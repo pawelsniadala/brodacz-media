@@ -104,7 +104,7 @@ export const photo = {
     "presentation": {
         "branding": {
             title: "Wizerunkowe",
-            description: "Test",
+            description: "Morbi accumsan sit amet mauris a tincidunt. Aliquam at mattis ipsum. Nunc viverra ante ante, quis accumsan erat ullamcorper id. Aenean facilisis nibh ut lacus blandit, id convallis nunc ullamcorper.",
             image: photoPresentationBranding
         },
         "studio": {
