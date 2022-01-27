@@ -14,7 +14,7 @@ const HomeView = () => {
     return (
         <div className="home-view">
             <PreludeSection />
-            <IntroductionSection />
+            {/* <IntroductionSection /> */}
             <VideoSection />
             <PhotoSection/>
             <BackstageSection />
