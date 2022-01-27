@@ -98,9 +98,9 @@ const NavSection = () => {
                                     className="nav-link"
                                     activeclassname="active"
                                     aria-current="page"
-                                    to="/new"
+                                    to="/about-me"
                                 >
-                                    Aktualności
+                                    O mnie
                                 </NavLink>
                             </li>
                             <li className="nav-item">
