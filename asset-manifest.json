@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/brodacz-media/static/css/main.33dd9ed2.css",
-    "main.js": "/brodacz-media/static/js/main.e817db35.js",
+    "main.js": "/brodacz-media/static/js/main.556c5d43.js",
     "static/js/787.b95d21ec.chunk.js": "/brodacz-media/static/js/787.b95d21ec.chunk.js",
     "static/media/preludeVideo.mp4": "/brodacz-media/static/media/preludeVideo.14ab9e987b726f763934.mp4",
     "static/media/videoPresentationWedding.png": "/brodacz-media/static/media/videoPresentationWedding.85e4ebdee6472fa14abd.png",
@@ -89,11 +89,11 @@
     "static/media/facebook.svg": "/brodacz-media/static/media/facebook.62f98e74603196881a1f6a63e2c13aa6.svg",
     "static/media/togller.svg": "/brodacz-media/static/media/togller.83cd3513c598c97a9a68.svg",
     "main.33dd9ed2.css.map": "/brodacz-media/static/css/main.33dd9ed2.css.map",
-    "main.e817db35.js.map": "/brodacz-media/static/js/main.e817db35.js.map",
+    "main.556c5d43.js.map": "/brodacz-media/static/js/main.556c5d43.js.map",
     "787.b95d21ec.chunk.js.map": "/brodacz-media/static/js/787.b95d21ec.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.33dd9ed2.css",
-    "static/js/main.e817db35.js"
+    "static/js/main.556c5d43.js"
   ]
 }
