@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/brodacz-media/static/css/main.33dd9ed2.css",
-    "main.js": "/brodacz-media/static/js/main.556c5d43.js",
+    "main.css": "/brodacz-media/static/css/main.73c4778b.css",
+    "main.js": "/brodacz-media/static/js/main.3adb06fa.js",
     "static/js/787.b95d21ec.chunk.js": "/brodacz-media/static/js/787.b95d21ec.chunk.js",
     "static/media/preludeVideo.mp4": "/brodacz-media/static/media/preludeVideo.14ab9e987b726f763934.mp4",
     "static/media/videoPresentationWedding.png": "/brodacz-media/static/media/videoPresentationWedding.85e4ebdee6472fa14abd.png",
@@ -10,7 +10,7 @@
     "static/media/photoProduct4.png": "/brodacz-media/static/media/photoProduct4.f17ab8e4230fe9e619b7.png",
     "static/media/photoProduct2.png": "/brodacz-media/static/media/photoProduct2.749707d4999039b8facf.png",
     "static/media/photoStudioOriginal1.png": "/brodacz-media/static/media/photoStudioOriginal1.966a181e19dfa272743c.png",
-    "static/media/introductionPhoto.png": "/brodacz-media/static/media/introductionPhoto.9b04fd2f98a450c5e3e0.png",
+    "static/media/aboutMePhoto.png": "/brodacz-media/static/media/aboutMePhoto.9b04fd2f98a450c5e3e0.png",
     "static/media/photoStudioOriginal4.png": "/brodacz-media/static/media/photoStudioOriginal4.6169280d2adcc854ea8a.png",
     "static/media/photoProduct1.png": "/brodacz-media/static/media/photoProduct1.ca0cf10ab0c851762d6e.png",
     "static/media/photoProduct3.png": "/brodacz-media/static/media/photoProduct3.1020a5d8cb9c5e3751d9.png",
@@ -78,7 +78,7 @@
     "static/media/photoStudioThumbnail9.png": "/brodacz-media/static/media/photoStudioThumbnail9.2da569940b90ded364af.png",
     "static/media/photoStudioThumbnail5.png": "/brodacz-media/static/media/photoStudioThumbnail5.3dae1afa3af7be16939c.png",
     "static/media/photoStudioThumbnail11.png": "/brodacz-media/static/media/photoStudioThumbnail11.f2f82a39d1381adf9a42.png",
-    "static/media/logo.svg": "/brodacz-media/static/media/logo.28992f2cf650f2ff4ae731dbcb199acd.svg",
+    "static/media/logo.svg": "/brodacz-media/static/media/logo.c0c41c726951fb36f9fd4f2ff6c3a7c9.svg",
     "static/media/youtube.svg": "/brodacz-media/static/media/youtube.610d54bc2aca64ebe6cc9fd45d212fd7.svg",
     "static/media/default-skin.svg": "/brodacz-media/static/media/default-skin.f64c3af3d0d25b9e4e00.svg",
     "static/media/tiktok.svg": "/brodacz-media/static/media/tiktok.1f5fb5bdfe60b7e485017ab455600a7b.svg",
@@ -88,12 +88,12 @@
     "index.html": "/brodacz-media/index.html",
     "static/media/facebook.svg": "/brodacz-media/static/media/facebook.62f98e74603196881a1f6a63e2c13aa6.svg",
     "static/media/togller.svg": "/brodacz-media/static/media/togller.83cd3513c598c97a9a68.svg",
-    "main.33dd9ed2.css.map": "/brodacz-media/static/css/main.33dd9ed2.css.map",
-    "main.556c5d43.js.map": "/brodacz-media/static/js/main.556c5d43.js.map",
+    "main.73c4778b.css.map": "/brodacz-media/static/css/main.73c4778b.css.map",
+    "main.3adb06fa.js.map": "/brodacz-media/static/js/main.3adb06fa.js.map",
     "787.b95d21ec.chunk.js.map": "/brodacz-media/static/js/787.b95d21ec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.33dd9ed2.css",
-    "static/js/main.556c5d43.js"
+    "static/css/main.73c4778b.css",
+    "static/js/main.3adb06fa.js"
   ]
 }
