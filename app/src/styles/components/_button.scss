@@ -1,0 +1,19 @@
+.button-link {
+    text-decoration: none;
+
+    &.backstage {
+        color: #FFF;
+        font-size: 3rem;
+        // border: 4px solid #FFF;
+        // padding: 0;
+
+        & .content {
+            // color: #FFF;
+        //     align-content: center;
+        // align-items:center;
+        // display: flex;
+        //     padding: .5rem 3rem;
+        //     line-height: 3rem;
+        }
+    }
+}

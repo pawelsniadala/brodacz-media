@@ -1,0 +1,107 @@
+html, body, #root, .app {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.view-wrapper {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.section-wrapper {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    &.footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+        padding: 3rem 0;
+        margin-bottom: 0;
+        margin-top: 0;
+
+        @media (max-width: 1199.98px) and (min-width: 992px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media (max-width: 991.98px) {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+.card-wrapper {
+    &.category {
+        display: grid;
+        gap: 1rem;
+        margin-bottom: 1rem;
+
+        &.video {
+            grid-template-columns: 1fr 1fr 1fr;
+
+            @media (max-width: 1199.98px) and (min-width: 992px) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media (max-width: 991.98px) and (min-width: 768px) {
+                grid-template-columns: 1fr;
+            }
+
+            @media (max-width: 767.98px) {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        &.photo {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+
+            @media (max-width: 1199.98px) and (min-width: 992px) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media (max-width: 991.98px) {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+    &.realization {
+        &.photo {
+            column-count: 4;
+            column-gap: 1rem;
+            orphans: 1;
+            widows: 1;
+
+            @media (max-width: 1199.98px) and (min-width: 992px) {
+                column-count: 3;
+            }
+
+            @media (max-width: 991.98px) {
+                column-count: 2;
+            }
+        }
+
+        &.video {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1rem;
+
+            @media (max-width: 1199.98px) and (min-width: 992px) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media (max-width: 991.98px) {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}
+body.dark-theme {
+    background-color: #212529;
+    color: rgba(255, 255, 255, 0.75);
+}
