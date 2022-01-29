@@ -52,7 +52,7 @@ const NavSection = () => {
                         activeclassname="active"
                         to="/"
                     >
-                        <img src={logo}  height="40" alt="logo" />
+                        <img src={logo} height="30" alt="logo" />
                     </NavLink>
                     <div className="theme-mobile" onClick={() => setDarkTheme(!darkTheme)}>
                         {darkTheme ? (
