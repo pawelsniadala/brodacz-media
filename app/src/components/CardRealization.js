@@ -1,4 +1,5 @@
 import Iframe from "react-iframe";
+import ReactImageAppear from "react-image-appear";
 
 const CardRealization = ({
     cardTitle,
@@ -12,13 +13,16 @@ const CardRealization = ({
 }) => (
     <div className={`card realization ${cardPhoto ? "photo" : "video"}`}>
         {cardPhoto && (
-            <img
-                src={cardPhotoSrc}
-                onClick={onClick}
-                alt={cardTitle}
-                ref={layoutRef}
-                className="card-image card-img-top"
-            />
+            <div ref={layoutRef}>
+                <ReactImageAppear
+                    src={cardPhotoSrc}
+                    onClick={onClick}
+                    alt={cardTitle}
+                    className="card-image card-img-top"
+                    placeholderStyle={{ backgroundColor: "transparent", display: "inline" }}
+                    showLoader={false}
+                />
+            </div>
         )}
         {cardVideo && (
             <Iframe

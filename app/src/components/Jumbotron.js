@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
+import ReactImageAppear from "react-image-appear";
 
 const Jumbotron = ({
     videoSrc,
     photoSrc,
-    photoAlt,
+    photoAlt
 }) => {
     function getWindowDimensions() {
         const { innerWidth: width, innerHeight: height } = window;
@@ -18,7 +19,7 @@ const Jumbotron = ({
 
         useEffect(() => {
             function handleResize() {
-            setWindowDimensions(getWindowDimensions());
+                setWindowDimensions(getWindowDimensions());
             }
 
             window.addEventListener("resize", handleResize);
@@ -32,7 +33,7 @@ const Jumbotron = ({
 
     return (
         <div className="jumbotron">
-            {width >= 991.98 ? (
+            {width >= 767.98 ? (
                 <div className="video-wrapper">
                     <video
                         className="video"
@@ -52,13 +53,23 @@ const Jumbotron = ({
                     <div id="carousel" className="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div className="carousel-inner">
                             <div className="carousel-item active">
-                                <img src={photoSrc} className="d-block w-100" alt={photoAlt} />
+                                <ReactImageAppear
+                                    src={photoSrc}
+                                    alt={photoAlt}
+                                    className="d-block w-100"
+                                    placeholderStyle={{ backgroundColor: "transparent", display: "inline" }}
+                                    showLoader={false}
+                                />
                             </div>
                         </div>
                         <div className="company-wrapper">
                             <h1 className="display-1 company-name">Brodacz media<hr/></h1>
                             <span className="company-services">
-                                film<span className="dot">&#xb7;</span>fotografia<span className="dot">&#xb7;</span>dźwięk
+                                film
+                                <span className="dot">&#xb7;</span>
+                                fotografia
+                                <span className="dot">&#xb7;</span>
+                                dźwięk
                             </span>
                         </div>
                     </div>
