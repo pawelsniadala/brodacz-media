@@ -1,6 +1,7 @@
 import { useEffect } from "react";
-import PageHeader from "../components/PageHeader";
 import { aboutMe } from "../data/aboutMe";
+import PageHeader from "../components/PageHeader";
+import ReactImageAppear from "react-image-appear";
 
 const AboutMeView = () => {
     useEffect(() => {
@@ -16,7 +17,12 @@ const AboutMeView = () => {
                         {aboutMe.map(item => (
                             <div className="card introduction" key={item.id}>
                                 <div className="grid">
-                                    <img src={item.image} className="card-img" alt="..." />
+                                    <ReactImageAppear
+                                        src={item.image}
+                                        className="card-img"
+                                        placeholderStyle={{ backgroundColor: "transparent", display: "inline" }}
+                                        alt="..."
+                                    />
                                     <div className="card-body">
                                         <p className="card-text">{item.description}</p>
                                     </div>
