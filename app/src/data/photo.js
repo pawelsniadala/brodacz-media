@@ -16,6 +16,7 @@ import photoBranding5 from "../assets/photo/realization/branding/photoBranding5.
 import photoBranding6 from "../assets/photo/realization/branding/photoBranding6.png";
 import photoBranding7 from "../assets/photo/realization/branding/photoBranding7.png";
 import photoBranding8 from "../assets/photo/realization/branding/photoBranding8.png";
+import photoBranding9 from "../assets/photo/realization/branding/photoBranding9.png";
 
 import photoStudioThumbnail1 from "../assets/photo/realization/studio/thumbnail/photoStudioThumbnail1.png";
 import photoStudioThumbnail2 from "../assets/photo/realization/studio/thumbnail/photoStudioThumbnail2.png";
@@ -109,17 +110,17 @@ export const photo = {
         },
         "studio": {
             title: "Studyjne",
-            description: "Morbi accumsan sit amet mauris a tincidunt. Aliquam at mattis ipsum. Nunc viverra ante ante, quis accumsan erat ullamcorper id. Aenean facilisis nibh ut lacus blandit, id convallis nunc ullamcorper. Maecenas ut nunc maximus, consequat dui ac, convallis enim. Nunc neque sem, ultrices sollicitudin odio nec, laoreet varius ligula.",
+            description: "Morbi accumsan sit amet mauris a tincidunt. Aliquam at mattis ipsum. Nunc viverra ante ante, quis accumsan erat ullamcorper id. Aenean facilisis nibh ut lacus blandit, id convallis nunc ullamcorper.",
             image: photoPresentationStudio
         },
         "product": {
             title: "Produktowe",
-            description: "Pellentesque eu commodo nisi, at lacinia nisl. Quisque ac metus augue. Etiam cursus magna eu nisl dignissim efficitur. Aliquam lacus lorem, tincidunt vitae tincidunt nec, volutpat a elit. Cras finibus velit risus, a condimentum quam hendrerit ultrices. Morbi quis vehicula lorem. Vivamus lobortis, metus sagittis laoreet pulvinar, neque nibh maximus mi, eget luctus ex tortor at eros",
+            description: "Pellentesque eu commodo nisi, at lacinia nisl. Quisque ac metus augue. Etiam cursus magna eu nisl dignissim efficitur. Aliquam lacus lorem, tincidunt vitae tincidunt nec, volutpat a elit. Cras finibus velit risus.",
             image: photoPresentationProduct
         },
         "outdoor": {
             title: "Plenerowe",
-            description: "Aenean tristique ullamcorper sapien vitae iaculis. Nullam finibus velit sit amet ullamcorper molestie. Duis in rutrum erat. Ut mollis massa ullamcorper nunc faucibus, sed commodo lacus convallis. Aenean sagittis tellus nec posuere sollicitudin. Etiam sit amet dapibus felis, non convallis lectus. Nulla nisi purus, fringilla lacinia magna vitae, vestibulum congue nibh. Quisque non purus faucibus ipsum venenatis facilisis vel in risus. Nullam ultricies bibendum commodo. Etiam eget eros leo.",
+            description: "Studiowanie leśnictwa bardzo otworzyło mi oczy na przyrodę i ujęcie jej w moich pracach. Jeśli uwielbiasz las i marzysz o plenerowej sesji to jesteś we właściwym miejscu.",
             image: photoPresentationOutdoor
         }
     },
@@ -134,7 +135,7 @@ export const photo = {
                 image: {
                     "src": photoBranding1,
                     "width": "1000",
-                    "height": "1500"
+                    "height": "1448"
                 }
             },
             {
@@ -148,15 +149,16 @@ export const photo = {
                     "height": "1500"
                 }
             },
+
             {
-                id: "2d3229c2-262b-4649-98e3-6ce178379fcc",
+                id: "ade86b9e-74b6-49d8-ad0a-859814125969",
                 date: '20 Listopada 2019',
                 title: '',
                 description: '',
                 image: {
                     "src": photoBranding3,
                     "width": "1000",
-                    "height": "1500"
+                    "height": "666"
                 }
             },
             {
@@ -182,14 +184,14 @@ export const photo = {
                 }
             },
             {
-                id: "ade86b9e-74b6-49d8-ad0a-859814125969",
+                id: "2d3229c2-262b-4649-98e3-6ce178379fcc",
                 date: '20 Listopada 2019',
                 title: '',
                 description: '',
                 image: {
                     "src": photoBranding6,
                     "width": "1000",
-                    "height": "666"
+                    "height": "1500"
                 }
             },
             {
@@ -210,6 +212,17 @@ export const photo = {
                 description: '',
                 image: {
                     "src": photoBranding8,
+                    "width": "1000",
+                    "height": "1500"
+                }
+            },
+            {
+                id: "109284a6-e352-46d6-9ba4-8b06595bba9b",
+                date: '20 Listopada 2019',
+                title: '',
+                description: '',
+                image: {
+                    "src": photoBranding9,
                     "width": "1000",
                     "height": "1500"
                 }
