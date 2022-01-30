@@ -22,7 +22,6 @@
     // }
 
     &.category {
-        background-color: #FFF;
         background-position: center;
         overflow: hidden;
         position: relative;
@@ -108,7 +107,7 @@
     &.realization {
         &.photo {
             display: inline-block !important;
-            margin-bottom: 1rem;
+            margin-bottom: .5rem;
         }
 
         &.video {
