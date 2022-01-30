@@ -385,7 +385,7 @@ export const photo = {
                     "original": {
                         "src": photoStudioOriginal10,
                         "width": "1000",
-                        "height": "1528"
+                        "height": "1485"
                     }
                 }
             },
