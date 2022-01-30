@@ -22,6 +22,7 @@ import PhotoBrandingPartial from "./partials/photo/PhotoBrandingPartial";
 import PhotoStudioPartial from "./partials/photo/PhotoStudioPartial";
 import PhotoProductPartial from "./partials/photo/PhotoProductPartial";
 import PhotoOutdoorPartial from "./partials/photo/PhotoOutdoorPartial";
+import ScrollArrow from "../components/ScrollArrow";
 
 const Root = () => (
     <MainTemplate>
@@ -51,6 +52,7 @@ const Root = () => (
                 </Routes>
             </main>
             <FooterSection />
+            <ScrollArrow />
         </Router>
     </MainTemplate>
 );
