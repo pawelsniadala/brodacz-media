@@ -1,10 +1,7 @@
 import { useState, useEffect } from "react";
-import ReactImageAppear from "react-image-appear";
 
 const Jumbotron = ({
-    videoSrc,
-    photoSrc,
-    photoAlt
+    videoSrc
 }) => {
     function getWindowDimensions() {
         const { innerWidth: width, innerHeight: height } = window;
@@ -50,18 +47,7 @@ const Jumbotron = ({
                 </div>
             ) : (
                 <div className="photo-wrapper">
-                    <div id="carousel" className="carousel slide carousel-fade" data-bs-ride="carousel">
-                        <div className="carousel-inner">
-                            <div className="carousel-item active">
-                                <ReactImageAppear
-                                    src={photoSrc}
-                                    alt={photoAlt}
-                                    className="d-block w-100"
-                                    placeholderStyle={{ backgroundColor: "transparent", display: "inline" }}
-                                    showLoader={false}
-                                />
-                            </div>
-                        </div>
+                    <div className="content-wrapper">
                         <div className="company-wrapper">
                             <h1 className="display-1 company-name">Brodacz media<hr/></h1>
                             <span className="company-services">
