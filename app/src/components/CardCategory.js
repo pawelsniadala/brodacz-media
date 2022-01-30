@@ -15,7 +15,7 @@ const CardCategory = ({
             showLoader={false}
         />
         <div className="card-title">
-            {cardTitle}
+            <h3>{cardTitle}</h3>
         </div>
         <Link
             className="stretched-link"
