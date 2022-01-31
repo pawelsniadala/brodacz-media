@@ -3,6 +3,8 @@ import { NavLink } from "react-router-dom";
 import logo from "./../assets/navbar/logo.svg";
 import sun from "./../assets/navbar/sun.svg";
 import moon from "./../assets/navbar/moon.png";
+import cameraShutterClick from "./../assets/navbar/cameraShutterClick.wav";
+import cameraFocusBeep from "./../assets/navbar/cameraFocusBeep.wav";
 
 const NavSection = () => {
     const [ darkTheme, setDarkTheme ] = useState(() => {
@@ -33,6 +35,9 @@ const NavSection = () => {
         }
     }
 
+    const cameraShutterClickAudio = new Audio(cameraShutterClick)
+    const cameraFocusBeepAudio = new Audio(cameraFocusBeep);
+
     return (
         <nav>
             <div className="navbar navbar-expand-lg">
@@ -51,10 +56,16 @@ const NavSection = () => {
                         className="navbar-brand text-uppercase"
                         activeclassname="active"
                         to="/"
+                        onClick={() => cameraShutterClickAudio.play()}
                     >
                         <img src={logo} height="30" alt="logo" />
                     </NavLink>
-                    <div className="theme-mobile" onClick={() => setDarkTheme(!darkTheme)}>
+                    <div className="theme-mobile"
+                        onClick={() => {
+                            setDarkTheme(!darkTheme);
+                            cameraFocusBeepAudio.play();
+                        }}
+                    >
                         {darkTheme ? (
                             <img src={sun} height="30" alt="sun" />
                         ) : (
@@ -69,6 +80,8 @@ const NavSection = () => {
                                     activeclassname="active"
                                     aria-current="page"
                                     to="/video"
+                                    onClick={() => cameraFocusBeepAudio.play()}
+
                                 >
                                     Video
                                 </NavLink>
@@ -79,6 +92,7 @@ const NavSection = () => {
                                     activeclassname="active"
                                     aria-current="page"
                                     to="/photo"
+                                    onClick={() => cameraFocusBeepAudio.play()}
                                 >
                                     Foto
                                 </NavLink>
@@ -89,6 +103,7 @@ const NavSection = () => {
                                     activeclassname="active"
                                     aria-current="page"
                                     to="/backstage"
+                                    onClick={() => cameraFocusBeepAudio.play()}
                                 >
                                     Backstage
                                 </NavLink>
@@ -99,6 +114,7 @@ const NavSection = () => {
                                     activeclassname="active"
                                     aria-current="page"
                                     to="/about-me"
+                                    onClick={() => cameraFocusBeepAudio.play()}
                                 >
                                     O mnie
                                 </NavLink>
@@ -109,13 +125,19 @@ const NavSection = () => {
                                     activeclassname="active"
                                     aria-current="page"
                                     to="/contact"
+                                    onClick={() => cameraFocusBeepAudio.play()}
                                 >
                                     Kontakt
                                 </NavLink>
                             </li>
                         </ul>
                     </div>
-                    <div className="theme-desktop" onClick={() => setDarkTheme(!darkTheme)}>
+                    <div className="theme-desktop"
+                        onClick={() => {
+                            setDarkTheme(!darkTheme);
+                            cameraFocusBeepAudio.play();
+                        }}
+                    >
                         {darkTheme ? (
                             <img src={sun} height="30" alt="sun" />
                         ) : (
