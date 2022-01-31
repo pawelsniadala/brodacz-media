@@ -1,5 +1,6 @@
 .scrollup {
     button.btn {
+        z-index: 1000;
         position: fixed;
         display: flex;
         align-items: center;
@@ -10,10 +11,9 @@
         height: 45px;
         padding: 2px;
         background-color: #171717;
-        border: none;
-        z-index: 1000;
-        cursor: pointer;
         opacity: 0.4;
+        border: none;
+        cursor: pointer;
         border-radius: 2px;
 
         &:focus {
