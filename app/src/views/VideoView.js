@@ -50,10 +50,6 @@ const VideoView = () => {
         return selectTab(pathname);
     });
 
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    }, []);
-
     const renderTabContent = (videoTab) => {
         switch(videoTab) {
             case "video-weddings":
@@ -83,6 +79,10 @@ const VideoView = () => {
             default:
         }
     }
+
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+    }, []);
 
     return (
         <div className="video-view">
