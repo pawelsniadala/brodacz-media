@@ -22,7 +22,6 @@ const CardCategory = ({
             to={cardPath ? cardPath : "#"}
         >
         </Link>
-
     </div>
 );
 
