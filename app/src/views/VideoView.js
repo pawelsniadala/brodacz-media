@@ -122,9 +122,9 @@ const VideoView = () => {
                         </li>
                         <li className="nav-item">
                             <Link
+                                to="/video/broadcasts"
                                 className={`nav-link${videoTab === "video-broadcasts" ? " active" : ""}`}
                                 aria-current="page"
-                                to="/video/broadcasts"
                                 onClick={() => setTab("video-broadcasts")}
                             >
                                 Transmisje

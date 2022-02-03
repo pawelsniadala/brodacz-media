@@ -4,12 +4,19 @@ import videoCategoryBroadcasts from "../assets/video/category/videoCategoryBroad
 import videoCategoryAnimation from "../assets/video/category/videoCategoryAnimation.png";
 import videoCategoryMusicVideo from "../assets/video/category/videoCategoryMusicVideo.png";
 
-import videoPresentationWedding from "../assets/video/presentation/videoPresentationWedding.png";
-import videoPresentationEwent from "../assets/video/presentation/videoPresentationEwent.png";
-import videoPresentationMusicVideo from "../assets/video/presentation/videoPresentationMusicVideo.png";
-import videoPresentationBroadcast from "../assets/video/presentation/videoPresentationBroadcast.png";
-import videoPresentationAdvertisting from "../assets/video/presentation/videoPresentationAdvertisting.png";
-import videoPresentationAnimation from "../assets/video/presentation/videoPresentationAnimation.png";
+// ŚLUBY
+import videoWeddingThumbnail1 from "../assets/video/realization/weddings/videoWeddingThumbnail1.png";
+
+// EVENTY
+import videoEventThumbnail1 from "../assets/video/realization/events/videoEventThumbnail1.png";
+import videoEventThumbnail2 from "../assets/video/realization/events/videoEventThumbnail2.png";
+import videoEventThumbnail3 from "../assets/video/realization/events/videoEventThumbnail3.png";
+import videoEventThumbnail4 from "../assets/video/realization/events/videoEventThumbnail4.png";
+import videoEventThumbnail5 from "../assets/video/realization/events/videoEventThumbnail5.png";
+
+// TELEDYSKI
+import videoMusicThumbnail1 from "../assets/video/realization/music/videoMusicThumbnail1.png";
+import videoMusicThumbnail2 from "../assets/video/realization/music/videoMusicThumbnail2.png";
 
 export const video = {
     "title": "Video",
@@ -69,103 +76,99 @@ export const video = {
             tab: "video-animations"
         }
     ],
-    "presentation": {
-        "wedding": {
-            title: "Śluby",
-            description: "Każdy dzień ślubu jest inny, bo każda para jest inna, dlatego zawsze staram się dopasować do stylu filmu, który preferujecie, oraz rodzaju mojej obecności z Wami. Oferuję pełną obsługę od wyjść plenerowych, przez życzenia dla rodziców po nagrywanie pamiątkowych wypowiedzi gości. Stwórzmy razem piękną pamiątkę.",
-            image: videoPresentationWedding
-        },
-        "event": {
-            title: "Śluby",
-            description: "Szykuje się ważne wydarzenie dla Twojego biznesu? To świetna okazja, by pokazać się szerzej i zyskać nowe kontakty! Zajmuję się tworzeniem relacji video z eventów i spotkań, które w bardzo skuteczny sposób wypromują Twoją działalność.",
-            image: videoPresentationEwent
-        },
-        "musicVideo": {
-            title: "Teledyski",
-            description: "Muzyką zajmuję się przez większość życia dlatego i na ten filar mojej działalności nie mogło zabraknąć miejsca. Chętnie tworzę klipy muzyczne, nieważne czy działasz w młodej kapeli, czy jesteś seniorem z akordeonem. Dopasuję się do każdego rodzaju twórczości, wnosząc swoje pomysły. Nie ma z góry ustalonej stawki, to Twoje wymagania decydują o cenie.",
-            image: videoPresentationMusicVideo
-        },
-        "broadcast": {
-            title: "Transmisje",
-            description: "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec fringilla turpis at nisl laoreet, quis rhoncus tortor gravida. Nunc ipsum purus, dapibus sed turpis at, mattis ultrices libero. Pellentesque imperdiet, nisl tempus aliquam rhoncus, mauris nunc facilisis nisl, id luctus purus enim ut ex.",
-            image: videoPresentationBroadcast
-        },
-        "advertisting": {
-            title: "Reklamy",
-            description: "Chcesz przekazać swoją wiedzę w formie kursu? A może potrzebujesz kampanii informacyjnej która nagłośni dany temat. Oferuję pełną realizację takich produkcji od wspólnej pracy przy scenariuszu, przez indywidualny styl nagrań po zaawansowaną animowaną postprodukcję.",
-            image: videoPresentationAdvertisting
-        },
-        "animation": {
-            title: "Animacje",
-            description: "Cras in risus lacinia, finibus dolor ut, commodo risus. Nulla pulvinar tempus tortor sit amet malesuada. Suspendisse vehicula elementum leo, nec sagittis urna molestie semper. Suspendisse ac malesuada augue, sit amet venenatis mi.",
-            image: videoPresentationAnimation
-        }
-    },
     "realization": {
         "title": "Realizacje",
         "weddings": [
             {
                 id: "262d3b76-ff77-4a6a-93d8-7797180085aa",
-                date: "6 sierpnia 2021",
+                date: "6 sie 2021",
                 title: "Teledysk ślubny Sylwia i Norbert",
-                description: "",
+                company: "Brodacz Media",
                 video: {
-                    id: "9AdxCvFOa-k",
-                    url: "https://www.youtube.com/embed/9AdxCvFOa-k"
+                    time: "3:06",
+                    src: videoWeddingThumbnail1,
+                    urlPage: "https://www.youtube.com/watch?v=9AdxCvFOa-k"
                 }
             }
         ],
         "events": [
             {
                 id: "e1989e40-8c49-4fc1-b7e7-ba842fbb40c8",
-                date: "20 sierpnia 2021",
-                title: "Graj o Swój Biznes 2021 - Golf - Golf Park Józefów",
-                description: "",
+                date: "20 sie2021",
+                title: "Graj o Swój Biznes 2021 - Golf",
+                company: "Manager Business Hub",
                 video: {
-                    id: "ryhhKhGw0n0",
-                    url: "https://www.youtube.com/embed/ryhhKhGw0n0"
-                }
-            },
-            {
-                id: "ddc2f133-468b-4c7c-95dd-834c1c43a072",
-                date: "7 lipca 2021",
-                title: "Military Day Manager Business Hub 2021 - III Edycja",
-                description: "",
-                video: {
-                    id: "GzPJnvwsmtM",
-                    url: "https://www.youtube.com/embed/GzPJnvwsmtM"
+                    time: "3:04",
+                    src: videoEventThumbnail1,
+                    urlPage: "https://www.youtube.com/watch?v=ryhhKhGw0n0&t=4s"
                 }
             },
             {
                 id: "40937a57-db58-4bbe-a46e-d142c8a690f3",
-                date: "2 grudnia 2021",
-                title: "Wieczór Portugalski Manager Business Hub",
-                description: "",
+                date: "2 gru 2021",
+                title: "Wieczór Portugalski",
+                company: "Manager Business Hub",
                 video: {
-                    id: "q0Q_wY3V2g0",
-                    url: "https://www.youtube.com/embed/q0Q_wY3V2g0"
+                    time: "2:22",
+                    src: videoEventThumbnail2,
+                    urlPage: "https://www.youtube.com/watch?v=q0Q_wY3V2g0&t=4s"
                 }
             },
+            {
+                id: "ddc2f133-468b-4c7c-95dd-834c1c43a072",
+                date: "7 lip 2021",
+                title: "Military Day - III Edycja",
+                company: "Manager Business Hub",
+                video: {
+                    time: "2:48",
+                    src: videoEventThumbnail3,
+                    urlPage: "https://www.youtube.com/watch?v=GzPJnvwsmtM"
+                }
+            },
+            {
+                id: "91584c37-2ddf-43ed-8f2a-8bcddce639de",
+                date: "15 sty 2022",
+                title: "Graj o Swój Biznes 2021 - Turniej Bilardowy",
+                company: "Manager Business Hub",
+                video: {
+                    time: "2:44",
+                    src: videoEventThumbnail4,
+                    urlPage: "https://www.youtube.com/watch?v=45JbG8Azjtg"
+                }
+            },
+            {
+                id: "13e18c2b-5dc3-4f4c-893e-98020dccaef2",
+                date: "20 sty 2022",
+                title: "Przedświąteczne spotkanie",
+                company: "Manager Business Hub",
+                video: {
+                    time: "2:36",
+                    src: videoEventThumbnail5,
+                    urlPage: "https://www.youtube.com/watch?v=_bLjnT3vk-E"
+                }
+            }
         ],
-        "musicVideo": [
+        "music": [
             {
                 id: "be1bfad3-7435-47dd-b1ba-28ffe39de6ca",
-                date: "24 listopada 2021",
-                title: "KURP- Dopsierum tu przysła",
-                description: "",
+                date: "24 lis 2021",
+                title: "Kurp - Dopsierum tu przysła",
+                company: "Kurp",
                 video: {
-                    id: "OTy97M9OTeE",
-                    url: "https://www.youtube.com/embed/OTy97M9OTeE"
+                    time: "3:58",
+                    src: videoMusicThumbnail1,
+                    urlPage: "https://www.youtube.com/watch?v=OTy97M9OTeE"
                 }
             },
             {
                 id: "296280a3-8f33-4895-ad14-f533907c0934",
-                date: "18 grudnia 2020",
+                date: "18 gru 2020",
                 title: "Fire Show Infernal",
-                description: "",
+                company: "Teatr Ognia Infernal",
                 video: {
-                    id: "_XSvz3Ym65A",
-                    url: "https://www.youtube.com/embed/_XSvz3Ym65A"
+                    time: "2:40",
+                    src: videoMusicThumbnail2,
+                    urlPage: "https://www.youtube.com/watch?v=_XSvz3Ym65A"
                 }
             }
         ],
