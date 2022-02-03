@@ -3,11 +3,7 @@ import photoCategoryStudio from "../assets/photo/category/photoCategoryStudio.pn
 import photoCategoryProduct from "../assets/photo/category/photoCategoryProduct.png";
 import photoCategoryOutdoor from "../assets/photo/category/photoCategoryOutdoor.png";
 
-import photoPresentationBranding from "../assets/photo/presentation/photoPresentationBranding.png";
-import photoPresentationStudio from "../assets/photo/presentation/photoPresentationStudio.png";
-import photoPresentationProduct from "../assets/photo/presentation/photoPresentationProduct.png";
-import photoPresentationOutdoor from "../assets/photo/presentation/photoPresentationOutdoor.png";
-
+// WIZERUNKOWE
 import photoBranding1 from "../assets/photo/realization/branding/photoBranding1.png";
 import photoBranding2 from "../assets/photo/realization/branding/photoBranding2.png";
 import photoBranding3 from "../assets/photo/realization/branding/photoBranding3.png";
@@ -18,6 +14,8 @@ import photoBranding7 from "../assets/photo/realization/branding/photoBranding7.
 import photoBranding8 from "../assets/photo/realization/branding/photoBranding8.png";
 import photoBranding9 from "../assets/photo/realization/branding/photoBranding9.png";
 
+// STUDYJNE
+// MINIATURKI
 import photoStudioThumbnail1 from "../assets/photo/realization/studio/thumbnail/photoStudioThumbnail1.png";
 import photoStudioThumbnail2 from "../assets/photo/realization/studio/thumbnail/photoStudioThumbnail2.png";
 import photoStudioThumbnail3 from "../assets/photo/realization/studio/thumbnail/photoStudioThumbnail3.png";
@@ -33,7 +31,7 @@ import photoStudioThumbnail12 from "../assets/photo/realization/studio/thumbnail
 import photoStudioThumbnail13 from "../assets/photo/realization/studio/thumbnail/photoStudioThumbnail13.png";
 import photoStudioThumbnail14 from "../assets/photo/realization/studio/thumbnail/photoStudioThumbnail14.png";
 import photoStudioThumbnail15 from "../assets/photo/realization/studio/thumbnail/photoStudioThumbnail15.png";
-
+// ORYGINALNE
 import photoStudioOriginal1 from "../assets/photo/realization/studio/original/photoStudioOriginal1.png";
 import photoStudioOriginal2 from "../assets/photo/realization/studio/original/photoStudioOriginal2.png";
 import photoStudioOriginal3 from "../assets/photo/realization/studio/original/photoStudioOriginal3.png";
@@ -50,11 +48,13 @@ import photoStudioOriginal13 from "../assets/photo/realization/studio/original/p
 import photoStudioOriginal14 from "../assets/photo/realization/studio/original/photoStudioOriginal14.png";
 import photoStudioOriginal15 from "../assets/photo/realization/studio/original/photoStudioOriginal15.png";
 
+// PRODUKTOWE
 import photoProduct1 from "../assets/photo/realization/product/photoProduct1.png";
 import photoProduct2 from "../assets/photo/realization/product/photoProduct2.png";
 import photoProduct3 from "../assets/photo/realization/product/photoProduct3.png";
 import photoProduct4 from "../assets/photo/realization/product/photoProduct4.png";
 
+// PLENEROWE
 import photoOutdoor1 from "../assets/photo/realization/outdoor/photoOutdoor1.png";
 import photoOutdoor2 from "../assets/photo/realization/outdoor/photoOutdoor2.png";
 import photoOutdoor3 from "../assets/photo/realization/outdoor/photoOutdoor3.png";
@@ -102,28 +102,6 @@ export const photo = {
             path: '/photo/outdoor',
         }
     ],
-    "presentation": {
-        "branding": {
-            title: "Wizerunkowe",
-            description: "Morbi accumsan sit amet mauris a tincidunt. Aliquam at mattis ipsum. Nunc viverra ante ante, quis accumsan erat ullamcorper id. Aenean facilisis nibh ut lacus blandit, id convallis nunc ullamcorper.",
-            image: photoPresentationBranding
-        },
-        "studio": {
-            title: "Studyjne",
-            description: "Morbi accumsan sit amet mauris a tincidunt. Aliquam at mattis ipsum. Nunc viverra ante ante, quis accumsan erat ullamcorper id. Aenean facilisis nibh ut lacus blandit, id convallis nunc ullamcorper.",
-            image: photoPresentationStudio
-        },
-        "product": {
-            title: "Produktowe",
-            description: "Pellentesque eu commodo nisi, at lacinia nisl. Quisque ac metus augue. Etiam cursus magna eu nisl dignissim efficitur. Aliquam lacus lorem, tincidunt vitae tincidunt nec, volutpat a elit. Cras finibus velit risus.",
-            image: photoPresentationProduct
-        },
-        "outdoor": {
-            title: "Plenerowe",
-            description: "Studiowanie leśnictwa bardzo otworzyło mi oczy na przyrodę i ujęcie jej w moich pracach. Jeśli uwielbiasz las i marzysz o plenerowej sesji to jesteś we właściwym miejscu.",
-            image: photoPresentationOutdoor
-        }
-    },
     "realization": {
         "title": "Realizacje",
         "branding": [
