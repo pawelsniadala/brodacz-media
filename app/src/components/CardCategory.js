@@ -14,6 +14,7 @@ const CardCategory = ({
             placeholderStyle={{ backgroundColor: "transparent", display: "inline" }}
             showLoader={false}
         />
+        <div className="card-title-wrapper" />
         <div className="card-title">
             <h3>{cardTitle}</h3>
         </div>
