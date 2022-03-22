@@ -1,11 +1,13 @@
 import videoCategoryWeddings from "../assets/video/category/videoCategoryWeddings.png";
 import videoCategoryEvents from "../assets/video/category/videoCategoryEvents.png";
 import videoCategoryBroadcasts from "../assets/video/category/videoCategoryBroadcasts.png";
+import videoCategoryDebate from "../assets/video/category/videoCategoryDebate.png";
 import videoCategoryAnimation from "../assets/video/category/videoCategoryAnimation.png";
 import videoCategoryMusicVideo from "../assets/video/category/videoCategoryMusicVideo.png";
 
 // ŚLUBY
 import videoWeddingThumbnail1 from "../assets/video/realization/weddings/videoWeddingThumbnail1.png";
+import videoWeddingThumbnail2 from "../assets/video/realization/weddings/videoWeddingThumbnail2.png";
 
 // EVENTY
 import videoEventThumbnail1 from "../assets/video/realization/events/videoEventThumbnail1.png";
@@ -13,10 +15,17 @@ import videoEventThumbnail2 from "../assets/video/realization/events/videoEventT
 import videoEventThumbnail3 from "../assets/video/realization/events/videoEventThumbnail3.png";
 import videoEventThumbnail4 from "../assets/video/realization/events/videoEventThumbnail4.png";
 import videoEventThumbnail5 from "../assets/video/realization/events/videoEventThumbnail5.png";
+import videoEventThumbnail6 from "../assets/video/realization/events/videoEventThumbnail6.png";
 
 // TELEDYSKI
 import videoMusicThumbnail1 from "../assets/video/realization/music/videoMusicThumbnail1.png";
 import videoMusicThumbnail2 from "../assets/video/realization/music/videoMusicThumbnail2.png";
+import videoMusicThumbnail3 from "../assets/video/realization/music/videoMusicThumbnail3.png";
+
+// TRANSMISJE
+import videoBroadcastThumbnail1 from "../assets/video/realization/broadcasts/videoBroadcastThumbnail1.png";
+import videoBroadcastThumbnail2 from "../assets/video/realization/broadcasts/videoBroadcastThumbnail2.png";
+
 
 export const video = {
     "title": "Video",
@@ -60,9 +69,9 @@ export const video = {
         {
             id: "50ed6498-04a7-4ff8-bc3e-6b477ad9d358",
             date: "",
-            title: "Reklamy",
+            title: "Debaty, wypowiedzi",
             description: "Chcesz przekazać swoją wiedzę w formie kursu? A może potrzebujesz kampanii informacyjnej, która nagłośni dany temat. Oferuję pełną realizację takich produkcji od wspólnej pracy przy scenariuszu, przez indywidualny styl nagrań po zaawansowaną animowaną postprodukcję.",
-            image: videoCategoryBroadcasts,
+            image: videoCategoryDebate,
             path: "/video/advertising",
             tab: "video-advertising"
         },
@@ -88,6 +97,17 @@ export const video = {
                     time: "3:06",
                     src: videoWeddingThumbnail1,
                     urlPage: "https://www.youtube.com/watch?v=9AdxCvFOa-k"
+                }
+            },
+            {
+                id: "0b0bd579-f4fe-4e34-b1e9-6b114a0c5da8",
+                date: "15 sie 2020",
+                title: "Teledysk Ślubny Kasia i Łukasz",
+                company: "Brodacz Media",
+                video: {
+                    time: "2:15",
+                    src: videoWeddingThumbnail2,
+                    urlPage: "https://www.youtube.com/watch?v=FURA4xL9-hs"
                 }
             }
         ],
@@ -146,6 +166,17 @@ export const video = {
                     src: videoEventThumbnail5,
                     urlPage: "https://www.youtube.com/watch?v=_bLjnT3vk-E"
                 }
+            },
+            {
+                id: "538afe57-2907-46ff-9789-311c548a111a",
+                date: "16 mar 2022",
+                title: "Targi maszyn roboczych",
+                company: "erobocze.pl",
+                video: {
+                    time: "1:21",
+                    src: videoEventThumbnail6,
+                    urlPage: "https://www.youtube.com/watch?v=YoAXW5QFmg8"
+                }
             }
         ],
         "music": [
@@ -170,19 +201,42 @@ export const video = {
                     src: videoMusicThumbnail2,
                     urlPage: "https://www.youtube.com/watch?v=_XSvz3Ym65A"
                 }
+            },
+            {
+                id: "c4df3075-2e7c-464b-b3fe-acaa93104144",
+                date: "27 lip 2020",
+                title: "Leśny z spacer Asią",
+                company: "Brodacz Media",
+                video: {
+                    time: "0:39",
+                    src: videoMusicThumbnail3,
+                    urlPage: "https://www.youtube.com/watch?v=j3DRt_7Yt10"
+                }
             }
         ],
         "broadcast": [
             {
                 id: "84af7c53-275e-48f7-aa2e-839a498e0df1",
-                date: "20 listopada 2021",
+                date: "20 lis 2021",
                 title: "Jubileusz Krajowej Reprezentacji Doktorantów - Konferencja Model Funkcjonowania Szkół Doktorskich",
-                description: "",
+                company: "KRD",
                 video: {
-                    id: "exEBorFnSMU",
-                    url: "https://www.youtube.com/embed/exEBorFnSMU"
+                    time: "10:22:30",
+                    src: videoBroadcastThumbnail1,
+                    urlPage: "https://www.youtube.com/watch?v=exEBorFnSMU"
                 }
             },
+            {
+                id: "01e49c34-ac14-41f4-b174-1eb3a822d441",
+                date: "26 lut 2022",
+                title: "I Otwarte Posiedzenie Zarządu KRD kadencji 2022",
+                company: "KRD",
+                video: {
+                    time: "5:41:05",
+                    src: videoBroadcastThumbnail2,
+                    urlPage: "https://www.youtube.com/watch?v=VGLSbb2LWuo"
+                }
+            }
         ],
         "advertisting": [
             {
