@@ -1,0 +1,22 @@
+.form-control {
+    border-radius: 2px;
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.dark-theme {
+    .form-control {
+        background-color: rgba(255, 255, 255, 0.75);
+        border-color: rgba(255, 255, 255, 0.07);
+        border-radius: 2px;
+
+        &:focus {
+            color: #212529;
+            background-color: rgba(255, 255, 255, 0.75);
+            border-color: rgba(255, 255, 255, 0.07);
+            box-shadow: none;
+        }
+    }
+}
