@@ -69,7 +69,7 @@ export const video = {
         {
             id: "50ed6498-04a7-4ff8-bc3e-6b477ad9d358",
             date: "",
-            title: "Debaty, wypowiedzi",
+            title: "Debaty i wypowiedzi",
             description: "Chcesz przekazać swoją wiedzę w formie kursu? A może potrzebujesz kampanii informacyjnej, która nagłośni dany temat. Oferuję pełną realizację takich produkcji od wspólnej pracy przy scenariuszu, przez indywidualny styl nagrań po zaawansowaną animowaną postprodukcję.",
             image: videoCategoryDebate,
             path: "/video/advertising",
