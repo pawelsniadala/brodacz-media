@@ -26,13 +26,18 @@ import videoMusicThumbnail3 from "../assets/video/realization/music/videoMusicTh
 import videoBroadcastThumbnail1 from "../assets/video/realization/broadcasts/videoBroadcastThumbnail1.png";
 import videoBroadcastThumbnail2 from "../assets/video/realization/broadcasts/videoBroadcastThumbnail2.png";
 
+// DEBATY I WYPOWIEDZI
+import videoDebateThumbnail1 from "../assets/video/realization/debates/videoDebateThumbnail1.png";
+import videoDebateThumbnail2 from "../assets/video/realization/debates/videoDebateThumbnail2.png";
+import videoDebateThumbnail3 from "../assets/video/realization/debates/videoDebateThumbnail3.png";
+import videoDebateThumbnail4 from "../assets/video/realization/debates/videoDebateThumbnail4.png";
+import videoDebateThumbnail5 from "../assets/video/realization/debates/videoDebateThumbnail5.png";
 
 export const video = {
     "title": "Video",
     "category": [
         {
             id: "f1c00469-6aea-4b00-abff-db03b02805b1",
-            date: "",
             title: "Śluby",
             description: "Każdy dzień ślubu jest inny, bo każda para jest inna, dlatego zawsze staram się dopasować do stylu filmu, który preferujecie, oraz rodzaju mojej obecności z Wami. Oferuję pełną obsługę od wyjść plenerowych, przez życzenia dla rodziców po nagrywanie pamiątkowych wypowiedzi gości. Stwórzmy razem piękną pamiątkę.",
             image: videoCategoryWeddings,
@@ -41,7 +46,6 @@ export const video = {
         },
         {
             id: "5aafd05a-0c33-4a43-a1b4-e71b02bd2acc",
-            date: "",
             title: "Eventy",
             description: "Szykuje się ważne wydarzenie dla Twojego biznesu? To świetna okazja, by pokazać się szerzej i zyskać nowe kontakty! Zajmuję się tworzeniem relacji video z eventów i spotkań, które w bardzo skuteczny sposób wypromują Twoją działalność.",
             image: videoCategoryEvents,
@@ -50,7 +54,6 @@ export const video = {
         },
         {
             id: "b46538f2-781e-4013-a68a-1f7dcbc81f48",
-            date: "",
             title: "Teledyski",
             description: "Muzyką zajmuję się przez większość życia dlatego i na ten filar mojej działalności nie mogło zabraknąć miejsca. Chętnie tworzę klipy muzyczne, nieważne czy działasz w młodej kapeli, czy jesteś seniorem z akordeonem. Dopasuję się do każdego rodzaju twórczości, wnosząc swoje pomysły. Nie ma z góry ustalonej stawki, to Twoje wymagania decydują o cenie.",
             image: videoCategoryMusicVideo,
@@ -59,7 +62,6 @@ export const video = {
         },
         {
             id: "a1280498-4dab-4ec8-8854-24a708e23331",
-            date: "",
             title: "Transmisje",
             description: "Oferuję pełną obsługę transmisji live: oprawa graficzna wydarzenia, oświetlenie, nagłośnienie, profesjonalne kamery, fotorelacja",
             image: videoCategoryBroadcasts,
@@ -68,7 +70,6 @@ export const video = {
         },
         {
             id: "50ed6498-04a7-4ff8-bc3e-6b477ad9d358",
-            date: "",
             title: "Debaty i wypowiedzi",
             description: "Chcesz przekazać swoją wiedzę w formie kursu? A może potrzebujesz kampanii informacyjnej, która nagłośni dany temat. Oferuję pełną realizację takich produkcji od wspólnej pracy przy scenariuszu, przez indywidualny styl nagrań po zaawansowaną animowaną postprodukcję.",
             image: videoCategoryDebate,
@@ -77,7 +78,6 @@ export const video = {
         },
         {
             id: "7993088f-594b-4e2a-851a-d4f0e124eb19",
-            date: "",
             title: "Animacje",
             description: "Chcesz przekazać swoją wiedzę w formie kursu? A może potrzebujesz kampanii informacyjnej, która nagłośni dany temat. Oferuję pełną realizację takich produkcji od wspólnej pracy przy scenariuszu, przez indywidualny styl nagrań po zaawansowaną animowaną postprodukcję.",
             image: videoCategoryAnimation,
@@ -238,75 +238,60 @@ export const video = {
                 }
             }
         ],
-        "advertisting": [
+        "debates": [
             {
                 id: "8427d654-853d-4070-9551-34c3a8aefdbb",
-                date: "30 grudnia 2021",
-                title: "Debata KRD - Infodemia",
-                description: "",
+                date: "4 mar 2022",
+                title: "Petycja przedsiębiorców leśnych do premiera",
+                company: "Gazeta Leśna",
                 video: {
-                    id: "-gihCEMOOtM",
-                    url: "https://www.youtube.com/embed/-gihCEMOOtM"
+                    time: "6:36",
+                    src: videoDebateThumbnail1,
+                    urlPage: "https://www.youtube.com/watch?v=R6pBg2yjwJo"
                 }
             },
             {
                 id: "596b24d5-1fe3-431a-87a5-a7ddc41eb6cb",
-                date: "3 stycznia 2022",
-                title: "Debata KRD - Śmiertelność w czasie pandemii",
-                description: "",
+                date: "12 mar 2022",
+                title: "Przedsiębiorca leśny a rosnące ceny paliw",
+                company: "Gazeta Leśna",
                 video: {
-                    id: "MlSJlzHpntw",
-                    url: "https://www.youtube.com/embed/MlSJlzHpntw"
+                    time: "6:58",
+                    src: videoDebateThumbnail2,
+                    urlPage: "https://www.youtube.com/watch?v=7k6lNBVcoeY"
                 }
             },
             {
                 id: "83c1cba9-ca5f-45c2-af90-5acf0888bb91",
-                date: "4 stycznia 2022",
-                title: "Debata KRD - Transmisja wirusa",
-                description: "",
+                date: "18 mar 2022",
+                title: "Zacznijmy liczyć koszty",
+                company: "Gazeta Leśna",
                 video: {
-                    id: "U7caxFKyQrc",
-                    url: "https://www.youtube.com/embed/U7caxFKyQrc"
+                    time: "18:37",
+                    src: videoDebateThumbnail3,
+                    urlPage: "https://www.youtube.com/watch?v=f9kugwOM-5Q"
                 }
             },
             {
                 id: "e8a772c7-e6e4-45a3-a08a-763e86b58f7f",
-                date: "5 stycznia 2022",
-                title: "Debata KRD - Dawka przypominająca",
-                description: "",
+                date: "24 maj 2021",
+                title: "Targi Work&Science Forum",
+                company: "KRD",
                 video: {
-                    id: "vB1xZaBBmz4",
-                    url: "https://www.youtube.com/embed/vB1xZaBBmz4"
+                    time: "2:55",
+                    src: videoDebateThumbnail4,
+                    urlPage: "https://www.youtube.com/watch?v=4xADP7bfBeg"
                 }
             },
             {
                 id: "db33580f-b9c7-4d09-89ee-81b18d031f4d",
-                date: "10 stycznia 2022",
-                title: "Debata KRD - Nowa generacja szczepionek",
-                description: "",
-                video: {
-                    id: "b51xeU60XZU",
-                    url: "https://www.youtube.com/embed/b51xeU60XZU"
-                }
-            },
-            {
-                id: "cc8aaf12-1263-4061-a76b-be8559b9597e",
-                date: "24 maja 2021",
-                title: "Targi Work&Science Forum",
-                description: "",
-                video: {
-                    id: "4xADP7bfBeg",
-                    url: "https://www.youtube.com/embed/4xADP7bfBeg"
-                }
-            },
-            {
-                id: "66b8168f-3956-4696-9fef-826d8f6f68f3",
-                date: "29 stycznia 2021",
+                date: "29 sty 2021",
                 title: "Leśnictwo na Wydziale Leśnym SGGW",
-                description: "",
+                company: "SGGW",
                 video: {
-                    id: "g2EtwK54kwc",
-                    url: "https://www.youtube.com/embed/g2EtwK54kwc"
+                    time: "2:01",
+                    src: videoDebateThumbnail5,
+                    urlPage: "https://www.youtube.com/watch?v=g2EtwK54kwc"
                 }
             }
         ]
