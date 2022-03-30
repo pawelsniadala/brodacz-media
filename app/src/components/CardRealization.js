@@ -63,7 +63,7 @@ const CardRealization = ({
                     </span>
                 </div>
                 <div className="card-body">
-                    <h6 className="card-title">
+                    <h6 className="card-title" title={cardThumbnaiVideoTitle}>
                         {cardThumbnaiVideoTitle}
                     </h6>
                     <small className="card-meta text-muted">
@@ -81,8 +81,8 @@ const CardRealization = ({
                     </Link> */}
                     <a className="stretched-link"
                         href={cardThumbnaiVideoPath ? cardThumbnaiVideoPath : "#"}
-                        target="_blank" rel="noopener noreferrer"
-                    >
+                        target="_blank"
+                        rel="noopener noreferrer">
                     </a>
                 </div>
             </div>
