@@ -36,8 +36,8 @@
         & .card-title-wrapper {
             position: absolute;
             left: 0;
-            bottom: 0;
-            height: 4rem;
+            bottom: 0rem;
+            height: 50%;
             // height: 100%;
             width: 100%;
             // background-color: #171717;
@@ -45,7 +45,7 @@
             // opacity: 0.5;
             // transition: height .25s, transform .25s;
             // transition: all linear 0.25s;
-            background: linear-gradient(to bottom,rgba(0,0,0,.0001) 0,rgba(0,0,0,.8) 100%);
+            background: linear-gradient(to bottom,rgba(0,0,0,.0001) 0,rgba(0,0,0,.9) 100%);
         }
 
         & .card-title {
@@ -147,11 +147,17 @@
                         bottom: .5rem;
                     }
                 }
+
                 .card-body {
                     padding: 1rem 1rem 1rem 0;
 
                     .card-title {
                         font-weight: 400;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
                     }
 
                     .card-meta {
