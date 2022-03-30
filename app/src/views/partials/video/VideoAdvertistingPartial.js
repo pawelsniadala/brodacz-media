@@ -6,12 +6,17 @@ const VideoAdvertistingPartial = () => (
         <section className="realization-section">
             <div className="section-wrapper">
                 <div className="card-wrapper realization video">
-                    {video.realization.advertisting.length ? video.realization.advertisting.map((item) => (
+                    {video.realization.debates.length ? video.realization.debates.map((item) => (
                         <CardRealization
-                            cardVideo
+                            cardThumbnaiVideo
                             key={item.id}
-                            cardVideoId={item.video.id}
-                            cardVideoUrl={item.video.url}
+                            cardThumbnaiVideoAlt={item.title}
+                            cardThumbnaiVideoTitle={item.title}
+                            cardThumbnaiVideoCompany={item.company}
+                            cardThumbnaiVideoDate={item.date}
+                            cardThumbnaiVideoTime={item.video.time}
+                            cardThumbnaiVideoSrc={item.video.src}
+                            cardThumbnaiVideoPath={item.video.urlPage}
                         />
                     )) : (
                         <div />
@@ -20,7 +25,6 @@ const VideoAdvertistingPartial = () => (
             </div>
         </section>
     </div>
-
 );
 
 export default VideoAdvertistingPartial;
