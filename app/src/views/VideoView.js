@@ -137,7 +137,7 @@ const VideoView = () => {
                                 aria-current="page"
                                 onClick={() => setTab("video-advertising")}
                             >
-                                Reklamy
+                                Debaty i wypowiedzi
                             </Link>
                             </li>
                         <li className="nav-item">
