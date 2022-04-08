@@ -1,5 +1,6 @@
 import { useEffect, useRef  } from "react";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
+import Iframe from "react-iframe";
 import PageHeader from "../components/PageHeader";
 
 const ContactView = () => {
@@ -26,24 +27,59 @@ const ContactView = () => {
         <div className="contact-view">
             <div className="view-wrapper container">
                 <PageHeader header="Kontakt" />
-                <div className="row">
-                    <form className="col-md-6" ref={form} onSubmit={sendEmail}>
-                        <div className="mb-3">
-                            <label htmlFor="name" className="form-label">Twoje imię</label>
-                            <input type="text" className="form-control" name="name" minLength="2" required />
+                <div className="card-wrapper contact">
+                    <div className="card contact">
+                        <div className="card-header">
+                            Formularz kontaktowy
                         </div>
-                        <div className="mb-3">
-                            <label htmlFor="email" className="form-label">Twój adres e-mail</label>
-                            <input type="email" className="form-control" name="email" required />
+                        <div className="card-body">
+                            <form ref={form} onSubmit={sendEmail}>
+                                <div className="mb-3">
+                                    <label htmlFor="name" className="form-label">
+                                        Imię i nazwisko
+                                        <span className="text-danger">&nbsp;*</span>
+                                    </label>
+                                    <input type="text" className="form-control" name="name" minLength="2" required />
+                                </div>
+                                <div className="mb-3">
+                                    <label htmlFor="email" className="form-label">
+                                        Adres e-mail
+                                        <span className="text-danger">&nbsp;*</span>
+                                    </label>
+                                    <input type="email" className="form-control" name="email" required />
+                                </div>
+                                <div className="mb-4">
+                                    <label htmlFor="message" className="form-label">
+                                        Wiadomość
+                                        <span className="text-danger">&nbsp;*</span>
+                                    </label>
+                                    <textarea className="form-control" name="message" rows="6" required></textarea>
+                                </div>
+                                <button type="submit" className="mb-2 button-card" id="liveToastBtn">
+                                    Wyślij
+                                </button>
+                            </form>
                         </div>
-                        <div className="mb-4">
-                            <label htmlFor="message" className="form-label">Wiadomość</label>
-                            <textarea className="form-control" name="message" rows="6" required></textarea>
+                        <div className="card-footer text-muted">
+                            Pola oznaczone
+                            <span className="text-danger">&nbsp;*</span> są wymagane.
                         </div>
-                        <button type="submit" className="btn btn-secondary btn-lg button-submit">
-                            Wyślij
-                        </button>
-                    </form>
+                    </div>
+                    {/* <div className="card contact">
+                        <div className="card-body">
+                            <Iframe
+                                id="1"
+                                url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2413.891051533925!2d21.577543952006145!3d52.7702388797635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ef8390797683b%3A0x84896b53f66d30b6!2sKornaciska%2019%2C%2007-210%20Kornaciska!5e0!3m2!1spl!2spl!4v1648759836881!5m2!1spl!2spl"
+                                width="100%"
+                                height="515"
+                                display="block"
+                                position="relative"
+                                frameborder="0"
+                                allowfullscreen
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            />
+                        </div>
+                    </div> */}
                 </div>
             </div>
         </div>
