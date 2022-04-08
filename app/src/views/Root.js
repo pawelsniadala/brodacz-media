@@ -23,6 +23,7 @@ import PhotoStudioPartial from "./partials/photo/PhotoStudioPartial";
 import PhotoProductPartial from "./partials/photo/PhotoProductPartial";
 import PhotoOutdoorPartial from "./partials/photo/PhotoOutdoorPartial";
 import ScrollArrow from "../components/ScrollArrow";
+import Modal from "../components/Modal";
 
 const Root = () => (
     <MainTemplate>
@@ -51,6 +52,7 @@ const Root = () => (
                     <Route path="/contact" element={<ContactView />} />
                 </Routes>
             </main>
+            <Modal />
             <FooterSection />
             <ScrollArrow />
         </Router>
