@@ -32,54 +32,67 @@ import videoDebateThumbnail2 from "../assets/video/realization/debates/videoDeba
 import videoDebateThumbnail3 from "../assets/video/realization/debates/videoDebateThumbnail3.png";
 import videoDebateThumbnail4 from "../assets/video/realization/debates/videoDebateThumbnail4.png";
 import videoDebateThumbnail5 from "../assets/video/realization/debates/videoDebateThumbnail5.png";
+import videoDebateThumbnail6 from "../assets/video/realization/debates/videoDebateThumbnail6.png";
+import videoDebateThumbnail7 from "../assets/video/realization/debates/videoDebateThumbnail7.png";
+import videoDebateThumbnail8 from "../assets/video/realization/debates/videoDebateThumbnail8.png";
+import videoDebateThumbnail9 from "../assets/video/realization/debates/videoDebateThumbnail9.png";
+import videoDebateThumbnail10 from "../assets/video/realization/debates/videoDebateThumbnail10.png";
+import videoDebateThumbnail11 from "../assets/video/realization/debates/videoDebateThumbnail11.png";
+import videoDebateThumbnail12 from "../assets/video/realization/debates/videoDebateThumbnail12.png";
 
 export const video = {
     "title": "Video",
     "category": [
         {
             id: "f1c00469-6aea-4b00-abff-db03b02805b1",
+            label: "filmy",
             title: "Śluby",
-            description: "Każdy dzień ślubu jest inny, bo każda para jest inna, dlatego zawsze staram się dopasować do stylu filmu, który preferujecie, oraz rodzaju mojej obecności z Wami. Oferuję pełną obsługę od wyjść plenerowych, przez życzenia dla rodziców po nagrywanie pamiątkowych wypowiedzi gości. Stwórzmy razem piękną pamiątkę.",
+            description: "Nie mam gotowej wizji na idealny film ślubny. Staramy się poznać gust mojego klienta i w takim stylu stworzyć dla niego film. Wieloletnie doświadczenie pozwala mi na świadome eksperymentowanie z różnymi stylami.",
             image: videoCategoryWeddings,
             path: "/video/weddings",
             tab: "video-weddings"
         },
         {
             id: "5aafd05a-0c33-4a43-a1b4-e71b02bd2acc",
+            label: "filmy",
             title: "Eventy",
-            description: "Szykuje się ważne wydarzenie dla Twojego biznesu? To świetna okazja, by pokazać się szerzej i zyskać nowe kontakty! Zajmuję się tworzeniem relacji video z eventów i spotkań, które w bardzo skuteczny sposób wypromują Twoją działalność.",
+            description: "Znajdę taki punkt widzenia aby pamiątka po Twoim evencie była wizytówką na wiele lat, sam zorganizowałem wiele eventów na skalę ogólnopolską, taka świadomość pozwala mi na uwiecznienie odpowiednich momentów.",
             image: videoCategoryEvents,
             path: "/video/events",
             tab: "video-events"
         },
         {
             id: "b46538f2-781e-4013-a68a-1f7dcbc81f48",
+            label: "filmy",
             title: "Teledyski",
-            description: "Muzyką zajmuję się przez większość życia dlatego i na ten filar mojej działalności nie mogło zabraknąć miejsca. Chętnie tworzę klipy muzyczne, nieważne czy działasz w młodej kapeli, czy jesteś seniorem z akordeonem. Dopasuję się do każdego rodzaju twórczości, wnosząc swoje pomysły. Nie ma z góry ustalonej stawki, to Twoje wymagania decydują o cenie.",
+            description: "Z gitarą spędziłem już 13 lat, moje doświadczenie muzyczne oraz wrażliwość artystyczna implikują bezbłędną komunikację z artystą aby stworzyć treści maksymalnie dopasowane do danego stylu.",
             image: videoCategoryMusicVideo,
             path: "/video/music-video",
             tab: "video-music-video"
         },
         {
             id: "a1280498-4dab-4ec8-8854-24a708e23331",
+            label: "filmy",
             title: "Transmisje",
-            description: "Oferuję pełną obsługę transmisji live: oprawa graficzna wydarzenia, oświetlenie, nagłośnienie, profesjonalne kamery, fotorelacja",
+            description: "W dzisiejszych czasach trudno wyobrazić sobie wszędzie zdążyć, dzięki transmisji możesz przełamać barierę odległości zyskując większą publikę podczas Twojego eventu. Możesz połączyć się z ludźmi z całego świata w ułamku sekundy.",
             image: videoCategoryBroadcasts,
             path: "/video/broadcasts",
             tab: "video-broadcasts"
         },
         {
             id: "50ed6498-04a7-4ff8-bc3e-6b477ad9d358",
+            label: "filmy",
             title: "Debaty i wypowiedzi",
-            description: "Chcesz przekazać swoją wiedzę w formie kursu? A może potrzebujesz kampanii informacyjnej, która nagłośni dany temat. Oferuję pełną realizację takich produkcji od wspólnej pracy przy scenariuszu, przez indywidualny styl nagrań po zaawansowaną animowaną postprodukcję.",
+            description: "Świat potrzebuje różnych punktów widzenia w każdej sprawie, profesjonalne przygotowanie materiału pozwoli mu dużo łatwiej dotrzeć do szerokiej bazy odbiorców.",
             image: videoCategoryDebate,
             path: "/video/advertising",
             tab: "video-advertising"
         },
         {
             id: "7993088f-594b-4e2a-851a-d4f0e124eb19",
+            label: "filmy",
             title: "Animacje",
-            description: "Chcesz przekazać swoją wiedzę w formie kursu? A może potrzebujesz kampanii informacyjnej, która nagłośni dany temat. Oferuję pełną realizację takich produkcji od wspólnej pracy przy scenariuszu, przez indywidualny styl nagrań po zaawansowaną animowaną postprodukcję.",
+            description: "Intro, outro, reklama, animacyjna wstawka w filmie? A może cały animowany film? Możliwości są nieograniczone.",
             image: videoCategoryAnimation,
             path: "/video/animations",
             tab: "video-animations"
@@ -293,7 +306,84 @@ export const video = {
                     src: videoDebateThumbnail5,
                     urlPage: "https://www.youtube.com/watch?v=g2EtwK54kwc"
                 }
-            }
+            },
+            {
+                id: "f86138a8-2da8-48e7-8c13-d2ba1049a17d",
+                date: "30 gru 2021",
+                title: "Debata KRD - Infodemia",
+                company: "KRD",
+                video: {
+                    time: "3:40",
+                    src: videoDebateThumbnail6,
+                    urlPage: "https://www.youtube.com/watch?v=-gihCEMOOtM&t=7s"
+                }
+            },
+            {
+                id: "7278f28e-6452-49da-920f-379692505fdd",
+                date: "14 sty 2022",
+                title: "Debata KRD - Śmiertelność w czasie pandemii",
+                company: "KRD",
+                video: {
+                    time: "2:41",
+                    src: videoDebateThumbnail7,
+                    urlPage: "https://www.youtube.com/watch?v=cEEf2-FbwZ0"
+                }
+            },
+            {
+                id: "9c4154db-2a04-4fb1-a3be-704db5d303d3",
+                date: "14 sty 2022",
+                title: "Debata KRD - Transmisja wirusa",
+                company: "KRD",
+                video: {
+                    time: "3:20",
+                    src: videoDebateThumbnail8,
+                    urlPage: "https://www.youtube.com/watch?v=HGginrpYMv0"
+                }
+            },
+            {
+                id: "b67034bf-4bff-4710-b202-ed4e0e82adec",
+                date: "14 sty 2022",
+                title: "Debata KRD - Dawka przypominająca",
+                company: "KRD",
+                video: {
+                    time: "4:40",
+                    src: videoDebateThumbnail9,
+                    urlPage: "https://www.youtube.com/watch?v=avY5RUd-Rjk"
+                }
+            },
+            {
+                id: "5432b848-3bdc-46b9-8b34-02e73c570a4a",
+                date: "14 sty 2022",
+                title: "Debata KRD - Nowa generacja szczepionek",
+                company: "KRD",
+                video: {
+                    time: "5:04",
+                    src: videoDebateThumbnail10,
+                    urlPage: "https://www.youtube.com/watch?v=mtCsNsWl7_U"
+                }
+            },
+            {
+                id: "acf3c54f-8b72-4fe9-84c8-7a624508e2fa",
+                date: "14 sty 2022",
+                title: "Debata KRD - Czy szczepionki są eksperymentem?",
+                company: "KRD",
+                video: {
+                    time: "2:52",
+                    src: videoDebateThumbnail11,
+                    urlPage: "https://www.youtube.com/watch?v=-tSRoLXpNKs"
+                }
+            },
+            {
+                id: "b28833cc-efd3-49c4-8c91-90c2b8425bcf",
+                date: "14 sty 2022",
+                title: "Debata KRD - Czy można mieszać szczepionki?",
+                company: "KRD",
+                video: {
+                    time: "3:16",
+                    src: videoDebateThumbnail12,
+                    urlPage: "https://www.youtube.com/watch?v=BLTErhvN7sE"
+                }
+            },
         ]
     }
 };
