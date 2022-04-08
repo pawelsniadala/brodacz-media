@@ -1,0 +1,13 @@
+.dark-theme {
+    .modal-content {
+        background-color: #212529;
+
+        .modal-header {
+            border-bottom: 1px solid darken(#212529, 5%);
+        }
+
+        .modal-footer {
+            border-top: 1px solid darken(#212529, 5%);
+        }
+    }
+}

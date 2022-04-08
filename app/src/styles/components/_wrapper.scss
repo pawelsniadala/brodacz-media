@@ -43,8 +43,8 @@ main {
 .card-wrapper {
     &.category {
         display: grid;
-        gap: .5rem;
-        margin-bottom: .5rem;
+        gap: 1rem;
+        margin-bottom: 1rem;
 
         &.video {
             grid-template-columns: 1fr 1fr 1fr;
@@ -57,7 +57,11 @@ main {
                 grid-template-columns: 1fr 1fr;
             }
 
-            @media (max-width: 767.98px) {
+            @media (max-width: 767.98px) and (min-width: 540px) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media (max-width: 539.98px) {
                 grid-template-columns: 1fr;
             }
         }
@@ -69,9 +73,52 @@ main {
                 grid-template-columns: 1fr 1fr;
             }
 
-            @media (max-width: 991.98px) {
+            @media (max-width: 991.98px) and (min-width: 768px) {
                 grid-template-columns: 1fr 1fr;
             }
+
+            @media (max-width: 767.98px) and (min-width: 540px) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media (max-width: 539.98px) {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+    &.recommendation {
+        display: grid;
+        align-items: start;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        row-gap: 2rem;
+
+        @media (max-width: 1199.98px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &.customer {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+
+        @media (max-width: 1199.98px) and (min-width: 992px) {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        @media (max-width: 991.98px) and (min-width: 768px) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        @media (max-width: 767.98px) and (min-width: 540px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media (max-width: 539.98px) {
+            grid-template-columns: 1fr 1fr;
         }
     }
 
@@ -103,6 +150,16 @@ main {
             @media (max-width: 991.98px) {
                 grid-template-columns: 1fr;
             }
+        }
+    }
+
+    &.contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+
+        @media (max-width: 991.98px) {
+            grid-template-columns: 1fr;
         }
     }
 }
