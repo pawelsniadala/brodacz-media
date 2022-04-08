@@ -108,7 +108,7 @@ const NavSection = () => {
                                     Backstage
                                 </NavLink>
                             </li>
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <NavLink
                                     className="nav-link"
                                     activeclassname="active"
@@ -118,7 +118,7 @@ const NavSection = () => {
                                 >
                                     O mnie
                                 </NavLink>
-                            </li>
+                            </li> */}
                             <li className="nav-item">
                                 <NavLink
                                     className="nav-link"
