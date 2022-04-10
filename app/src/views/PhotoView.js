@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { photo } from "../data/photo";
 import PageHeader from "../components/PageHeader";
+import PhotoAllPartial from "./partials/photo/PhotoAllPartial";
 import PhotoBrandingPartial from "./partials/photo/PhotoBrandingPartial";
 import PhotoStudioPartial from "./partials/photo/PhotoStudioPartial";
 import PhotoOutdoorPartial from "./partials/photo/PhotoOutdoorPartial";
@@ -15,7 +16,11 @@ const PhotoView = () => {
             switch(pathname) {
                 case "/photo":
                     return (
-                        "photo-branding"
+                        "photo-all"
+                    );
+                case "/photo/all":
+                    return (
+                        "photo-all"
                     );
                 case "/photo/branding":
                     return (
@@ -40,12 +45,12 @@ const PhotoView = () => {
         return selectTab(pathname);
     });
 
-    useEffect(() => {
-        window.scrollTo({ top: 0, left: 0, behavior: "instant" });
-    }, []);
-
     const renderTabContent = (photoTab) => {
         switch(photoTab) {
+            case "photo-all":
+                return (
+                    <PhotoAllPartial />
+                );
             case "photo-branding":
                 return (
                     <PhotoBrandingPartial />
@@ -66,12 +71,26 @@ const PhotoView = () => {
         }
     }
 
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+    }, []);
+
     return (
         <div className="photo-view">
             <div className="view-wrapper container">
                 <PageHeader header={photo.title} />
                 <div className="navpils">
                     <ul className="nav nav-pills nav-justified">
+                        <li className="nav-item">
+                            <Link
+                                to="/photo/all"
+                                className={(`nav-link ${photoTab === "photo-all" ? "active" : ""}`).trim()}
+                                aria-current="page"
+                                onClick={() => setTab("photo-all")}
+                            >
+                                Wszystkie
+                            </Link>
+                        </li>
                         <li className="nav-item">
                             <Link
                                 to="/photo/branding"
