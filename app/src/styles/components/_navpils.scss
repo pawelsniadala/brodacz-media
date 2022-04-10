@@ -7,9 +7,14 @@
         }
 
         .nav-link {
-            background-color: #FFF;
+            background-color: transparent;
             color: #6a6c6f;
             transition: none;
+            border-radius: 980px;
+            background-color: rgba(0,0,0,.05);
+            // border: 1px solid rgba(0,0,0,.1);
+            color: #202124;
+            // font-size: .8rem;
 
             &.active {
                 color: #FFF;
