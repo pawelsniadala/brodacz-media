@@ -4,15 +4,26 @@ import photoCategoryProduct from "../assets/photo/category/photoCategoryProduct.
 import photoCategoryOutdoor from "../assets/photo/category/photoCategoryOutdoor.png";
 
 // WIZERUNKOWE
-import photoBranding1 from "../assets/photo/realization/branding/photoBranding1.png";
-import photoBranding2 from "../assets/photo/realization/branding/photoBranding2.png";
-import photoBranding3 from "../assets/photo/realization/branding/photoBranding3.png";
-import photoBranding4 from "../assets/photo/realization/branding/photoBranding4.png";
-import photoBranding5 from "../assets/photo/realization/branding/photoBranding5.png";
-import photoBranding6 from "../assets/photo/realization/branding/photoBranding6.png";
-import photoBranding7 from "../assets/photo/realization/branding/photoBranding7.png";
-import photoBranding8 from "../assets/photo/realization/branding/photoBranding8.png";
-import photoBranding9 from "../assets/photo/realization/branding/photoBranding9.png";
+// MINIATURKI
+import photoBrandingThumbnail1 from "../assets/photo/realization/branding/thumbnail/photoBrandingThumbnail1.png";
+import photoBrandingThumbnail2 from "../assets/photo/realization/branding/thumbnail/photoBrandingThumbnail2.png";
+import photoBrandingThumbnail3 from "../assets/photo/realization/branding/thumbnail/photoBrandingThumbnail3.png";
+import photoBrandingThumbnail4 from "../assets/photo/realization/branding/thumbnail/photoBrandingThumbnail4.png";
+import photoBrandingThumbnail5 from "../assets/photo/realization/branding/thumbnail/photoBrandingThumbnail5.png";
+import photoBrandingThumbnail6 from "../assets/photo/realization/branding/thumbnail/photoBrandingThumbnail6.png";
+import photoBrandingThumbnail7 from "../assets/photo/realization/branding/thumbnail/photoBrandingThumbnail7.png";
+import photoBrandingThumbnail8 from "../assets/photo/realization/branding/thumbnail/photoBrandingThumbnail8.png";
+import photoBrandingThumbnail9 from "../assets/photo/realization/branding/thumbnail/photoBrandingThumbnail9.png";
+// ORYGINALNE
+import photoBrandingOriginal1 from "../assets/photo/realization/branding/original/photoBrandingOriginal1.png";
+import photoBrandingOriginal2 from "../assets/photo/realization/branding/original/photoBrandingOriginal2.png";
+import photoBrandingOriginal3 from "../assets/photo/realization/branding/original/photoBrandingOriginal3.png";
+import photoBrandingOriginal4 from "../assets/photo/realization/branding/original/photoBrandingOriginal4.png";
+import photoBrandingOriginal5 from "../assets/photo/realization/branding/original/photoBrandingOriginal5.png";
+import photoBrandingOriginal6 from "../assets/photo/realization/branding/original/photoBrandingOriginal6.png";
+import photoBrandingOriginal7 from "../assets/photo/realization/branding/original/photoBrandingOriginal7.png";
+import photoBrandingOriginal8 from "../assets/photo/realization/branding/original/photoBrandingOriginal8.png";
+import photoBrandingOriginal9 from "../assets/photo/realization/branding/original/photoBrandingOriginal9.png";
 
 // STUDYJNE
 // MINIATURKI
@@ -49,22 +60,40 @@ import photoStudioOriginal14 from "../assets/photo/realization/studio/original/p
 import photoStudioOriginal15 from "../assets/photo/realization/studio/original/photoStudioOriginal15.png";
 
 // PRODUKTOWE
-import photoProduct1 from "../assets/photo/realization/product/photoProduct1.png";
-import photoProduct2 from "../assets/photo/realization/product/photoProduct2.png";
-import photoProduct3 from "../assets/photo/realization/product/photoProduct3.png";
-import photoProduct4 from "../assets/photo/realization/product/photoProduct4.png";
+// MINIATURKI
+import photoProductThumbnail1 from "../assets/photo/realization/product/thumbnail/photoProductThumbnail1.png";
+import photoProductThumbnail2 from "../assets/photo/realization/product/thumbnail/photoProductThumbnail2.png";
+import photoProductThumbnail3 from "../assets/photo/realization/product/thumbnail/photoProductThumbnail3.png";
+import photoProductThumbnail4 from "../assets/photo/realization/product/thumbnail/photoProductThumbnail4.png";
+// ORYGINALNE
+import photoProductOriginal1 from "../assets/photo/realization/product/original/photoProductOriginal1.png";
+import photoProductOriginal2 from "../assets/photo/realization/product/original/photoProductOriginal2.png";
+import photoProductOriginal3 from "../assets/photo/realization/product/original/photoProductOriginal3.png";
+import photoProductOriginal4 from "../assets/photo/realization/product/original/photoProductOriginal4.png";
 
 // PLENEROWE
-import photoOutdoor1 from "../assets/photo/realization/outdoor/photoOutdoor1.png";
-import photoOutdoor2 from "../assets/photo/realization/outdoor/photoOutdoor2.png";
-import photoOutdoor3 from "../assets/photo/realization/outdoor/photoOutdoor3.png";
-import photoOutdoor4 from "../assets/photo/realization/outdoor/photoOutdoor4.png";
-import photoOutdoor5 from "../assets/photo/realization/outdoor/photoOutdoor5.png";
-import photoOutdoor6 from "../assets/photo/realization/outdoor/photoOutdoor6.png";
-import photoOutdoor7 from "../assets/photo/realization/outdoor/photoOutdoor7.png";
-import photoOutdoor8 from "../assets/photo/realization/outdoor/photoOutdoor8.png";
-import photoOutdoor9 from "../assets/photo/realization/outdoor/photoOutdoor9.png";
-import photoOutdoor10 from "../assets/photo/realization/outdoor/photoOutdoor10.png";
+// MINIATURKI
+import photoOutdoorThumbnail1 from "../assets/photo/realization/outdoor/thumbnail/photoOutdoorThumbnail1.png";
+import photoOutdoorThumbnail2 from "../assets/photo/realization/outdoor/thumbnail/photoOutdoorThumbnail2.png";
+import photoOutdoorThumbnail3 from "../assets/photo/realization/outdoor/thumbnail/photoOutdoorThumbnail3.png";
+import photoOutdoorThumbnail4 from "../assets/photo/realization/outdoor/thumbnail/photoOutdoorThumbnail4.png";
+import photoOutdoorThumbnail5 from "../assets/photo/realization/outdoor/thumbnail/photoOutdoorThumbnail5.png";
+import photoOutdoorThumbnail6 from "../assets/photo/realization/outdoor/thumbnail/photoOutdoorThumbnail6.png";
+import photoOutdoorThumbnail7 from "../assets/photo/realization/outdoor/thumbnail/photoOutdoorThumbnail7.png";
+import photoOutdoorThumbnail8 from "../assets/photo/realization/outdoor/thumbnail/photoOutdoorThumbnail8.png";
+import photoOutdoorThumbnail9 from "../assets/photo/realization/outdoor/thumbnail/photoOutdoorThumbnail9.png";
+import photoOutdoorThumbnail10 from "../assets/photo/realization/outdoor/thumbnail/photoOutdoorThumbnail10.png";
+// ORYGINALNE
+import photoOutdoorOriginal1 from "../assets/photo/realization/outdoor/original/photoOutdoorOriginal1.png";
+import photoOutdoorOriginal2 from "../assets/photo/realization/outdoor/original/photoOutdoorOriginal2.png";
+import photoOutdoorOriginal3 from "../assets/photo/realization/outdoor/original/photoOutdoorOriginal3.png";
+import photoOutdoorOriginal4 from "../assets/photo/realization/outdoor/original/photoOutdoorOriginal4.png";
+import photoOutdoorOriginal5 from "../assets/photo/realization/outdoor/original/photoOutdoorOriginal5.png";
+import photoOutdoorOriginal6 from "../assets/photo/realization/outdoor/original/photoOutdoorOriginal6.png";
+import photoOutdoorOriginal7 from "../assets/photo/realization/outdoor/original/photoOutdoorOriginal7.png";
+import photoOutdoorOriginal8 from "../assets/photo/realization/outdoor/original/photoOutdoorOriginal8.png";
+import photoOutdoorOriginal9 from "../assets/photo/realization/outdoor/original/photoOutdoorOriginal9.png";
+import photoOutdoorOriginal10 from "../assets/photo/realization/outdoor/original/photoOutdoorOriginal10.png";
 
 export const photo = {
     "title": "Foto",
@@ -111,9 +140,14 @@ export const photo = {
                 title: '',
                 description: '',
                 image: {
-                    "src": photoBranding1,
-                    "width": "1000",
-                    "height": "1448"
+                    "thumbnail": {
+                        "src": photoBrandingThumbnail1,
+                    },
+                    "original": {
+                        "src": photoBrandingOriginal1,
+                        "width": "1000",
+                        "height": "1448"
+                    }
                 }
             },
             {
@@ -122,9 +156,14 @@ export const photo = {
                 title: '',
                 description: '',
                 image: {
-                    "src": photoBranding2,
-                    "width": "1000",
-                    "height": "1500"
+                    "thumbnail": {
+                        "src": photoBrandingThumbnail2,
+                    },
+                    "original": {
+                        "src": photoBrandingOriginal2,
+                        "width": "1000",
+                        "height": "1500"
+                    }
                 }
             },
 
@@ -134,9 +173,14 @@ export const photo = {
                 title: '',
                 description: '',
                 image: {
-                    "src": photoBranding3,
-                    "width": "1000",
-                    "height": "666"
+                    "thumbnail": {
+                        "src": photoBrandingThumbnail3,
+                    },
+                    "original": {
+                        "src": photoBrandingOriginal3,
+                        "width": "1000",
+                        "height": "666"
+                    }
                 }
             },
             {
@@ -145,9 +189,14 @@ export const photo = {
                 title: '',
                 description: '',
                 image: {
-                    "src": photoBranding4,
-                    "width": "999",
+                    "thumbnail": {
+                        "src": photoBrandingThumbnail4,
+                    },
+                    "original": {
+                        "src": photoBrandingOriginal4,
+                        "width": "999",
                     "height": "666"
+                    }
                 }
             },
             {
@@ -156,9 +205,14 @@ export const photo = {
                 title: '',
                 description: '',
                 image: {
-                    "src": photoBranding5,
-                    "width": "1000",
-                    "height": "1500"
+                    "thumbnail": {
+                        "src": photoBrandingThumbnail5,
+                    },
+                    "original": {
+                        "src": photoBrandingOriginal5,
+                        "width": "1000",
+                        "height": "1500"
+                    }
                 }
             },
             {
@@ -167,9 +221,14 @@ export const photo = {
                 title: '',
                 description: '',
                 image: {
-                    "src": photoBranding6,
-                    "width": "1000",
-                    "height": "1500"
+                    "thumbnail": {
+                        "src": photoBrandingThumbnail6,
+                    },
+                    "original": {
+                        "src": photoBrandingOriginal6,
+                        "width": "1000",
+                        "height": "1500"
+                    }
                 }
             },
             {
@@ -178,9 +237,14 @@ export const photo = {
                 title: '',
                 description: '',
                 image: {
-                    "src": photoBranding7,
-                    "width": "1000",
-                    "height": "666"
+                    "thumbnail": {
+                        "src": photoBrandingThumbnail7,
+                    },
+                    "original": {
+                        "src": photoBrandingOriginal7,
+                        "width": "1000",
+                        "height": "666"
+                    }
                 }
             },
             {
@@ -189,9 +253,14 @@ export const photo = {
                 title: '',
                 description: '',
                 image: {
-                    "src": photoBranding8,
-                    "width": "1000",
-                    "height": "1500"
+                    "thumbnail": {
+                        "src": photoBrandingThumbnail8,
+                    },
+                    "original": {
+                        "src": photoBrandingOriginal8,
+                        "width": "1000",
+                        "height": "1500"
+                    }
                 }
             },
             {
@@ -200,9 +269,14 @@ export const photo = {
                 title: '',
                 description: '',
                 image: {
-                    "src": photoBranding9,
-                    "width": "1000",
-                    "height": "1500"
+                    "thumbnail": {
+                        "src": photoBrandingThumbnail9,
+                    },
+                    "original": {
+                        "src": photoBrandingOriginal9,
+                        "width": "1000",
+                        "height": "1500"
+                    }
                 }
             }
         ],
@@ -454,28 +528,64 @@ export const photo = {
                 date: '20 Listopada 2019',
                 title: '',
                 description: '',
-                image: photoProduct1
+                image: {
+                    "thumbnail": {
+                        "src": photoProductThumbnail1,
+                    },
+                    "original": {
+                        "src": photoProductOriginal1,
+                        "width": "1000",
+                        "height": "1500",
+                    }
+                }
             },
             {
                 id: "c95b1ab7-0810-4a8e-a186-cc0973b16a25",
                 date: '20 Listopada 2019',
                 title: '',
                 description: '',
-                image: photoProduct2
+                image: {
+                    "thumbnail": {
+                        "src": photoProductThumbnail2,
+                    },
+                    "original": {
+                        "src": photoProductOriginal2,
+                        "width": "1000",
+                        "height": "1500",
+                    }
+                }
             },
             {
                 id: "84d4aa2f-a6f4-4206-babc-db979396e910",
                 date: '20 Listopada 2019',
                 title: '',
                 description: '',
-                image: photoProduct3
+                image: {
+                    "thumbnail": {
+                        "src": photoProductThumbnail3,
+                    },
+                    "original": {
+                        "src": photoProductOriginal3,
+                        "width": "1000",
+                        "height": "1500",
+                    }
+                }
             },
             {
                 id: "98ade02f-5f42-4560-8478-43eb740509f6",
                 date: '20 Listopada 2019',
                 title: '',
                 description: '',
-                image: photoProduct4
+                image: {
+                    "thumbnail": {
+                        "src": photoProductThumbnail4,
+                    },
+                    "original": {
+                        "src": photoProductOriginal4,
+                        "width": "1000",
+                        "height": "1500",
+                    }
+                }
             },
         ],
         "outdoor": [
@@ -485,9 +595,14 @@ export const photo = {
                 title: '',
                 description: '',
                 image: {
-                    "src": photoOutdoor1,
-                    "width": "1000",
-                    "height": "666"
+                    "thumbnail": {
+                        "src": photoOutdoorThumbnail1,
+                    },
+                    "original": {
+                        "src": photoOutdoorOriginal1,
+                        "width": "1000",
+                        "height": "666"
+                    }
                 }
             },
             {
@@ -496,9 +611,14 @@ export const photo = {
                 title: '',
                 description: '',
                 image: {
-                    "src": photoOutdoor2,
-                    "width": "1000",
-                    "height": "666"
+                    "thumbnail": {
+                        "src": photoOutdoorThumbnail2,
+                    },
+                    "original": {
+                        "src": photoOutdoorOriginal2,
+                        "width": "1000",
+                        "height": "666"
+                    }
                 }
             },
             {
@@ -507,9 +627,14 @@ export const photo = {
                 title: '',
                 description: '',
                 image: {
-                    "src": photoOutdoor3,
-                    "width": "1000",
-                    "height": "666"
+                    "thumbnail": {
+                        "src": photoOutdoorThumbnail3,
+                    },
+                    "original": {
+                        "src": photoOutdoorOriginal3,
+                        "width": "1000",
+                        "height": "666"
+                    }
                 }
             },
             {
@@ -518,9 +643,14 @@ export const photo = {
                 title: '',
                 description: '',
                 image: {
-                    "src": photoOutdoor4,
-                    "width": "1000",
-                    "height": "1500"
+                    "thumbnail": {
+                        "src": photoOutdoorThumbnail4,
+                    },
+                    "original": {
+                        "src": photoOutdoorOriginal4,
+                        "width": "1000",
+                        "height": "1500"
+                    }
                 }
             },
             {
@@ -529,9 +659,14 @@ export const photo = {
                 title: '',
                 description: '',
                 image: {
-                    "src": photoOutdoor5,
-                    "width": "1000",
-                    "height": "1500"
+                    "thumbnail": {
+                        "src": photoOutdoorThumbnail5,
+                    },
+                    "original": {
+                        "src": photoOutdoorOriginal5,
+                        "width": "1000",
+                        "height": "1500"
+                    }
                 }
             },
             {
@@ -540,9 +675,14 @@ export const photo = {
                 title: '',
                 description: '',
                 image: {
-                    "src": photoOutdoor6,
-                    "width": "1000",
-                    "height": "1500"
+                    "thumbnail": {
+                        "src": photoOutdoorThumbnail6,
+                    },
+                    "original": {
+                        "src": photoOutdoorOriginal6,
+                        "width": "1000",
+                        "height": "1500"
+                    }
                 }
             },
             {
@@ -551,9 +691,14 @@ export const photo = {
                 title: '',
                 description: '',
                 image: {
-                    "src": photoOutdoor7,
-                    "width": "1000",
-                    "height": "666"
+                    "thumbnail": {
+                        "src": photoOutdoorThumbnail7,
+                    },
+                    "original": {
+                        "src": photoOutdoorOriginal7,
+                        "width": "1000",
+                        "height": "666"
+                    }
                 }
             },
             {
@@ -562,9 +707,14 @@ export const photo = {
                 title: '',
                 description: '',
                 image: {
-                    "src": photoOutdoor8,
-                    "width": "1000",
-                    "height": "1500"
+                    "thumbnail": {
+                        "src": photoOutdoorThumbnail8,
+                    },
+                    "original": {
+                        "src": photoOutdoorOriginal8,
+                        "width": "1000",
+                        "height": "1500"
+                    }
                 }
             },
             {
@@ -573,9 +723,14 @@ export const photo = {
                 title: '',
                 description: '',
                 image: {
-                    "src": photoOutdoor9,
-                    "width": "1000",
-                    "height": "666"
+                    "thumbnail": {
+                        "src": photoOutdoorThumbnail9,
+                    },
+                    "original": {
+                        "src": photoOutdoorOriginal9,
+                        "width": "1000",
+                        "height": "666"
+                    }
                 }
             },
             {
@@ -584,9 +739,14 @@ export const photo = {
                 title: '',
                 description: '',
                 image: {
-                    "src": photoOutdoor10,
-                    "width": "1000",
-                    "height": "982"
+                    "thumbnail": {
+                        "src": photoOutdoorThumbnail10,
+                    },
+                    "original": {
+                        "src": photoOutdoorOriginal10,
+                        "width": "1000",
+                        "height": "982"
+                    }
                 }
             }
         ]
