@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { video } from "../data/video";
 import PageHeader from "../components/PageHeader";
+import VideoAllPartial from "./partials/video/VideoAllPartial";
 import VideoWeddingPartial from "./partials/video/VideoWeddingPartial";
 import VideoEventPartial from "./partials/video/VideoEventPartial";
 import VideoMusicVideoPartial from "./partials/video/VideoMusicVideoPartial";
@@ -17,7 +18,11 @@ const VideoView = () => {
             switch(pathname) {
                 case "/video":
                     return (
-                        "video-weddings"
+                        "video-all"
+                    );
+                case "/video/all":
+                    return (
+                        "video-all"
                     );
                 case "/video/weddings":
                     return (
@@ -52,6 +57,10 @@ const VideoView = () => {
 
     const renderTabContent = (videoTab) => {
         switch(videoTab) {
+            case "video-all":
+                return (
+                    <VideoAllPartial />
+                );
             case "video-weddings":
                 return (
                     <VideoWeddingPartial />
@@ -90,6 +99,16 @@ const VideoView = () => {
                 <PageHeader header={video.title} />
                 <div className="navpils">
                     <ul className="nav nav-pills nav-justified">
+                        <li className="nav-item">
+                            <Link
+                                to="/video/all"
+                                className={`nav-link${videoTab === "video-all" ? " active" : ""}`}
+                                aria-current="page"
+                                onClick={() => setTab("video-all")}
+                            >
+                                Wszystkie
+                            </Link>
+                        </li>
                         <li className="nav-item">
                             <Link
                                 to="/video/weddings"
