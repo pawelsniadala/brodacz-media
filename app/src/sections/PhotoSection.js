@@ -27,7 +27,7 @@ const PhotoSection = () => {
     }
 
     return (
-        <section className="video-section">
+        <section className="photo-section">
             <div className="container">
                 <div className="section-wrapper">
                     <SectionHeader header={photo.title} />

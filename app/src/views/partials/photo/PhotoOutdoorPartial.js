@@ -11,17 +11,17 @@ const PhotoOutdoorPartial = () => (
                         {photo.realization.outdoor.length ? photo.realization.outdoor.map((item) => (
                             <Item
                                 key={item.id}
-                                original={item.image.src}
-                                thumbnail={item.image.src}
-                                width={item.image.width}
-                                height={item.image.height}
+                                original={item.image.original.src}
+                                thumbnail={item.image.thumbnail.src}
+                                width={item.image.original.width}
+                                height={item.image.original.height}
                                 title={item.title}
                             >
                                 {({ ref, open }) => (
                                     <CardRealization
                                         cardPhoto
                                         cardTitle={item.title}
-                                        cardPhotoSrc={item.image.src}
+                                        cardPhotoSrc={item.image.thumbnail.src}
                                         layoutRef={ref}
                                         onClick={open}
                                     />
