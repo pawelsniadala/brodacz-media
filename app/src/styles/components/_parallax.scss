@@ -28,7 +28,7 @@
 
         &:after {
             // @include bd-bg-overlay(#222222, .7);
-            @include bd-bg-overlay(#000, .5);
+            @include bd-bg-overlay(#000, .2);
             // filter: brightness(50%);
         }
 
@@ -37,6 +37,16 @@
             position: relative;
             z-index: 1;
             padding: 250px 0;
+        }
+    }
+}
+
+.dark-theme {
+    .photo-banner {
+        .photo-banner-inner {
+            &:after {
+                @include bd-bg-overlay(#000, .4);
+            }
         }
     }
 }
