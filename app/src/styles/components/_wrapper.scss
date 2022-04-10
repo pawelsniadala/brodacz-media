@@ -4,6 +4,10 @@ html, body, #root, .app {
     flex-direction: column;
 }
 
+body {
+    background-color: #F2F3F5;
+}
+
 body::-webkit-scrollbar {
     display: none;
 }
@@ -18,8 +22,8 @@ main {
 }
 
 .section-wrapper {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
 
     &.footer {
         display: grid;
