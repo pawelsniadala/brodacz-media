@@ -10,16 +10,16 @@ const RecommendationSection = () => (
                 <div className="card-wrapper recommendation">
                     {recommendation.length && recommendation.map(item => (
                         <div key={item.id} className="card recommendation">
-                            <div className="media-wrapper">
-                                <div className="image-wrapper">
-                                    <ReactImageAppear
-                                        src={item.image}
-                                        className="card-img"
-                                        placeholderStyle={{ backgroundColor: "transparent", display: "inline" }}
-                                        showLoader={false}
-                                        alt={item.name}
-                                    />
-                                </div>
+                            <div className="image-wrapper">
+                                <ReactImageAppear
+                                    src={item.image}
+                                    className="card-img"
+                                    placeholderStyle={{ backgroundColor: "transparent", display: "inline" }}
+                                    showLoader={false}
+                                    alt={item.name}
+                                />
+                            </div>
+                            <div className="text-wrapper">
                                 <div>
                                     <div className="name">
                                         {item.name}
@@ -28,9 +28,9 @@ const RecommendationSection = () => (
                                         {item.position}
                                     </div>
                                 </div>
-                            </div>
-                            <div className="description">
-                                {item.description}
+                                <div className="description">
+                                    {item.description}
+                                </div>
                             </div>
                         </div>
                     ))}

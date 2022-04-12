@@ -12,12 +12,14 @@ import PhotoView from "./PhotoView";
 import BackstageView from "./BackstageView";
 import AboutMeView from "./AboutMeView";
 import ContactView from "./ContactView";
+import VideoAllPartial from "./partials/video/VideoAllPartial";
 import VideoWeddingPartial from "./partials/video/VideoWeddingPartial";
 import VideoEventPartial from "./partials/video/VideoEventPartial";
 import VideoMusicVideoPartial from "./partials/video/VideoMusicVideoPartial";
 import VideoBroadcastPartial from "./partials/video/VideoBroadcastPartial";
 import VideoAdvertistingPartial from "./partials/video/VideoAdvertistingPartial";
 import VideoAnimationPartial from "./partials/video/VideoAnimationPartial";
+import PhotoAllPartial from "./partials/photo/PhotoAllPartial";
 import PhotoBrandingPartial from "./partials/photo/PhotoBrandingPartial";
 import PhotoStudioPartial from "./partials/photo/PhotoStudioPartial";
 import PhotoProductPartial from "./partials/photo/PhotoProductPartial";
@@ -34,6 +36,7 @@ const Root = () => (
                     <Route exact path="/" element={<HomeView />} />
                     <Route exact path="/brodacz-media/" element={<HomeView />} />
                     <Route path="/video" element={<VideoView />}>
+                        <Route path="/video/all" element={<VideoAllPartial />} />
                         <Route path="/video/weddings" element={<VideoWeddingPartial />} />
                         <Route path="/video/events" element={<VideoEventPartial />} />
                         <Route path="/video/music-video" element={<VideoMusicVideoPartial />} />
@@ -42,13 +45,14 @@ const Root = () => (
                         <Route path="/video/animations" element={<VideoAnimationPartial />} />
                     </Route>
                     <Route path="/photo" element={<PhotoView />}>
+                        <Route path="/photo/all" element={<PhotoAllPartial />} />
                         <Route path="/photo/branding" element={<PhotoBrandingPartial />} />
                         <Route path="/photo/studio" element={<PhotoStudioPartial />} />
                         <Route path="/photo/product" element={<PhotoProductPartial />} />
                         <Route path="/photo/outdoor" element={<PhotoOutdoorPartial />} />
                     </Route>
                     <Route path="/backstage" element={<BackstageView />} />
-                    <Route path="/about-me" element={<AboutMeView />} />
+                    {/* <Route path="/about-me" element={<AboutMeView />} /> */}
                     <Route path="/contact" element={<ContactView />} />
                 </Routes>
             </main>

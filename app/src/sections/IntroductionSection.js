@@ -12,7 +12,7 @@ const IntroductionSection = () => (
                         <div className="grid">
                             <div className="card-body">
                                 <div className="card-title">
-                                    Witajcie!
+                                    Witaj! Jestem Mariusz<br/>i nagram Twój film
                                 </div>
                                 {/* <div className="card-subtitle">
                                     kilku słów o mnie
@@ -24,12 +24,14 @@ const IntroductionSection = () => (
                                     {/* <button type="button" className="button-card introduction">
                                         Zobacz reel
                                     </button> */}
-                                    <button type="button" className="button-card introduction" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                        Zobacz reel
+                                    <button type="button" className="button-card introduction left" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        {/* <div className="circle" /> */}
+                                        Zobacz mój reel
                                     </button>
-                                    <button type="button" className="button-card introduction" style={{ backgroundColor: "#303134" }}>
+                                    {/* <button type="button" className="button-card introduction right">
                                         Napisz wiadomość
-                                    </button>
+                                        <div className="circle" />
+                                    </button> */}
                                 </div>
                             </div>
                             <div className="image-wrapper">
