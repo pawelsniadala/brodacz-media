@@ -3,27 +3,21 @@ import { photo } from "../../../data/photo";
 import CardRealization from "../../../components/CardRealization";
 
 const PhotoAllPartial = () => {
-    const studio = photo.realization.studio;
-    const branding = photo.realization.branding;
-    const product = photo.realization.product;
-    const outdoor = photo.realization.outdoor;
+    const all = [
+        ...photo.realization.studio,
+        ...photo.realization.branding,
+        ...photo.realization.product,
+        ...photo.realization.outdoor,
+    ];
 
-    const all = [...studio, ...branding, ...product, ...outdoor];
-
-    const shuffle = (array) => {
-        let currentIndex = array.length, randomIndex;
-
-        while (currentIndex !== 0) {
-            randomIndex = Math.floor(Math.random() * currentIndex);
-            currentIndex --;
-
-            [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+    const shuffleArray = (array) => {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
         }
-
-        return array;
     }
 
-    shuffle(all);
+    shuffleArray(all);
 
     return (
         <div className="photo-all-partial">
