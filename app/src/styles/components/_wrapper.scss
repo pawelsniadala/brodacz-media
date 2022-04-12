@@ -91,6 +91,12 @@ main {
         }
     }
 
+    &.favorite-photos {
+        .marquee {
+            // gap: 1rem;
+        }
+    }
+
     &.recommendation {
         display: grid;
         align-items: start;
@@ -145,7 +151,7 @@ main {
         &.video {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            gap: .5rem;
+            gap: 1rem;
 
             @media (max-width: 1199.98px) and (min-width: 992px) {
                 grid-template-columns: 1fr 1fr 1fr;
