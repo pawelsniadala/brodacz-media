@@ -4,6 +4,7 @@ import PreludeSection from "../sections/PreludeSection";
 import VideoSection from "../sections/VideoSection";
 import BackstageSection from "../sections/BackstageSection";
 import PhotoSection from "../sections/PhotoSection";
+import FavoritePhotosSection from "../sections/FavoritePhotosSection";
 import RecommendationSection from "../sections/RecommendationSection";
 import CustomerSection from "../sections/CustomerSection";
 
@@ -14,13 +15,14 @@ const HomeView = () => {
 
     return (
         <div className="home-view">
-            <PreludeSection />
-            <IntroductionSection />
+            {/* <PreludeSection /> */}
+            {/* <IntroductionSection /> */}
             <VideoSection />
             <PhotoSection/>
-            <BackstageSection />
-            <RecommendationSection />
-            <CustomerSection />
+            <FavoritePhotosSection />
+            {/* <BackstageSection /> */}
+            {/* <RecommendationSection />
+            <CustomerSection /> */}
         </div>
     );
 };
