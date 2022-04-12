@@ -9,8 +9,6 @@ const CardCategory = ({
     cardPath,
     cardRealizations
 }) => (
-
-
     <div className="card category">
         <img src={cardImg} className="card-img-top" alt={cardTitle} />
 
@@ -37,9 +35,9 @@ const CardCategory = ({
             {/* </div> */}
             {/* <button type="button" class="btn btn-light">Zobacz realizacje</button> */}
         </div>
-        <div className="card-footer text-muted">
+        {/* <div className="card-footer text-muted">
             Realizacje • {cardRealizations}
-        </div>
+        </div> */}
         <Link
             className="stretched-link"
             to={cardPath ? cardPath : "#"}>
