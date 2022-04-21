@@ -46,6 +46,7 @@ import videoAnimationThumbnail2 from "../assets/video/realization/animations/vid
 
 export const video = {
     "title": "Video",
+    "path": "/video",
     "category": [
         {
             id: "f1c00469-6aea-4b00-abff-db03b02805b1",

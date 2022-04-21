@@ -127,6 +127,7 @@ import photoOutdoorOriginal11 from "../assets/photo/realization/outdoor/original
 
 export const photo = {
     "title": "Foto",
+    "path": "/photo",
     "categories": [
         {
             id: "1d74d681-e494-4cd8-8782-79eab496f9dd",
@@ -167,11 +168,11 @@ export const photo = {
             title: "",
             image: photoStudioThumbnail3,
         },
-        {
-            id: "52e82689-0741-4abd-92bb-d24de96596f4",
-            title: "",
-            image: photoBrandingThumbnail9,
-        },
+        // {
+        //     id: "52e82689-0741-4abd-92bb-d24de96596f4",
+        //     title: "",
+        //     image: photoBrandingThumbnail9,
+        // },
         // {
         //     id: "f40ba5b3-8d68-40e7-8d45-a763ebad1234",
         //     title: "",
@@ -709,22 +710,22 @@ export const photo = {
                     }
                 }
             },
-            {
-                id: "402167aa-f117-4eff-a56d-3c7c7ff83a25",
-                date: '20 Listopada 2019',
-                title: "",
-                description: '',
-                image: {
-                    "thumbnail": {
-                        "src": photoStudioThumbnail16,
-                    },
-                    "original": {
-                        "src": photoStudioOriginal16,
-                        "width": "1000",
-                        "height": "562"
-                    }
-                }
-            },
+            // {
+            //     id: "402167aa-f117-4eff-a56d-3c7c7ff83a25",
+            //     date: '20 Listopada 2019',
+            //     title: "",
+            //     description: '',
+            //     image: {
+            //         "thumbnail": {
+            //             "src": photoStudioThumbnail16,
+            //         },
+            //         "original": {
+            //             "src": photoStudioOriginal16,
+            //             "width": "1000",
+            //             "height": "562"
+            //         }
+            //     }
+            // },
             {
                 id: "ba7aebf4-e296-4a8f-bea8-ca11658505c5",
                 date: '20 Listopada 2019',
@@ -757,22 +758,22 @@ export const photo = {
                     }
                 }
             },
-            {
-                id: "ed47bae8-ebe3-4798-bbd2-575372d7a23f",
-                date: '20 Listopada 2019',
-                title: "",
-                description: '',
-                image: {
-                    "thumbnail": {
-                        "src": photoStudioThumbnail19,
-                    },
-                    "original": {
-                        "src": photoStudioOriginal19,
-                        "width": "1000",
-                        "height": "800"
-                    }
-                }
-            },
+            // {
+            //     id: "ed47bae8-ebe3-4798-bbd2-575372d7a23f",
+            //     date: '20 Listopada 2019',
+            //     title: "",
+            //     description: '',
+            //     image: {
+            //         "thumbnail": {
+            //             "src": photoStudioThumbnail19,
+            //         },
+            //         "original": {
+            //             "src": photoStudioOriginal19,
+            //             "width": "1000",
+            //             "height": "800"
+            //         }
+            //     }
+            // },
             {
                 id: "df0903d2-1707-46e7-96e3-d7cd48fe150c",
                 date: '20 Listopada 2019',
@@ -789,38 +790,38 @@ export const photo = {
                     }
                 }
             },
-            {
-                id: "a8a14547-f4b3-49c7-a2ab-d8f98663705f",
-                date: '20 Listopada 2019',
-                title: "",
-                description: '',
-                image: {
-                    "thumbnail": {
-                        "src": photoStudioThumbnail21,
-                    },
-                    "original": {
-                        "src": photoStudioOriginal21,
-                        "width": "1000",
-                        "height": "871"
-                    }
-                }
-            },
-            {
-                id: "788fb592-42de-431f-9470-7f2f6f92f20f",
-                date: '20 Listopada 2019',
-                title: "",
-                description: '',
-                image: {
-                    "thumbnail": {
-                        "src": photoStudioThumbnail22,
-                    },
-                    "original": {
-                        "src": photoStudioOriginal22,
-                        "width": "1000",
-                        "height": "1249"
-                    }
-                }
-            },
+            // {
+            //     id: "a8a14547-f4b3-49c7-a2ab-d8f98663705f",
+            //     date: '20 Listopada 2019',
+            //     title: "",
+            //     description: '',
+            //     image: {
+            //         "thumbnail": {
+            //             "src": photoStudioThumbnail21,
+            //         },
+            //         "original": {
+            //             "src": photoStudioOriginal21,
+            //             "width": "1000",
+            //             "height": "871"
+            //         }
+            //     }
+            // },
+            // {
+            //     id: "788fb592-42de-431f-9470-7f2f6f92f20f",
+            //     date: '20 Listopada 2019',
+            //     title: "",
+            //     description: '',
+            //     image: {
+            //         "thumbnail": {
+            //             "src": photoStudioThumbnail22,
+            //         },
+            //         "original": {
+            //             "src": photoStudioOriginal22,
+            //             "width": "1000",
+            //             "height": "1249"
+            //         }
+            //     }
+            // },
             {
                 id: "8255f001-851a-4afa-bb34-10c2c952560f",
                 date: '20 Listopada 2019',
