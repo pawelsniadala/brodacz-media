@@ -1,12 +1,14 @@
 import { useEffect } from "react";
-import IntroductionSection from "../sections/IntroductionSection";
+// import IntroductionSection from "../sections/IntroductionSection";
 import PreludeSection from "../sections/PreludeSection";
 import VideoSection from "../sections/VideoSection";
-import BackstageSection from "../sections/BackstageSection";
+import StudioSection from "../sections/StudioSection";
 import PhotoSection from "../sections/PhotoSection";
+// import BackstageSection2 from "../sections/BackstageSection2";
 import FavoritePhotosSection from "../sections/FavoritePhotosSection";
-import RecommendationSection from "../sections/RecommendationSection";
-import CustomerSection from "../sections/CustomerSection";
+import FeedbackSection from "../sections/FeedbackSection";
+import OutdoorSection from "../sections/OutdoorSection";
+// import CustomerSection from "../sections/CustomerSection";
 
 const HomeView = () => {
     useEffect(() => {
@@ -15,14 +17,16 @@ const HomeView = () => {
 
     return (
         <div className="home-view">
-            {/* <PreludeSection /> */}
+            <PreludeSection />
             {/* <IntroductionSection /> */}
             <VideoSection />
             <PhotoSection/>
+            {/* <BackstageSection2 /> */}
+            <StudioSection />
             <FavoritePhotosSection />
-            {/* <BackstageSection /> */}
-            {/* <RecommendationSection />
-            <CustomerSection /> */}
+            <FeedbackSection />
+            <OutdoorSection />
+            {/* <CustomerSection /> */}
         </div>
     );
 };
