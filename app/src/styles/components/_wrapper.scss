@@ -91,20 +91,11 @@ main {
         }
     }
 
-    &.favorite-photos {
-        .marquee {
-            // gap: 1rem;
-        }
-    }
-
     &.feedback {
-
         &.opinions {
             display: grid;
-            // align-items: start;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             gap: 1rem;
-            // row-gap: 2rem;
 
             @media (max-width: 1199.98px) and (min-width: 992px) {
                 grid-template-columns: 1fr 1fr 1fr;
