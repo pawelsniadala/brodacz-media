@@ -37,7 +37,11 @@ const VideoSection = () => {
         <section className="video-section">
             <div className="container">
                 <div className="section-wrapper">
-                    <SectionHeader header={video.title} />
+                    <SectionHeader
+                        header={video.title}
+                        all
+                        allPath={video.path}
+                    />
                     <div className="card-wrapper category video">
                         {video.category.map(item => (
                             <CardCategory
