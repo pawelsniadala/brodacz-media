@@ -16,28 +16,26 @@ const FavoritePhotosSection = () => {
 
     return (
         <section className="favorite-photos-section">
-            <div className="">
-                <div className="section-wrapper">
-                    <Marquee
-                        speed={80}
-                        gradient={false}
-                        className="card-wrapper favorite-photos"
-                    >
-                        {favorite.length && favorite.map(item => (
-                            <div key={item.id} className="card favorite-photos">
-                                <div className="image-wrapper">
-                                    <ReactImageAppear
-                                        src={item.image}
-                                        className="card-img"
-                                        placeholderStyle={{ backgroundColor: "transparent", display: "inline" }}
-                                        showLoader={false}
-                                        alt={item.title}
-                                    />
-                                </div>
+            <div className="section-wrapper">
+                <Marquee
+                    speed={80}
+                    gradient={false}
+                    className="card-wrapper favorite-photos"
+                >
+                    {favorite.length && favorite.map(item => (
+                        <div key={item.id} className="card favorite-photos">
+                            <div className="image-wrapper">
+                                <ReactImageAppear
+                                    src={item.image}
+                                    className="card-img"
+                                    placeholderStyle={{ backgroundColor: "transparent", display: "inline" }}
+                                    showLoader={false}
+                                    alt={item.title}
+                                />
                             </div>
-                        ))}
-                    </Marquee>
-                </div>
+                        </div>
+                    ))}
+                </Marquee>
             </div>
         </section>
     );
