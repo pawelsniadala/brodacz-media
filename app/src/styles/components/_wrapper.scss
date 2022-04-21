@@ -97,15 +97,22 @@ main {
         }
     }
 
-    &.recommendation {
-        display: grid;
-        align-items: start;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-        row-gap: 2rem;
+    &.feedback {
 
-        @media (max-width: 1199.98px) {
-            grid-template-columns: 1fr;
+        &.opinions {
+            display: grid;
+            // align-items: start;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 1rem;
+            // row-gap: 2rem;
+
+            @media (max-width: 1199.98px) and (min-width: 992px) {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            @media (max-width: 991.98px) and (min-width: 768px) {
+                grid-template-columns: 1fr 1fr;
+            }
         }
     }
 
