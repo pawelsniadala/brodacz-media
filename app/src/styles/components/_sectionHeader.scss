@@ -3,14 +3,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@200;500&family=Roboto:wght@500&display=swap');
 
 .section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+
     .header {
-        font-weight: 400;
-        font-size: 2.2rem;
-        // letter-spacing: 1px;
-        // color: rgba(0,0,0,.7);
+        font-size: 2.5rem;
+        font-weight: 500;
         font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        line-height: 1;
     }
-    .divider {
-        opacity: .0;
+
+    .all-wrapper {
+        display: flex;
+        align-items: end;
+
+        .all {
+            font-size: 19px;
+            font-weight: 400;
+            text-decoration: none;
+            color: #212529;
+        }
+
+        .arrow {
+            filter: invert(0%) sepia(100%) saturate(7500%) hue-rotate(327deg) brightness(114%) contrast(114%);
+            margin-left: -3px;
+        }
+    }
+}
+
+body.dark-theme {
+    .section-header {
+        .all-wrapper {
+            .all {
+                color: rgba(255, 255, 255, 0.75);
+            }
+
+            .arrow {
+                filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+                opacity: 0.75;
+            }
+        }
+
     }
 }
