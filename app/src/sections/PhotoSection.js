@@ -30,7 +30,11 @@ const PhotoSection = () => {
         <section className="photo-section">
             <div className="container">
                 <div className="section-wrapper">
-                    <SectionHeader header={photo.title} />
+                    <SectionHeader
+                        header={photo.title}
+                        all
+                        allPath={photo.path}
+                    />
                     <div className="card-wrapper category photo">
                         {photo.categories.length ? photo.categories.map(item => (
                             <CardCategory
