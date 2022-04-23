@@ -29,7 +29,7 @@ const CardCategory = ({
             </p>
             {/* <a href="#" class="btn btn btn-success">Zobacz realizacje</a> */}
             {/* <div className="d-grid"> */}
-            <button type="button" className="button-card">
+            <button type="button" className="button category">
                 Zobacz {cardLabel}
             </button>
             {/* </div> */}

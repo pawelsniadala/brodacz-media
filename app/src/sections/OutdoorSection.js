@@ -10,7 +10,7 @@ const OutdoorSection = () => (
                     sit amet consectetur<br/>
                     adipiscing elit integer
                 </div>
-                <button type="button" className="button-card">
+                <button type="button" className="button outdoor">
                     Lorem ipsum
                 </button>
             </div>
