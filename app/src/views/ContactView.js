@@ -30,6 +30,23 @@ const ContactView = () => {
                 <div className="card-wrapper contact">
                     <div className="card contact">
                         <div className="card-header">
+                            Dane firmy
+                        </div>
+                        <div className="card-body business">
+                            <div><span className="title">Nazwa</span>: Brodacz Media Mariusz Śniadała</div>
+                            <div><span className="title">Adres</span>: Kornaciska 19, 07-210 Długosiodło</div>
+                            <div><span className="title">NIP</span>: 7622014234</div>
+                        </div>
+                        <div className="card-header">
+                            Dane kontaktowe
+                        </div>
+                        <div className="card-body business">
+                            <div><span className="title">Adres e-mail</span>: brodaczmedia@gmail.com</div>
+                            <div><span className="title">Numer telefonu</span>: 797 365 584</div>
+                        </div>
+                    </div>
+                    <div className="card contact">
+                        <div className="card-header">
                             Formularz kontaktowy
                         </div>
                         <div className="card-body">
@@ -37,32 +54,28 @@ const ContactView = () => {
                                 <div className="mb-3">
                                     <label htmlFor="name" className="form-label">
                                         Imię i nazwisko
-                                        <span className="text-danger">&nbsp;*</span>
+                                        {/* <span className="text-danger">&nbsp;*</span> */}
                                     </label>
                                     <input type="text" className="form-control" name="name" minLength="2" required />
                                 </div>
                                 <div className="mb-3">
                                     <label htmlFor="email" className="form-label">
                                         Adres e-mail
-                                        <span className="text-danger">&nbsp;*</span>
+                                        {/* <span className="text-danger">&nbsp;*</span> */}
                                     </label>
                                     <input type="email" className="form-control" name="email" required />
                                 </div>
                                 <div className="mb-4">
                                     <label htmlFor="message" className="form-label">
                                         Wiadomość
-                                        <span className="text-danger">&nbsp;*</span>
+                                        {/* <span className="text-danger">&nbsp;*</span> */}
                                     </label>
                                     <textarea className="form-control" name="message" rows="6" required></textarea>
                                 </div>
-                                <button type="submit" className="mb-2 button-card" id="liveToastBtn">
-                                    Wyślij
+                                <button type="submit" className="mb-2 button contact" id="liveToastBtn">
+                                    Wyślij wiadomość
                                 </button>
                             </form>
-                        </div>
-                        <div className="card-footer text-muted">
-                            Pola oznaczone
-                            <span className="text-danger">&nbsp;*</span> są wymagane.
                         </div>
                     </div>
                     {/* <div className="card contact">
