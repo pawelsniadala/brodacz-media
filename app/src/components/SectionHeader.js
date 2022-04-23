@@ -19,7 +19,7 @@ const SectionHeader = ({
                 >
                     Zobacz wszystkie
                 </Link>
-                <img className="arrow" src={arrowLeft24} alt="logo" />
+                {/* <img className="arrow" src={arrowLeft24} alt="logo" /> */}
             </div>
         )}
     </div>
