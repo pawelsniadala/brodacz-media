@@ -6,12 +6,11 @@ const StudioSection = () => (
         <Parallax section="studio">
             <div className="parallax-content">
                 <div className="heading">
-                    Lorem ipsum dolor<br/>
-                    sit amet consectetur<br/>
-                    adipiscing elit integer
+                    Zobacz siebie<br/>
+                    w innym świetle
                 </div>
-                <button type="button" className="button-card">
-                    Lorem ipsum
+                <button type="button" className="button studio">
+                    Zapisz się na sesję
                 </button>
             </div>
         </Parallax>
