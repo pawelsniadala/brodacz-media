@@ -1,6 +1,10 @@
 .favorite-photos-section {
     .section-wrapper {
         padding-top: 1rem;
+
+        .marquee {
+            z-index: 0;
+        }
     }
 }
 
