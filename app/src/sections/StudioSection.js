@@ -1,5 +1,5 @@
+import { Link } from "react-router-dom";
 import Parallax from "../components/Parallax";
-import ButtonLink from "../components/ButtonLink";
 
 const StudioSection = () => (
     <section className="studio-section">
@@ -9,9 +9,13 @@ const StudioSection = () => (
                     Zobacz siebie<br/>
                     w innym świetle
                 </div>
-                <button type="button" className="button studio">
+                <Link
+                    to="/contact"
+                    className="button studio"
+                    aria-current="page"
+                >
                     Zapisz się na sesję
-                </button>
+                </Link>
             </div>
         </Parallax>
     </section>
