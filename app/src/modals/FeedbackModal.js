@@ -10,7 +10,8 @@ const FeedbackModal = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm("service_hgver59", "template_orffq56", form.current, "_o3zGPDB_96l97OYE")
+        emailjs.sendForm("service_uu7euve", "template_wr11azm", form.current, "nCwtxRyHnXpW-ROrH")
+        // emailjs.sendForm("service_hgver59", "template_orffq56", form.current, "_o3zGPDB_96l97OYE")
             .then((result) => {
                 console.log(result.text);
                 hideModal();
