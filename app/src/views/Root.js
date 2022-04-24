@@ -10,7 +10,7 @@ import HomeView from "./HomeView";
 import VideoView from "./VideoView";
 import PhotoView from "./PhotoView";
 import BackstageView from "./BackstageView";
-import AboutMeView from "./AboutMeView";
+// import AboutMeView from "./AboutMeView";
 import ContactView from "./ContactView";
 import VideoAllPartial from "./partials/video/VideoAllPartial";
 import VideoWeddingPartial from "./partials/video/VideoWeddingPartial";
@@ -26,6 +26,7 @@ import PhotoProductPartial from "./partials/photo/PhotoProductPartial";
 import PhotoOutdoorPartial from "./partials/photo/PhotoOutdoorPartial";
 import ScrollArrow from "../components/ScrollArrow";
 import Modal from "../components/Modal";
+import Toast from "../components/Toast";
 
 const Root = () => (
     <MainTemplate>
@@ -57,6 +58,7 @@ const Root = () => (
                 </Routes>
             </main>
             <Modal />
+            <Toast />
             <FooterSection />
             <ScrollArrow />
         </Router>
