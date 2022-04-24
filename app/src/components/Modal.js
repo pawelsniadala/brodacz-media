@@ -4,8 +4,7 @@ const Modal = ({
     verticallyCentered,
     modalId,
     modalTitle,
-    children,
-    modalFooter
+    children
 }) => (
     <div className={`modal fade ${className}`}
         id={modalId}
@@ -30,21 +29,6 @@ const Modal = ({
                 <div className="modal-body">
                     {children}
                 </div>
-                {modalFooter && (
-                    <div className="modal-footer">
-                        <button type="button"
-                            className="btn btn-secondary"
-                            data-bs-dismiss="modal"
-                        >
-                            Close
-                        </button>
-                        <button type="button"
-                            className="btn btn-primary"
-                        >
-                            Save changes
-                        </button>
-                    </div>
-                )}
             </div>
         </div>
     </div>
