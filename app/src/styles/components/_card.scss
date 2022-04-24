@@ -177,16 +177,30 @@
             gap: 1rem;
             margin-bottom: 3rem;
 
+            .image-wrapper {
+                @media (max-width: 991.98px) {
+                    display: none;
+                }
+            }
+
             .text-wrapper {
                 display: grid;
                 align-content: center;
                 gap: 2rem;
+
+                @media (max-width: 539.98px) {
+                    text-align: center;
+                }
 
                 .heading {
                     font-size: 3rem;
                     font-weight: 700;
                     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
                     line-height: 1;
+
+                    @media (max-width: 539.98px) {
+                        font-size: 2.5rem;
+                    }
                 }
 
                 .description {
@@ -194,15 +208,15 @@
                     font-weight: 400;
                     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
                     line-height: 1;
-                }
 
-                // button {
-                //     background-color: #235347;
-                //     width: fit-content;
-                //     font-size: 1.15rem;
-                //     line-height: 1;
-                //     padding: 13px 21px;
-                // }
+                    @media (max-width: 539.98px) {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+
+            @media (max-width: 991.98px) {
+                grid-template-columns: 1fr;
             }
         }
 
