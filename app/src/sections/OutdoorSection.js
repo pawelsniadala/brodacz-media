@@ -1,5 +1,5 @@
+import { Link } from "react-router-dom";
 import Parallax from "../components/Parallax";
-import ButtonLink from "../components/ButtonLink";
 
 const OutdoorSection = () => (
     <section className="outdoor-section">
@@ -10,9 +10,13 @@ const OutdoorSection = () => (
                     sit amet consectetur<br/>
                     adipiscing elit integer
                 </div>
-                <button type="button" className="button outdoor">
-                    Lorem ipsum
-                </button>
+                <Link
+                    to="/contact"
+                    className="button studio"
+                    aria-current="page"
+                >
+                    Zapisz się na sesję
+                </Link>
             </div>
         </Parallax>
     </section>
