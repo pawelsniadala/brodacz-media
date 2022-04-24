@@ -1,6 +1,7 @@
 import { useEffect, useRef  } from "react";
+import * as bootstrap from "bootstrap";
 import emailjs from "@emailjs/browser";
-import Iframe from "react-iframe";
+// import Iframe from "react-iframe";
 import PageHeader from "../components/PageHeader";
 
 const ContactView = () => {
@@ -13,15 +14,20 @@ const ContactView = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm("service_uu7euve", "template_bnuaglf", form.current, "nCwtxRyHnXpW-ROrH")
-        // emailjs.sendForm("service_hgver59", "template_kidfc2k", form.current, "_o3zGPDB_96l97OYE")
+        // emailjs.sendForm("service_uu7euve", "template_bnuaglf", form.current, "nCwtxRyHnXpW-ROrH")
+        emailjs.sendForm("service_hgver59", "template_kidfc2k", form.current, "_o3zGPDB_96l97OYE")
             .then((result) => {
                 console.log(result.text);
+                showToast();
+                e.target.reset();
             }, (error) => {
                 console.log(error.text);
             });
-        e.target.reset();
     };
+
+    const showToast = () => {
+        new bootstrap.Toast(document.getElementById("successToast")).show();
+    }
 
     return (
         <div className="contact-view">
