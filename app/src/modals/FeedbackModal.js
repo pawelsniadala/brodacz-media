@@ -1,7 +1,8 @@
+
 import { useRef } from "react";
+import * as bootstrap from "bootstrap";
 import emailjs from "@emailjs/browser";
 import Modal from "../components/Modal";
-import ReactStars from "react-stars";
 
 const FeedbackModal = () => {
     const form = useRef();
@@ -12,15 +13,22 @@ const FeedbackModal = () => {
         emailjs.sendForm("service_hgver59", "template_orffq56", form.current, "_o3zGPDB_96l97OYE")
             .then((result) => {
                 console.log(result.text);
+                hideModal();
+                showToast();
+                e.target.reset();
             }, (error) => {
                 console.log(error.text);
             });
-        e.target.reset();
-
     };
 
-    const ratingChanged = (newRating) => {
-        document.getElementById("rating").value = newRating;
+    const hideModal = (e) => {
+        let myModalEl = document.getElementById("feedbackModal");
+        let modal = bootstrap.Modal.getInstance(myModalEl);
+        modal.hide();
+    }
+
+    const showToast = () => {
+        new bootstrap.Toast(document.getElementById("successToast")).show();
     }
 
     return (
@@ -53,6 +61,18 @@ const FeedbackModal = () => {
                     </label>
                     <input type="email" className="form-control" name="email" required />
                 </div>
+                <div className="mb-3">
+                    <label htmlFor="rating" className="form-label">
+                        Ocena
+                        {/* <span className="text-danger">&nbsp;*</span> */}
+                    </label>
+                    <input type="number" className="form-control" name="rating" min="1" max="5" required />
+                    {/* <ReactStars
+                        className="rating"
+                        onChange={ratingChanged}
+                        size={24}
+                    /> */}
+                </div>
                 <div className="mb-4">
                     <label htmlFor="opinion" className="form-label">
                         Opinia
@@ -60,29 +80,13 @@ const FeedbackModal = () => {
                     </label>
                     <textarea className="form-control" name="opinion" rows="6" required></textarea>
                 </div>
-                <div className="mb-3">
-                    <label htmlFor="rating" className="form-label">
-                        Ocena
-                        {/* <span className="text-danger">&nbsp;*</span> */}
-                    </label>
-                    <input type="hidden" className="form-control" name="rating" id="rating" required />
-                    <ReactStars
-                        className="rating"
-                        onChange={ratingChanged}
-                        size={24}
-                    />
-                </div>
+
                 <div className="button-wrapper">
-                    {/* <button type="button"
-                        className="btn"
-                        data-bs-dismiss="modal"
-                    >
-                        Close
-                    </button> */}
                     <button type="button"
                         className="button feedback modal close"
                         data-bs-dismiss="modal"
-                        // onClick={close}
+                        onClick={hideModal}
+                        // onClick={showToast}
                     >
                         Anuluj
                     </button>
