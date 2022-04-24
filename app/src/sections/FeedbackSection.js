@@ -11,13 +11,15 @@ const FeedbackSection = () => (
                 <div className="section-wrapper">
                     {feedback.information.length && feedback.information.map(item => (
                         <div key={item.id} className="card feedback information">
-                        <ReactImageAppear
-                                src={item.image}
-                                className="card-img"
-                                alt="..."
-                                placeholderStyle={{ backgroundColor: "transparent", display: "inline" }}
-                                showLoader={false}
-                            />
+                            <div className="image-wrapper">
+                                <ReactImageAppear
+                                    src={item.image}
+                                    className="card-img"
+                                    alt="..."
+                                    placeholderStyle={{ backgroundColor: "transparent", display: "inline" }}
+                                    showLoader={false}
+                                />
+                            </div>
                             <div className="text-wrapper">
                                 <div className="heading">
                                     Dołącz do grona<br/>
