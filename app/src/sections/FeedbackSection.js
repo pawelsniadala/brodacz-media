@@ -30,13 +30,15 @@ const FeedbackSection = () => (
                                     jeśli podzielisz się swoją opinią<br/>
                                     na temat moich usług.
                                 </div>
-                                <button type="button"
-                                    className="button feedback information"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#feedbackModal"
-                                >
-                                    Napisz opinię
-                                </button>
+                                <div className="button-wrapper">
+                                    <button type="button"
+                                        className="button feedback information"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#feedbackModal"
+                                    >
+                                        Napisz opinię
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     ))}
