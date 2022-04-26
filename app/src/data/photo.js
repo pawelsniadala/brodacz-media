@@ -133,7 +133,7 @@ export const photo = {
             id: "1d74d681-e494-4cd8-8782-79eab496f9dd",
             label: "zdjęcia",
             title: 'Wizerunkowe',
-            description: "Nie mam gotowej wizji na idealny film ślubny. Staramy się poznać gust mojego klienta i w takim stylu stworzyć dla niego film. Wieloletnie doświadczenie pozwala mi na świadome eksperymentowanie z różnymi stylami.",
+            description: "Nieważne czym się zajmujesz reprezentatywne zdjęcie utrwalające Twój charakter oraz wykonywany zawód jest niezastąpione przy poszukiwaniu nowych wyzwań zawodowych",
             image: photoCategoryBranding,
             path: '/photo/branding',
         },
@@ -141,25 +141,25 @@ export const photo = {
             id: "57c5d3f9-6dc3-40e4-a0e4-a966827b6833",
             label: "zdjęcia",
             title: 'Studyjne',
-            description: "Znajdę taki punkt widzenia aby pamiątka po Twoim evencie była wizytówką na wiele lat, sam zorganizowałem wiele eventów na skalę ogólnopolską, taka świadomość pozwala mi na uwiecznienie odpowiednich momentów.",
+            description: "Chcesz pokazać światu artystyczne wnętrze Twojej duszy poprzez niecodzienny portret? Spróbujmy razem stworzyć coś niesamowitego. Uwielbiam pracę oświetleniem studyjnym na przeróżne sposoby.",
             image: photoCategoryStudio,
             path: '/photo/studio',
-        },
-        {
-            id: "5f36d40d-812a-4ea5-8cae-2eb033280939",
-            label: "zdjęcia",
-            title: 'Produktowe',
-            description: "Z gitarą spędziłem już 13 lat, moje doświadczenie muzyczne oraz wrażliwość artystyczna implikują bezbłędną komunikację z artystą aby stworzyć treści maksymalnie dopasowane do danego stylu.",
-            image: photoCategoryProduct,
-            path: '/photo/product',
         },
         {
             id: "2c807707-b84c-4522-9e7e-2f26d3a82352",
             label: "zdjęcia",
             title: 'Plenerowe',
-            description: "W dzisiejszych czasach trudno wyobrazić sobie wszędzie zdążyć, dzięki transmisji możesz przełamać barierę odległości zyskując większą publikę podczas Twojego eventu. Możesz połączyć się z ludźmi z całego świata w ułamku sekundy.",
+            description: "Wykształcenie przyrodnicze nie poszło na marne! Chętnie zabiorę Cię na spacer i uchwycę jego najlepsze chwile urozmaicając sesję ciekawostkami ze świata przyrody.",
             image: photoCategoryOutdoor,
             path: '/photo/outdoor',
+        },
+        {
+            id: "5f36d40d-812a-4ea5-8cae-2eb033280939",
+            label: "zdjęcia",
+            title: 'Produktowe',
+            description: "Wszyscy kupujemy oczami, dlatego ważne, żeby produkt miał dobre zdjęcie. Znajdę ciekawy sposób na ukazanie Twojego produktu w jak najlepszym świetle.",
+            image: photoCategoryProduct,
+            path: '/photo/product',
         }
     ],
     "favorite": [
@@ -839,72 +839,6 @@ export const photo = {
                 }
             },
         ],
-        "product": [
-            // {
-            //     id: "659cfc12-2bd3-402b-b350-6077b045a93d",
-            //     date: '20 Listopada 2019',
-            //     title: '',
-            //     description: '',
-            //     image: {
-            //         "thumbnail": {
-            //             "src": photoProductThumbnail1,
-            //         },
-            //         "original": {
-            //             "src": photoProductOriginal1,
-            //             "width": "1000",
-            //             "height": "1500",
-            //         }
-            //     }
-            // },
-            {
-                id: "c95b1ab7-0810-4a8e-a186-cc0973b16a25",
-                date: '20 Listopada 2019',
-                title: '',
-                description: '',
-                image: {
-                    "thumbnail": {
-                        "src": photoProductThumbnail2,
-                    },
-                    "original": {
-                        "src": photoProductOriginal2,
-                        "width": "1000",
-                        "height": "1500",
-                    }
-                }
-            },
-            // {
-            //     id: "84d4aa2f-a6f4-4206-babc-db979396e910",
-            //     date: '20 Listopada 2019',
-            //     title: '',
-            //     description: '',
-            //     image: {
-            //         "thumbnail": {
-            //             "src": photoProductThumbnail3,
-            //         },
-            //         "original": {
-            //             "src": photoProductOriginal3,
-            //             "width": "1000",
-            //             "height": "1500",
-            //         }
-            //     }
-            // },
-            // {
-            //     id: "98ade02f-5f42-4560-8478-43eb740509f6",
-            //     date: '20 Listopada 2019',
-            //     title: '',
-            //     description: '',
-            //     image: {
-            //         "thumbnail": {
-            //             "src": photoProductThumbnail4,
-            //         },
-            //         "original": {
-            //             "src": photoProductOriginal4,
-            //             "width": "1000",
-            //             "height": "1500",
-            //         }
-            //     }
-            // },
-        ],
         "outdoor": [
             {
                 id: "b820584a-a23f-455f-af79-5fbad13a41a3",
@@ -1082,6 +1016,72 @@ export const photo = {
                     }
                 }
             }
-        ]
+        ],
+        "product": [
+            // {
+            //     id: "659cfc12-2bd3-402b-b350-6077b045a93d",
+            //     date: '20 Listopada 2019',
+            //     title: '',
+            //     description: '',
+            //     image: {
+            //         "thumbnail": {
+            //             "src": photoProductThumbnail1,
+            //         },
+            //         "original": {
+            //             "src": photoProductOriginal1,
+            //             "width": "1000",
+            //             "height": "1500",
+            //         }
+            //     }
+            // },
+            {
+                id: "c95b1ab7-0810-4a8e-a186-cc0973b16a25",
+                date: '20 Listopada 2019',
+                title: '',
+                description: '',
+                image: {
+                    "thumbnail": {
+                        "src": photoProductThumbnail2,
+                    },
+                    "original": {
+                        "src": photoProductOriginal2,
+                        "width": "1000",
+                        "height": "1500",
+                    }
+                }
+            },
+            {
+                id: "84d4aa2f-a6f4-4206-babc-db979396e910",
+                date: '20 Listopada 2019',
+                title: '',
+                description: '',
+                image: {
+                    "thumbnail": {
+                        "src": photoProductThumbnail3,
+                    },
+                    "original": {
+                        "src": photoProductOriginal3,
+                        "width": "1000",
+                        "height": "1500",
+                    }
+                }
+            },
+            // {
+            //     id: "98ade02f-5f42-4560-8478-43eb740509f6",
+            //     date: '20 Listopada 2019',
+            //     title: '',
+            //     description: '',
+            //     image: {
+            //         "thumbnail": {
+            //             "src": photoProductThumbnail4,
+            //         },
+            //         "original": {
+            //             "src": photoProductOriginal4,
+            //             "width": "1000",
+            //             "height": "1500",
+            //         }
+            //     }
+            // },
+        ],
     }
 };
