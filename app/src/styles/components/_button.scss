@@ -27,6 +27,7 @@ a.button {
     background-color: #327766;
     color: #ffffff;
     border-radius: 980px;
+    // border-radius: 8px;
     width: fit-content;
 
     &:hover {
@@ -47,10 +48,6 @@ a.button {
             font-size: 1.15rem;
             padding: 13px 21px;
             font-weight: 400;
-
-            @media (max-width: 539.98px) {
-                width: 100%;
-            }
         }
 
         &.modal {
@@ -77,11 +74,11 @@ a.button {
 .dark-theme {
     button.button,
     a.button {
-        background-color: #235347;
+        background-color: #253d38;
         color: rgba(255, 255, 255, 0.75);
 
         &:hover {
-            background-color: lighten(#235347, 5%);
+            background-color: lighten(#253d38, 5%);
         }
 
         &.feedback {
