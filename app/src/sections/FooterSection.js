@@ -31,7 +31,7 @@ const FooterSection = () => (
                             <a href="/video/broadcasts">Transmisje</a>
                         </li>
                         <li className="list-group-item">
-                            <a href="/video/advertising">Reklamy</a>
+                            <a href="/video/advertising">Debaty i wypowiedzi</a>
                         </li>
                         <li className="list-group-item">
                             <a href="/video/animations">Animacje</a>
