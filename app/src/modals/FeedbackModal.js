@@ -50,7 +50,7 @@ const FeedbackModal = () => {
                 </div>
                 <div className="mb-3">
                     <label htmlFor="position" className="form-label">
-                        Pozycja
+                        Stanowisko
                         {/* <span className="text-danger">&nbsp;*</span> */}
                     </label>
                     <input type="text" className="form-control" name="position" minLength="2" required />
