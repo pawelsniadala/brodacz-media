@@ -7,8 +7,8 @@ import PhotoSection from "../sections/PhotoSection";
 // import BackstageSection2 from "../sections/BackstageSection2";
 import FavoritePhotosSection from "../sections/FavoritePhotosSection";
 import FeedbackSection from "../sections/FeedbackSection";
-// import OutdoorSection from "../sections/OutdoorSection";
-// import CustomerSection from "../sections/CustomerSection";
+import OutdoorSection from "../sections/OutdoorSection";
+import CustomerSection from "../sections/CustomerSection";
 // import ContactSection from "../sections/ContactSection";
 
 const HomeView = () => {
@@ -27,7 +27,7 @@ const HomeView = () => {
             <FavoritePhotosSection />
             <FeedbackSection />
             {/* <OutdoorSection /> */}
-            {/* <CustomerSection /> */}
+            <CustomerSection />
             {/* <ContactSection /> */}
         </div>
     );
