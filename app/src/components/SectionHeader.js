@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import arrowLeft24 from "./../assets/common/arrowLeft24.png";
 
 const SectionHeader = ({
     header,
@@ -19,7 +18,9 @@ const SectionHeader = ({
                 >
                     Zobacz wszystkie
                 </Link>
-                {/* <img className="arrow" src={arrowLeft24} alt="logo" /> */}
+                {/* <span className="arrow-wrapper"> */}
+                    {/* <svg focusable="false" fill="#8ab4f8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg> */}
+                {/* </span> */}
             </div>
         )}
     </div>
