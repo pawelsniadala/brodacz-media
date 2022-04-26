@@ -30,13 +30,13 @@ const PhotoView = () => {
                     return (
                         "photo-studio"
                     );
-                case "/photo/product":
-                    return (
-                        "photo-product"
-                    );
                 case "/photo/outdoor":
                     return (
                         "photo-outdoor"
+                    );
+                case "/photo/product":
+                    return (
+                        "photo-product"
                     );
                 default:
             }
@@ -59,13 +59,13 @@ const PhotoView = () => {
                 return (
                     <PhotoStudioPartial />
                 );
-            case "photo-product":
-                return (
-                    <PhotoProductPartial />
-                );
             case "photo-outdoor":
                 return (
                     <PhotoOutdoorPartial />
+                );
+            case "photo-product":
+                return (
+                    <PhotoProductPartial />
                 );
             default:
         }
@@ -113,22 +113,22 @@ const PhotoView = () => {
                         </li>
                         <li className="nav-item">
                             <Link
-                                to="/photo/product"
-                                className={(`nav-link ${photoTab === "photo-product" ? "active" : ""}`).trim()}
-                                aria-current="page"
-                                onClick={() => setTab("photo-product")}
-                            >
-                                Produktowe
-                            </Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link
                                 to="/photo/outdoor"
                                 className={(`nav-link${photoTab === "photo-outdoor" ? " active" : ""}`).trim()}
                                 aria-current="page"
                                 onClick={() => setTab("photo-outdoor")}
                             >
                                 Plenerowe
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link
+                                to="/photo/product"
+                                className={(`nav-link ${photoTab === "photo-product" ? "active" : ""}`).trim()}
+                                aria-current="page"
+                                onClick={() => setTab("photo-product")}
+                            >
+                                Produktowe
                             </Link>
                         </li>
                     </ul>
