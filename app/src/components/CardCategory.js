@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import ReactImageAppear from "react-image-appear";
+// import ReactImageAppear from "react-image-appear";
 
 const CardCategory = ({
     cardImg,
