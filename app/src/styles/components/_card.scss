@@ -102,8 +102,6 @@
     }
 
     &.category {
-        // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        border: none;
         background-color: #ffffff;
         // box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
         border: 1px solid rgba(0, 0, 0, .1);
@@ -115,26 +113,28 @@
             border-top-right-radius: calc(15px - 1px);
         }
 
-        .card-title {
-            font-size: 1.5rem;
-            font-weight: 400;
-        }
+        .card-body {
+            .card-title {
+                font-size: 1.5rem;
+                font-weight: 400;
+            }
 
-        .card-realization {
-            color: #70757a;
-        }
+            // .card-realization {
+            //     color: #70757a;
+            // }
 
-        .card-text {
-            font-weight: 300;
-            font-size: .95rem;
-            line-height: 1.43;
-            letter-spacing: 0.01071em;
-            color: black;
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            .card-text {
+                font-weight: 300;
+                font-size: .95rem;
+                line-height: 1.43;
+                letter-spacing: 0.01071em;
+                color: black;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
         }
 
         .card-footer {
@@ -153,6 +153,34 @@
                 z-index: 2;
             }
         }
+
+        @media (max-width: 991.98px) {
+            border-radius: 8px;
+
+            .card-img-top {
+                border-top-left-radius: calc(8px - 1px);
+                border-top-right-radius: calc(8px - 1px);
+            }
+
+            .card-body {
+                padding: .5rem;
+
+                .card-title {
+                    font-size: 1.1rem;
+                    margin-bottom: 0;
+                }
+
+                .card-text {
+                    font-size: .8rem;
+                    line-height: 1.33;
+                    margin-bottom: .5rem;
+                }
+
+                button {
+                    width: 100%;
+                }
+            }
+        }
     }
 
     &.favorite-photos {
@@ -165,6 +193,19 @@
 
             .card-img {
                 border-radius: 15px;
+            }
+        }
+
+        @media (max-width: 991.98px) {
+            margin-left: .25rem;
+            margin-right: .25rem;
+
+            .image-wrapper {
+                width: 180px;
+
+                .card-img {
+                    border-radius: 8px;
+                }
             }
         }
     }
@@ -188,7 +229,7 @@
                 align-content: center;
                 gap: 2rem;
 
-                @media (max-width: 539.98px) {
+                @media (max-width: 991.98px) {
                     text-align: center;
                 }
 
@@ -198,8 +239,8 @@
                     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
                     line-height: 1;
 
-                    @media (max-width: 539.98px) {
-                        font-size: 2.5rem;
+                    @media (max-width: 991.98px) {
+                        font-size: 2rem;
                     }
                 }
 
@@ -209,9 +250,20 @@
                     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
                     line-height: 1;
 
-                    @media (max-width: 539.98px) {
-                        font-size: 1.5rem;
+                    @media (max-width: 991.98px) {
+                        font-size: 1.4rem;
                     }
+                }
+
+                .button-wrapper {
+                    @media (max-width: 991.98px) {
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+
+                @media (max-width: 991.98px) {
+                    gap: 1rem;
                 }
             }
 
@@ -239,7 +291,6 @@
                     width: 100px;
                     height: 100px;
                     border-radius: 50%;
-                    border: 5px solid #fff;
                     margin-bottom: 1rem;
                 }
 
@@ -272,6 +323,44 @@
                     display: flex;
                     justify-content: center;
                     margin-bottom: .4rem;
+                }
+            }
+
+            @media (max-width: 991.98px) {
+                border-radius: 8px;
+
+                .card-body {
+                    padding: .5rem;
+
+                    .profile img {
+                        width: 80px;
+                        height: 80px;
+                        margin-bottom: .5rem;
+                    }
+
+                    .name {
+                        font-size: 1rem;
+                    }
+
+                    .position {
+
+                        font-size: .8rem;
+                        margin-bottom: .5rem;
+                    }
+
+                    .description {
+                        font-size: .8rem;
+                        line-height: 1.33;
+                        margin-bottom: .5rem;
+                    }
+
+                    .rating {
+                        margin-bottom: 0;
+
+                        span {
+                            font-size: 18px !important;
+                        }
+                    }
                 }
             }
         }
@@ -420,6 +509,11 @@
                 color: rgba(255, 255, 255, 0.5);
             }
 
+            @media (max-width: 991.98px) {
+                // box-shadow: none;
+                // background-color: transparent;
+
+            }
         }
 
         &.feedback {
@@ -428,10 +522,6 @@
                 background-color: lighten(#212529, 1%);
 
                 .card-body {
-                    .profile img {
-                        border: 7px solid lighten(#212529, 1%);
-                    }
-
                     .description {
                         color: rgba(255, 255, 255, 0.5);
                     }
