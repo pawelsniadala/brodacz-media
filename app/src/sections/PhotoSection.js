@@ -14,13 +14,13 @@ const PhotoSection = () => {
                 return (
                     photo.realization.studio.length
                 );
-            case "Produktowe":
-                return (
-                    photo.realization.product.length
-                );
             case "Plenerowe":
                 return (
                     photo.realization.outdoor.length
+                );
+            case "Produktowe":
+                return (
+                    photo.realization.product.length
                 );
             default:
         }
