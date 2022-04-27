@@ -1,4 +1,5 @@
 import { useEffect, useRef  } from "react";
+import { contact } from "../data/contact";
 import * as bootstrap from "bootstrap";
 import emailjs from "@emailjs/browser";
 // import Iframe from "react-iframe";
@@ -34,7 +35,45 @@ const ContactView = () => {
             <div className="view-wrapper container">
                 <PageHeader header="Kontakt" />
                 <div className="card-wrapper contact">
-                    <div className="card contact">
+                    <div>
+                        {contact.length && contact.map(item => (
+                            <div key={item.id} className="card contact info">
+                                <div className="card-body">
+
+                                    {/* <div className="profile">
+                                        <img src={item.image} alt={item.title} />
+                                    </div> */}
+                                    <div className="text-wrapper">
+                                        <div className="description">
+                                            {item.description}
+                                        </div>
+                                    </div>
+
+                                    {/* <div>Napisz do mnie lub zadzwoń. Odpowiem na wszystkie Twoje pytania. Telefon odbieram w dni robocze, a na wiadomości mailowe odpisuję maksymalnie w ciągu 24 godzin.</div> */}
+                                    {/* <a className="button contact phone" href="tel:+48797365584">797 365 854</a>
+                                    <a className="button contact mail" href="mailto:brodaczmedia@gmail.com">brodaczmedia@gmail.com</a> */}
+                                </div>
+                            </div>
+                        ))}
+
+                        <div className="card contact details">
+                            <div className="card-body">
+                                <a className="button contact phone" href="tel:+48797365584">797 365 854</a>
+                                <a className="button contact mail" href="mailto:brodaczmedia@gmail.com">brodaczmedia@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div className="card contact business">
+                            <div className="card-body">
+                                <div>Brodacz Media Mariusz Śniadała</div>
+                                <div>Kornaciska 19, 07-210 Długosiodło</div>
+                                <div><span className="title">NIP</span>: 7622014234</div>
+                                <div><span className="title">REGON</span>: 7622014234</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    {/* <div className="card contact">
                         <div className="card-header">
                             Dane firmy
                         </div>
@@ -50,11 +89,11 @@ const ContactView = () => {
                             <div><span className="title">Adres e-mail</span>: brodaczmedia@gmail.com</div>
                             <div><span className="title">Numer telefonu</span>: 797 365 584</div>
                         </div>
-                    </div>
-                    <div className="card contact">
-                        <div className="card-header">
+                    </div> */}
+                    <div className="card contact message">
+                        {/* <div className="card-header">
                             Formularz kontaktowy
-                        </div>
+                        </div> */}
                         <div className="card-body">
                             <form ref={form} onSubmit={sendEmail}>
                                 <div className="mb-3">
@@ -78,7 +117,7 @@ const ContactView = () => {
                                     </label>
                                     <textarea className="form-control" name="message" rows="6" required></textarea>
                                 </div>
-                                <button type="submit" className="mb-2 button contact" id="liveToastBtn">
+                                <button type="submit" className="mb-2 button contact message" id="liveToastBtn">
                                     Wyślij wiadomość
                                 </button>
                             </form>
