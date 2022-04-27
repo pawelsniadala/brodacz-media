@@ -6,9 +6,8 @@ const OutdoorSection = () => (
         <Parallax section="outdoor">
             <div className="parallax-content">
                 <div className="heading">
-                    Lorem ipsum dolor<br/>
-                    sit amet consectetur<br/>
-                    adipiscing elit integer
+                    Chodźmy na spacer<br/>
+                    zrobimy kilka zdjęć<br/>
                 </div>
                 <Link
                     to="/contact"
