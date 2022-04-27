@@ -29,9 +29,17 @@ const CardCategory = ({
             </p>
             {/* <a href="#" class="btn btn btn-success">Zobacz realizacje</a> */}
             {/* <div className="d-grid"> */}
-            <button type="button" className="button category">
+            {/* <button type="button" className="button category">
                 Zobacz {cardLabel}
-            </button>
+            </button> */}
+            <Link
+                to={cardPath ? cardPath : "#"}
+                className="button category"
+                aria-current="page"
+            >
+                Zobacz {cardLabel}
+            </Link>
+
             {/* </div> */}
             {/* <button type="button" class="btn btn-light">Zobacz realizacje</button> */}
         </div>
