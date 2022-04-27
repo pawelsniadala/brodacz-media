@@ -132,25 +132,25 @@ main {
     &.customer {
         display: grid;
         align-items: center;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         gap: 3rem;
 
         @media (max-width: 1199.98px) and (min-width: 992px) {
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         }
 
         @media (max-width: 991.98px) and (min-width: 768px) {
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
             gap: 2rem;
         }
 
         @media (max-width: 767.98px) and (min-width: 540px) {
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
             gap: 2rem;
         }
 
         @media (max-width: 539.98px) {
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
             gap: 2rem;
         }
     }
