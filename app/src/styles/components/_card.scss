@@ -1,5 +1,6 @@
 // @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@200;500&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@200;500&family=Roboto:wght@100;300;400&display=swap');
+
 .card {
     // border: none;
     background-color: #F2F3F5;
@@ -103,8 +104,8 @@
 
     &.category {
         background-color: #ffffff;
-        // box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-        border: 1px solid rgba(0, 0, 0, .1);
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        border: none;
         font-family: "Roboto", "Helvetica", "Arial", sans-serif;
         border-radius: 15px;
 
@@ -174,10 +175,11 @@
                     font-size: .8rem;
                     line-height: 1.33;
                     margin-bottom: .5rem;
+                    margin-bottom: 0;
                 }
 
-                button {
-                    width: 100%;
+                a {
+                    display: none;
                 }
             }
         }
@@ -278,6 +280,9 @@
             background-color: #fff;
             font-family: "Roboto", "Helvetica", "Arial", sans-serif;
             text-align: center;
+
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+            border: none;
 
             .card-body {
                 text-align: center;
@@ -445,35 +450,93 @@
     &.contact {
         border: none;
 
-        .card-header {
-            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-            font-size: 1.5rem;
-            background-color: transparent;
-            border-bottom: none;
-            display: flex;
-            align-items: center;
-            padding-left: 0;
-            padding-bottom: 1rem;
-        }
+        // .card-header {
+        //     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        //     font-size: 1.5rem;
+        //     background-color: transparent;
+        //     border-bottom: none;
+        //     display: flex;
+        //     align-items: center;
+        //     padding-left: 0;
+        //     padding-bottom: 1rem;
+        // }
 
-        .card-body {
-            padding: 0;
-            padding-top: 1rem;
+        // .card-body {
+        //     padding: 0;
+        //     padding-top: 1rem;
 
-            &.business {
-                font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-                font-weight: 300;
+        //     &.business {
+        //         font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        //         font-weight: 300;
 
-                .title {
-                    font-weight: 500;
+        //         .title {
+        //             font-weight: 500;
+        //         }
+        //     }
+        // }
+
+        // .card-footer {
+        //     font-size: .875em;
+        //     background-color: transparent;
+        //     border-top: 1px solid rgba(0, 0, 0, .1);
+        // }
+
+
+        &.info {
+            // background-color: #fff;
+            .card-body {
+                display: flex;
+                gap: 1.2rem;
+                // padding-right: 1rem;
+                padding-left: 0;
+
+                .profile img {
+                    position: relative;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    z-index: 1;
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                    // margin-bottom: 1rem;
+                }
+
+                .text-wrapper {
+                    display: grid;
+                    align-content: space-between;
+                    // align-content: space-between;
+                }
+
+                .description {
+                    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+                    font-weight: 300;
+                    // font-size: 1rem;
+                    // color: rgba(255, 255, 255, 0.5);
                 }
             }
         }
 
-        .card-footer {
-            font-size: .875em;
-            background-color: transparent;
-            border-top: 1px solid rgba(0, 0, 0, .1);
+        &.details {
+            .card-body {
+                display: flex;
+                gap: 1rem;
+                padding-left: 0;
+            }
+        }
+
+        &.business {
+            .card-body {
+                padding-left: 0;
+                font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+                font-weight: 300;
+            }
+        }
+
+        &.message {
+            .card-body {
+                padding-left: 0;
+            }
         }
     }
 }
@@ -501,9 +564,14 @@
         }
 
         &.category {
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            // border: 1px solid darken(#212529, 1%);
-            background-color: lighten(#212529, 1%);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+            background-color: lighten(#212529, 1.5%);
+
+            @media (hover: hover) {
+                &:hover {
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                }
+            }
 
             .card-text {
                 color: rgba(255, 255, 255, 0.5);
@@ -518,14 +586,20 @@
 
         &.feedback {
             &.opinions {
-                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-                background-color: lighten(#212529, 1%);
+                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+                background-color: lighten(#212529, 1.5%);
 
                 .card-body {
                     .description {
                         color: rgba(255, 255, 255, 0.5);
                     }
                 }
+
+                // @media (hover: hover) {
+                //     &:hover {
+                //         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                //     }
+                // }
             }
 
         }
