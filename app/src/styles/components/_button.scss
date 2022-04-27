@@ -34,6 +34,11 @@ a.button {
         background-color: lighten(#327766, 5%);
     }
 
+    &.category {
+        z-index: 2;
+        // position: relative;
+    }
+
     &.studio,
     &.outdoor {
         font-size: 1.15rem;
@@ -65,9 +70,30 @@ a.button {
     }
 
     &.contact {
-        font-size: 1.15rem;
-        padding: 13px 21px;
-        font-weight: 400;
+        &.phone,
+        &.mail {
+            // background-color: #fff;
+            // background-color: #ffffff;
+            // opacity: .75;
+            // border: 1px solid rgba(0, 0, 0, .1);
+            // color: #212529;
+            // font-size: 1.15rem;
+            // padding: 13px 21px;
+            // font-weight: 400;
+            // border-radius: 8px;
+            // background-color: #303134;
+            // color: rgba(255, 255, 255, 0.75);
+
+            color: #000;
+            background-color: rgba(0,0,0,.05);
+            border: 1px solid rgba(0,0,0,.1);
+        }
+
+        &.message {
+            font-size: 1.15rem;
+            padding: 13px 21px;
+            // font-weight: 400;
+        }
     }
 }
 
@@ -92,6 +118,13 @@ a.button {
                 }
             }
         }
-    }
 
+        &.contact {
+            &.phone,
+            &.mail {
+                background-color: #303134;
+                color: rgba(255, 255, 255, 0.75);
+            }
+        }
+    }
 }
