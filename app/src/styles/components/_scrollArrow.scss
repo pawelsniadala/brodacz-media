@@ -26,3 +26,11 @@
         }
     }
 }
+
+body.modal-open {
+    .scrollup {
+        button.btn {
+            display: none;
+        }
+    }
+}
