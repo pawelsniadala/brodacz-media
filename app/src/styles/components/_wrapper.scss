@@ -132,7 +132,7 @@ main {
     &.customer {
         display: grid;
         align-items: center;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         gap: 3rem;
 
         @media (max-width: 1199.98px) and (min-width: 992px) {
@@ -190,6 +190,11 @@ main {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
+
+        // .map {
+        //     grid-column-start: 1;
+        //     grid-column-end: 3;
+        // }
 
         @media (max-width: 991.98px) {
             grid-template-columns: 1fr;
