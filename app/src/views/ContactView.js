@@ -1,5 +1,12 @@
 import { useEffect, useRef  } from "react";
 import { contact } from "../data/contact";
+import phone from "./../assets/common/phone.svg";
+import email from "./../assets/common/email.svg";
+import facebook from "./../assets/common/facebook.svg";
+import instagram from "./../assets/common/instagram.svg";
+import youtube from "./../assets/common/youtube.svg";
+import vimeo from "./../assets/common/vimeo.svg";
+import tiktok from "./../assets/common/tiktok.svg";
 import * as bootstrap from "bootstrap";
 import emailjs from "@emailjs/browser";
 // import Iframe from "react-iframe";
@@ -35,34 +42,84 @@ const ContactView = () => {
             <div className="view-wrapper container">
                 <PageHeader header="Kontakt" />
                 <div className="card-wrapper contact">
-                    <div>
+                    <div className="">
                         {contact.length && contact.map(item => (
-                            <div key={item.id} className="card contact info">
+                            <div key={item.id} className="card contact description">
                                 <div className="card-body">
-
-                                    {/* <div className="profile">
+                                    <div className="profile">
                                         <img src={item.image} alt={item.title} />
-                                    </div> */}
+                                    </div>
                                     <div className="text-wrapper">
                                         <div className="description">
                                             {item.description}
                                         </div>
                                     </div>
-
-                                    {/* <div>Napisz do mnie lub zadzwoń. Odpowiem na wszystkie Twoje pytania. Telefon odbieram w dni robocze, a na wiadomości mailowe odpisuję maksymalnie w ciągu 24 godzin.</div> */}
-                                    {/* <a className="button contact phone" href="tel:+48797365584">797 365 854</a>
-                                    <a className="button contact mail" href="mailto:brodaczmedia@gmail.com">brodaczmedia@gmail.com</a> */}
                                 </div>
                             </div>
                         ))}
-
                         <div className="card contact details">
                             <div className="card-body">
-                                <a className="button contact phone" href="tel:+48797365584">797 365 854</a>
-                                <a className="button contact mail" href="mailto:brodaczmedia@gmail.com">brodaczmedia@gmail.com</a>
+                                <a className="button contact phone" href="tel:+48797365584">
+                                    <img src={phone} height="28" alt="phone" />
+                                    <span>797 365 854</span>
+                                </a>
+                                <a className="button contact email" href="mailto:brodaczmedia@gmail.com">
+                                    <img src={email} height="28" alt="email" />
+                                    <span>brodaczmedia@gmail.com</span>
+                                </a>
                             </div>
                         </div>
-
+                        <div className="card contact media">
+                            <div className="card-body">
+                                <div className="media-wrapper">
+                                    <div className="icon-wrapper">
+                                        <a href="https://www.facebook.com/brodaczmedia1/"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            className="facebook"
+                                        >
+                                            <img src={facebook} height="28" alt="facebook" />
+                                        </a>
+                                    </div>
+                                    <div className="icon-wrapper">
+                                        <a href="https://www.instagram.com/brodaczmedia/"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            className="instagram"
+                                        >
+                                            <img src={instagram} height="28" alt="instagram" />
+                                        </a>
+                                    </div>
+                                    <div className="icon-wrapper">
+                                        <a href="https://www.youtube.com/channel/UCNbuL274tzbrmcqFOtcGYaw"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            className="youtube"
+                                        >
+                                            <img src={youtube} height="28" alt="youtube" />
+                                        </a>
+                                    </div>
+                                    <div className="icon-wrapper">
+                                        <a href="https://www.tiktok.com/@brodaczmedia"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            className="tiktok"
+                                        >
+                                            <img src={tiktok} height="28" alt="tiktok" />
+                                        </a>
+                                    </div>
+                                    <div className="icon-wrapper">
+                                        <a href="https://vimeo.com/brodaczmedia"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            className="vimeo"
+                                        >
+                                            <img src={vimeo} height="28" alt="vimeo" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div className="card contact business">
                             <div className="card-body">
                                 <div>Brodacz Media Mariusz Śniadała</div>
@@ -73,27 +130,7 @@ const ContactView = () => {
                         </div>
 
                     </div>
-                    {/* <div className="card contact">
-                        <div className="card-header">
-                            Dane firmy
-                        </div>
-                        <div className="card-body business">
-                            <div><span className="title">Nazwa</span>: Brodacz Media Mariusz Śniadała</div>
-                            <div><span className="title">Adres</span>: Kornaciska 19, 07-210 Długosiodło</div>
-                            <div><span className="title">NIP</span>: 7622014234</div>
-                        </div>
-                        <div className="card-header">
-                            Dane kontaktowe
-                        </div>
-                        <div className="card-body business">
-                            <div><span className="title">Adres e-mail</span>: brodaczmedia@gmail.com</div>
-                            <div><span className="title">Numer telefonu</span>: 797 365 584</div>
-                        </div>
-                    </div> */}
                     <div className="card contact message">
-                        {/* <div className="card-header">
-                            Formularz kontaktowy
-                        </div> */}
                         <div className="card-body">
                             <form ref={form} onSubmit={sendEmail}>
                                 <div className="mb-3">
@@ -123,7 +160,7 @@ const ContactView = () => {
                             </form>
                         </div>
                     </div>
-                    {/* <div className="card contact">
+                    {/* <div className="card contact map">
                         <div className="card-body">
                             <Iframe
                                 id="1"

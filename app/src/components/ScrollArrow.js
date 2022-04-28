@@ -1,4 +1,6 @@
 import { useState } from "react";
+// import arrowUp from "./../assets/common/arrowUp.svg";
+
 
 const ScrollArrow = () => {
     const [showScroll, setShowScroll] = useState(false)
@@ -24,6 +26,7 @@ const ScrollArrow = () => {
         >
             <button className="btn btn-secondary">
                 <i className="fas fa-arrow-up" />
+                {/* <img src={arrowUp} alt="arrowUp" /> */}
             </button>
         </div>
     );

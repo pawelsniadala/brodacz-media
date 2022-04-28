@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "./../assets/navbar/logo.svg";
 import sun from "./../assets/navbar/sun.svg";
-import moon from "./../assets/navbar/moon.png";
+import moon from "./../assets/navbar/moon.svg";
 import cameraShutterClick from "./../assets/navbar/cameraShutterClick.wav";
 import cameraFocusBeep from "./../assets/navbar/cameraFocusBeep.wav";
 
@@ -67,9 +67,9 @@ const NavSection = () => {
                         }}
                     >
                         {darkTheme ? (
-                            <img src={sun} height="30" alt="sun" />
+                            <img src={sun} height="25" alt="sun" />
                         ) : (
-                            <img src={moon} height="30" alt="moon" />
+                            <img src={moon} height="25" alt="moon" />
                         )}
                     </div>
                     <div className="collapse navbar-collapse" id="navbarNav">
@@ -139,9 +139,9 @@ const NavSection = () => {
                         }}
                     >
                         {darkTheme ? (
-                            <img src={sun} height="30" alt="sun" />
+                            <img src={sun} height="25" alt="sun" />
                         ) : (
-                            <img src={moon} height="30" alt="moon" />
+                            <img src={moon} height="25" alt="moon" />
                         )}
                     </div>
                 </div>

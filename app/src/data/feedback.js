@@ -5,7 +5,6 @@ import recommendationProfilePhotoAlternative from '../assets/feedback/opinions/r
 import recommendationProfilePhoto1 from '../assets/feedback/opinions/recommendationProfilePhoto1.png';
 import recommendationProfilePhoto3 from '../assets/feedback/opinions/recommendationProfilePhoto3.png';
 
-
 export const feedback = {
     "information": [
         {

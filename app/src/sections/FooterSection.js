@@ -1,8 +1,8 @@
-import facebook from "./../assets/footer/facebook.svg";
-import instagram from "./../assets/footer/instagram.svg";
-import youtube from "./../assets/footer/youtube.svg";
-import vimeo from "./../assets/footer/vimeo.svg";
-import tiktok from "./../assets/footer/tiktok.svg";
+import facebook from "./../assets/common/facebook.svg";
+import instagram from "./../assets/common/instagram.svg";
+import youtube from "./../assets/common/youtube.svg";
+import vimeo from "./../assets/common/vimeo.svg";
+import tiktok from "./../assets/common/tiktok.svg";
 
 const FooterSection = () => (
     <footer>
