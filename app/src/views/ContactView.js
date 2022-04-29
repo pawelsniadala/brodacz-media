@@ -1,5 +1,6 @@
 import { useEffect, useRef  } from "react";
 import { contact } from "../data/contact";
+import ReactImageAppear from "react-image-appear";
 import phone from "./../assets/common/phone.svg";
 import email from "./../assets/common/email.svg";
 import facebook from "./../assets/common/facebook.svg";
@@ -47,7 +48,13 @@ const ContactView = () => {
                             <div key={item.id} className="card contact description">
                                 <div className="card-body">
                                     <div className="profile">
-                                        <img src={item.image} alt={item.title} />
+                                        <ReactImageAppear
+                                            className="card-img-top"
+                                            src={item.image}
+                                            alt={item.title}
+                                            placeholderStyle={{ backgroundColor: "transparent", display: "inline" }}
+                                            showLoader={false}
+                                        />
                                     </div>
                                     <div className="text-wrapper">
                                         <div className="description">
@@ -59,11 +66,11 @@ const ContactView = () => {
                         ))}
                         <div className="card contact details">
                             <div className="card-body">
-                                <a className="button contact phone" href="tel:+48797365584">
+                                <a className="button contact phone" href="tel:+48797365584" title="Zadzwoń">
                                     <img src={phone} height="28" alt="phone" />
                                     <span>797 365 854</span>
                                 </a>
-                                <a className="button contact email" href="mailto:brodaczmedia@gmail.com">
+                                <a className="button contact email" href="mailto:brodaczmedia@gmail.com" title="Napisz wiadomość">
                                     <img src={email} height="28" alt="email" />
                                     <span>brodaczmedia@gmail.com</span>
                                 </a>
@@ -72,7 +79,7 @@ const ContactView = () => {
                         <div className="card contact media">
                             <div className="card-body">
                                 <div className="media-wrapper">
-                                    <div className="icon-wrapper">
+                                    <div className="icon-wrapper" title="Facebook">
                                         <a href="https://www.facebook.com/brodaczmedia1/"
                                             target="_blank"
                                             rel="noreferrer"
@@ -81,7 +88,7 @@ const ContactView = () => {
                                             <img src={facebook} height="28" alt="facebook" />
                                         </a>
                                     </div>
-                                    <div className="icon-wrapper">
+                                    <div className="icon-wrapper" title="Instagram">
                                         <a href="https://www.instagram.com/brodaczmedia/"
                                             target="_blank"
                                             rel="noreferrer"
@@ -90,7 +97,7 @@ const ContactView = () => {
                                             <img src={instagram} height="28" alt="instagram" />
                                         </a>
                                     </div>
-                                    <div className="icon-wrapper">
+                                    <div className="icon-wrapper" title="YouTube">
                                         <a href="https://www.youtube.com/channel/UCNbuL274tzbrmcqFOtcGYaw"
                                             target="_blank"
                                             rel="noreferrer"
@@ -99,7 +106,7 @@ const ContactView = () => {
                                             <img src={youtube} height="28" alt="youtube" />
                                         </a>
                                     </div>
-                                    <div className="icon-wrapper">
+                                    <div className="icon-wrapper" title="TikTok">
                                         <a href="https://www.tiktok.com/@brodaczmedia"
                                             target="_blank"
                                             rel="noreferrer"
@@ -108,7 +115,7 @@ const ContactView = () => {
                                             <img src={tiktok} height="28" alt="tiktok" />
                                         </a>
                                     </div>
-                                    <div className="icon-wrapper">
+                                    <div className="icon-wrapper" title="Vimeo">
                                         <a href="https://vimeo.com/brodaczmedia"
                                             target="_blank"
                                             rel="noreferrer"
