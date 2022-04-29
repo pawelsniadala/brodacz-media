@@ -12,11 +12,11 @@ footer {
                 margin-bottom: 1rem;
             }
 
-            .contact {
-                .company-name {
-                    text-transform: uppercase;
-                }
-            }
+            // .contact {
+            //     .company-name {
+            //         text-transform: uppercase;
+            //     }
+            // }
 
             .video,
             .foto {
@@ -55,7 +55,7 @@ footer {
                     align-items: center;
                     gap: .8rem;
 
-                    img {
+                    svg {
                         filter: invert(0%) sepia(100%) saturate(7500%) hue-rotate(327deg) brightness(114%) contrast(114%);
                         opacity: 0.5;
                         user-select: none;
@@ -125,7 +125,7 @@ footer {
 
                 .media {
                     .media-wrapper {
-                        img {
+                        svg {
                             filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
                             opacity: .3;
 
