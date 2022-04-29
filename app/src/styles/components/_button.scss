@@ -31,6 +31,7 @@ a.button {
     border-radius: 980px;
     // border-radius: 8px;
     width: fit-content;
+    border: 1px solid rgba(0,0,0,0);
 
     &:hover {
         background-color: lighten(#327766, 5%);
@@ -79,21 +80,24 @@ a.button {
             gap: .75rem;
             font-size: 1rem;
             font-weight: 300;
-            // border-radius: 8px;
             border-radius: 980px;
             padding: .75rem;
             color: #000;
-            background-color: rgba(0,0,0,.05);
-            // border: 1px solid rgba(0,0,0,.1);
+            background-color: #ffffff;
+            border: 1px solid rgba(0,0,0,.1);
 
             img {
                 filter: invert(0%) sepia(100%) saturate(7500%) hue-rotate(327deg) brightness(114%) contrast(114%);
                 opacity: 0.5;
                 user-select: none;
+            }
 
-                &:hover {
+            &:hover {
+                background-color: rgba(0,0,0,.05);
+                cursor: pointer;
+
+                img {
                     opacity: 0.7;
-                    cursor: pointer;
                 }
             }
         }
@@ -111,6 +115,7 @@ a.button {
     a.button {
         background-color: #253d38;
         color: rgba(255, 255, 255, 0.75);
+        border: 1px solid rgba(255, 255, 255, 0.05);
 
         &:hover {
             background-color: lighten(#253d38, 5%);
@@ -119,10 +124,10 @@ a.button {
         &.feedback {
             &.modal {
                 &.close {
-                    background-color: #303134;
+                    background-color: rgba(255, 255, 255, 0.05);
 
                     &:hover {
-                        background-color: lighten(#303134, 5%);
+                        background-color: rgba(255, 255, 255, 0.1);
                     }
                 }
             }
@@ -131,19 +136,23 @@ a.button {
         &.contact {
             &.phone,
             &.email {
-                // background-color: #303134;
                 background-color: rgba(255, 255, 255, 0.05);
-                color: rgba(255, 255, 255, 0.75);
+                border: 1px solid rgba(255, 255, 255, 0.05);
+                color: rgba(255, 255, 255, 0.55);
 
                 img {
                     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
                     opacity: .5;
-                    // user-select: none;
+                }
 
-                    // &:hover {
-                    //     opacity: 0.7;
-                    //     cursor: pointer;
-                    // }
+                &:hover {
+                    color: rgba(255,255,255,.75);
+                    background-color: rgba(255, 255, 255, 0.1);
+                    cursor: pointer;
+
+                    img {
+                        opacity: 0.7;
+                    }
                 }
             }
         }
