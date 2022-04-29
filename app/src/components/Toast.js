@@ -1,6 +1,6 @@
 const Toast = () => (
     <div className="toast-container position-fixed top-0 end-0">
-        <div className="toast align-items-center text-white border-0"
+        <div className="toast align-items-center border-0"
             id="successToast"
             role="alert"
             aria-live="assertive"
