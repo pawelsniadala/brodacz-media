@@ -18,6 +18,7 @@ import VideoEventPartial from "./partials/video/VideoEventPartial";
 import VideoMusicVideoPartial from "./partials/video/VideoMusicVideoPartial";
 import VideoBroadcastPartial from "./partials/video/VideoBroadcastPartial";
 import VideoAdvertistingPartial from "./partials/video/VideoAdvertistingPartial";
+import VideoImmovablesPartial from "./partials/video/VideoImmovablesPartial";
 import VideoAnimationPartial from "./partials/video/VideoAnimationPartial";
 import PhotoAllPartial from "./partials/photo/PhotoAllPartial";
 import PhotoBrandingPartial from "./partials/photo/PhotoBrandingPartial";
@@ -43,6 +44,7 @@ const Root = () => (
                         <Route path="/video/music-video" element={<VideoMusicVideoPartial />} />
                         <Route path="/video/broadcasts" element={<VideoBroadcastPartial />} />
                         <Route path="/video/advertising" element={<VideoAdvertistingPartial />} />
+                        <Route path="/video/immovables" element={<VideoImmovablesPartial />} />
                         <Route path="/video/animations" element={<VideoAnimationPartial />} />
                     </Route>
                     <Route path="/photo" element={<PhotoView />}>

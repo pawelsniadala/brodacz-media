@@ -8,6 +8,7 @@ const VideoAllPartial = () => {
         ...video.realization.music,
         ...video.realization.broadcast,
         ...video.realization.debates,
+        ...video.realization.immovables,
         ...video.realization.animations
     ];
 

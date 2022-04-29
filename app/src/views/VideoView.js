@@ -8,6 +8,7 @@ import VideoEventPartial from "./partials/video/VideoEventPartial";
 import VideoMusicVideoPartial from "./partials/video/VideoMusicVideoPartial";
 import VideoBroadcastPartial from "./partials/video/VideoBroadcastPartial";
 import VideoAdvertistingPartial from "./partials/video/VideoAdvertistingPartial";
+import VideoImmovablesPartial from "./partials/video/VideoImmovablesPartial";
 import VideoAnimationPartial from "./partials/video/VideoAnimationPartial";
 
 const VideoView = () => {
@@ -43,6 +44,10 @@ const VideoView = () => {
                 case "/video/advertising":
                     return (
                         "video-advertising"
+                    );
+                case "/video/immovables":
+                    return (
+                        "video-immovables"
                     );
                 case "/video/animations":
                     return (
@@ -81,6 +86,10 @@ const VideoView = () => {
                 return (
                     <VideoAdvertistingPartial />
                 );
+            case "video-immovables":
+                return (
+                    <VideoImmovablesPartial />
+                );
             case "video-animations":
                 return (
                     <VideoAnimationPartial />
@@ -98,7 +107,7 @@ const VideoView = () => {
             <div className="view-wrapper container">
                 <PageHeader header={video.title} />
                 <div className="navpils">
-                    <ul className="nav nav-pills nav-justified">
+                    <ul className="nav nav-pills video">
                         <li className="nav-item">
                             <Link
                                 to="/video/all"
@@ -158,7 +167,17 @@ const VideoView = () => {
                             >
                                 Debaty i wypowiedzi
                             </Link>
-                            </li>
+                        </li>
+                        <li className="nav-item">
+                            <Link
+                                to="/video/immovables"
+                                className={`nav-link${videoTab === "video-immovables" ? " active" : ""}`}
+                                aria-current="page"
+                                onClick={() => setTab("video-immovables")}
+                            >
+                                Nieruchomości
+                            </Link>
+                        </li>
                         <li className="nav-item">
                             <Link
                                 to="/video/animations"

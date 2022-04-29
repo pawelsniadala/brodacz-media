@@ -1,9 +1,11 @@
 import videoCategoryWeddings from "../assets/video/category/videoCategoryWeddings.png";
 import videoCategoryEvents from "../assets/video/category/videoCategoryEvents.png";
+import videoCategoryMusicVideo from "../assets/video/category/videoCategoryMusicVideo.png";
 import videoCategoryBroadcasts from "../assets/video/category/videoCategoryBroadcasts.png";
 import videoCategoryDebate from "../assets/video/category/videoCategoryDebate.png";
+import videoCategoryImmovables from "../assets/video/category/videoCategoryImmovables.png";
 import videoCategoryAnimation from "../assets/video/category/videoCategoryAnimation.png";
-import videoCategoryMusicVideo from "../assets/video/category/videoCategoryMusicVideo.png";
+
 
 // ŚLUBY
 import videoWeddingThumbnail1 from "../assets/video/realization/weddings/videoWeddingThumbnail1.png";
@@ -39,6 +41,9 @@ import videoDebateThumbnail9 from "../assets/video/realization/debates/videoDeba
 import videoDebateThumbnail10 from "../assets/video/realization/debates/videoDebateThumbnail10.png";
 import videoDebateThumbnail11 from "../assets/video/realization/debates/videoDebateThumbnail11.png";
 import videoDebateThumbnail12 from "../assets/video/realization/debates/videoDebateThumbnail12.png";
+
+// NIERUCHOMOSCI
+import videoImmovablesThumbnail1 from "../assets/video/realization/immovables/videoImmovablesThumbnail1.png";
 
 // ANIMACJE
 import videoAnimationThumbnail1 from "../assets/video/realization/animations/videoAnimationThumbnail1.png";
@@ -92,6 +97,15 @@ export const video = {
             image: videoCategoryDebate,
             path: "/video/advertising",
             tab: "video-advertising"
+        },
+        {
+            id: "32cbb538-c587-4946-8ddf-e7753d4f2966",
+            label: "filmy",
+            title: "Nieruchomości",
+            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
+            image: videoCategoryImmovables,
+            path: "/video/immovables",
+            tab: "video-immovables"
         },
         {
             id: "7993088f-594b-4e2a-851a-d4f0e124eb19",
@@ -389,6 +403,19 @@ export const video = {
                     urlPage: "https://www.youtube.com/watch?v=BLTErhvN7sE"
                 }
             },
+        ],
+        "immovables": [
+            {
+                id: "3cf380ad-8862-4c82-a3d3-2f3952e6fdc1",
+                date: "20 kwi 2022",
+                title: "2-pokojowe mieszkanie po remoncie na sprzedaż!",
+                company: "FindSQUARE",
+                video: {
+                    time: "2:09",
+                    src: videoImmovablesThumbnail1,
+                    urlPage: "https://www.youtube.com/watch?v=BIGVs3PK6Ww"
+                }
+            }
         ],
         "animations": [
             {
