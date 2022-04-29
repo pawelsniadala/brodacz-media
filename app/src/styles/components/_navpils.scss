@@ -1,7 +1,53 @@
 .nav.nav-pills {
-    gap: .5rem;
+    display: grid;
+    gap: 1rem;
+
+    &.video {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+        @media (max-width: 1199.98px) and (min-width: 992px) {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        @media (max-width: 991.98px) and (min-width: 768px) {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        }
+
+        @media (max-width: 767.98px) and (min-width: 540px) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        @media (max-width: 539.98px) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    &.photo {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+        @media (max-width: 1199.98px) and (min-width: 992px) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        @media (max-width: 991.98px) and (min-width: 768px) {
+            grid-template-columns: 1fr 1fr 1fr;
+
+        }
+
+        @media (max-width: 767.98px) and (min-width: 540px) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        @media (max-width: 539.98px) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
 
     .nav-item {
+        justify-self: stretch;
+        text-align: center;
+
         @media (max-width: 767.98px) {
             width: 100%;
         }
@@ -11,10 +57,10 @@
             color: #6a6c6f;
             transition: none;
             border-radius: 980px;
-            // background-color: rgba(0,0,0,.05);
-            // border: 1px solid rgba(0,0,0,.1);
+            background-color: rgba(0,0,0,.05);
+            border: 1px solid rgba(0,0,0,.1);
             color: #202124;
-            // font-size: .8rem;
+            white-space: nowrap;
 
             &.active {
                 color: #FFF;
@@ -24,7 +70,7 @@
             @media (hover: hover) {
                 &:hover:not(.active) {
                     color: #000;
-                    background-color: rgba(0,0,0,.05);
+                    background-color: rgba(0,0,0,.1);
                     transition: background-color 0.5s cubic-bezier(0.05,0,0,1);
                 }
             }
@@ -41,20 +87,19 @@
     .nav.nav-pills {
         .nav-item {
             .nav-link {
-                background-color: #212529;
+                background-color: rgba(255, 255, 255, 0.05);
+                border: 1px solid rgba(255, 255, 255, 0.05);
                 color: rgba(255, 255, 255, 0.55);
 
                 &.active {
-                    // background-color: #303134;
-                    background-color: rgba(255, 255, 255, 0.05);
-                    color: rgba(255,255,255,.75);
-                    // background-color: rgba(255, 255, 255, 0.05);
+                    background-color: rgba(255, 255, 255, 0.95);
+                    color: #212529;
                 }
 
                 @media (hover: hover) {
                     &:hover:not(.active) {
                         color: rgba(255,255,255,.75);
-                        background-color: rgba(255, 255, 255, 0.05);
+                        background-color: rgba(255, 255, 255, 0.1);
                     }
                 }
             }

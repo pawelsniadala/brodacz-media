@@ -80,7 +80,7 @@ const PhotoView = () => {
             <div className="view-wrapper container">
                 <PageHeader header={photo.title} />
                 <div className="navpils">
-                    <ul className="nav nav-pills nav-justified">
+                    <ul className="nav nav-pills photo">
                         <li className="nav-item">
                             <Link
                                 to="/photo/all"
