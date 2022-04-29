@@ -1,108 +1,100 @@
-import facebook from "./../assets/common/facebook.svg";
-import instagram from "./../assets/common/instagram.svg";
-import youtube from "./../assets/common/youtube.svg";
-import vimeo from "./../assets/common/vimeo.svg";
-import tiktok from "./../assets/common/tiktok.svg";
+import { footer } from "../data/footer";
+import FacebookSvg from "../assets/common/FacebookSvg";
+import InstagramSvg from "../assets/common/InstagramSvg";
+import YouTubeSvg from "../assets/common/YouTubeSvg";
+import TikTokSvg from "../assets/common/TikTokSvg";
+import VimeoSvg from "../assets/common/VimeoSvg";
 
-const FooterSection = () => (
-    <footer>
-        <div className="container">
-            <div className="section-wrapper footer">
-                <div className="contact">
-                    <h5 className="footer-subheader">Kontakt</h5>
-                    <div className="company-name">Brodacz media</div>
-                    <div className="first-name-last-name">Mariusz Śniadała</div>
-                    <div className="email-address">brodaczmedia@gmail.com</div>
-                    <div className="phone-number">797 365 584</div>
-                </div>
-                <div className="video">
-                    <h5 className="footer-subheader">Video</h5>
-                    <ul className="list-group-flush">
-                        <li className="list-group-item">
-                            <a href="/video/weddings">Śluby</a>
-                        </li>
-                        <li className="list-group-item">
-                            <a href="/video/events">Eventy</a>
-                        </li>
-                        <li className="list-group-item">
-                            <a href="/video/music-video">Teledyski</a>
-                        </li>
-                        <li className="list-group-item">
-                            <a href="/video/broadcasts">Transmisje</a>
-                        </li>
-                        <li className="list-group-item">
-                            <a href="/video/advertising">Debaty i wypowiedzi</a>
-                        </li>
-                        <li className="list-group-item">
-                            <a href="/video/animations">Animacje</a>
-                        </li>
-                    </ul>
-                </div>
-                <div className="foto">
-                    <h5 className="footer-subheader">Foto</h5>
-                    <ul className="list-group-flush">
-                        <li className="list-group-item">
-                            <a href="/photo/branding">Wizerunkowe</a>
-                        </li>
-                        <li className="list-group-item">
-                            <a href="/photo/studio">Studyjne</a>
-                        </li>
-                        <li className="list-group-item">
-                            <a href="/photo/product">Produktowe</a>
-                        </li>
-                        <li className="list-group-item">
-                            <a href="/photo/outdoor">Plenerowe</a>
-                        </li>
-                    </ul>
-                </div>
-                <div className="media">
-                    <h5 className="footer-subheader">Media</h5>
-                    <div className="media-wrapper">
-                        <a href="https://www.facebook.com/brodaczmedia1/"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="facebook"
-                        >
-                            <img src={facebook} height="28" alt="facebook" />
-                        </a>
-                        <a href="https://www.instagram.com/brodaczmedia/"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="instagram"
-                        >
-                            <img src={instagram} height="28" alt="instagram" />
-                        </a>
-                        <a href="https://www.youtube.com/channel/UCNbuL274tzbrmcqFOtcGYaw"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="youtube"
-                        >
-                            <img src={youtube} height="28" alt="youtube" />
-                        </a>
-                        <a href="https://www.tiktok.com/@brodaczmedia"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="tiktok"
-                        >
-                            <img src={tiktok} height="28" alt="tiktok" />
-                        </a>
-                        <a href="https://vimeo.com/brodaczmedia"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="vimeo"
-                        >
-                            <img src={vimeo} height="28" alt="vimeo" />
-                        </a>
+const FooterSection = () => {
+    const renderMediaIcon = (label) => {
+        switch(label) {
+            case "facebook":
+                return (
+                    <FacebookSvg />
+                );
+            case "instagram":
+                return (
+                    <InstagramSvg />
+                );
+            case "youtube":
+                return (
+                    <YouTubeSvg />
+                );
+            case "tiktok":
+                return (
+                    <TikTokSvg />
+                );
+            case "vimeo":
+                return (
+                    <VimeoSvg />
+                );
+            default:
+        }
+    }
+
+    return (
+        <footer>
+            <div className="container">
+                <div className="section-wrapper footer">
+                    <div className="contact">
+                        <h5 className="footer-subheader">Kontakt</h5>
+                        <div>Brodacz Media</div>
+                        <div>Mariusz Śniadała</div>
+                        <div>brodaczmedia@gmail.com</div>
+                        <div>797 365 584</div>
+                    </div>
+                    <div className="video">
+                        <h5 className="footer-subheader">Video</h5>
+                        <ul className="list-group-flush">
+                            {footer.video.length && footer.video.map(item => (
+                                <li key={item.id}
+                                    className="list-group-item"
+                                >
+                                    <a href={item.href}>
+                                        {item.name}
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                    <div className="foto">
+                        <h5 className="footer-subheader">Foto</h5>
+                        <ul className="list-group-flush">
+                            {footer.photo.length && footer.photo.map(item => (
+                                <li key={item.id}
+                                    className="list-group-item"
+                                >
+                                    <a href={item.href}>
+                                        {item.name}
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                    <div className="media">
+                        <h5 className="footer-subheader">Media</h5>
+                        <div className="media-wrapper">
+                            {footer.media.length && footer.media.map(item => (
+                                <a key={item.id} href={item.href}
+                                    className={item.label}
+                                    title={item.title}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    {renderMediaIcon(item.label)}
+                                </a>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div className="section-wrapper info">
-            <div className="copyright">
-                Copyright © 2022 <span className="company-name">Brodacz media</span>. Wszelkie Prawa Zastrzeżone.
+            <div className="section-wrapper info">
+                <div className="copyright">
+                    Copyright © 2022 <span className="company-name">Brodacz media</span>. Wszelkie Prawa Zastrzeżone.
+                </div>
             </div>
-        </div>
-    </footer>
-);
+        </footer>
+    );
+}
 
 export default FooterSection;
