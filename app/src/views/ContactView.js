@@ -1,17 +1,17 @@
+import * as bootstrap from "bootstrap";
 import { useEffect, useRef  } from "react";
 import { contact } from "../data/contact";
 import ReactImageAppear from "react-image-appear";
-import phone from "./../assets/common/phone.svg";
-import email from "./../assets/common/email.svg";
-import facebook from "./../assets/common/facebook.svg";
-import instagram from "./../assets/common/instagram.svg";
-import youtube from "./../assets/common/youtube.svg";
-import vimeo from "./../assets/common/vimeo.svg";
-import tiktok from "./../assets/common/tiktok.svg";
-import * as bootstrap from "bootstrap";
+import PhoneSvg from "../assets/common/PhoneSvg";
+import EmailSvg from "../assets/common/EmailSvg";
+import FacebookSvg from "../assets/common/FacebookSvg";
+import InstagramSvg from "../assets/common/InstagramSvg";
+import YouTubeSvg from "../assets/common/YouTubeSvg";
+import TikTokSvg from "../assets/common/TikTokSvg";
+import VimeoSvg from "../assets/common/VimeoSvg";
 import emailjs from "@emailjs/browser";
-// import Iframe from "react-iframe";
 import PageHeader from "../components/PageHeader";
+// import Iframe from "react-iframe";
 
 const ContactView = () => {
     useEffect(() => {
@@ -38,14 +38,56 @@ const ContactView = () => {
         new bootstrap.Toast(document.getElementById("successToast")).show();
     }
 
+    const renderDetailsIcon = (label) => {
+        switch(label) {
+            case "phone":
+                return (
+                    <PhoneSvg />
+                );
+            case "email":
+                return (
+                    <EmailSvg />
+                );
+            default:
+        }
+    }
+
+    const renderMediaIcon = (label) => {
+        switch(label) {
+            case "facebook":
+                return (
+                    <FacebookSvg />
+                );
+            case "instagram":
+                return (
+                    <InstagramSvg />
+                );
+            case "youtube":
+                return (
+                    <YouTubeSvg />
+                );
+            case "tiktok":
+                return (
+                    <TikTokSvg />
+                );
+            case "vimeo":
+                return (
+                    <VimeoSvg />
+                );
+            default:
+        }
+    }
+
     return (
         <div className="contact-view">
             <div className="view-wrapper container">
                 <PageHeader header="Kontakt" />
                 <div className="card-wrapper contact">
                     <div className="">
-                        {contact.length && contact.map(item => (
-                            <div key={item.id} className="card contact description">
+                        {contact.information.length && contact.information.map(item => (
+                            <div key={item.id}
+                                className="card contact information"
+                            >
                                 <div className="card-body">
                                     <div className="profile">
                                         <ReactImageAppear
@@ -66,64 +108,35 @@ const ContactView = () => {
                         ))}
                         <div className="card contact details">
                             <div className="card-body">
-                                <a className="button contact phone" href="tel:+48797365584" title="Zadzwoń">
-                                    <img src={phone} height="28" alt="phone" />
-                                    <span>797 365 854</span>
-                                </a>
-                                <a className="button contact email" href="mailto:brodaczmedia@gmail.com" title="Napisz wiadomość">
-                                    <img src={email} height="28" alt="email" />
-                                    <span>brodaczmedia@gmail.com</span>
-                                </a>
+                                {contact.details.length && contact.details.map(item => (
+                                    <a key={item.id}
+                                        className={`button contact ${item.label}`}
+                                        href={item.href}
+                                        title={item.title}
+                                    >
+                                        {renderDetailsIcon(item.label)}
+                                        <span>{item.content}</span>
+                                    </a>
+                                ))}
                             </div>
                         </div>
                         <div className="card contact media">
                             <div className="card-body">
                                 <div className="media-wrapper">
-                                    <div className="icon-wrapper" title="Facebook">
-                                        <a href="https://www.facebook.com/brodaczmedia1/"
-                                            target="_blank"
-                                            rel="noreferrer"
-                                            className="facebook"
+                                    {contact.media.length && contact.media.map(item => (
+                                        <div key={item.id}
+                                            className="icon-wrapper"
+                                            title={item.title}
                                         >
-                                            <img src={facebook} height="28" alt="facebook" />
-                                        </a>
-                                    </div>
-                                    <div className="icon-wrapper" title="Instagram">
-                                        <a href="https://www.instagram.com/brodaczmedia/"
-                                            target="_blank"
-                                            rel="noreferrer"
-                                            className="instagram"
-                                        >
-                                            <img src={instagram} height="28" alt="instagram" />
-                                        </a>
-                                    </div>
-                                    <div className="icon-wrapper" title="YouTube">
-                                        <a href="https://www.youtube.com/channel/UCNbuL274tzbrmcqFOtcGYaw"
-                                            target="_blank"
-                                            rel="noreferrer"
-                                            className="youtube"
-                                        >
-                                            <img src={youtube} height="28" alt="youtube" />
-                                        </a>
-                                    </div>
-                                    <div className="icon-wrapper" title="TikTok">
-                                        <a href="https://www.tiktok.com/@brodaczmedia"
-                                            target="_blank"
-                                            rel="noreferrer"
-                                            className="tiktok"
-                                        >
-                                            <img src={tiktok} height="28" alt="tiktok" />
-                                        </a>
-                                    </div>
-                                    <div className="icon-wrapper" title="Vimeo">
-                                        <a href="https://vimeo.com/brodaczmedia"
-                                            target="_blank"
-                                            rel="noreferrer"
-                                            className="vimeo"
-                                        >
-                                            <img src={vimeo} height="28" alt="vimeo" />
-                                        </a>
-                                    </div>
+                                            <a href={item.href}
+                                                target="_blank"
+                                                rel="noreferrer"
+                                                className={item.label}
+                                            >
+                                                {renderMediaIcon(item.label)}
+                                            </a>
+                                        </div>
+                                    ))}
                                 </div>
                             </div>
                         </div>
@@ -131,11 +144,10 @@ const ContactView = () => {
                             <div className="card-body">
                                 <div>Brodacz Media Mariusz Śniadała</div>
                                 <div>Kornaciska 19, 07-210 Długosiodło</div>
-                                <div><span className="title">NIP</span>: 7622014234</div>
-                                <div><span className="title">REGON</span>: 7622014234</div>
+                                <div>NIP: 7622014234</div>
+                                <div>REGON: 521119841</div>
                             </div>
                         </div>
-
                     </div>
                     <div className="card contact message">
                         <div className="card-body">
