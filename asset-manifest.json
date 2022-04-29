@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/brodacz-media/static/css/main.a27302dd.css",
-    "main.js": "/brodacz-media/static/js/main.c44d8770.js",
+    "main.css": "/brodacz-media/static/css/main.b87df9f1.css",
+    "main.js": "/brodacz-media/static/js/main.f61fa0f1.js",
     "static/js/787.b95d21ec.chunk.js": "/brodacz-media/static/js/787.b95d21ec.chunk.js",
     "static/media/preludeVideo.mp4": "/brodacz-media/static/media/preludeVideo.b3b34d5f40e28bebe57f.mp4",
     "static/media/outdoor.jpg": "/brodacz-media/static/media/outdoor.30eae538f6678f9259ae.jpg",
@@ -183,24 +183,17 @@
     "static/media/fa-regular-400.woff2": "/brodacz-media/static/media/fa-regular-400.7a3337626410ca2f4071.woff2",
     "static/media/logo.svg": "/brodacz-media/static/media/logo.1bcd3a5f5994911f69298ac07eac4905.svg",
     "static/media/default-skin.svg": "/brodacz-media/static/media/default-skin.f64c3af3d0d25b9e4e00.svg",
-    "static/media/tiktok.svg": "/brodacz-media/static/media/tiktok.a2dbd80ccf7b34cd372ac4d2847a532a.svg",
     "static/media/sun.svg": "/brodacz-media/static/media/sun.9a0ffd606b59dff04e881c635e4617ab.svg",
-    "static/media/phone.svg": "/brodacz-media/static/media/phone.ddb93c0f5d8b08e4756ea22e2cfa409c.svg",
-    "static/media/instagram.svg": "/brodacz-media/static/media/instagram.19bb13780bc73b5f282fcd7eed751494.svg",
-    "static/media/vimeo.svg": "/brodacz-media/static/media/vimeo.e9335cbbdfb050ee3a7e03e6a78d26c6.svg",
     "static/media/moon.svg": "/brodacz-media/static/media/moon.59f5c05d834263e428f0441458651e63.svg",
     "index.html": "/brodacz-media/index.html",
-    "static/media/youtube.svg": "/brodacz-media/static/media/youtube.dbdd2dadf10d93e8f49b61b1b2a72fb1.svg",
-    "static/media/email.svg": "/brodacz-media/static/media/email.66a96e55f40bd110c5b1341f8e398c62.svg",
-    "static/media/facebook.svg": "/brodacz-media/static/media/facebook.62f98e74603196881a1f6a63e2c13aa6.svg",
     "static/media/close.svg": "/brodacz-media/static/media/close.524bf3a5e9756e7ccb00.svg",
     "static/media/togller.svg": "/brodacz-media/static/media/togller.83cd3513c598c97a9a68.svg",
-    "main.a27302dd.css.map": "/brodacz-media/static/css/main.a27302dd.css.map",
-    "main.c44d8770.js.map": "/brodacz-media/static/js/main.c44d8770.js.map",
+    "main.b87df9f1.css.map": "/brodacz-media/static/css/main.b87df9f1.css.map",
+    "main.f61fa0f1.js.map": "/brodacz-media/static/js/main.f61fa0f1.js.map",
     "787.b95d21ec.chunk.js.map": "/brodacz-media/static/js/787.b95d21ec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a27302dd.css",
-    "static/js/main.c44d8770.js"
+    "static/css/main.b87df9f1.css",
+    "static/js/main.f61fa0f1.js"
   ]
 }
