@@ -30,7 +30,7 @@ const Jumbotron = ({
 
     return (
         <div className="jumbotron">
-            {width >= 767.98 ? (
+            {width >= 991.98 ? (
                 <div className="video-wrapper">
                     <video
                         className="video"
