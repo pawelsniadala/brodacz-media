@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
 import Iframe from "react-iframe";
 import ReactImageAppear from "react-image-appear";
+import SearchZoomSvg from "../assets/common/SearchZoomSvg";
 
 const CardRealization = ({
     cardTitle,
@@ -24,7 +24,7 @@ const CardRealization = ({
 }) => (
     <div className={`card realization ${cardPhoto ? "photo" : "video"}`}>
         {cardPhoto && (
-            <div ref={layoutRef}>
+            <div className="img-box" ref={layoutRef}>
                 <ReactImageAppear
                     src={cardPhotoSrc}
                     onClick={onClick}
@@ -33,6 +33,9 @@ const CardRealization = ({
                     placeholderStyle={{ backgroundColor: "transparent", display: "inline" }}
                     showLoader={false}
                 />
+                <span onClick={onClick}>
+                    <SearchZoomSvg />
+                </span>
             </div>
         )}
         {cardVideo && (
@@ -74,11 +77,6 @@ const CardRealization = ({
                             {cardThumbnaiVideoDate}
                         </span>
                     </small>
-                    {/* <Link
-                        className="stretched-link"
-                        to={cardThumbnaiVideoPath ? cardThumbnaiVideoPath : "#"}
-                    >
-                    </Link> */}
                     <a className="stretched-link"
                         href={cardThumbnaiVideoPath ? cardThumbnaiVideoPath : "#"}
                         target="_blank"
