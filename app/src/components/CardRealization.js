@@ -1,6 +1,7 @@
 import Iframe from "react-iframe";
 import ReactImageAppear from "react-image-appear";
 import SearchZoomSvg from "../assets/common/SearchZoomSvg";
+import PlayVideoSvg from "../assets/common/PlayVideoSvg";
 
 const CardRealization = ({
     cardTitle,
@@ -53,7 +54,11 @@ const CardRealization = ({
         )}
         {cardThumbnaiVideo && (
             <div className="thumbnail">
-                <div className="img-box">
+                <a className="img-box"
+                    href={cardThumbnaiVideoPath ? cardThumbnaiVideoPath : "#"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     <ReactImageAppear
                         className="card-img-top"
                         src={cardThumbnaiVideoSrc}
@@ -64,11 +69,19 @@ const CardRealization = ({
                     {/* <span className="card-video-time badge bg-dark">
                         {cardThumbnaiVideoTime}
                     </span> */}
-                </div>
+                    <span>
+                        <PlayVideoSvg />
+                    </span>
+                </a>
                 <div className="card-body">
-                    <h6 className="card-title" title={cardThumbnaiVideoTitle}>
+                    <a className="card-title"
+                        title={cardThumbnaiVideoTitle}
+                        href={cardThumbnaiVideoPath ? cardThumbnaiVideoPath : "#"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         {cardThumbnaiVideoTitle}
-                    </h6>
+                    </a>
                     <small className="card-meta text-muted">
                         <span className="company">
                             {cardThumbnaiVideoCompany}
@@ -77,11 +90,11 @@ const CardRealization = ({
                             {cardThumbnaiVideoDate}
                         </span>
                     </small>
-                    <a className="stretched-link"
+                    {/* <a className="stretched-link"
                         href={cardThumbnaiVideoPath ? cardThumbnaiVideoPath : "#"}
                         target="_blank"
                         rel="noopener noreferrer">
-                    </a>
+                    </a> */}
                 </div>
             </div>
         )}
