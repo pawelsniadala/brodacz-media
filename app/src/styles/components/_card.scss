@@ -189,6 +189,8 @@
         border: none;
         margin-left: .5rem;
         margin-right: .5rem;
+        border-radius: 8px;
+
 
         .image-wrapper {
             width: 310px;
@@ -339,7 +341,7 @@
                     letter-spacing: 0.01071em;
                     color: black;
                     display: -webkit-box;
-                    -webkit-line-clamp: 6;
+                    -webkit-line-clamp: 4;
                     -webkit-box-orient: vertical;
                     overflow: hidden;
                     text-overflow: ellipsis;
@@ -651,7 +653,7 @@
 
 .dark-theme {
     .card {
-        background-color: #212529;
+        background-color: transparent;
 
         &.introduction {
             .card-body {
