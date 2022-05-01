@@ -45,15 +45,15 @@ export const feedback = {
                 profile: recommendationProfilePhoto3
             }
         },
-        {
-            id: "a6817228-3c44-4a8c-9013-018f6816fcff",
-            name: 'Mateusz Morawiecki',
-            position: 'Prezes Rady Ministrów',
-            description: '"Proin at odio volutpat, finibus neque quis, venenatis ex. Duis semper ultricies condimentum. Sed volutpat pulvinar quam, quis vehicula turpis ornare at. Etiam placerat tincidunt turpis ut tristique. Sed mi lacus, accumsan gravida magna eget, sagittis volutpat ipsum. Maecenas a iaculis lacus, nec consequat urna. Donec lacinia sit amet libero vel maximus."',
-            rating: 5,
-            image: {
-                profile: recommendationProfilePhotoAlternative
-            }
-        },
+        // {
+        //     id: "a6817228-3c44-4a8c-9013-018f6816fcff",
+        //     name: 'Mateusz Morawiecki',
+        //     position: 'Prezes Rady Ministrów',
+        //     description: '"Proin at odio volutpat, finibus neque quis, venenatis ex. Duis semper ultricies condimentum. Sed volutpat pulvinar quam, quis vehicula turpis ornare at. Etiam placerat tincidunt turpis ut tristique. Sed mi lacus, accumsan gravida magna eget, sagittis volutpat ipsum. Maecenas a iaculis lacus, nec consequat urna. Donec lacinia sit amet libero vel maximus."',
+        //     rating: 5,
+        //     image: {
+        //         profile: recommendationProfilePhotoAlternative
+        //     }
+        // },
     ]
 };
