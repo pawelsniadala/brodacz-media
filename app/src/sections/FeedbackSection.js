@@ -52,10 +52,10 @@ const FeedbackSection = () => (
                                     <div className="name">
                                         {item.name}
                                     </div>
-                                    <div className="position">
+                                    <div className="position" title={item.position}>
                                         {item.position}
                                     </div>
-                                    <div className="description">
+                                    <div className="description" title={item.description}>
                                         {item.description}
                                     </div>
                                     <ReactStars
