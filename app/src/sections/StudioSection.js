@@ -9,13 +9,22 @@ const StudioSection = () => (
                     Zobacz siebie<br/>
                     w innym świetle
                 </div>
-                <Link
-                    to="/contact"
-                    className="button studio"
-                    aria-current="page"
-                >
-                    Zapisz się na sesję
-                </Link>
+                <div className="button-wrapper">
+                    <Link
+                        to="/contact"
+                        className="button studio"
+                        aria-current="page"
+                    >
+                        Zapisz się na sesję
+                    </Link>
+                    <Link
+                        to="/photo/studio"
+                        className="button studio photo"
+                        aria-current="page"
+                    >
+                        Zobacz zdjęcia
+                    </Link>
+                </div>
             </div>
         </Parallax>
     </section>
