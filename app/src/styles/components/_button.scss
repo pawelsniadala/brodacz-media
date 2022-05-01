@@ -38,6 +38,29 @@ a.button {
         transition: background-color .5s cubic-bezier(0.05,0,0,1);
     }
 
+    &.section {
+        // background-color: rgba(255, 255, 255, 0.05);
+
+        // background-color: rgba(0,0,0,.05);
+        background-color: transparent;
+        border: 1px solid rgba(0,0,0,.15);
+        // color: #202124;
+        color: #212529;
+        svg {
+            margin-left: 4px;
+            margin-bottom: 2px;
+            filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+            opacity: .75;
+        }
+
+        &:hover {
+            // color: #000;
+            // background-color: rgba(0,0,0,.1);
+            background-color: rgba(0,0,0,.05);
+            transition: background-color 0.5s cubic-bezier(0.05,0,0,1);
+        }
+    }
+
     &.category {
         z-index: 2;
         // position: relative;
@@ -50,6 +73,12 @@ a.button {
         padding: 13px 21px;
         background-color: rgba(255, 255, 255, 0.95) !important;
         color: #212529 !important;
+
+        &.photo {
+            background-color: transparent !important;
+            color: rgba(255, 255, 255, 0.95) !important;
+            border: 1px solid rgba(255, 255, 255, 0.95);
+        }
     }
 
     &.feedback {
@@ -120,6 +149,23 @@ a.button {
 
         &:hover {
             background-color: lighten(#253d38, 5%);
+        }
+
+        &.section {
+            background-color: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+
+            svg {
+                margin-left: 4px;
+                margin-bottom: 2px;
+                filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+                opacity: .75;
+            }
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.05);
+                color: rgba(255,255,255,.75);
+            }
         }
 
         &.feedback {
