@@ -297,7 +297,10 @@
             border: none;
 
             .card-body {
-                text-align: center;
+                // text-align: center;
+                // display: grid;
+                display: flex;
+                flex-direction: column;
 
                 .profile img {
                     position: relative;
@@ -320,16 +323,23 @@
                     font-weight: 400;
                     font-size: 1rem;
                     margin-bottom: .8rem;
+
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+
                 }
 
                 .description {
                     font-weight: 300;
                     font-size: 1rem;
-                    line-height: 1.43;
+                    // line-height: 1.43;
+                    line-height: 1.5;
                     letter-spacing: 0.01071em;
                     color: black;
                     display: -webkit-box;
-                    -webkit-line-clamp: 7;
+                    -webkit-line-clamp: 6;
                     -webkit-box-orient: vertical;
                     overflow: hidden;
                     text-overflow: ellipsis;
@@ -340,6 +350,7 @@
                     display: flex;
                     justify-content: center;
                     margin-bottom: .4rem;
+                    // align-self: end;
                 }
             }
 
@@ -417,8 +428,11 @@
                 position: relative;
 
                 .card-img-top {
-                    position: relative;
                     transition: filter .3s;
+                    border-top-left-radius: calc(8px - 1px);
+                    border-top-right-radius: calc(8px - 1px);
+                    border-bottom-left-radius: calc(8px - 1px);
+                    border-bottom-right-radius: calc(8px - 1px);
                 }
 
                 svg {
@@ -435,7 +449,7 @@
                 @media (hover: hover) {
                     &:hover {
                         .card-img-top {
-                            filter: brightness(.9);
+                            filter: brightness(.8);
                         }
 
                         svg {
@@ -454,7 +468,31 @@
                     position: relative;
 
                     .card-img-top {
+                        transition: filter .3s;
                         border-radius: calc(8px - 1px);
+                    }
+
+                    svg {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%) scale(0);
+                        transition: transform .3s, -webkit-transform .3s;
+                        cursor: pointer;
+                        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+                        opacity: .7;
+                    }
+
+                    @media (hover: hover) {
+                        &:hover {
+                            .card-img-top {
+                                filter: brightness(.8);
+                            }
+
+                            svg {
+                                transform: translate(-50%, -50%) scale(1);
+                            }
+                        }
                     }
 
                     .card-video-time {
@@ -465,17 +503,22 @@
                 }
 
                 .card-body {
-                    padding: .7rem .7rem .7rem 0;
+                    padding: 0;
                     animation: 1000ms ease-in-out 0s 1 normal none running fadeIn;
 
                     .card-title {
+                        line-height: 1.2;
                         font-weight: 500;
+                        color: #212529;
                         display: -webkit-box;
                         -webkit-line-clamp: 2;
                         -webkit-box-orient: vertical;
                         overflow: hidden;
                         text-overflow: ellipsis;
-                        margin-bottom: 0.2rem
+                        margin-bottom: 0;
+                        cursor: pointer;
+                        text-decoration: none;
+                        padding: .7rem 0 .2rem 0;
                     }
 
                     .card-meta {
@@ -668,12 +711,17 @@
             }
         }
 
-
-
-
-
-
-
+        &.realization {
+            &.video {
+                .thumbnail {
+                    .card-body {
+                        .card-title {
+                            color: rgba(255, 255, 255, 0.75);
+                        }
+                    }
+                }
+            }
+        }
 
         &.contact {
             box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
