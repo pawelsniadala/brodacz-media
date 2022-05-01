@@ -3,43 +3,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@200;500&family=Roboto:wght@500&display=swap');
 
 .section-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 1.5rem;
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+    // margin-bottom: 1.5rem;
 
-    .header {
-        font-size: 2.5rem;
-        font-weight: 500;
-        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-        line-height: 1;
-    }
-
-    .all-wrapper {
+    .text-wrapper {
         display: flex;
-        align-items: end;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-bottom: 1rem;
 
-        .all {
-            font-size: 19px;
-            font-weight: 400;
-            text-decoration: none;
-            // color: #212529;
-            color: #1068bf;
-            // color: #D6F9E8;
-            line-height: 1;
+        .header {
+            font-size: 2.5rem;
+            font-weight: 500;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            line-height: 0;
+            margin-bottom: 1rem;
+
+
+
+            /* Keyword value */
+// line-height: normal;
+
+/* Unitless values: use this number multiplied
+by the element's font size */
+// line-height: 3.5;
+
+/* <length> values */
+// line-height: 3em;
+
+/* <percentage> values */
+// line-height: 34%;
+
+/* Global values */
+// line-height: inherit;
+// line-height: initial;
+// line-height: unset;
+
+        }
+    
+        .all-wrapper {
+            display: flex;
+            align-items: end;
+    
+            .all {
+                font-size: 19px;
+                font-weight: 400;
+                text-decoration: none;
+                // color: #212529;
+                color: #1068bf;
+                // color: #D6F9E8;
+                line-height: 1;
+            }
+    
+            // .arrow-wrapper {
+            //     line-height: 1;
+            //     height: 19px;
+            //     width: 19px;
+    
+            //     svg {
+            //         height: 100%;
+            //         width: 100%;
+            //     }
+            // }
         }
 
-        // .arrow-wrapper {
-        //     line-height: 1;
-        //     height: 19px;
-        //     width: 19px;
-
-        //     svg {
-        //         height: 100%;
-        //         width: 100%;
-        //     }
+        // .divider {
+        //     opacity: .15;
         // }
     }
+
+    .divider {
+        opacity: .15;
+    }
+
 
     // @media (max-width: 991.98px) {
     //     margin-bottom: .75rem;
@@ -62,13 +100,13 @@ body.dark-theme {
         .all-wrapper {
             .all {
                 // color: rgba(255, 255, 255, 0.75);
-                color: #8ab4f8;
+                // color: #8ab4f8;
             }
 
             .arrow {
                 // filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
-                filter: invert(68%) sepia(22%) saturate(1128%) hue-rotate(187deg) brightness(100%) contrast(96%);
-                opacity: 0.75;
+                // filter: invert(68%) sepia(22%) saturate(1128%) hue-rotate(187deg) brightness(100%) contrast(96%);
+                // opacity: 0.75;
             }
         }
 

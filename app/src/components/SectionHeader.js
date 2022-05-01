@@ -6,23 +6,25 @@ const SectionHeader = ({
     allPath
 }) => (
     <div className="section-header">
-        <div className="header">
-            {header}
-        </div>
-        {all && (
-            <div className="all-wrapper">
-                <Link
-                    to={allPath}
-                    className="all"
-                    aria-current="page"
-                >
-                    Zobacz wszystkie
-                </Link>
-                {/* <span className="arrow-wrapper"> */}
-                    {/* <svg focusable="false" fill="#8ab4f8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg> */}
-                {/* </span> */}
+        <div className="text-wrapper">
+            <div className="header">
+                {header}
             </div>
-        )}
+            {all && (
+                <div className="all-wrapper">
+                    <Link
+                        to={allPath}
+                        // className="all"
+                        className="button section"
+                        aria-current="page"
+                    >
+                        <span>Zobacz wszystkie</span>
+                        {/* <svg xmlns="http://www.w3.org/2000/svg" focusable="false" viewBox="8.59 6 7.41 12" height="11px"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg> */}
+                    </Link>
+                </div>
+            )}
+        </div>
+        <hr className="divider" />
     </div>
 );
 
