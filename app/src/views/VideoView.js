@@ -3,12 +3,13 @@ import { Link } from "react-router-dom";
 import { video } from "../data/video";
 import PageHeader from "../components/PageHeader";
 import VideoAllPartial from "./partials/video/VideoAllPartial";
-import VideoWeddingPartial from "./partials/video/VideoWeddingPartial";
-import VideoEventPartial from "./partials/video/VideoEventPartial";
-import VideoMusicVideoPartial from "./partials/video/VideoMusicVideoPartial";
-import VideoBroadcastPartial from "./partials/video/VideoBroadcastPartial";
 import VideoAdvertistingPartial from "./partials/video/VideoAdvertistingPartial";
 import VideoImmovablesPartial from "./partials/video/VideoImmovablesPartial";
+import VideoDronePartial from "./partials/video/VideoDronePartial";
+import VideoEventPartial from "./partials/video/VideoEventPartial";
+import VideoMusicVideoPartial from "./partials/video/VideoMusicVideoPartial";
+import VideoWeddingPartial from "./partials/video/VideoWeddingPartial";
+import VideoBroadcastPartial from "./partials/video/VideoBroadcastPartial";
 import VideoAnimationPartial from "./partials/video/VideoAnimationPartial";
 
 const VideoView = () => {
@@ -25,9 +26,17 @@ const VideoView = () => {
                     return (
                         "video-all"
                     );
-                case "/video/weddings":
+                case "/video/advertising":
                     return (
-                        "video-weddings"
+                        "video-advertising"
+                    );
+                case "/video/immovables":
+                    return (
+                        "video-immovables"
+                    );
+                case "/video/drone":
+                    return (
+                        "video-drone"
                     );
                 case "/video/events":
                     return (
@@ -37,17 +46,13 @@ const VideoView = () => {
                     return (
                         "video-music-video"
                     );
+                case "/video/weddings":
+                    return (
+                        "video-weddings"
+                    );
                 case "/video/broadcasts":
                     return (
                         "video-broadcasts"
-                    );
-                case "/video/advertising":
-                    return (
-                        "video-advertising"
-                    );
-                case "/video/immovables":
-                    return (
-                        "video-immovables"
                     );
                 case "/video/animations":
                     return (
@@ -66,9 +71,17 @@ const VideoView = () => {
                 return (
                     <VideoAllPartial />
                 );
-            case "video-weddings":
+            case "video-advertising":
                 return (
-                    <VideoWeddingPartial />
+                    <VideoAdvertistingPartial />
+                );
+            case "video-immovables":
+                return (
+                    <VideoImmovablesPartial />
+                );
+            case "video-drone":
+                return (
+                    <VideoDronePartial />
                 );
             case "video-events":
                 return (
@@ -78,17 +91,13 @@ const VideoView = () => {
                 return (
                     <VideoMusicVideoPartial />
                 );
+            case "video-weddings":
+                return (
+                    <VideoWeddingPartial />
+                );
             case "video-broadcasts":
                 return (
                     <VideoBroadcastPartial />
-                );
-            case "video-advertising":
-                return (
-                    <VideoAdvertistingPartial />
-                );
-            case "video-immovables":
-                return (
-                    <VideoImmovablesPartial />
                 );
             case "video-animations":
                 return (
@@ -120,12 +129,32 @@ const VideoView = () => {
                         </li>
                         <li className="nav-item">
                             <Link
-                                to="/video/weddings"
-                                className={`nav-link${videoTab === "video-weddings" ? " active" : ""}`}
+                                to="/video/advertising"
+                                className={`nav-link${videoTab === "video-advertising" ? " active" : ""}`}
                                 aria-current="page"
-                                onClick={() => setTab("video-weddings")}
+                                onClick={() => setTab("video-advertising")}
                             >
-                                Śluby
+                                Debaty i wypowiedzi
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link
+                                to="/video/immovables"
+                                className={`nav-link${videoTab === "video-immovables" ? " active" : ""}`}
+                                aria-current="page"
+                                onClick={() => setTab("video-immovables")}
+                            >
+                                Nieruchomości
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link
+                                to="/video/drone"
+                                className={`nav-link${videoTab === "video-drone" ? " active" : ""}`}
+                                aria-current="page"
+                                onClick={() => setTab("video-drone")}
+                            >
+                                Dron
                             </Link>
                         </li>
                         <li className="nav-item">
@@ -150,32 +179,22 @@ const VideoView = () => {
                         </li>
                         <li className="nav-item">
                             <Link
+                                to="/video/weddings"
+                                className={`nav-link${videoTab === "video-weddings" ? " active" : ""}`}
+                                aria-current="page"
+                                onClick={() => setTab("video-weddings")}
+                            >
+                                Śluby
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link
                                 to="/video/broadcasts"
                                 className={`nav-link${videoTab === "video-broadcasts" ? " active" : ""}`}
                                 aria-current="page"
                                 onClick={() => setTab("video-broadcasts")}
                             >
                                 Transmisje
-                            </Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link
-                                to="/video/advertising"
-                                className={`nav-link${videoTab === "video-advertising" ? " active" : ""}`}
-                                aria-current="page"
-                                onClick={() => setTab("video-advertising")}
-                            >
-                                Debaty i wypowiedzi
-                            </Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link
-                                to="/video/immovables"
-                                className={`nav-link${videoTab === "video-immovables" ? " active" : ""}`}
-                                aria-current="page"
-                                onClick={() => setTab("video-immovables")}
-                            >
-                                Nieruchomości
                             </Link>
                         </li>
                         <li className="nav-item">

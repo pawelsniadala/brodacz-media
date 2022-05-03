@@ -5,9 +5,17 @@ import { video } from "../data/video";
 const VideoSection = () => {
     const cardRealizations = (title) => {
         switch(title) {
-            case "Śluby":
+            case "Debaty i wypowiedzi":
                 return (
-                    video.realization.weddings.length
+                    video.realization.debates.length
+                );
+            case "Nieruchomości":
+                return (
+                    video.realization.immovables.length
+                );
+            case "Dron":
+                return (
+                    video.realization.drone.length
                 );
             case "Eventy":
                 return (
@@ -17,17 +25,17 @@ const VideoSection = () => {
                 return (
                     video.realization.music.length
                 );
+            case "Śluby":
+                return (
+                    video.realization.weddings.length
+                );
             case "Transmisje":
                 return (
                     video.realization.broadcast.length
                 );
-            case "Debaty i wypowiedzi":
-                return (
-                    video.realization.debates.length
-                );
             case "Animacje":
                 return (
-                    video.realization.debates.length
+                    video.realization.animations.length
                 );
             default:
         }

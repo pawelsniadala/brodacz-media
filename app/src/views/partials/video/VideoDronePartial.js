@@ -2,12 +2,12 @@ import { video } from "../../../data/video";
 import CardRealization from "../../../components/CardRealization";
 import Alert from "../../../components/Alert";
 
-const VideoWeddingPartial = () => (
+const VideoDronePartial = () => (
     <div className="video-wedding-partial">
         <section className="realization-section">
             <div className="section-wrapper">
-                <div className={`card-wrapper realization video ${video.realization.weddings.length ? "" : "empty"}`}>
-                    {video.realization.weddings.length ? video.realization.weddings.map((item) => (
+                <div className={`card-wrapper realization video ${video.realization.drone.length ? "" : "empty"}`}>
+                    {video.realization.drone.length ? video.realization.drone.map((item) => (
                         <CardRealization
                             cardThumbnaiVideo
                             key={item.id}
@@ -30,4 +30,4 @@ const VideoWeddingPartial = () => (
     </div>
 );
 
-export default VideoWeddingPartial;
+export default VideoDronePartial;

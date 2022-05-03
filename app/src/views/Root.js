@@ -13,12 +13,13 @@ import BackstageView from "./BackstageView";
 // import AboutMeView from "./AboutMeView";
 import ContactView from "./ContactView";
 import VideoAllPartial from "./partials/video/VideoAllPartial";
-import VideoWeddingPartial from "./partials/video/VideoWeddingPartial";
-import VideoEventPartial from "./partials/video/VideoEventPartial";
-import VideoMusicVideoPartial from "./partials/video/VideoMusicVideoPartial";
-import VideoBroadcastPartial from "./partials/video/VideoBroadcastPartial";
 import VideoAdvertistingPartial from "./partials/video/VideoAdvertistingPartial";
 import VideoImmovablesPartial from "./partials/video/VideoImmovablesPartial";
+import VideoDronePartial from "./partials/video/VideoDronePartial";
+import VideoEventPartial from "./partials/video/VideoEventPartial";
+import VideoMusicVideoPartial from "./partials/video/VideoMusicVideoPartial";
+import VideoWeddingPartial from "./partials/video/VideoWeddingPartial";
+import VideoBroadcastPartial from "./partials/video/VideoBroadcastPartial";
 import VideoAnimationPartial from "./partials/video/VideoAnimationPartial";
 import PhotoAllPartial from "./partials/photo/PhotoAllPartial";
 import PhotoBrandingPartial from "./partials/photo/PhotoBrandingPartial";
@@ -39,12 +40,13 @@ const Root = () => (
                     <Route exact path="https://brodaczmedia.pl" element={<HomeView />} />
                     <Route path="/video" element={<VideoView />}>
                         <Route path="/video/all" element={<VideoAllPartial />} />
-                        <Route path="/video/weddings" element={<VideoWeddingPartial />} />
-                        <Route path="/video/events" element={<VideoEventPartial />} />
-                        <Route path="/video/music-video" element={<VideoMusicVideoPartial />} />
-                        <Route path="/video/broadcasts" element={<VideoBroadcastPartial />} />
                         <Route path="/video/advertising" element={<VideoAdvertistingPartial />} />
                         <Route path="/video/immovables" element={<VideoImmovablesPartial />} />
+                        <Route path="/video/drone" element={<VideoDronePartial />} />
+                        <Route path="/video/events" element={<VideoEventPartial />} />
+                        <Route path="/video/music-video" element={<VideoMusicVideoPartial />} />
+                        <Route path="/video/weddings" element={<VideoWeddingPartial />} />
+                        <Route path="/video/broadcasts" element={<VideoBroadcastPartial />} />
                         <Route path="/video/animations" element={<VideoAnimationPartial />} />
                     </Route>
                     <Route path="/photo" element={<PhotoView />}>

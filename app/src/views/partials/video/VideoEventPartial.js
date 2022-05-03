@@ -1,11 +1,12 @@
-import CardRealization from "../../../components/CardRealization";
 import { video } from "../../../data/video";
+import CardRealization from "../../../components/CardRealization";
+import Alert from "../../../components/Alert";
 
 const VideoEventPartial = () => (
     <div className="video-wedding-partial">
         <section className="realization-section">
             <div className="section-wrapper">
-                <div className="card-wrapper realization video">
+                <div className={`card-wrapper realization video ${video.realization.events.length ? "" : "empty"}`}>
                     {video.realization.events.length ? video.realization.events.map((item) => (
                         <CardRealization
                             cardThumbnaiVideo
@@ -19,7 +20,9 @@ const VideoEventPartial = () => (
                             cardThumbnaiVideoPath={item.video.urlPage}
                         />
                     )) : (
-                        <div />
+                        <Alert
+                            content={video.realization.empty}
+                        />
                     )}
                 </div>
             </div>

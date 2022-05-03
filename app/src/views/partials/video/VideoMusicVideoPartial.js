@@ -1,11 +1,12 @@
-import CardRealization from "../../../components/CardRealization";
 import { video } from "../../../data/video";
+import CardRealization from "../../../components/CardRealization";
+import Alert from "../../../components/Alert";
 
 const VideoMusicVideoPartial = () => (
     <div className="video-wedding-partial">
         <section className="realization-section">
             <div className="section-wrapper">
-                <div className="card-wrapper realization video">
+                <div className={`card-wrapper realization video ${video.realization.music.length ? "" : "empty"}`}>
                     {video.realization.music.length ? video.realization.music.map((item) => (
                         <CardRealization
                             cardThumbnaiVideo
@@ -19,13 +20,14 @@ const VideoMusicVideoPartial = () => (
                             cardThumbnaiVideoPath={item.video.urlPage}
                         />
                     )) : (
-                        <div />
+                        <Alert
+                            content={video.realization.empty}
+                        />
                     )}
                 </div>
             </div>
         </section>
     </div>
-
 );
 
 export default VideoMusicVideoPartial;

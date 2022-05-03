@@ -1,32 +1,11 @@
-import videoCategoryWeddings from "../assets/video/category/videoCategoryWeddings.png";
-import videoCategoryEvents from "../assets/video/category/videoCategoryEvents.png";
-import videoCategoryMusicVideo from "../assets/video/category/videoCategoryMusicVideo.png";
-import videoCategoryBroadcasts from "../assets/video/category/videoCategoryBroadcasts.png";
 import videoCategoryDebate from "../assets/video/category/videoCategoryDebate.png";
 import videoCategoryImmovables from "../assets/video/category/videoCategoryImmovables.png";
+import videoCategoryDrone from "../assets/video/category/videoCategoryDrone.png";
+import videoCategoryEvents from "../assets/video/category/videoCategoryEvents.png";
+import videoCategoryMusicVideo from "../assets/video/category/videoCategoryMusicVideo.png";
+import videoCategoryWeddings from "../assets/video/category/videoCategoryWeddings.png";
+import videoCategoryBroadcasts from "../assets/video/category/videoCategoryBroadcasts.png";
 import videoCategoryAnimation from "../assets/video/category/videoCategoryAnimation.png";
-
-
-// ŚLUBY
-import videoWeddingThumbnail1 from "../assets/video/realization/weddings/videoWeddingThumbnail1.png";
-import videoWeddingThumbnail2 from "../assets/video/realization/weddings/videoWeddingThumbnail2.png";
-
-// EVENTY
-import videoEventThumbnail1 from "../assets/video/realization/events/videoEventThumbnail1.png";
-import videoEventThumbnail2 from "../assets/video/realization/events/videoEventThumbnail2.png";
-import videoEventThumbnail3 from "../assets/video/realization/events/videoEventThumbnail3.png";
-import videoEventThumbnail4 from "../assets/video/realization/events/videoEventThumbnail4.png";
-import videoEventThumbnail5 from "../assets/video/realization/events/videoEventThumbnail5.png";
-import videoEventThumbnail6 from "../assets/video/realization/events/videoEventThumbnail6.png";
-
-// TELEDYSKI
-import videoMusicThumbnail1 from "../assets/video/realization/music/videoMusicThumbnail1.png";
-import videoMusicThumbnail2 from "../assets/video/realization/music/videoMusicThumbnail2.png";
-import videoMusicThumbnail3 from "../assets/video/realization/music/videoMusicThumbnail3.png";
-
-// TRANSMISJE
-import videoBroadcastThumbnail1 from "../assets/video/realization/broadcasts/videoBroadcastThumbnail1.png";
-import videoBroadcastThumbnail2 from "../assets/video/realization/broadcasts/videoBroadcastThumbnail2.png";
 
 // DEBATY I WYPOWIEDZI
 import videoDebateThumbnail1 from "../assets/video/realization/debates/videoDebateThumbnail1.png";
@@ -45,6 +24,29 @@ import videoDebateThumbnail12 from "../assets/video/realization/debates/videoDeb
 // NIERUCHOMOSCI
 import videoImmovablesThumbnail1 from "../assets/video/realization/immovables/videoImmovablesThumbnail1.png";
 
+// DRON
+
+// EVENTY
+import videoEventThumbnail1 from "../assets/video/realization/events/videoEventThumbnail1.png";
+import videoEventThumbnail2 from "../assets/video/realization/events/videoEventThumbnail2.png";
+import videoEventThumbnail3 from "../assets/video/realization/events/videoEventThumbnail3.png";
+import videoEventThumbnail4 from "../assets/video/realization/events/videoEventThumbnail4.png";
+import videoEventThumbnail5 from "../assets/video/realization/events/videoEventThumbnail5.png";
+import videoEventThumbnail6 from "../assets/video/realization/events/videoEventThumbnail6.png";
+
+// TELEDYSKI
+import videoMusicThumbnail1 from "../assets/video/realization/music/videoMusicThumbnail1.png";
+import videoMusicThumbnail2 from "../assets/video/realization/music/videoMusicThumbnail2.png";
+import videoMusicThumbnail3 from "../assets/video/realization/music/videoMusicThumbnail3.png";
+
+// ŚLUBY
+import videoWeddingThumbnail1 from "../assets/video/realization/weddings/videoWeddingThumbnail1.png";
+import videoWeddingThumbnail2 from "../assets/video/realization/weddings/videoWeddingThumbnail2.png";
+
+// TRANSMISJE
+import videoBroadcastThumbnail1 from "../assets/video/realization/broadcasts/videoBroadcastThumbnail1.png";
+import videoBroadcastThumbnail2 from "../assets/video/realization/broadcasts/videoBroadcastThumbnail2.png";
+
 // ANIMACJE
 import videoAnimationThumbnail1 from "../assets/video/realization/animations/videoAnimationThumbnail1.png";
 import videoAnimationThumbnail2 from "../assets/video/realization/animations/videoAnimationThumbnail2.png";
@@ -54,13 +56,31 @@ export const video = {
     "path": "/video",
     "category": [
         {
-            id: "f1c00469-6aea-4b00-abff-db03b02805b1",
+            id: "50ed6498-04a7-4ff8-bc3e-6b477ad9d358",
             label: "filmy",
-            title: "Śluby",
-            description: "Nie mam gotowej wizji na idealny film ślubny. Staramy się poznać gust mojego klienta i w takim stylu stworzyć dla niego film. Wieloletnie doświadczenie pozwala mi na świadome eksperymentowanie z różnymi stylami.",
-            image: videoCategoryWeddings,
-            path: "/video/weddings",
-            tab: "video-weddings"
+            title: "Debaty i wypowiedzi",
+            description: "Świat potrzebuje różnych punktów widzenia w każdej sprawie, profesjonalne przygotowanie materiału pozwoli mu dużo łatwiej dotrzeć do szerokiej bazy odbiorców.",
+            image: videoCategoryDebate,
+            path: "/video/advertising",
+            tab: "video-advertising"
+        },
+        {
+            id: "32cbb538-c587-4946-8ddf-e7753d4f2966",
+            label: "filmy",
+            title: "Nieruchomości",
+            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
+            image: videoCategoryImmovables,
+            path: "/video/immovables",
+            tab: "video-immovables"
+        },
+        {
+            id: "c9aa88bb-d3ea-47b9-a3b2-318fb7e51af3",
+            label: "filmy",
+            title: "Dron",
+            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
+            image: videoCategoryDrone,
+            path: "/video/drone",
+            tab: "video-drone"
         },
         {
             id: "5aafd05a-0c33-4a43-a1b4-e71b02bd2acc",
@@ -81,6 +101,15 @@ export const video = {
             tab: "video-music-video"
         },
         {
+            id: "f1c00469-6aea-4b00-abff-db03b02805b1",
+            label: "filmy",
+            title: "Śluby",
+            description: "Nie mam gotowej wizji na idealny film ślubny. Staramy się poznać gust mojego klienta i w takim stylu stworzyć dla niego film. Wieloletnie doświadczenie pozwala mi na świadome eksperymentowanie z różnymi stylami.",
+            image: videoCategoryWeddings,
+            path: "/video/weddings",
+            tab: "video-weddings"
+        },
+        {
             id: "a1280498-4dab-4ec8-8854-24a708e23331",
             label: "filmy",
             title: "Transmisje",
@@ -88,24 +117,6 @@ export const video = {
             image: videoCategoryBroadcasts,
             path: "/video/broadcasts",
             tab: "video-broadcasts"
-        },
-        {
-            id: "50ed6498-04a7-4ff8-bc3e-6b477ad9d358",
-            label: "filmy",
-            title: "Debaty i wypowiedzi",
-            description: "Świat potrzebuje różnych punktów widzenia w każdej sprawie, profesjonalne przygotowanie materiału pozwoli mu dużo łatwiej dotrzeć do szerokiej bazy odbiorców.",
-            image: videoCategoryDebate,
-            path: "/video/advertising",
-            tab: "video-advertising"
-        },
-        {
-            id: "32cbb538-c587-4946-8ddf-e7753d4f2966",
-            label: "filmy",
-            title: "Nieruchomości",
-            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
-            image: videoCategoryImmovables,
-            path: "/video/immovables",
-            tab: "video-immovables"
         },
         {
             id: "7993088f-594b-4e2a-851a-d4f0e124eb19",
@@ -119,157 +130,7 @@ export const video = {
     ],
     "realization": {
         "title": "Realizacje",
-        "weddings": [
-            {
-                id: "262d3b76-ff77-4a6a-93d8-7797180085aa",
-                date: "6 sie 2021",
-                title: "Teledysk ślubny Sylwia i Norbert",
-                company: "Brodacz Media",
-                video: {
-                    time: "3:06",
-                    src: videoWeddingThumbnail1,
-                    urlPage: "https://www.youtube.com/watch?v=9AdxCvFOa-k"
-                }
-            },
-            {
-                id: "0b0bd579-f4fe-4e34-b1e9-6b114a0c5da8",
-                date: "15 sie 2020",
-                title: "Teledysk Ślubny Kasia i Łukasz",
-                company: "Brodacz Media",
-                video: {
-                    time: "2:15",
-                    src: videoWeddingThumbnail2,
-                    urlPage: "https://www.youtube.com/watch?v=FURA4xL9-hs"
-                }
-            }
-        ],
-        "events": [
-            {
-                id: "e1989e40-8c49-4fc1-b7e7-ba842fbb40c8",
-                date: "20 sie2021",
-                title: "Graj o Swój Biznes 2021 - Golf",
-                company: "Manager Business Hub",
-                video: {
-                    time: "3:04",
-                    src: videoEventThumbnail1,
-                    urlPage: "https://www.youtube.com/watch?v=ryhhKhGw0n0&t=4s"
-                }
-            },
-            {
-                id: "40937a57-db58-4bbe-a46e-d142c8a690f3",
-                date: "2 gru 2021",
-                title: "Wieczór Portugalski",
-                company: "Manager Business Hub",
-                video: {
-                    time: "2:22",
-                    src: videoEventThumbnail2,
-                    urlPage: "https://www.youtube.com/watch?v=q0Q_wY3V2g0&t=4s"
-                }
-            },
-            {
-                id: "ddc2f133-468b-4c7c-95dd-834c1c43a072",
-                date: "7 lip 2021",
-                title: "Military Day - III Edycja",
-                company: "Manager Business Hub",
-                video: {
-                    time: "2:48",
-                    src: videoEventThumbnail3,
-                    urlPage: "https://www.youtube.com/watch?v=GzPJnvwsmtM"
-                }
-            },
-            {
-                id: "91584c37-2ddf-43ed-8f2a-8bcddce639de",
-                date: "15 sty 2022",
-                title: "Graj o Swój Biznes 2021 - Turniej Bilardowy",
-                company: "Manager Business Hub",
-                video: {
-                    time: "2:44",
-                    src: videoEventThumbnail4,
-                    urlPage: "https://www.youtube.com/watch?v=45JbG8Azjtg"
-                }
-            },
-            {
-                id: "13e18c2b-5dc3-4f4c-893e-98020dccaef2",
-                date: "20 sty 2022",
-                title: "Przedświąteczne spotkanie",
-                company: "Manager Business Hub",
-                video: {
-                    time: "2:36",
-                    src: videoEventThumbnail5,
-                    urlPage: "https://www.youtube.com/watch?v=_bLjnT3vk-E"
-                }
-            },
-            {
-                id: "538afe57-2907-46ff-9789-311c548a111a",
-                date: "16 mar 2022",
-                title: "Targi maszyn roboczych",
-                company: "erobocze.pl",
-                video: {
-                    time: "1:21",
-                    src: videoEventThumbnail6,
-                    urlPage: "https://www.youtube.com/watch?v=YoAXW5QFmg8"
-                }
-            }
-        ],
-        "music": [
-            {
-                id: "be1bfad3-7435-47dd-b1ba-28ffe39de6ca",
-                date: "24 lis 2021",
-                title: "Kurp - Dopsierum tu przysła",
-                company: "Kurp",
-                video: {
-                    time: "3:58",
-                    src: videoMusicThumbnail1,
-                    urlPage: "https://www.youtube.com/watch?v=OTy97M9OTeE"
-                }
-            },
-            {
-                id: "296280a3-8f33-4895-ad14-f533907c0934",
-                date: "18 gru 2020",
-                title: "Fire Show Infernal",
-                company: "Teatr Ognia Infernal",
-                video: {
-                    time: "2:40",
-                    src: videoMusicThumbnail2,
-                    urlPage: "https://www.youtube.com/watch?v=_XSvz3Ym65A"
-                }
-            },
-            {
-                id: "c4df3075-2e7c-464b-b3fe-acaa93104144",
-                date: "27 lip 2020",
-                title: "Leśny z spacer Asią",
-                company: "Brodacz Media",
-                video: {
-                    time: "0:39",
-                    src: videoMusicThumbnail3,
-                    urlPage: "https://www.youtube.com/watch?v=j3DRt_7Yt10"
-                }
-            }
-        ],
-        "broadcast": [
-            {
-                id: "84af7c53-275e-48f7-aa2e-839a498e0df1",
-                date: "20 lis 2021",
-                title: "Jubileusz Krajowej Reprezentacji Doktorantów - Konferencja Model Funkcjonowania Szkół Doktorskich",
-                company: "KRD",
-                video: {
-                    time: "10:22:30",
-                    src: videoBroadcastThumbnail1,
-                    urlPage: "https://www.youtube.com/watch?v=exEBorFnSMU"
-                }
-            },
-            {
-                id: "01e49c34-ac14-41f4-b174-1eb3a822d441",
-                date: "26 lut 2022",
-                title: "I Otwarte Posiedzenie Zarządu KRD kadencji 2022",
-                company: "KRD",
-                video: {
-                    time: "5:41:05",
-                    src: videoBroadcastThumbnail2,
-                    urlPage: "https://www.youtube.com/watch?v=VGLSbb2LWuo"
-                }
-            }
-        ],
+        "empty": "Brak video.",
         "debates": [
             {
                 id: "8427d654-853d-4070-9551-34c3a8aefdbb",
@@ -414,6 +275,170 @@ export const video = {
                     time: "2:09",
                     src: videoImmovablesThumbnail1,
                     urlPage: "https://www.youtube.com/watch?v=BIGVs3PK6Ww"
+                }
+            }
+        ],
+        "drone": [
+            // {
+            //     id: "9af50e47-e2af-4e61-92e9-a15d17cdc8fd",
+            //     date: "_",
+            //     title: "_",
+            //     company: "_",
+            //     video: {
+            //         time: "_",
+            //         src: videoImmovablesThumbnail1,
+            //         urlPage: ""
+            //     }
+            // }
+        ],
+        "events": [
+            {
+                id: "e1989e40-8c49-4fc1-b7e7-ba842fbb40c8",
+                date: "20 sie2021",
+                title: "Graj o Swój Biznes 2021 - Golf",
+                company: "Manager Business Hub",
+                video: {
+                    time: "3:04",
+                    src: videoEventThumbnail1,
+                    urlPage: "https://www.youtube.com/watch?v=ryhhKhGw0n0&t=4s"
+                }
+            },
+            {
+                id: "40937a57-db58-4bbe-a46e-d142c8a690f3",
+                date: "2 gru 2021",
+                title: "Wieczór Portugalski",
+                company: "Manager Business Hub",
+                video: {
+                    time: "2:22",
+                    src: videoEventThumbnail2,
+                    urlPage: "https://www.youtube.com/watch?v=q0Q_wY3V2g0&t=4s"
+                }
+            },
+            {
+                id: "ddc2f133-468b-4c7c-95dd-834c1c43a072",
+                date: "7 lip 2021",
+                title: "Military Day - III Edycja",
+                company: "Manager Business Hub",
+                video: {
+                    time: "2:48",
+                    src: videoEventThumbnail3,
+                    urlPage: "https://www.youtube.com/watch?v=GzPJnvwsmtM"
+                }
+            },
+            {
+                id: "91584c37-2ddf-43ed-8f2a-8bcddce639de",
+                date: "15 sty 2022",
+                title: "Graj o Swój Biznes 2021 - Turniej Bilardowy",
+                company: "Manager Business Hub",
+                video: {
+                    time: "2:44",
+                    src: videoEventThumbnail4,
+                    urlPage: "https://www.youtube.com/watch?v=45JbG8Azjtg"
+                }
+            },
+            {
+                id: "13e18c2b-5dc3-4f4c-893e-98020dccaef2",
+                date: "20 sty 2022",
+                title: "Przedświąteczne spotkanie",
+                company: "Manager Business Hub",
+                video: {
+                    time: "2:36",
+                    src: videoEventThumbnail5,
+                    urlPage: "https://www.youtube.com/watch?v=_bLjnT3vk-E"
+                }
+            },
+            {
+                id: "538afe57-2907-46ff-9789-311c548a111a",
+                date: "16 mar 2022",
+                title: "Targi maszyn roboczych",
+                company: "erobocze.pl",
+                video: {
+                    time: "1:21",
+                    src: videoEventThumbnail6,
+                    urlPage: "https://www.youtube.com/watch?v=YoAXW5QFmg8"
+                }
+            }
+        ],
+        "music": [
+            {
+                id: "be1bfad3-7435-47dd-b1ba-28ffe39de6ca",
+                date: "24 lis 2021",
+                title: "Kurp - Dopsierum tu przysła",
+                company: "Kurp",
+                video: {
+                    time: "3:58",
+                    src: videoMusicThumbnail1,
+                    urlPage: "https://www.youtube.com/watch?v=OTy97M9OTeE"
+                }
+            },
+            {
+                id: "296280a3-8f33-4895-ad14-f533907c0934",
+                date: "18 gru 2020",
+                title: "Fire Show Infernal",
+                company: "Teatr Ognia Infernal",
+                video: {
+                    time: "2:40",
+                    src: videoMusicThumbnail2,
+                    urlPage: "https://www.youtube.com/watch?v=_XSvz3Ym65A"
+                }
+            },
+            {
+                id: "c4df3075-2e7c-464b-b3fe-acaa93104144",
+                date: "27 lip 2020",
+                title: "Leśny z spacer Asią",
+                company: "Brodacz Media",
+                video: {
+                    time: "0:39",
+                    src: videoMusicThumbnail3,
+                    urlPage: "https://www.youtube.com/watch?v=j3DRt_7Yt10"
+                }
+            }
+        ],
+        "weddings": [
+            {
+                id: "262d3b76-ff77-4a6a-93d8-7797180085aa",
+                date: "6 sie 2021",
+                title: "Teledysk ślubny Sylwia i Norbert",
+                company: "Brodacz Media",
+                video: {
+                    time: "3:06",
+                    src: videoWeddingThumbnail1,
+                    urlPage: "https://www.youtube.com/watch?v=9AdxCvFOa-k"
+                }
+            },
+            {
+                id: "0b0bd579-f4fe-4e34-b1e9-6b114a0c5da8",
+                date: "15 sie 2020",
+                title: "Teledysk Ślubny Kasia i Łukasz",
+                company: "Brodacz Media",
+                video: {
+                    time: "2:15",
+                    src: videoWeddingThumbnail2,
+                    urlPage: "https://www.youtube.com/watch?v=FURA4xL9-hs"
+                }
+            }
+        ],
+        "broadcast": [
+            {
+                id: "84af7c53-275e-48f7-aa2e-839a498e0df1",
+                date: "20 lis 2021",
+                title: "Jubileusz Krajowej Reprezentacji Doktorantów - Konferencja Model Funkcjonowania Szkół Doktorskich",
+                company: "KRD",
+                video: {
+                    time: "10:22:30",
+                    src: videoBroadcastThumbnail1,
+                    urlPage: "https://www.youtube.com/watch?v=exEBorFnSMU"
+                }
+            },
+            {
+                id: "01e49c34-ac14-41f4-b174-1eb3a822d441",
+                date: "26 lut 2022",
+                title: "I Otwarte Posiedzenie Zarządu KRD kadencji 2022",
+                company: "KRD",
+                video: {
+                    time: "5:41:05",
+                    src: videoBroadcastThumbnail2,
+                    urlPage: "https://www.youtube.com/watch?v=VGLSbb2LWuo"
                 }
             }
         ],
