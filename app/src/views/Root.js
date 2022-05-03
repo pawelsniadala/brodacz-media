@@ -36,7 +36,7 @@ const Root = () => (
             <main>
                 <Routes>
                     <Route exact path="/" element={<HomeView />} />
-                    <Route exact path="/brodacz-media/" element={<HomeView />} />
+                    <Route exact path="https://brodaczmedia.pl" element={<HomeView />} />
                     <Route path="/video" element={<VideoView />}>
                         <Route path="/video/all" element={<VideoAllPartial />} />
                         <Route path="/video/weddings" element={<VideoWeddingPartial />} />
