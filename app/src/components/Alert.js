@@ -1,8 +1,5 @@
-const Alert = ({
-    type,
-    content
-}) => (
-    <div className={(`alert ${type ? type : "alert-primary"}`).trim()} role="alert">
+const Alert = ({ content }) => (
+    <div className="alert" role="alert">
         {content}
     </div>
 );
