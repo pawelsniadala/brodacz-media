@@ -1,9 +1,19 @@
 export const footer = {
     video: [
         {
-            id: "a9a2dd07-3321-4964-a8fa-d16d14b168d9",
-            name: "Śluby",
-            href: "/video/weddings"
+            id: "501a147a-8c10-41d3-a480-fbded1ed5e58",
+            name: "Debaty i wypowiedzi",
+            href: "/video/advertising"
+        },
+        {
+            id: "9061c854-4485-48ec-a919-656d4f9213a3",
+            name: "Nieruchomości",
+            href: "/video/immovables"
+        },
+        {
+            id: "45db8a29-4bd5-46ea-99c5-09c94710225c",
+            name: "Dron",
+            href: "/video/drone"
         },
         {
             id: "b1c18c21-58c1-45a3-a210-9e3be66a181c",
@@ -16,19 +26,14 @@ export const footer = {
             href: "/video/music-video"
         },
         {
+            id: "a9a2dd07-3321-4964-a8fa-d16d14b168d9",
+            name: "Śluby",
+            href: "/video/weddings"
+        },
+        {
             id: "bf5afca8-a995-466a-8106-9bf80750d6db",
             name: "Transmisje",
             href: "/video/broadcasts"
-        },
-        {
-            id: "501a147a-8c10-41d3-a480-fbded1ed5e58",
-            name: "Debaty i wypowiedzi",
-            href: "/video/advertising"
-        },
-        {
-            id: "9061c854-4485-48ec-a919-656d4f9213a3",
-            name: "Nieruchomości",
-            href: "/video/immovables"
         },
         {
             id: "ca868122-c5c4-46c0-a2d3-ef210d4dbdf5",
