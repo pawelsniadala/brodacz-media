@@ -191,6 +191,10 @@ main {
             @media (max-width: 539.98px) {
                 grid-template-columns: 1fr;
             }
+
+            &.empty {
+                grid-template-columns: 1fr;
+            }
         }
     }
 
