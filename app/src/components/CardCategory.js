@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-// import ReactImageAppear from "react-image-appear";
+import ReactImageAppear from "react-image-appear";
 
 const CardCategory = ({
     cardImg,
@@ -10,15 +10,15 @@ const CardCategory = ({
     cardRealizations
 }) => (
     <div className="card category">
-        <img src={cardImg} className="card-img-top" alt={cardTitle} />
+        {/* <img src={cardImg} className="card-img-top" alt={cardTitle} /> */}
 
-        {/* <ReactImageAppear
+        <ReactImageAppear
             className="card-img-top"
             src={cardImg}
             alt={cardTitle}
             placeholderStyle={{ backgroundColor: "transparent", display: "inline" }}
             showLoader={false}
-        /> */}
+        />
 
         <div className="card-body">
             <h5 className="card-title">
