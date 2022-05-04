@@ -68,7 +68,7 @@ export const video = {
             id: "32cbb538-c587-4946-8ddf-e7753d4f2966",
             label: "filmy",
             title: "Nieruchomości",
-            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
+            description: "Lubię podchodzić do każdej nieruchomości indywidualnie jako oddzielnego kawałka świata ze swoją historią. Staram się pokazywać dane otoczenie nie tylko od strony wizualnej, ale też podprogowo przemycić nastrój i uczucia, jakie towarzyszą podczas przebywania w danym miejscu.",
             image: videoCategoryImmovables,
             path: "/video/immovables",
             tab: "video-immovables"
@@ -77,7 +77,7 @@ export const video = {
             id: "c9aa88bb-d3ea-47b9-a3b2-318fb7e51af3",
             label: "filmy",
             title: "Dron",
-            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
+            description: "Widok z powietrza wprowadza ogrom świeżości do nagrania, świat z lotu ptaka wygląda wspaniale i stanowi doskonałe uzupełnienie opowiadanej historii.",
             image: videoCategoryDrone,
             path: "/video/drone",
             tab: "video-drone"
