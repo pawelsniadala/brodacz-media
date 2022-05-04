@@ -1,15 +1,17 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "./../assets/navbar/logo.svg";
-import sun from "./../assets/navbar/sun.svg";
-import moon from "./../assets/navbar/moon.svg";
+import SunSvg from "../assets/common/SunSvg";
+import MoonSvg from "../assets/common/MoonSvg";
+import SoundOffSvg from "../assets/common/SoundOffSvg";
+import SoundOnSvg from "../assets/common/SoundOnSvg";
 import cameraShutterClick from "./../assets/navbar/cameraShutterClick.wav";
 import cameraFocusBeep from "./../assets/navbar/cameraFocusBeep.wav";
 
 const NavSection = () => {
     const [ darkTheme, setDarkTheme ] = useState(() => {
-    const saved = localStorage.getItem("darkTheme");
-    const initialValue = JSON.parse(saved);
+        const saved = localStorage.getItem("darkTheme");
+        const initialValue = JSON.parse(saved);
 
         return initialValue || false;
     });
@@ -35,8 +37,56 @@ const NavSection = () => {
         }
     }
 
-    const cameraShutterClickAudio = new Audio(cameraShutterClick)
-    const cameraFocusBeepAudio = new Audio(cameraFocusBeep);
+    const [ soundOf, setSoundOf ] = useState(() => {
+        const saved = localStorage.getItem("soundOf");
+        const initialValue = JSON.parse(saved);
+
+        console.log(initialValue);
+
+        return initialValue || false;
+    });
+
+    useEffect(() => {
+        localStorage.setItem("soundOf", JSON.stringify(soundOf));
+
+        setSoundOf(soundOf)
+
+        return () => {
+            localStorage.clear();
+        }
+    }, [soundOf]);
+
+    const getWindowDimensions = () => {
+        const { innerWidth: width } = window;
+        return { width };
+    }
+
+    const useWindowDimensions = () => {
+        const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+
+        useEffect(() => {
+            function handleResize() {
+                setWindowDimensions(getWindowDimensions());
+            }
+
+            window.addEventListener("resize", handleResize);
+            return () => window.removeEventListener("resize", handleResize);
+        }, []);
+
+        return windowDimensions;
+    }
+
+    const { width } = useWindowDimensions();
+
+    const cameraFocusBeepAudioSwitch = () => {
+        let cameraFocusBeepAudio = new Audio(cameraFocusBeep);
+        (width >= 991.98 && !soundOf) && cameraFocusBeepAudio.play();
+    }
+
+    const cameraShutterClickAudioSwith = () => {
+        let cameraShutterClickAudio = new Audio(cameraShutterClick);
+        (width >= 991.98 && !soundOf) && cameraShutterClickAudio.play();
+    }
 
     return (
         <nav>
@@ -56,21 +106,23 @@ const NavSection = () => {
                         className="navbar-brand text-uppercase"
                         activeclassname="active"
                         to="/"
-                        onClick={() => cameraShutterClickAudio.play()}
+                        onClick={() => cameraShutterClickAudioSwith()}
                     >
                         <img src={logo} height="30" alt="logo" />
                     </NavLink>
-                    <div className="theme-mobile"
-                        onClick={() => {
-                            setDarkTheme(!darkTheme);
-                            cameraFocusBeepAudio.play();
-                        }}
-                    >
-                        {darkTheme ? (
-                            <img src={sun} height="25" alt="sun" />
-                        ) : (
-                            <img src={moon} height="25" alt="moon" />
-                        )}
+                    <div className="button-wrapper mobile">
+                        <div className="icon-wrapper"
+                            title={darkTheme ? "Ustaw jasny motyw" : "Ustaw ciemny motyw"}
+                            onClick={() => setDarkTheme(!darkTheme)}
+                        >
+                            <div className="theme-mobile">
+                                {darkTheme ? (
+                                    <SunSvg />
+                                ) : (
+                                    <MoonSvg />
+                                )}
+                            </div>
+                        </div>
                     </div>
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav">
@@ -80,7 +132,7 @@ const NavSection = () => {
                                     activeclassname="active"
                                     aria-current="page"
                                     to="/video"
-                                    onClick={() => cameraFocusBeepAudio.play()}
+                                    onClick={() => cameraFocusBeepAudioSwitch()}
 
                                 >
                                     Video
@@ -92,7 +144,7 @@ const NavSection = () => {
                                     activeclassname="active"
                                     aria-current="page"
                                     to="/photo"
-                                    onClick={() => cameraFocusBeepAudio.play()}
+                                    onClick={() => cameraFocusBeepAudioSwitch()}
                                 >
                                     Foto
                                 </NavLink>
@@ -125,24 +177,41 @@ const NavSection = () => {
                                     activeclassname="active"
                                     aria-current="page"
                                     to="/contact"
-                                    onClick={() => cameraFocusBeepAudio.play()}
+                                    onClick={() => cameraFocusBeepAudioSwitch()}
                                 >
                                     Kontakt
                                 </NavLink>
                             </li>
                         </ul>
                     </div>
-                    <div className="theme-desktop"
-                        onClick={() => {
-                            setDarkTheme(!darkTheme);
-                            cameraFocusBeepAudio.play();
-                        }}
-                    >
-                        {darkTheme ? (
-                            <img src={sun} height="25" alt="sun" />
-                        ) : (
-                            <img src={moon} height="25" alt="moon" />
-                        )}
+                    <div className="button-wrapper desktop">
+                        <div className="icon-wrapper"
+                            title={soundOf ? "Włącz dźwiek" : "Wyłącz dźwięk"}
+                            onClick={() => setSoundOf(!soundOf)}
+                        >
+                            <div className="sound-desktop">
+                                {soundOf ? (
+                                    <SoundOffSvg />
+                                ) : (
+                                    <SoundOnSvg />
+                                )}
+                            </div>
+                        </div>
+                        <div className="icon-wrapper"
+                            title={darkTheme ? "Ustaw jasny motyw" : "Ustaw ciemny motyw"}
+                            onClick={() => {
+                                setDarkTheme(!darkTheme);
+                                cameraFocusBeepAudioSwitch()
+                            }}
+                        >
+                            <div className="theme-desktop">
+                                {darkTheme ? (
+                                    <SunSvg />
+                                ) : (
+                                    <MoonSvg />
+                                )}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
