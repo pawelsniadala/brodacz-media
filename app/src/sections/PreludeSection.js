@@ -3,11 +3,13 @@ import { prelude } from "../data/prelude";
 
 const PreludeSection = () => (
     <section className="prelude-section">
-        <Jumbotron
-            videoSrc={prelude.video.src}
-            photoSrc={prelude.photo.src}
-            photoAlt={prelude.photo.alt}
-        />
+        <div className="section-wrapper">
+            <Jumbotron
+                videoSrc={prelude.video.src}
+                photoSrc={prelude.photo.src}
+                photoAlt={prelude.photo.alt}
+            />
+        </div>
     </section>
 );
 
