@@ -1,4 +1,13 @@
 export const footer = {
+    business: [
+        {
+            id: "3f83e609-c625-4a9d-81e1-350c67307d62",
+            name: "Brodacz Media Mariusz Śniadała",
+            address: "Kornaciska 19, 07-210 Długosiodło",
+            nip: "NIP: 7622014234",
+            regon: "REGON: 521119841"
+        }
+    ],
     video: [
         {
             id: "501a147a-8c10-41d3-a480-fbded1ed5e58",
@@ -63,36 +72,54 @@ export const footer = {
             href: "/photo/product"
         }
     ],
-    media: [
-        {
-            id: "a90ee660-0bf4-40f5-8bf6-738de9146093",
-            label: "facebook",
-            title: "Facebook",
-            href: "https://www.facebook.com/brodaczmedia1/",
-        },
-        {
-            id: "78c29e31-02ad-4efa-aff4-bbed908b4ea7",
-            label: "instagram",
-            title: "Instagram",
-            href: "https://www.instagram.com/brodaczmedia/",
-        },
-        {
-            id: "5391b681-0ed2-4846-9901-13ef451f6350",
-            label: "youtube",
-            title: "YouTube",
-            href: "https://www.youtube.com/channel/UCNbuL274tzbrmcqFOtcGYaw",
-        },
-        {
-            id: "94b08002-d906-4817-a153-1191538ac727",
-            label: "tiktok",
-            title: "TikTok",
-            href: "https://www.tiktok.com/@brodaczmedia",
-        },
-        {
-            id: "2e852bd2-3dd4-4bc2-ac31-85e5eccca92c",
-            label: "vimeo",
-            title: "Vimeo",
-            href: "https://vimeo.com/brodaczmedia",
-        },
-    ]
+    contact: {
+        details: [
+            {
+                id: "e28fbb3e-5c0e-456a-a5cc-6d76402eb950",
+                label: "phone",
+                title: "Zadzwoń",
+                href: "tel:+48797365584",
+                content: "+48 797 365 854"
+            },
+            {
+                id: "67028c30-d548-4ada-98c1-49fc3374c7f5",
+                label: "email",
+                title: "Napisz wiadomość",
+                href: "mailto:studio@brodaczmedia.pl",
+                content: "studio@brodaczmedia.pl"
+            }
+        ],
+        media: [
+            {
+                id: "a90ee660-0bf4-40f5-8bf6-738de9146093",
+                label: "facebook",
+                title: "Facebook",
+                href: "https://www.facebook.com/brodaczmedia1/",
+            },
+            {
+                id: "78c29e31-02ad-4efa-aff4-bbed908b4ea7",
+                label: "instagram",
+                title: "Instagram",
+                href: "https://www.instagram.com/brodaczmedia/",
+            },
+            {
+                id: "5391b681-0ed2-4846-9901-13ef451f6350",
+                label: "youtube",
+                title: "YouTube",
+                href: "https://www.youtube.com/channel/UCNbuL274tzbrmcqFOtcGYaw",
+            },
+            {
+                id: "94b08002-d906-4817-a153-1191538ac727",
+                label: "tiktok",
+                title: "TikTok",
+                href: "https://www.tiktok.com/@brodaczmedia",
+            },
+            {
+                id: "2e852bd2-3dd4-4bc2-ac31-85e5eccca92c",
+                label: "vimeo",
+                title: "Vimeo",
+                href: "https://vimeo.com/brodaczmedia",
+            },
+        ]
+    }
 };

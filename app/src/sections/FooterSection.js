@@ -36,12 +36,16 @@ const FooterSection = () => {
         <footer>
             <div className="container">
                 <div className="section-wrapper footer">
-                    <div className="contact">
-                        <h5 className="footer-subheader">Kontakt</h5>
-                        <div>Brodacz Media</div>
-                        <div>Mariusz Śniadała</div>
-                        <div>brodaczmedia@gmail.com</div>
-                        <div>797 365 584</div>
+                    <div className="business">
+                        <h5 className="footer-subheader">Studio</h5>
+                        {footer.business.length && footer.business.map(item => (
+                            <div key={item.id} className="business-wrapper">
+                                <span>{item.name}</span>
+                                <span>{item.address}</span>
+                                <span>{item.nip}</span>
+                                <span>{item.regon}</span>
+                            </div>
+                        ))}
                     </div>
                     <div className="video">
                         <h5 className="footer-subheader">Video</h5>
@@ -71,19 +75,32 @@ const FooterSection = () => {
                             ))}
                         </ul>
                     </div>
-                    <div className="media">
-                        <h5 className="footer-subheader">Media</h5>
-                        <div className="media-wrapper">
-                            {footer.media.length && footer.media.map(item => (
-                                <a key={item.id} href={item.href}
-                                    className={item.label}
-                                    title={item.title}
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    {renderMediaIcon(item.label)}
-                                </a>
-                            ))}
+                    <div className="contact">
+                        <h5 className="footer-subheader">Kontakt</h5>
+                        <div className="contact-wrapper">
+                            <div className="details">
+                                {footer.contact.details.length && footer.contact.details.map(item => (
+                                    <a key={item.id}
+                                        className={`button footer ${item.label}`}
+                                        href={item.href}
+                                        title={item.title}
+                                    >
+                                        <span>{item.content}</span>
+                                    </a>
+                                ))}
+                            </div>
+                            <div className="media">
+                                {footer.contact.media.length && footer.contact.media.map(item => (
+                                    <a key={item.id} href={item.href}
+                                        className={item.label}
+                                        title={item.title}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        {renderMediaIcon(item.label)}
+                                    </a>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>
