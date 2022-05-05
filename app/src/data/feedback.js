@@ -1,8 +1,7 @@
 import feedbackInformation from '../assets/feedback/information/feedbackInformation.png';
 
-import recommendationProfilePhotoAlternative from '../assets/feedback/opinions/recommendationProfilePhotoAlternative.png';
-
 import recommendationProfilePhoto1 from '../assets/feedback/opinions/recommendationProfilePhoto1.png';
+import recommendationProfilePhoto2 from '../assets/feedback/opinions/recommendationProfilePhoto2.png';
 import recommendationProfilePhoto3 from '../assets/feedback/opinions/recommendationProfilePhoto3.png';
 
 export const feedback = {
@@ -32,7 +31,7 @@ export const feedback = {
             description: '"Mariusz przygotowuje oprawę filmową dla większości naszych projektów, pracuje dobrze i szybko. Oczekujemy najlepszej jakości dlatego wybraliśmy Brodacz Media. Można dać 6 gwiazdek na 5?"',
             rating: 5,
             image: {
-                profile: recommendationProfilePhotoAlternative
+                profile: recommendationProfilePhoto2
             }
         },
         {
