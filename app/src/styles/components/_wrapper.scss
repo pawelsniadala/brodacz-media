@@ -176,6 +176,9 @@ main {
             grid-template-columns: 1fr 1fr 1fr 1fr;
             gap: 1rem;
 
+            column-gap: 1rem;
+            row-gap: 2rem;
+
             @media (max-width: 1199.98px) and (min-width: 992px) {
                 grid-template-columns: 1fr 1fr 1fr;
             }
@@ -215,6 +218,7 @@ main {
 }
 
 body.dark-theme {
-    background-color: #212529;
+    // background-color: #212529;
+    background-color: darken(#212529, 3%);
     color: rgba(255, 255, 255, 0.75);
 }
