@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "./../assets/navbar/logo.svg";
+import LogoSvg from "../assets/common/LogoSvg";
 import SunSvg from "../assets/common/SunSvg";
 import MoonSvg from "../assets/common/MoonSvg";
 import SoundOffSvg from "../assets/common/SoundOffSvg";
@@ -40,8 +41,6 @@ const NavSection = () => {
     const [ soundOf, setSoundOf ] = useState(() => {
         const saved = localStorage.getItem("soundOf");
         const initialValue = JSON.parse(saved);
-
-        console.log(initialValue);
 
         return initialValue || false;
     });
@@ -108,7 +107,8 @@ const NavSection = () => {
                         to="/"
                         onClick={() => cameraShutterClickAudioSwith()}
                     >
-                        <img src={logo} height="30" alt="logo" />
+                        {/* <img src={logo} height="30" alt="logo" /> */}
+                        <LogoSvg />
                     </NavLink>
                     <div className="button-wrapper mobile">
                         <div className="icon-wrapper"
