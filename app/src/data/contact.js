@@ -21,8 +21,8 @@ export const contact = {
             id: "5054b5d7-ae05-4905-95ec-763d58559d15",
             label: "email",
             title: "Napisz wiadomość",
-            href: "mailto:brodaczmedia@gmail.com",
-            content: "brodaczmedia@gmail.com"
+            href: "mailto:studio@brodaczmedia.pl",
+            content: "studio@brodaczmedia.pl"
         }
     ],
     media: [
