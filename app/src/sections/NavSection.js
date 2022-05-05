@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import logo from "./../assets/navbar/logo.svg";
 import LogoSvg from "../assets/common/LogoSvg";
 import SunSvg from "../assets/common/SunSvg";
 import MoonSvg from "../assets/common/MoonSvg";
@@ -107,7 +106,6 @@ const NavSection = () => {
                         to="/"
                         onClick={() => cameraShutterClickAudioSwith()}
                     >
-                        {/* <img src={logo} height="30" alt="logo" /> */}
                         <LogoSvg />
                     </NavLink>
                     <div className="button-wrapper mobile">
