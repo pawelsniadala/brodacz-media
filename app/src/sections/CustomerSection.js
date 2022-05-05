@@ -17,7 +17,7 @@ const CustomerSection = () => {
             <div className="">
                 <div className="section-wrapper">
                     <Marquee
-                        speed={80}
+                        speed={40}
                         gradient={false}
                         className="card-wrapper customer"
                     >
