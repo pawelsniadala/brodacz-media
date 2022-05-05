@@ -676,7 +676,7 @@
 
         &.category {
             box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-            background-color: lighten(#212529, 3%);
+            background-color: #212529;
 
             @media (hover: hover) {
                 &:hover {
@@ -698,7 +698,7 @@
         &.feedback {
             &.opinions {
                 box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-                background-color: lighten(#212529, 3%);
+                background-color: #212529;
 
                 .card-body {
                     .description {
@@ -728,7 +728,7 @@
 
         &.contact {
             box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-            background-color: lighten(#212529, 3%);
+            background-color: #212529;
 
             &.description {
                 .card-body {
