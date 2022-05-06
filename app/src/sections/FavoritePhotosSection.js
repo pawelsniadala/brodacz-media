@@ -3,7 +3,7 @@ import Marquee from "react-fast-marquee";
 import { photo } from "../data/photo";
 
 const FavoritePhotosSection = () => {
-    const favorite = photo.favorite;
+    const favorite = photo.favorite.studio;
 
     const shuffleArray = (array) => {
         for (let i = array.length - 1; i > 0; i--) {
@@ -18,7 +18,7 @@ const FavoritePhotosSection = () => {
         <section className="favorite-photos-section">
             <div className="section-wrapper">
                 <Marquee
-                    speed={80}
+                    speed={60}
                     gradient={false}
                     className="card-wrapper favorite-photos"
                 >
