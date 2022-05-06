@@ -4,7 +4,7 @@ import "bootstrap";
 import "photoswipe/dist/photoswipe.css";
 import "photoswipe/dist/default-skin/default-skin.css";
 import "../styles/app.scss";
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const MainTemplate = ({ children }) => (
     <div className="app">
