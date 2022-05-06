@@ -1,5 +1,4 @@
 footer {
-    // background-color: #f8f9fa;
     background-color: #ffffff;
     border-top: 1px solid rgba(0, 0, 0, .1);
 
@@ -35,7 +34,6 @@ footer {
 
                     .list-group-item {
                         padding: 0.5rem 0;
-                        // background-color: #f8f9fa;
                         background-color: #ffffff;
 
                         a {
@@ -99,8 +97,9 @@ footer {
                 color: rgba(0,0,0,.55);
                 font-size: .7rem;
 
-                .company-name {
-                    text-transform: uppercase;
+                .design {
+                    text-decoration: none;
+                    color: rgba(0,0,0,.55);
                 }
             }
         }
@@ -163,7 +162,10 @@ footer {
 
                 .copyright {
                     color: rgba(255,255,255,.5);
-                    font-weight: 100;
+
+                    .design {
+                        color: rgba(255,255,255,.5);
+                    }
                 }
             }
         }
