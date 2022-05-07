@@ -1,31 +1,38 @@
 .studio-section {
     .section-wrapper {
-        padding-bottom: 1rem;
+        .parallax-wrapper {
+            margin-bottom: 1rem;
 
-        .parallax-content {
-            display: grid;
-            align-content: end;
-            gap: 2rem;
-            padding-bottom: 3rem;
+            .parallax-content {
+                display: grid;
+                align-content: end;
+                gap: 2rem;
+                padding-bottom: 3rem;
 
-            .heading {
-                color: rgba(255, 255, 255, 0.95);
-                font-size: 3rem;
-                font-weight: 700;
-                font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-                line-height: 1;
+                .heading {
+                    color: rgba(255, 255, 255, 0.95);
+                    font-size: 3rem;
+                    font-weight: 700;
+                    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+                    line-height: 1;
+                }
+
+                .button-wrapper {
+                    display: flex;
+                    justify-content: flex-start;
+                    gap: 1rem;
+                }
             }
+        }
 
-            .button-wrapper {
-                display: flex;
-                justify-content: flex-start;
-                gap: 1rem;
+        .marquee-wrapper {
+            .marquee {
+                z-index: 0;
             }
         }
 
         @media (max-width: 991.98px) {
             display: none;
         }
-
     }
 }
