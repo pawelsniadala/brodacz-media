@@ -5,7 +5,7 @@ import VideoSection from "../sections/VideoSection";
 import StudioSection from "../sections/StudioSection";
 import PhotoSection from "../sections/PhotoSection";
 // import BackstageSection2 from "../sections/BackstageSection2";
-import FavoritePhotosSection from "../sections/FavoritePhotosSection";
+// import FavoritePhotosSection from "../sections/FavoritePhotosSection";
 import FeedbackSection from "../sections/FeedbackSection";
 // import OutdoorSection from "../sections/OutdoorSection";
 import CustomerSection from "../sections/CustomerSection";
@@ -24,7 +24,7 @@ const HomeView = () => {
             <PhotoSection/>
             {/* <BackstageSection2 /> */}
             <StudioSection />
-            <FavoritePhotosSection />
+            {/* <FavoritePhotosSection /> */}
             <FeedbackSection />
             {/* <OutdoorSection /> */}
             <CustomerSection />
