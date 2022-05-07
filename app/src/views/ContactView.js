@@ -114,7 +114,7 @@ const ContactView = () => {
                                         href={item.href}
                                         title={item.title}
                                     >
-                                        {renderDetailsIcon(item.label)}
+                                        {/* {renderDetailsIcon(item.label)} */}
                                         <span>{item.content}</span>
                                     </a>
                                 ))}
