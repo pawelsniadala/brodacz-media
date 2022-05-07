@@ -97,6 +97,10 @@ footer {
                 color: rgba(0,0,0,.55);
                 font-size: .7rem;
 
+                @media (max-width: 539.98px) {
+                    font-size: .55rem;
+                }
+
                 .design {
                     text-decoration: none;
                     color: rgba(0,0,0,.55);
