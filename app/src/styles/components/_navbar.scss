@@ -42,7 +42,7 @@
                         width: 40px;
                         height: 40px;
                         cursor: pointer;
-                        box-shadow: 0 1px 2px rgb(0 0 0 / 20%);
+                        background-color: rgba(0, 0, 0, 0.04);
 
                         .sound-desktop {
                             display: flex;
@@ -79,7 +79,7 @@
                         width: 40px;
                         height: 40px;
                         cursor: pointer;
-                        box-shadow: 0 1px 2px rgb(0 0 0 / 20%);
+                        background-color: rgba(0, 0, 0, 0.04);
 
                         .sound-desktop {
                             display: flex;
@@ -168,7 +168,6 @@
                     &.desktop {
                         .icon-wrapper {
                             background-color: rgba(255, 255, 255, 0.05);
-                            border: 1px solid rgba(255, 255, 255, 0.05);
 
                             .sound-desktop {
                                 svg {
@@ -189,7 +188,6 @@
                     &.mobile {
                         .icon-wrapper {
                             background-color: rgba(255, 255, 255, 0.05);
-                            border: 1px solid rgba(255, 255, 255, 0.05);
 
                             .theme-mobile {
                                 svg {
