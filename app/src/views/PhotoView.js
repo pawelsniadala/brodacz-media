@@ -7,6 +7,7 @@ import PhotoBrandingPartial from "./partials/photo/PhotoBrandingPartial";
 import PhotoStudioPartial from "./partials/photo/PhotoStudioPartial";
 import PhotoOutdoorPartial from "./partials/photo/PhotoOutdoorPartial";
 import PhotoProductPartial from "./partials/photo/PhotoProductPartial";
+import PhotoDronePartial from "./partials/photo/PhotoDronePartial";
 
 const PhotoView = () => {
     const [ photoTab, setTab ] = useState(() => {
@@ -38,6 +39,10 @@ const PhotoView = () => {
                     return (
                         "photo-product"
                     );
+                case "/photo/drone":
+                    return (
+                        "photo-drone"
+                    );
                 default:
             }
         }
@@ -66,6 +71,10 @@ const PhotoView = () => {
             case "photo-product":
                 return (
                     <PhotoProductPartial />
+                );
+            case "photo-drone":
+                return (
+                    <PhotoDronePartial />
                 );
             default:
         }
@@ -129,6 +138,16 @@ const PhotoView = () => {
                                 onClick={() => setTab("photo-product")}
                             >
                                 Produktowe
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link
+                                to="/photo/drone"
+                                className={(`nav-link ${photoTab === "photo-drone" ? "active" : ""}`).trim()}
+                                aria-current="page"
+                                onClick={() => setTab("photo-drone")}
+                            >
+                                Dron
                             </Link>
                         </li>
                     </ul>

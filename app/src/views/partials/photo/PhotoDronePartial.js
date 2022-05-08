@@ -1,15 +1,9 @@
 import { Gallery, Item } from "react-photoswipe-gallery";
-import { photo } from "../../../data/photo";
 import CardRealization from "../../../components/CardRealization";
+import { photo } from "../../../data/photo";
 
-const PhotoAllPartial = () => {
-    const all = [
-        ...photo.realization.studio,
-        ...photo.realization.branding,
-        ...photo.realization.product,
-        ...photo.realization.outdoor,
-        ...photo.realization.drone
-    ];
+const PhotoDronePartial = () => {
+    const drone = photo.realization.drone;
 
     const shuffleArray = (array) => {
         for (let i = array.length - 1; i > 0; i--) {
@@ -18,15 +12,15 @@ const PhotoAllPartial = () => {
         }
     }
 
-    shuffleArray(all);
+    shuffleArray(drone);
 
     return (
-        <div className="photo-all-partial">
+        <div className="video-wedding-partial">
             <section className="realization-section">
                 <div className="section-wrapper">
                     <div className="card-wrapper realization photo">
                         <Gallery shareButton={false}>
-                            {all.length ? all.map((item) => (
+                            {drone.length ? drone.map((item) => (
                                 <Item
                                     key={item.id}
                                     original={item.image.original.src}
@@ -56,4 +50,4 @@ const PhotoAllPartial = () => {
     );
 }
 
-export default PhotoAllPartial;
+export default PhotoDronePartial;

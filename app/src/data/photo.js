@@ -2,7 +2,7 @@ import photoCategoryBranding from "../assets/photo/category/photoCategoryBrandin
 import photoCategoryStudio from "../assets/photo/category/photoCategoryStudio.png";
 import photoCategoryProduct from "../assets/photo/category/photoCategoryProduct.png";
 import photoCategoryOutdoor from "../assets/photo/category/photoCategoryOutdoor.png";
-// import photoCategoryDrone from "../assets/photo/category/photoCategoryDrone.png";
+import photoCategoryDrone from "../assets/photo/category/photoCategoryDrone.png";
 
 // WIZERUNKOWE
 // MINIATURKI
@@ -142,6 +142,12 @@ import photoOutdoorOriginal17 from "../assets/photo/realization/outdoor/original
 import photoOutdoorOriginal18 from "../assets/photo/realization/outdoor/original/photoOutdoorOriginal18.png"; // nev size
 import photoOutdoorOriginal19 from "../assets/photo/realization/outdoor/original/photoOutdoorOriginal19.png"; // nev size
 
+// DRON
+// MINIATURKI
+import photoDroneThumbnail1 from "../assets/photo/realization/drone/thumbnail/photoDroneThumbnail1.png";
+// ORYGINALNE
+import photoDroneOriginal1 from "../assets/photo/realization/drone/original/photoDroneOriginal1.png";
+
 export const photo = {
     "title": "Foto",
     "path": "/photo",
@@ -178,14 +184,14 @@ export const photo = {
             image: photoCategoryProduct,
             path: '/photo/product'
         },
-        // {
-        //     id: "7b014e6a-f5d7-48e4-bab3-e9905ea1f8e6",
-        //     label: "zdjęcia",
-        //     title: 'Dron',
-        //     description: "Nowa perspektywa to nowe możliwości. Dzięki posiadaniu drona zainteresowałem się mocno fotografią krajobrazową i dokumentalną i chętnie uwiecznię też Twoje otoczenie.",
-        //     image: photoCategoryDrone,
-        //     path: '/photo/product'
-        // }
+        {
+            id: "7b014e6a-f5d7-48e4-bab3-e9905ea1f8e6",
+            label: "zdjęcia",
+            title: 'Dron',
+            description: "Nowa perspektywa to nowe możliwości. Dzięki posiadaniu drona zainteresowałem się mocno fotografią krajobrazową i dokumentalną i chętnie uwiecznię też Twoje otoczenie.",
+            image: photoCategoryDrone,
+            path: '/photo/drone'
+        }
     ],
     "favorite": {
         studio: [
@@ -1144,7 +1150,7 @@ export const photo = {
                 }
             },
             {
-                id: "7755c343-074d-4553-9183-040a79354f31",
+                id: "b595807c-1532-4161-b703-bf134aedc25d",
                 date: '20 Listopada 2019',
                 title: '',
                 description: '',
@@ -1242,5 +1248,23 @@ export const photo = {
             //     }
             // },
         ],
+        "drone": [
+            {
+                id: "f154afe6-6506-48a3-958f-6aa6b296dea2",
+                date: '20 Listopada 2019',
+                title: '',
+                description: '',
+                image: {
+                    "thumbnail": {
+                        "src": photoDroneThumbnail1,
+                    },
+                    "original": {
+                        "src": photoDroneOriginal1,
+                        "width": "1920",
+                        "height": "936",
+                    }
+                }
+            }
+        ]
     }
 };
