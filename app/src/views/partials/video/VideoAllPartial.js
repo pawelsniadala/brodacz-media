@@ -4,12 +4,13 @@ import Alert from "../../../components/Alert";
 
 const VideoAllPartial = () => {
     const all = [
-        ...video.realization.weddings,
-        ...video.realization.events,
-        ...video.realization.music,
-        ...video.realization.broadcast,
         ...video.realization.debates,
         ...video.realization.immovables,
+        ...video.realization.drone,
+        ...video.realization.events,
+        ...video.realization.music,
+        ...video.realization.weddings,
+        ...video.realization.broadcast,
         ...video.realization.animations
     ];
 
