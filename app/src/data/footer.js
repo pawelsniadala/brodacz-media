@@ -70,6 +70,11 @@ export const footer = {
             id: "1856c68f-e3df-478f-b8b3-81025488246b",
             name: "Produktowe",
             href: "/photo/product"
+        },
+        {
+            id: "2bae6379-91c1-466b-a96f-4c17bec71c77",
+            name: "Dron",
+            href: "/photo/drone"
         }
     ],
     contact: {
