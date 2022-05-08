@@ -2,7 +2,7 @@ import { video } from "../../../data/video";
 import CardRealization from "../../../components/CardRealization";
 import Alert from "../../../components/Alert";
 
-const VideoAdvertistingPartial = () => (
+const VideoDebatePartial = () => (
     <div className="video-wedding-partial">
         <section className="realization-section">
             <div className="section-wrapper">
@@ -30,4 +30,4 @@ const VideoAdvertistingPartial = () => (
     </div>
 );
 
-export default VideoAdvertistingPartial;
+export default VideoDebatePartial;

@@ -61,8 +61,8 @@ export const video = {
             title: "Debaty i wypowiedzi",
             description: "Świat potrzebuje różnych punktów widzenia w każdej sprawie, profesjonalne przygotowanie materiału pozwoli mu dużo łatwiej dotrzeć do szerokiej bazy odbiorców.",
             image: videoCategoryDebate,
-            path: "/video/advertising",
-            tab: "video-advertising"
+            path: "/video/debates",
+            tab: "video-debates"
         },
         {
             id: "32cbb538-c587-4946-8ddf-e7753d4f2966",
@@ -97,8 +97,8 @@ export const video = {
             title: "Teledyski",
             description: "Z gitarą spędziłem już 13 lat, moje doświadczenie muzyczne oraz wrażliwość artystyczna implikują bezbłędną komunikację z artystą aby stworzyć treści maksymalnie dopasowane do danego stylu.",
             image: videoCategoryMusicVideo,
-            path: "/video/music-video",
-            tab: "video-music-video"
+            path: "/video/music",
+            tab: "video-music"
         },
         {
             id: "f1c00469-6aea-4b00-abff-db03b02805b1",

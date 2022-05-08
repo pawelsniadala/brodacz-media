@@ -12,7 +12,7 @@ export const footer = {
         {
             id: "501a147a-8c10-41d3-a480-fbded1ed5e58",
             name: "Debaty i wypowiedzi",
-            href: "/video/advertising"
+            href: "/video/debates"
         },
         {
             id: "9061c854-4485-48ec-a919-656d4f9213a3",
@@ -32,7 +32,7 @@ export const footer = {
         {
             id: "8becfeee-7f71-4872-82e1-bad91c1e80f8",
             name: "Teledyski",
-            href: "/video/music-video"
+            href: "/video/music"
         },
         {
             id: "a9a2dd07-3321-4964-a8fa-d16d14b168d9",

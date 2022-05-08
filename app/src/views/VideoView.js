@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import { video } from "../data/video";
 import PageHeader from "../components/PageHeader";
 import VideoAllPartial from "./partials/video/VideoAllPartial";
-import VideoAdvertistingPartial from "./partials/video/VideoAdvertistingPartial";
+import VideoDebatePartial from "./partials/video/VideoDebatePartial";
 import VideoImmovablesPartial from "./partials/video/VideoImmovablesPartial";
 import VideoDronePartial from "./partials/video/VideoDronePartial";
 import VideoEventPartial from "./partials/video/VideoEventPartial";
-import VideoMusicVideoPartial from "./partials/video/VideoMusicVideoPartial";
+import VideoMusicPartial from "./partials/video/VideoMusicPartial";
 import VideoWeddingPartial from "./partials/video/VideoWeddingPartial";
 import VideoBroadcastPartial from "./partials/video/VideoBroadcastPartial";
 import VideoAnimationPartial from "./partials/video/VideoAnimationPartial";
@@ -26,9 +26,9 @@ const VideoView = () => {
                     return (
                         "video-all"
                     );
-                case "/video/advertising":
+                case "/video/debates":
                     return (
-                        "video-advertising"
+                        "video-debates"
                     );
                 case "/video/immovables":
                     return (
@@ -42,9 +42,9 @@ const VideoView = () => {
                     return (
                         "video-events"
                     );
-                case "/video/music-video":
+                case "/video/music":
                     return (
-                        "video-music-video"
+                        "video-music"
                     );
                 case "/video/weddings":
                     return (
@@ -71,9 +71,9 @@ const VideoView = () => {
                 return (
                     <VideoAllPartial />
                 );
-            case "video-advertising":
+            case "video-debates":
                 return (
-                    <VideoAdvertistingPartial />
+                    <VideoDebatePartial />
                 );
             case "video-immovables":
                 return (
@@ -87,9 +87,9 @@ const VideoView = () => {
                 return (
                     <VideoEventPartial />
                 );
-            case "video-music-video":
+            case "video-music":
                 return (
-                    <VideoMusicVideoPartial />
+                    <VideoMusicPartial />
                 );
             case "video-weddings":
                 return (
@@ -129,10 +129,10 @@ const VideoView = () => {
                         </li>
                         <li className="nav-item">
                             <Link
-                                to="/video/advertising"
-                                className={`nav-link${videoTab === "video-advertising" ? " active" : ""}`}
+                                to="/video/debates"
+                                className={`nav-link${videoTab === "video-debates" ? " active" : ""}`}
                                 aria-current="page"
-                                onClick={() => setTab("video-advertising")}
+                                onClick={() => setTab("video-debates")}
                             >
                                 Debaty i wypowiedzi
                             </Link>
@@ -169,10 +169,10 @@ const VideoView = () => {
                         </li>
                         <li className="nav-item">
                             <Link
-                                to="/video/music-video"
-                                className={`nav-link${videoTab === "video-music-video" ? " active" : ""}`}
+                                to="/video/music"
+                                className={`nav-link${videoTab === "video-music" ? " active" : ""}`}
                                 aria-current="page"
-                                onClick={() => setTab("video-music-video")}
+                                onClick={() => setTab("video-music")}
                             >
                                 Teledyski
                             </Link>
