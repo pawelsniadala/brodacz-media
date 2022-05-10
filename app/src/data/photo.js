@@ -258,7 +258,7 @@ export const photo = {
             {
                 id: "0075e893-9386-4777-83a3-a3e4cb0b1fa7",
                 title: "",
-                image: photoStudioThumbnail16,
+                image: photoStudioThumbnail17,
             }
         ]
     },
