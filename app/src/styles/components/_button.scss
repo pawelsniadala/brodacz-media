@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@200;500&family=Roboto:wght@500&family=Work+Sans:wght@300&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@200;500&family=Roboto:wght@300&display=swap');
 
 button.button,
 a.button {
@@ -40,6 +39,25 @@ a.button {
         transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     }
 
+    &.introduction {
+        font-size: 1.15rem;
+        font-weight: 400;
+        padding: 13px 21px;
+        font-weight: 400;
+
+        &.left {
+            // background-color: #212529;
+            // color: rgba(255, 255, 255, 0.95);
+            // border: 1px solid #212529;
+        }
+
+        &.right {
+            background-color: transparent;
+            color: #212529;
+            border: 1px solid #212529;
+        }
+    }
+
     &.section {
         background-color: transparent;
         border: 1px solid rgba(0,0,0,.15);
@@ -63,15 +81,32 @@ a.button {
         z-index: 2;
     }
 
-    &.studio,
-    &.outdoor {
+    // &.studio,
+    // &.outdoor {
+    //     font-size: 1.15rem;
+    //     font-weight: 400;
+    //     padding: 13px 21px;
+    //     background-color: rgba(255, 255, 255, 0.95) !important;
+    //     color: #212529 !important;
+
+    //     &.photo {
+    //         background-color: transparent !important;
+    //         color: rgba(255, 255, 255, 0.95) !important;
+    //         border: 1px solid rgba(255, 255, 255, 0.95);
+    //     }
+    // }
+
+    &.parallax {
         font-size: 1.15rem;
         font-weight: 400;
         padding: 13px 21px;
-        background-color: rgba(255, 255, 255, 0.95) !important;
-        color: #212529 !important;
 
-        &.photo {
+        &.left {
+            background-color: rgba(255, 255, 255, 0.95) !important;
+            color: #212529 !important;
+        }
+
+        &.right {
             background-color: transparent !important;
             color: rgba(255, 255, 255, 0.95) !important;
             border: 1px solid rgba(255, 255, 255, 0.95);
@@ -169,6 +204,20 @@ a.button {
 
         &:hover {
             background-color: lighten(#253d38, 5%);
+        }
+
+        &.introduction {
+            &.left {
+                // background-color: rgba(255, 255, 255, 0.75);
+                // color: #212529;
+                // border: 1px solid rgba(255, 255, 255, 0.75);
+            }
+
+            &.right {
+                background-color: transparent;
+                color: rgba(255, 255, 255, 0.75);
+                border: 1px solid rgba(255, 255, 255, 0.75);
+            }
         }
 
         &.section {
