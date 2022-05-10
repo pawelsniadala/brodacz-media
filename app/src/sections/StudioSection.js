@@ -24,19 +24,19 @@ const StudioSection = () => {
                         <div className="parallax-content">
                             <div className="heading">
                                 Zobacz siebie<br/>
-                                w innym świetle
+                                w innym świetle.
                             </div>
                             <div className="button-wrapper">
                                 <Link
                                     to="/contact"
-                                    className="button studio"
+                                    className="button parallax left"
                                     aria-current="page"
                                 >
                                     Zapisz się na sesję
                                 </Link>
                                 <Link
                                     to="/photo/studio"
-                                    className="button studio photo"
+                                    className="button parallax right"
                                     aria-current="page"
                                 >
                                     Zobacz zdjęcia

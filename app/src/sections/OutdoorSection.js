@@ -12,14 +12,14 @@ const OutdoorSection = () => (
                 <div className="button-wrapper">
                 <Link
                     to="/contact"
-                    className="button outdoor"
+                    className="button parallax left"
                     aria-current="page"
                 >
                     Zapisz się na sesję
                 </Link>
                 <Link
                     to="/photo/outdoor"
-                    className="button outdoor photo"
+                    className="button parallax right"
                     aria-current="page"
                 >
                     Zobacz zdjęcia

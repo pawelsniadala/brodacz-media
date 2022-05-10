@@ -147,17 +147,17 @@ const NavSection = () => {
                                     Foto
                                 </NavLink>
                             </li>
-                            {/* <li className="nav-item">
+                            <li className="nav-item">
                                 <NavLink
                                     className="nav-link"
                                     activeclassname="active"
                                     aria-current="page"
                                     to="/backstage"
-                                    onClick={() => cameraFocusBeepAudio.play()}
+                                    onClick={() => cameraFocusBeepAudioSwitch()}
                                 >
                                     Backstage
                                 </NavLink>
-                            </li> */}
+                            </li>
                             {/* <li className="nav-item">
                                 <NavLink
                                     className="nav-link"

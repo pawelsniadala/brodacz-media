@@ -46,23 +46,24 @@ const Jumbotron = ({
                     </video>
                 </div>
             ) : (
-                <div className="photo-wrapper">
-                    <div className="content-wrapper">
-                        <div className="company-wrapper">
-                            <h1 className="display-1 company-name">Brodacz media<hr/></h1>
-                            <span className="company-services">
-                                film
-                                <span className="dot">&#xb7;</span>
-                                fotografia
-                                <span className="dot">&#xb7;</span>
-                                dźwięk
-                            </span>
-                        </div>
-                    </div>
-                </div>
+                null
             )}
         </div>
     );
 }
 
 export default Jumbotron;
+ {/* <div className="photo-wrapper">
+    <div className="content-wrapper">
+        <div className="company-wrapper">
+            <h1 className="display-1 company-name">Brodacz media<hr/></h1>
+            <span className="company-services">
+                film
+                <span className="dot">&#xb7;</span>
+                fotografia
+                <span className="dot">&#xb7;</span>
+                dźwięk
+            </span>
+        </div>
+    </div>
+</div> */}

@@ -48,6 +48,6 @@ const PhotoBrandingPartial = () => {
             </section>
         </div>
     );
-};
+}
 
 export default PhotoBrandingPartial;

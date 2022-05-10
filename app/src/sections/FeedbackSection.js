@@ -20,15 +20,17 @@ const FeedbackSection = () => (
                                     showLoader={false}
                                 />
                             </div>
-                            <div className="text-wrapper">
-                                <div className="heading">
-                                    Dołącz do grona<br/>
-                                    zadowolonych klientów
-                                </div>
-                                <div className="description">
-                                    Będę bardzo wdzięczny<br/>
-                                    jeśli podzielisz się swoją opinią<br/>
-                                    na temat moich usług.
+                            <div className="content-wrapper">
+                                <div className="header-wrapper">
+                                    <div className="header">
+                                        Dołącz do grona<br/>
+                                        zadowolonych klientów.
+                                    </div>
+                                    <div className="subheader">
+                                        Będę bardzo wdzięczny<br/>
+                                        jeśli podzielisz się swoją opinią<br/>
+                                        na temat moich usług.
+                                    </div>
                                 </div>
                                 <div className="button-wrapper">
                                     <button type="button"
@@ -55,9 +57,11 @@ const FeedbackSection = () => (
                                     <div className="position" title={item.position}>
                                         {item.position}
                                     </div>
-                                    <div className="description" title={item.description}>
+                                    <div className="description">
                                         {item.description}
                                     </div>
+                                </div>
+                                <div className="card-footer">
                                     <ReactStars
                                         className="rating"
                                         edit={false}
