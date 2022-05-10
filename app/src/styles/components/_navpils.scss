@@ -44,6 +44,13 @@
         }
     }
 
+    &.backstage {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+
     .nav-item {
         justify-self: stretch;
         text-align: center;
