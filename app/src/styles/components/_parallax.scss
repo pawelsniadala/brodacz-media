@@ -30,25 +30,33 @@
         background-size: cover;
     }
 
+    &.backstage {
+        background: url('../../assets/backstage/backstage.png') fixed 0;
+        margin: 0;
+        background-size: cover;
+
+        .photo-banner-inner {
+            &:after {
+                @include bd-bg-overlay(#000, .5);
+                filter: brightness(50%);
+            }
+        }
+    }
+
     .photo-banner-inner {
         position: relative;
         z-index: 0;
         height: 650px;
 
         &:after {
-            // @include bd-bg-overlay(#222222, .7);
             @include bd-bg-overlay(#000, .2);
-            // filter: brightness(50%);
         }
 
         .container {
-            // text-align: center;
+            display: flex;
             position: relative;
             z-index: 1;
-            // padding: 700px 0;
             height: 650px;
-            display: flex;
-            // align-content: flex-end;
         }
     }
 }
