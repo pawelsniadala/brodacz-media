@@ -107,8 +107,8 @@ const FooterSection = () => {
             </div>
             <div className="section-wrapper info">
                 <div className="copyright">
-                    <div>Copyright © 2022 Brodacz Media Mariusz Śniadała. Wszelkie Prawa Zastrzeżone.</div>
-                    <div>Design <a href="https://www.linkedin.com/in/pawelsniadala/" className="design" target="_blank" rel="noreferrer">Paweł Śniadała</a>.</div>
+                    <div>Copyright © 2022 Brodacz Media Mariusz Śniadała. All rights reserved.</div>
+                    <div>Design by <a href="https://www.linkedin.com/in/pawelsniadala/" className="design" target="_blank" rel="noreferrer">Paweł Śniadała</a>.</div>
                 </div>
             </div>
         </footer>
