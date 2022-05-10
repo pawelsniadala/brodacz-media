@@ -15,10 +15,20 @@ export const feedback = {
     ],
     "opinions": [
         {
+            id: "c28ecbc9-7509-442c-8098-6442405b17b6",
+            name: 'Mateusz Niziołek',
+            position: 'Przewodniczący Samorządu Studentów SGGW',
+            description: '"Profesjonalista! A za razem bardzo przyjazny. Wszystkie sesje, wyjazdy czy imprezy to najwyższa jakość. A współpraca z Mariuszem i jego ekipą to sama przyjemność. Na pewno będę korzystać w przyszłości!"',
+            rating: 5,
+            image: {
+                profile: recommendationProfilePhoto3
+            }
+        },
+        {
             id: "8277130f-383c-4d10-bee3-953f11c4f790",
             name: 'Rafał Jajor',
             position: 'Prezes Lasmedia Sp. z o.o.',
-            description: '"Po kilku latach współpracy wiem, że na Brodacz Media można polegać. Terminowość, kreatywność, chęć do pracy i rozwoju to coś, co warto docenić. W naszej firmie pomysły idą często w poprzek obowiązującym trendom, zwykle wybieramy ścieżki, którymi nikt wcześniej nie szedł. A w taką wędrówkę warto zabrać kogoś, kto po prostu da radę. Brodacz Media daje radę. No i nazwę ma podobną do naszej :-)"',
+            description: '"Po kilku latach współpracy wiem, że na Brodacz Media można polegać. Terminowość, kreatywność, chęć do pracy i rozwoju to coś, co warto docenić. W naszej firmie pomysły idą często w poprzek obowiązującym trendom, zwykle wybieramy ścieżki, którymi nikt wcześniej nie szedł. A w taką wędrówkę warto zabrać kogoś, kto po prostu da radę. Brodacz Media daje radę. No i nazwę ma podobną do naszej."',
             rating: 5,
             image: {
                 profile: recommendationProfilePhoto1
@@ -34,16 +44,8 @@ export const feedback = {
                 profile: recommendationProfilePhoto2
             }
         },
-        {
-            id: "c28ecbc9-7509-442c-8098-6442405b17b6",
-            name: 'Mateusz Niziołek',
-            position: 'Przewodniczący Samorządu Studentów SGGW',
-            description: '"Profesjonalista! A za razem bardzo przyjazny. Wszystkie sesje, wyjazdy czy imprezy to najwyższa jakość. A współpraca z Mariuszem i jego ekipą to sama przyjemność. Na pewno będę korzystać w przyszłości!"',
-            rating: 5,
-            image: {
-                profile: recommendationProfilePhoto3
-            }
-        },
+
+
         // {
         //     id: "a6817228-3c44-4a8c-9013-018f6816fcff",
         //     name: 'Mateusz Morawiecki',
