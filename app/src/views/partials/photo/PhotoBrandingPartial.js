@@ -1,6 +1,6 @@
 import { Gallery, Item } from "react-photoswipe-gallery";
-import CardRealization from "../../../components/CardRealization";
 import { photo } from "../../../data/photo";
+import CardRealization from "../../../components/CardRealization";
 
 const PhotoBrandingPartial = () => {
     const branding = photo.realization.branding;

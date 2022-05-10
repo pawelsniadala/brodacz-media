@@ -16,7 +16,7 @@ const BackstagePhotoPartial = () => {
 
     return (
         <div className="backstage-photo-partial">
-            <section className="backstage-section">
+            <section className="backstage-photo-section">
                 <div className="section-wrapper">
                     <div className="card-wrapper realization photo">
                         <Gallery shareButton={false}>

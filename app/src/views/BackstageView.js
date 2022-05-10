@@ -49,7 +49,7 @@ const BackstageView = () => {
     }, []);
 
     return (
-        <div className="photo-view">
+        <div className="backstage-view">
             <div className="view-wrapper container">
                 <PageHeader header={backstage.title} />
                 <div className="navpils">
