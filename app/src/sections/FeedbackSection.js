@@ -38,7 +38,7 @@ const FeedbackSection = () => (
                                             className="rating"
                                             edit={false}
                                             value={5}
-                                            size={30}
+                                            size={24}
                                         />
                                         <span className="text">Ocena: 5.0 • 3 opinie</span>
                                     </div>
