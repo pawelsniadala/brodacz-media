@@ -62,8 +62,8 @@ import photoStudioThumbnail17 from "../assets/photo/realization/studio/thumbnail
 import photoStudioThumbnail18 from "../assets/photo/realization/studio/thumbnail/photoStudioThumbnail18.png"; // nev size
 // import photoStudioThumbnail19 from "../assets/photo/realization/studio/thumbnail/photoStudioThumbnail19.png";
 import photoStudioThumbnail20 from "../assets/photo/realization/studio/thumbnail/photoStudioThumbnail20.png"; // nev size
-// import photoStudioThumbnail21 from "../assets/photo/realization/studio/thumbnail/photoStudioThumbnail21.png";
-// import photoStudioThumbnail22 from "../assets/photo/realization/studio/thumbnail/photoStudioThumbnail22.png";
+import photoStudioThumbnail21 from "../assets/photo/realization/studio/thumbnail/photoStudioThumbnail21.png"; // nev size
+import photoStudioThumbnail22 from "../assets/photo/realization/studio/thumbnail/photoStudioThumbnail22.png"; // nev size
 import photoStudioThumbnail23 from "../assets/photo/realization/studio/thumbnail/photoStudioThumbnail23.png"; // nev size
 // ORYGINALNE
 import photoStudioOriginal1 from "../assets/photo/realization/studio/original/photoStudioOriginal1.png"; // nev size
@@ -86,8 +86,8 @@ import photoStudioOriginal17 from "../assets/photo/realization/studio/original/p
 import photoStudioOriginal18 from "../assets/photo/realization/studio/original/photoStudioOriginal18.png"; // nev size
 // import photoStudioOriginal19 from "../assets/photo/realization/studio/original/photoStudioOriginal19.png";
 import photoStudioOriginal20 from "../assets/photo/realization/studio/original/photoStudioOriginal20.png"; // nev size
-// import photoStudioOriginal21 from "../assets/photo/realization/studio/original/photoStudioOriginal21.png";
-// import photoStudioOriginal22 from "../assets/photo/realization/studio/original/photoStudioOriginal22.png";
+import photoStudioOriginal21 from "../assets/photo/realization/studio/original/photoStudioOriginal21.png"; // nev size
+import photoStudioOriginal22 from "../assets/photo/realization/studio/original/photoStudioOriginal22.png"; // nev size
 import photoStudioOriginal23 from "../assets/photo/realization/studio/original/photoStudioOriginal23.png"; // nev size
 
 // PRODUKTOWE
@@ -110,7 +110,7 @@ import photoOutdoorThumbnail3 from "../assets/photo/realization/outdoor/thumbnai
 import photoOutdoorThumbnail4 from "../assets/photo/realization/outdoor/thumbnail/photoOutdoorThumbnail4.png"; // nev size
 import photoOutdoorThumbnail5 from "../assets/photo/realization/outdoor/thumbnail/photoOutdoorThumbnail5.png"; // nev size
 import photoOutdoorThumbnail6 from "../assets/photo/realization/outdoor/thumbnail/photoOutdoorThumbnail6.png"; // nev size
-// import photoOutdoorThumbnail7 from "../assets/photo/realization/outdoor/thumbnail/photoOutdoorThumbnail7.png";
+import photoOutdoorThumbnail7 from "../assets/photo/realization/outdoor/thumbnail/photoOutdoorThumbnail7.png"; // nev size
 import photoOutdoorThumbnail8 from "../assets/photo/realization/outdoor/thumbnail/photoOutdoorThumbnail8.png";
 // import photoOutdoorThumbnail9 from "../assets/photo/realization/outdoor/thumbnail/photoOutdoorThumbnail9.png";
 import photoOutdoorThumbnail10 from "../assets/photo/realization/outdoor/thumbnail/photoOutdoorThumbnail10.png";
@@ -129,7 +129,7 @@ import photoOutdoorOriginal3 from "../assets/photo/realization/outdoor/original/
 import photoOutdoorOriginal4 from "../assets/photo/realization/outdoor/original/photoOutdoorOriginal4.png"; // nev size
 import photoOutdoorOriginal5 from "../assets/photo/realization/outdoor/original/photoOutdoorOriginal5.png"; // nev size
 import photoOutdoorOriginal6 from "../assets/photo/realization/outdoor/original/photoOutdoorOriginal6.png"; // nev size
-// import photoOutdoorOriginal7 from "../assets/photo/realization/outdoor/original/photoOutdoorOriginal7.png";
+import photoOutdoorOriginal7 from "../assets/photo/realization/outdoor/original/photoOutdoorOriginal7.png"; // nev size
 import photoOutdoorOriginal8 from "../assets/photo/realization/outdoor/original/photoOutdoorOriginal8.png";
 // import photoOutdoorOriginal9 from "../assets/photo/realization/outdoor/original/photoOutdoorOriginal9.png";
 import photoOutdoorOriginal10 from "../assets/photo/realization/outdoor/original/photoOutdoorOriginal10.png";
@@ -843,38 +843,38 @@ export const photo = {
                     }
                 }
             },
-            // {
-            //     id: "a8a14547-f4b3-49c7-a2ab-d8f98663705f",
-            //     date: '20 Listopada 2019',
-            //     title: "",
-            //     description: '',
-            //     image: {
-            //         "thumbnail": {
-            //             "src": photoStudioThumbnail21,
-            //         },
-            //         "original": {
-            //             "src": photoStudioOriginal21,
-            //             "width": "1000",
-            //             "height": "871"
-            //         }
-            //     }
-            // },
-            // {
-            //     id: "788fb592-42de-431f-9470-7f2f6f92f20f",
-            //     date: '20 Listopada 2019',
-            //     title: "",
-            //     description: '',
-            //     image: {
-            //         "thumbnail": {
-            //             "src": photoStudioThumbnail22,
-            //         },
-            //         "original": {
-            //             "src": photoStudioOriginal22,
-            //             "width": "1000",
-            //             "height": "1249"
-            //         }
-            //     }
-            // },
+            {
+                id: "a8a14547-f4b3-49c7-a2ab-d8f98663705f",
+                date: '20 Listopada 2019',
+                title: "",
+                description: '',
+                image: {
+                    "thumbnail": {
+                        "src": photoStudioThumbnail21,
+                    },
+                    "original": {
+                        "src": photoStudioOriginal21,
+                        "width": "1920",
+                        "height": "3269"
+                    }
+                }
+            },
+            {
+                id: "788fb592-42de-431f-9470-7f2f6f92f20f",
+                date: '20 Listopada 2019',
+                title: "",
+                description: '',
+                image: {
+                    "thumbnail": {
+                        "src": photoStudioThumbnail22,
+                    },
+                    "original": {
+                        "src": photoStudioOriginal22,
+                        "width": "1920",
+                        "height": "2400"
+                    }
+                }
+            },
             {
                 id: "8255f001-851a-4afa-bb34-10c2c952560f",
                 date: '20 Listopada 2019',
@@ -989,22 +989,22 @@ export const photo = {
                     }
                 }
             },
-            // {
-            //     id: "dd180962-4255-4113-a6b0-7bb17c268bf2",
-            //     date: '20 Listopada 2019',
-            //     title: '',
-            //     description: '',
-            //     image: {
-            //         "thumbnail": {
-            //             "src": photoOutdoorThumbnail7,
-            //         },
-            //         "original": {
-            //             "src": photoOutdoorOriginal7,
-            //             "width": "1000",
-            //             "height": "666"
-            //         }
-            //     }
-            // },
+            {
+                id: "dd180962-4255-4113-a6b0-7bb17c268bf2",
+                date: '20 Listopada 2019',
+                title: '',
+                description: '',
+                image: {
+                    "thumbnail": {
+                        "src": photoOutdoorThumbnail7,
+                    },
+                    "original": {
+                        "src": photoOutdoorOriginal7,
+                        "width": "1920",
+                        "height": "2773"
+                    }
+                }
+            },
             {
                 id: "b9037c6a-56f2-4696-8ff7-c87b96b8d1c5",
                 date: '20 Listopada 2019',
