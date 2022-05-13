@@ -21,15 +21,26 @@ const FeedbackSection = () => (
                                 />
                             </div>
                             <div className="content-wrapper">
-                                <div className="header-wrapper">
-                                    <div className="header">
-                                        Dołącz do grona<br/>
-                                        zadowolonych klientów.
+                                <div className="text-wrapper">
+                                    <div className="header-wrapper">
+                                        <div className="header">
+                                            Dołącz do grona<br/>
+                                            zadowolonych klientów.
+                                        </div>
+                                        <div className="subheader">
+                                            Będę bardzo wdzięczny<br/>
+                                            jeśli podzielisz się swoją opinią<br/>
+                                            na temat moich usług.
+                                        </div>
                                     </div>
-                                    <div className="subheader">
-                                        Będę bardzo wdzięczny<br/>
-                                        jeśli podzielisz się swoją opinią<br/>
-                                        na temat moich usług.
+                                    <div className="rating-wrapper">
+                                        <ReactStars
+                                            className="rating"
+                                            edit={false}
+                                            value={5}
+                                            size={30}
+                                        />
+                                        <span className="text">Ocena: 5.0 • 3 opinie</span>
                                     </div>
                                 </div>
                                 <div className="button-wrapper">

@@ -2,7 +2,9 @@ import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import LogoSvg from "../assets/common/LogoSvg";
 import SunSvg from "../assets/common/SunSvg";
+import SunSvgMobile from "../assets/common/SunSvgMobile";
 import MoonSvg from "../assets/common/MoonSvg";
+import MoonSvgMobile from "../assets/common/MoonSvgMobile";
 import SoundOffSvg from "../assets/common/SoundOffSvg";
 import SoundOnSvg from "../assets/common/SoundOnSvg";
 import cameraShutterClick from "./../assets/navbar/cameraShutterClick.wav";
@@ -115,9 +117,9 @@ const NavSection = () => {
                         >
                             <div className="theme-mobile">
                                 {darkTheme ? (
-                                    <SunSvg />
+                                    <SunSvgMobile />
                                 ) : (
-                                    <MoonSvg />
+                                    <MoonSvgMobile />
                                 )}
                             </div>
                         </div>
