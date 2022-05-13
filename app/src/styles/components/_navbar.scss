@@ -74,12 +74,13 @@
                     .icon-wrapper {
                         display: flex;
                         align-items: center;
-                        justify-content: center;
-                        border-radius: 50%;
+                        justify-content: end;
+                        // border-radius: 50%;
                         width: 40px;
                         height: 40px;
                         cursor: pointer;
-                        background-color: rgba(0, 0, 0, 0.04);
+                        // background-color: rgba(0, 0, 0, 0.04);
+                        background-color: transparent;
 
                         .sound-desktop {
                             display: flex;
@@ -96,7 +97,7 @@
                             align-items: center;
                             justify-content: center;
 
-                            img {
+                            svg {
                                 filter: invert(0%) sepia(100%) saturate(7500%) hue-rotate(327deg) brightness(114%) contrast(114%);
                             }
                         }
@@ -187,7 +188,7 @@
 
                     &.mobile {
                         .icon-wrapper {
-                            background-color: rgba(255, 255, 255, 0.05);
+                            // background-color: rgba(255, 255, 255, 0.05);
 
                             .theme-mobile {
                                 svg {
