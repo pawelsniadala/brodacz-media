@@ -33,6 +33,7 @@ import videoEventThumbnail3 from "../assets/video/realization/events/videoEventT
 import videoEventThumbnail4 from "../assets/video/realization/events/videoEventThumbnail4.png";
 import videoEventThumbnail5 from "../assets/video/realization/events/videoEventThumbnail5.png";
 import videoEventThumbnail6 from "../assets/video/realization/events/videoEventThumbnail6.png";
+import videoEventThumbnail7 from "../assets/video/realization/events/videoEventThumbnail7.png";
 
 // TELEDYSKI
 import videoMusicThumbnail1 from "../assets/video/realization/music/videoMusicThumbnail1.png";
@@ -356,6 +357,17 @@ export const video = {
                     time: "1:21",
                     src: videoEventThumbnail6,
                     urlPage: "https://www.youtube.com/watch?v=YoAXW5QFmg8"
+                }
+            },
+            {
+                id: "ccefc25b-92e0-463a-af8d-c366424fd428",
+                date: "17 maj 2022",
+                title: "Wieczór Aperitivo",
+                company: "Manager Business Hub",
+                video: {
+                    time: "2:45",
+                    src: videoEventThumbnail7,
+                    urlPage: "https://www.youtube.com/watch?v=aYo1Iqkr9cs"
                 }
             }
         ],
