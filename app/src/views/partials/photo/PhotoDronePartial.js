@@ -19,7 +19,7 @@ const PhotoDronePartial = () => {
             <section className="realization-section">
                 <div className="section-wrapper">
                     <div className="card-wrapper realization photo">
-                        <Gallery shareButton={false}>
+                        <Gallery>
                             {drone.length ? drone.map((item) => (
                                 <Item
                                     key={item.id}

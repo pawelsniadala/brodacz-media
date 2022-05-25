@@ -19,7 +19,7 @@ const PhotoProductPartial = () => {
             <section className="realization-section">
                 <div className="section-wrapper">
                     <div className="card-wrapper realization photo">
-                        <Gallery shareButton={false}>
+                        <Gallery>
                             {product.length ? product.map((item) => (
                                 <Item
                                     key={item.id}

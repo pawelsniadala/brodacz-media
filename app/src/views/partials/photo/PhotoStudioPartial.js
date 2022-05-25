@@ -19,7 +19,7 @@ const PhotoStudioPartial = () => {
             <section className="realization-section">
                 <div className="section-wrapper">
                     <div className="card-wrapper realization photo">
-                        <Gallery shareButton={false}>
+                        <Gallery>
                             {studio.length ? studio.map((item) => (
                                 <Item
                                     key={item.id}

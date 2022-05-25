@@ -19,7 +19,7 @@ const PhotoBrandingPartial = () => {
             <section className="realization-section">
                 <div className="section-wrapper">
                     <div className="card-wrapper realization photo">
-                        <Gallery shareButton={false}>
+                        <Gallery>
                             {branding.length ? branding.map((item) => (
                                 <Item
                                     key={item.id}

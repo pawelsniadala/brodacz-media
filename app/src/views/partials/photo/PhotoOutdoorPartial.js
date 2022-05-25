@@ -19,7 +19,7 @@ const PhotoOutdoorPartial = () => {
             <section className="realization-section">
                 <div className="section-wrapper">
                     <div className="card-wrapper realization photo">
-                        <Gallery shareButton={false}>
+                        <Gallery>
                             {outdoor.length ? outdoor.map((item) => (
                                 <Item
                                     key={item.id}
