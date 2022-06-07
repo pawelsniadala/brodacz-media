@@ -10,7 +10,6 @@ import HomeView from "./HomeView";
 import VideoView from "./VideoView";
 import PhotoView from "./PhotoView";
 import BackstageView from "./BackstageView";
-// import AboutMeView from "./AboutMeView";
 import ContactView from "./ContactView";
 import VideoAllPartial from "./partials/video/VideoAllPartial";
 import VideoDebatePartial from "./partials/video/VideoDebatePartial";
@@ -64,7 +63,6 @@ const Root = () => (
                         <Route path="/backstage/video" element={<BackstageVideoPartial />} />
                         <Route path="/backstage/photo" element={<BackstagePhotoPartial />} />
                     </Route>
-                    {/* <Route path="/about-me" element={<AboutMeView />} /> */}
                     <Route path="/contact" element={<ContactView />} />
                 </Routes>
             </main>

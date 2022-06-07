@@ -160,17 +160,6 @@ const NavSection = () => {
                                     Backstage
                                 </NavLink>
                             </li>
-                            {/* <li className="nav-item">
-                                <NavLink
-                                    className="nav-link"
-                                    activeclassname="active"
-                                    aria-current="page"
-                                    to="/about-me"
-                                    onClick={() => cameraFocusBeepAudio.play()}
-                                >
-                                    O mnie
-                                </NavLink>
-                            </li> */}
                             <li className="nav-item">
                                 <NavLink
                                     className="nav-link"
