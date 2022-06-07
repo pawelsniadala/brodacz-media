@@ -1,7 +1,14 @@
 .navbar {
-    // background-color: #f8f9fa;
     background-color: #ffffff;
     border-bottom: 1px solid rgba(0, 0, 0, .1);
+
+    @media (min-width: 991.98px) {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
 
     .container {
         &.container-fluid {
