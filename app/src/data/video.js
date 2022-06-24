@@ -34,6 +34,7 @@ import videoEventThumbnail4 from "../assets/video/realization/events/videoEventT
 import videoEventThumbnail5 from "../assets/video/realization/events/videoEventThumbnail5.png";
 import videoEventThumbnail6 from "../assets/video/realization/events/videoEventThumbnail6.png";
 import videoEventThumbnail7 from "../assets/video/realization/events/videoEventThumbnail7.png";
+import videoEventThumbnail8 from "../assets/video/realization/events/videoEventThumbnail8.png";
 
 // TELEDYSKI
 import videoMusicThumbnail1 from "../assets/video/realization/music/videoMusicThumbnail1.png";
@@ -294,58 +295,25 @@ export const video = {
         ],
         "events": [
             {
-                id: "e1989e40-8c49-4fc1-b7e7-ba842fbb40c8",
-                date: "20 sie2021",
-                title: "Graj o Swój Biznes 2021 - Golf",
+                id: "9e35d83a-7440-4ab3-90ca-2b5594aa121b",
+                date: "23 cze 2022",
+                title: "Gala z okazji pięciolecia",
                 company: "Manager Business Hub",
                 video: {
-                    time: "3:04",
-                    src: videoEventThumbnail1,
-                    urlPage: "https://www.youtube.com/watch?v=ryhhKhGw0n0&t=4s"
+                    time: "3:16",
+                    src: videoEventThumbnail8,
+                    urlPage: "https://www.youtube.com/watch?v=2WXALR88vwA"
                 }
             },
             {
-                id: "40937a57-db58-4bbe-a46e-d142c8a690f3",
-                date: "2 gru 2021",
-                title: "Wieczór Portugalski",
+                id: "ccefc25b-92e0-463a-af8d-c366424fd428",
+                date: "17 maj 2022",
+                title: "Wieczór Aperitivo",
                 company: "Manager Business Hub",
                 video: {
-                    time: "2:22",
-                    src: videoEventThumbnail2,
-                    urlPage: "https://www.youtube.com/watch?v=q0Q_wY3V2g0&t=4s"
-                }
-            },
-            {
-                id: "ddc2f133-468b-4c7c-95dd-834c1c43a072",
-                date: "7 lip 2021",
-                title: "Military Day - III Edycja",
-                company: "Manager Business Hub",
-                video: {
-                    time: "2:48",
-                    src: videoEventThumbnail3,
-                    urlPage: "https://www.youtube.com/watch?v=GzPJnvwsmtM"
-                }
-            },
-            {
-                id: "91584c37-2ddf-43ed-8f2a-8bcddce639de",
-                date: "15 sty 2022",
-                title: "Graj o Swój Biznes 2021 - Turniej Bilardowy",
-                company: "Manager Business Hub",
-                video: {
-                    time: "2:44",
-                    src: videoEventThumbnail4,
-                    urlPage: "https://www.youtube.com/watch?v=45JbG8Azjtg"
-                }
-            },
-            {
-                id: "13e18c2b-5dc3-4f4c-893e-98020dccaef2",
-                date: "20 sty 2022",
-                title: "Przedświąteczne spotkanie",
-                company: "Manager Business Hub",
-                video: {
-                    time: "2:36",
-                    src: videoEventThumbnail5,
-                    urlPage: "https://www.youtube.com/watch?v=_bLjnT3vk-E"
+                    time: "2:45",
+                    src: videoEventThumbnail7,
+                    urlPage: "https://www.youtube.com/watch?v=aYo1Iqkr9cs"
                 }
             },
             {
@@ -360,14 +328,58 @@ export const video = {
                 }
             },
             {
-                id: "ccefc25b-92e0-463a-af8d-c366424fd428",
-                date: "17 maj 2022",
-                title: "Wieczór Aperitivo",
+                id: "13e18c2b-5dc3-4f4c-893e-98020dccaef2",
+                date: "20 sty 2022",
+                title: "Przedświąteczne spotkanie",
                 company: "Manager Business Hub",
                 video: {
-                    time: "2:45",
-                    src: videoEventThumbnail7,
-                    urlPage: "https://www.youtube.com/watch?v=aYo1Iqkr9cs"
+                    time: "2:36",
+                    src: videoEventThumbnail5,
+                    urlPage: "https://www.youtube.com/watch?v=_bLjnT3vk-E"
+                }
+            },
+            {
+                id: "91584c37-2ddf-43ed-8f2a-8bcddce639de",
+                date: "15 sty 2022",
+                title: "Graj o Swój Biznes 2021 - Turniej Bilardowy",
+                company: "Manager Business Hub",
+                video: {
+                    time: "2:44",
+                    src: videoEventThumbnail4,
+                    urlPage: "https://www.youtube.com/watch?v=45JbG8Azjtg"
+                }
+            },
+            {
+                id: "ddc2f133-468b-4c7c-95dd-834c1c43a072",
+                date: "7 lip 2021",
+                title: "Military Day - III Edycja",
+                company: "Manager Business Hub",
+                video: {
+                    time: "2:48",
+                    src: videoEventThumbnail3,
+                    urlPage: "https://www.youtube.com/watch?v=GzPJnvwsmtM"
+                }
+            },
+            {
+                id: "40937a57-db58-4bbe-a46e-d142c8a690f3",
+                date: "2 gru 2021",
+                title: "Wieczór Portugalski",
+                company: "Manager Business Hub",
+                video: {
+                    time: "2:22",
+                    src: videoEventThumbnail2,
+                    urlPage: "https://www.youtube.com/watch?v=q0Q_wY3V2g0&t=4s"
+                }
+            },
+            {
+                id: "e1989e40-8c49-4fc1-b7e7-ba842fbb40c8",
+                date: "20 sie 2021",
+                title: "Graj o Swój Biznes 2021 - Golf",
+                company: "Manager Business Hub",
+                video: {
+                    time: "3:04",
+                    src: videoEventThumbnail1,
+                    urlPage: "https://www.youtube.com/watch?v=ryhhKhGw0n0&t=4s"
                 }
             }
         ],
