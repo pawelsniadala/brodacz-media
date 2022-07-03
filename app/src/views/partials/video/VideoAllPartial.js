@@ -6,7 +6,7 @@ const VideoAllPartial = () => {
     const all = [
         ...video.realization.debates,
         ...video.realization.immovables,
-        ...video.realization.drone,
+        // ...video.realization.drone,
         ...video.realization.events,
         ...video.realization.music,
         ...video.realization.weddings,

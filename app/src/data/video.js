@@ -20,11 +20,13 @@ import videoDebateThumbnail9 from "../assets/video/realization/debates/videoDeba
 import videoDebateThumbnail10 from "../assets/video/realization/debates/videoDebateThumbnail10.png";
 import videoDebateThumbnail11 from "../assets/video/realization/debates/videoDebateThumbnail11.png";
 import videoDebateThumbnail12 from "../assets/video/realization/debates/videoDebateThumbnail12.png";
+import videoDebateThumbnail13 from "../assets/video/realization/debates/videoDebateThumbnail13.png";
 
 // NIERUCHOMOSCI
 import videoImmovablesThumbnail1 from "../assets/video/realization/immovables/videoImmovablesThumbnail1.png";
 
 // DRON
+import videoDroneThumbnail1 from "../assets/video/realization/drone/videoDroneThumbnail1.png";
 
 // EVENTY
 import videoEventThumbnail1 from "../assets/video/realization/events/videoEventThumbnail1.png";
@@ -35,6 +37,8 @@ import videoEventThumbnail5 from "../assets/video/realization/events/videoEventT
 import videoEventThumbnail6 from "../assets/video/realization/events/videoEventThumbnail6.png";
 import videoEventThumbnail7 from "../assets/video/realization/events/videoEventThumbnail7.png";
 import videoEventThumbnail8 from "../assets/video/realization/events/videoEventThumbnail8.png";
+import videoEventThumbnail9 from "../assets/video/realization/events/videoEventThumbnail9.png";
+import videoEventThumbnail10 from "../assets/video/realization/events/videoEventThumbnail10.png";
 
 // TELEDYSKI
 import videoMusicThumbnail1 from "../assets/video/realization/music/videoMusicThumbnail1.png";
@@ -134,6 +138,17 @@ export const video = {
         "title": "Realizacje",
         "empty": "Brak video.",
         "debates": [
+            {
+                id: "ee854b71-2a40-4d02-91ce-cf627031c799",
+                date: "30 cze 2022",
+                title: "PowerB@nk. Jak promować sklep internetowy? Webinar Tomasza Jaroszka",
+                company: "PKO Bank Polski",
+                video: {
+                    time: "13:31",
+                    src: videoDebateThumbnail13,
+                    urlPage: "https://www.youtube.com/watch?v=Yrle7CRNNCk"
+                }
+            },
             {
                 id: "8427d654-853d-4070-9551-34c3a8aefdbb",
                 date: "4 mar 2022",
@@ -281,19 +296,41 @@ export const video = {
             }
         ],
         "drone": [
-            // {
-            //     id: "9af50e47-e2af-4e61-92e9-a15d17cdc8fd",
-            //     date: "_",
-            //     title: "_",
-            //     company: "_",
-            //     video: {
-            //         time: "_",
-            //         src: videoImmovablesThumbnail1,
-            //         urlPage: ""
-            //     }
-            // }
+            {
+                id: "ebf8fcc2-b162-4cc0-8187-4650eba6d493",
+                date: "30 cze 2022",
+                title: "Centralne eRobocze SHOW Lubień Kujawski 3-4.06.2022",
+                company: "erobocze.pl",
+                video: {
+                    time: "2:10",
+                    src: videoDroneThumbnail1,
+                    urlPage: "https://www.youtube.com/watch?v=TQrnbLunIpA"
+                }
+            },
         ],
         "events": [
+            {
+                id: "b1ad7b7a-8f6b-4432-ab27-7a35ca63cac4",
+                date: "30 cze 2022",
+                title: "Centralne eRobocze SHOW Lubień Kujawski 3-4.06.2022",
+                company: "erobocze.pl",
+                video: {
+                    time: "2:10",
+                    src: videoEventThumbnail10,
+                    urlPage: "https://www.youtube.com/watch?v=TQrnbLunIpA"
+                }
+            },
+            {
+                id: "08e314dc-3fb8-4753-b800-046fea046937",
+                date: "1 lip 2022",
+                title: "Piknik Rodzinny 2022",
+                company: "Manager Business Hub",
+                video: {
+                    time: "3:25",
+                    src: videoEventThumbnail9,
+                    urlPage: "https://www.youtube.com/watch?v=g64cEQZLeyU"
+                }
+            },
             {
                 id: "9e35d83a-7440-4ab3-90ca-2b5594aa121b",
                 date: "23 cze 2022",
