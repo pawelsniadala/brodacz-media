@@ -39,6 +39,7 @@ import videoEventThumbnail7 from "../assets/video/realization/events/videoEventT
 import videoEventThumbnail8 from "../assets/video/realization/events/videoEventThumbnail8.png";
 import videoEventThumbnail9 from "../assets/video/realization/events/videoEventThumbnail9.png";
 import videoEventThumbnail10 from "../assets/video/realization/events/videoEventThumbnail10.png";
+import videoEventThumbnail11 from "../assets/video/realization/events/videoEventThumbnail11.png";
 
 // TELEDYSKI
 import videoMusicThumbnail1 from "../assets/video/realization/music/videoMusicThumbnail1.png";
@@ -309,6 +310,17 @@ export const video = {
             },
         ],
         "events": [
+            {
+                id: "1f20e019-8e1a-438c-89ef-083dd4113be4",
+                date: "22 lip 2022",
+                title: "Graj o Swój Biznes 2022 - Siatkówka Plażowa",
+                company: "Manager Business Hub",
+                video: {
+                    time: "2:56",
+                    src: videoEventThumbnail11,
+                    urlPage: "https://www.youtube.com/watch?v=CGgA4K06xAM"
+                }
+            },
             {
                 id: "b1ad7b7a-8f6b-4432-ab27-7a35ca63cac4",
                 date: "30 cze 2022",
