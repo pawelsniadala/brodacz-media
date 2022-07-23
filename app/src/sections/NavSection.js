@@ -154,6 +154,17 @@ const NavSection = () => {
                                     className="nav-link"
                                     activeclassname="active"
                                     aria-current="page"
+                                    to="/podcast"
+                                    onClick={() => cameraFocusBeepAudioSwitch()}
+                                >
+                                    Podcast
+                                </NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink
+                                    className="nav-link"
+                                    activeclassname="active"
+                                    aria-current="page"
                                     to="/backstage"
                                     onClick={() => cameraFocusBeepAudioSwitch()}
                                 >

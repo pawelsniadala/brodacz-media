@@ -26,6 +26,7 @@ import PhotoStudioPartial from "./partials/photo/PhotoStudioPartial";
 import PhotoProductPartial from "./partials/photo/PhotoProductPartial";
 import PhotoOutdoorPartial from "./partials/photo/PhotoOutdoorPartial";
 import PhotoDronePartial from "./partials/photo/PhotoDronePartial";
+import PodcastView from "./PodcastView";
 import BackstageVideoPartial from "./partials/backstage/BackstageVideoPartial";
 import BackstagePhotoPartial from "./partials/backstage/BackstagePhotoPartial";
 import ScrollArrow from "../components/ScrollArrow";
@@ -59,6 +60,7 @@ const Root = () => (
                         <Route path="/photo/outdoor" element={<PhotoOutdoorPartial />} />
                         <Route path="/photo/drone" element={<PhotoDronePartial />} />
                     </Route>
+                    <Route path="/podcast" element={<PodcastView />} />
                     <Route path="/backstage" element={<BackstageView />} >
                         <Route path="/backstage/video" element={<BackstageVideoPartial />} />
                         <Route path="/backstage/photo" element={<BackstagePhotoPartial />} />
