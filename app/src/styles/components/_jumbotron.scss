@@ -23,7 +23,7 @@
     .video-wrapper {
         position: relative;
         overflow: hidden;
-        height: 900px;
+        height: calc(100vh - 51px);
 
         .video {
             position: absolute;
