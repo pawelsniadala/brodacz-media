@@ -60,7 +60,7 @@ const Root = () => (
                         <Route path="/photo/outdoor" element={<PhotoOutdoorPartial />} />
                         <Route path="/photo/drone" element={<PhotoDronePartial />} />
                     </Route>
-                    <Route path="/podcast" element={<PodcastView />} />
+                    <Route path="/podcasts" element={<PodcastView />} />
                     <Route path="/backstage" element={<BackstageView />} >
                         <Route path="/backstage/video" element={<BackstageVideoPartial />} />
                         <Route path="/backstage/photo" element={<BackstagePhotoPartial />} />
