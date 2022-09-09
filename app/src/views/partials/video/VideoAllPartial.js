@@ -6,7 +6,7 @@ const VideoAllPartial = () => {
     const all = [
         ...video.realization.debates,
         ...video.realization.immovables,
-        // ...video.realization.drone,
+        ...video.realization.drone,
         ...video.realization.events,
         ...video.realization.music,
         ...video.realization.weddings,
@@ -28,7 +28,7 @@ const VideoAllPartial = () => {
             <section className="realization-section">
                 <div className="section-wrapper">
                     <div className={`card-wrapper realization video ${all.length ? "" : "empty"}`}>
-                        {all.length ? all.map((item) => (
+                        {all.length ? all.filter(item => item.display !== false).map((item) => (
                             <CardRealization
                                 cardThumbnaiVideo
                                 key={item.id}

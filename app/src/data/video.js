@@ -27,6 +27,7 @@ import videoImmovablesThumbnail1 from "../assets/video/realization/immovables/vi
 
 // DRON
 import videoDroneThumbnail1 from "../assets/video/realization/drone/videoDroneThumbnail1.png";
+import videoDroneThumbnail2 from "../assets/video/realization/drone/videoDroneThumbnail2.png";
 
 // EVENTY
 import videoEventThumbnail1 from "../assets/video/realization/events/videoEventThumbnail1.png";
@@ -40,6 +41,7 @@ import videoEventThumbnail8 from "../assets/video/realization/events/videoEventT
 import videoEventThumbnail9 from "../assets/video/realization/events/videoEventThumbnail9.png";
 import videoEventThumbnail10 from "../assets/video/realization/events/videoEventThumbnail10.png";
 import videoEventThumbnail11 from "../assets/video/realization/events/videoEventThumbnail11.png";
+import videoEventThumbnail12 from "../assets/video/realization/events/videoEventThumbnail12.png";
 
 // TELEDYSKI
 import videoMusicThumbnail1 from "../assets/video/realization/music/videoMusicThumbnail1.png";
@@ -140,6 +142,7 @@ export const video = {
         "empty": "Brak video.",
         "debates": [
             {
+                display: true,
                 id: "ee854b71-2a40-4d02-91ce-cf627031c799",
                 date: "30 cze 2022",
                 title: "PowerB@nk. Jak promować sklep internetowy? Webinar Tomasza Jaroszka",
@@ -151,6 +154,7 @@ export const video = {
                 }
             },
             {
+                display: true,
                 id: "8427d654-853d-4070-9551-34c3a8aefdbb",
                 date: "4 mar 2022",
                 title: "Petycja przedsiębiorców leśnych do premiera",
@@ -162,6 +166,7 @@ export const video = {
                 }
             },
             {
+                display: true,
                 id: "596b24d5-1fe3-431a-87a5-a7ddc41eb6cb",
                 date: "12 mar 2022",
                 title: "Przedsiębiorca leśny a rosnące ceny paliw",
@@ -173,6 +178,7 @@ export const video = {
                 }
             },
             {
+                display: true,
                 id: "83c1cba9-ca5f-45c2-af90-5acf0888bb91",
                 date: "18 mar 2022",
                 title: "Zacznijmy liczyć koszty",
@@ -184,6 +190,7 @@ export const video = {
                 }
             },
             {
+                display: true,
                 id: "e8a772c7-e6e4-45a3-a08a-763e86b58f7f",
                 date: "24 maj 2021",
                 title: "Targi Work&Science Forum",
@@ -195,6 +202,7 @@ export const video = {
                 }
             },
             {
+                display: true,
                 id: "db33580f-b9c7-4d09-89ee-81b18d031f4d",
                 date: "29 sty 2021",
                 title: "Leśnictwo na Wydziale Leśnym SGGW",
@@ -206,6 +214,7 @@ export const video = {
                 }
             },
             {
+                display: true,
                 id: "f86138a8-2da8-48e7-8c13-d2ba1049a17d",
                 date: "30 gru 2021",
                 title: "Debata KRD - Infodemia",
@@ -217,6 +226,7 @@ export const video = {
                 }
             },
             {
+                display: true,
                 id: "7278f28e-6452-49da-920f-379692505fdd",
                 date: "14 sty 2022",
                 title: "Debata KRD - Śmiertelność w czasie pandemii",
@@ -228,6 +238,7 @@ export const video = {
                 }
             },
             {
+                display: true,
                 id: "9c4154db-2a04-4fb1-a3be-704db5d303d3",
                 date: "14 sty 2022",
                 title: "Debata KRD - Transmisja wirusa",
@@ -239,6 +250,7 @@ export const video = {
                 }
             },
             {
+                display: true,
                 id: "b67034bf-4bff-4710-b202-ed4e0e82adec",
                 date: "14 sty 2022",
                 title: "Debata KRD - Dawka przypominająca",
@@ -250,6 +262,7 @@ export const video = {
                 }
             },
             {
+                display: true,
                 id: "5432b848-3bdc-46b9-8b34-02e73c570a4a",
                 date: "14 sty 2022",
                 title: "Debata KRD - Nowa generacja szczepionek",
@@ -261,6 +274,7 @@ export const video = {
                 }
             },
             {
+                display: true,
                 id: "acf3c54f-8b72-4fe9-84c8-7a624508e2fa",
                 date: "14 sty 2022",
                 title: "Debata KRD - Czy szczepionki są eksperymentem?",
@@ -272,6 +286,7 @@ export const video = {
                 }
             },
             {
+                display: true,
                 id: "b28833cc-efd3-49c4-8c91-90c2b8425bcf",
                 date: "14 sty 2022",
                 title: "Debata KRD - Czy można mieszać szczepionki?",
@@ -285,6 +300,7 @@ export const video = {
         ],
         "immovables": [
             {
+                display: true,
                 id: "3cf380ad-8862-4c82-a3d3-2f3952e6fdc1",
                 date: "20 kwi 2022",
                 title: "2-pokojowe mieszkanie po remoncie na sprzedaż!",
@@ -298,6 +314,19 @@ export const video = {
         ],
         "drone": [
             {
+                display: false,
+                id: "a1933b1a-dc3b-4388-bf7f-05f94cec1527",
+                date: "5 wrz 2022",
+                title: "Święto Mazurskiej Dłubanki 2022",
+                company: "Brodacz Media",
+                video: {
+                    time: "1:59",
+                    src: videoDroneThumbnail2,
+                    urlPage: "https://www.youtube.com/watch?v=J1bUJ4w4mCY"
+                }
+            },
+            {
+                display: false,
                 id: "ebf8fcc2-b162-4cc0-8187-4650eba6d493",
                 date: "30 cze 2022",
                 title: "Centralne eRobocze SHOW Lubień Kujawski 3-4.06.2022",
@@ -311,6 +340,19 @@ export const video = {
         ],
         "events": [
             {
+                display: true,
+                id: "57cd8389-2657-4a8f-a719-b81ba615916d",
+                date: "5 wrz 2022",
+                title: "Święto Mazurskiej Dłubanki 2022",
+                company: "Brodacz Media",
+                video: {
+                    time: "1:59",
+                    src: videoEventThumbnail12,
+                    urlPage: "https://www.youtube.com/watch?v=J1bUJ4w4mCY"
+                }
+            },
+            {
+                display: true,
                 id: "1f20e019-8e1a-438c-89ef-083dd4113be4",
                 date: "22 lip 2022",
                 title: "Graj o Swój Biznes 2022 - Siatkówka Plażowa",
@@ -322,6 +364,7 @@ export const video = {
                 }
             },
             {
+                display: true,
                 id: "b1ad7b7a-8f6b-4432-ab27-7a35ca63cac4",
                 date: "30 cze 2022",
                 title: "Centralne eRobocze SHOW Lubień Kujawski 3-4.06.2022",
@@ -333,6 +376,7 @@ export const video = {
                 }
             },
             {
+                display: true,
                 id: "08e314dc-3fb8-4753-b800-046fea046937",
                 date: "1 lip 2022",
                 title: "Piknik Rodzinny 2022",
@@ -344,6 +388,7 @@ export const video = {
                 }
             },
             {
+                display: true,
                 id: "9e35d83a-7440-4ab3-90ca-2b5594aa121b",
                 date: "23 cze 2022",
                 title: "Gala z okazji pięciolecia",
@@ -355,6 +400,7 @@ export const video = {
                 }
             },
             {
+                display: true,
                 id: "ccefc25b-92e0-463a-af8d-c366424fd428",
                 date: "17 maj 2022",
                 title: "Wieczór Aperitivo",
@@ -366,6 +412,7 @@ export const video = {
                 }
             },
             {
+                display: true,
                 id: "538afe57-2907-46ff-9789-311c548a111a",
                 date: "16 mar 2022",
                 title: "Targi maszyn roboczych",
@@ -377,6 +424,7 @@ export const video = {
                 }
             },
             {
+                display: true,
                 id: "13e18c2b-5dc3-4f4c-893e-98020dccaef2",
                 date: "20 sty 2022",
                 title: "Przedświąteczne spotkanie",
@@ -388,6 +436,7 @@ export const video = {
                 }
             },
             {
+                display: true,
                 id: "91584c37-2ddf-43ed-8f2a-8bcddce639de",
                 date: "15 sty 2022",
                 title: "Graj o Swój Biznes 2021 - Turniej Bilardowy",
@@ -399,6 +448,7 @@ export const video = {
                 }
             },
             {
+                display: true,
                 id: "ddc2f133-468b-4c7c-95dd-834c1c43a072",
                 date: "7 lip 2021",
                 title: "Military Day - III Edycja",
@@ -410,6 +460,7 @@ export const video = {
                 }
             },
             {
+                display: true,
                 id: "40937a57-db58-4bbe-a46e-d142c8a690f3",
                 date: "2 gru 2021",
                 title: "Wieczór Portugalski",
@@ -421,6 +472,7 @@ export const video = {
                 }
             },
             {
+                display: true,
                 id: "e1989e40-8c49-4fc1-b7e7-ba842fbb40c8",
                 date: "20 sie 2021",
                 title: "Graj o Swój Biznes 2021 - Golf",
@@ -434,6 +486,7 @@ export const video = {
         ],
         "music": [
             {
+                display: true,
                 id: "be1bfad3-7435-47dd-b1ba-28ffe39de6ca",
                 date: "24 lis 2021",
                 title: "Kurp - Dopsierum tu przysła",
@@ -445,6 +498,7 @@ export const video = {
                 }
             },
             {
+                display: true,
                 id: "296280a3-8f33-4895-ad14-f533907c0934",
                 date: "18 gru 2020",
                 title: "Fire Show Infernal",
@@ -456,6 +510,7 @@ export const video = {
                 }
             },
             {
+                display: true,
                 id: "c4df3075-2e7c-464b-b3fe-acaa93104144",
                 date: "27 lip 2020",
                 title: "Leśny z spacer Asią",
@@ -469,6 +524,7 @@ export const video = {
         ],
         "weddings": [
             {
+                display: true,
                 id: "262d3b76-ff77-4a6a-93d8-7797180085aa",
                 date: "6 sie 2021",
                 title: "Teledysk ślubny Sylwia i Norbert",
@@ -480,6 +536,7 @@ export const video = {
                 }
             },
             {
+                display: true,
                 id: "0b0bd579-f4fe-4e34-b1e9-6b114a0c5da8",
                 date: "15 sie 2020",
                 title: "Teledysk Ślubny Kasia i Łukasz",
@@ -493,6 +550,7 @@ export const video = {
         ],
         "broadcast": [
             {
+                display: true,
                 id: "84af7c53-275e-48f7-aa2e-839a498e0df1",
                 date: "20 lis 2021",
                 title: "Jubileusz Krajowej Reprezentacji Doktorantów - Konferencja Model Funkcjonowania Szkół Doktorskich",
@@ -504,6 +562,7 @@ export const video = {
                 }
             },
             {
+                display: true,
                 id: "01e49c34-ac14-41f4-b174-1eb3a822d441",
                 date: "26 lut 2022",
                 title: "I Otwarte Posiedzenie Zarządu KRD kadencji 2022",
@@ -517,6 +576,7 @@ export const video = {
         ],
         "animations": [
             {
+                display: true,
                 id: "7b04a539-e4be-4b3c-9deb-8d367f38e6d6",
                 date: "2 lut 2022",
                 title: "Robocze News",
@@ -528,6 +588,7 @@ export const video = {
                 }
             },
             {
+                display: true,
                 id: "fe5acafa-de33-4ab3-978f-3937cad6815d",
                 date: "2 lut 2022",
                 title: "Las Media",
@@ -538,6 +599,6 @@ export const video = {
                     urlPage: "https://www.youtube.com/watch?v=wIKshXhx-Vk"
                 }
             }
-        ],
+        ]
     }
 };
