@@ -21,6 +21,7 @@ import videoDebateThumbnail10 from "../assets/video/realization/debates/videoDeb
 import videoDebateThumbnail11 from "../assets/video/realization/debates/videoDebateThumbnail11.png";
 import videoDebateThumbnail12 from "../assets/video/realization/debates/videoDebateThumbnail12.png";
 import videoDebateThumbnail13 from "../assets/video/realization/debates/videoDebateThumbnail13.png";
+import videoDebateThumbnail14 from "../assets/video/realization/debates/videoDebateThumbnail14.png";
 
 // NIERUCHOMOSCI
 import videoImmovablesThumbnail1 from "../assets/video/realization/immovables/videoImmovablesThumbnail1.png";
@@ -141,6 +142,18 @@ export const video = {
         "title": "Realizacje",
         "empty": "Brak video.",
         "debates": [
+            {
+                display: true,
+                id: "a5e54b0c-e50c-45f2-aa20-7a47dda84a97",
+                date: "3 lis 2023",
+                title: "Strategie sprzedażowe do sklepu internetowego. Tomasz Jaroszek",
+                company: "PKO Bank Polski",
+                video: {
+                    time: "9:30",
+                    src: videoDebateThumbnail14,
+                    urlPage: "https://www.youtube.com/watch?v=bZLEkMOd2qQ"
+                }
+            },
             {
                 display: true,
                 id: "ee854b71-2a40-4d02-91ce-cf627031c799",
