@@ -2,8 +2,8 @@ import * as bootstrap from "bootstrap";
 import { useEffect, useRef  } from "react";
 import { contact } from "../data/contact";
 import ReactImageAppear from "react-image-appear";
-import PhoneSvg from "../assets/common/PhoneSvg";
-import EmailSvg from "../assets/common/EmailSvg";
+// import PhoneSvg from "../assets/common/PhoneSvg";
+// import EmailSvg from "../assets/common/EmailSvg";
 import FacebookSvg from "../assets/common/FacebookSvg";
 import InstagramSvg from "../assets/common/InstagramSvg";
 import YouTubeSvg from "../assets/common/YouTubeSvg";
@@ -38,19 +38,19 @@ const ContactView = () => {
         new bootstrap.Toast(document.getElementById("successToast")).show();
     }
 
-    const renderDetailsIcon = (label) => {
-        switch(label) {
-            case "phone":
-                return (
-                    <PhoneSvg />
-                );
-            case "email":
-                return (
-                    <EmailSvg />
-                );
-            default:
-        }
-    }
+    // const renderDetailsIcon = (label) => {
+    //     switch(label) {
+    //         case "phone":
+    //             return (
+    //                 <PhoneSvg />
+    //             );
+    //         case "email":
+    //             return (
+    //                 <EmailSvg />
+    //             );
+    //         default:
+    //     }
+    // }
 
     const renderMediaIcon = (label) => {
         switch(label) {
