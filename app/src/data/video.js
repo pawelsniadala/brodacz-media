@@ -543,7 +543,7 @@ export const video = {
                 display: true,
                 id: "d3234b41-089a-4c2e-b3b7-3b7c512b308d",
                 date: "30 sty 2023",
-                title: "Pierwszy Taniec Julia i Jakub | Oskar Cyms - My Girl | First Wedding Dance",
+                title: "Pierwszy Taniec Julia i Jakub",
                 company: "Brodacz Media",
                 video: {
                     time: "2:26",
@@ -579,7 +579,7 @@ export const video = {
                 display: true,
                 id: "262d3b76-ff77-4a6a-93d8-7797180085aa",
                 date: "6 sie 2021",
-                title: "Teledysk ślubny Sylwia i Norbert",
+                title: "Teledysk Ślubny Sylwia i Norbert",
                 company: "Brodacz Media",
                 video: {
                     time: "3:06",
