@@ -395,6 +395,10 @@
         .image-wrapper {
             width: 200px;
 
+            @media (max-width: 539.98px) {
+                width: 125px;
+            }
+
             &.different-width {
                 width: 125px;
             }
@@ -455,6 +459,7 @@
 
             .thumbnail {
                 .img-box {
+                    display: block;
                     position: relative;
 
                     .card-img-top {
@@ -489,6 +494,7 @@
                         position: absolute;
                         right: .5rem;
                         bottom: .5rem;
+                        animation: 1000ms ease-in-out 0s 1 normal none running fadeIn;
                     }
                 }
 

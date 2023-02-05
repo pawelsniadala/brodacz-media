@@ -52,6 +52,9 @@ import videoMusicThumbnail3 from "../assets/video/realization/music/videoMusicTh
 // ŚLUBY
 import videoWeddingThumbnail1 from "../assets/video/realization/weddings/videoWeddingThumbnail1.png";
 import videoWeddingThumbnail2 from "../assets/video/realization/weddings/videoWeddingThumbnail2.png";
+import videoWeddingThumbnail3 from "../assets/video/realization/weddings/videoWeddingThumbnail3.png";
+import videoWeddingThumbnail4 from "../assets/video/realization/weddings/videoWeddingThumbnail4.png";
+import videoWeddingThumbnail5 from "../assets/video/realization/weddings/videoWeddingThumbnail5.png";
 
 // TRANSMISJE
 import videoBroadcastThumbnail1 from "../assets/video/realization/broadcasts/videoBroadcastThumbnail1.png";
@@ -536,6 +539,42 @@ export const video = {
             }
         ],
         "weddings": [
+            {
+                display: true,
+                id: "d3234b41-089a-4c2e-b3b7-3b7c512b308d",
+                date: "30 sty 2023",
+                title: "Pierwszy Taniec Julia i Jakub | Oskar Cyms - My Girl | First Wedding Dance",
+                company: "Brodacz Media",
+                video: {
+                    time: "2:26",
+                    src: videoWeddingThumbnail5,
+                    urlPage: "https://www.youtube.com/watch?v=_4WTR8WdBZo"
+                }
+            },
+            {
+                display: true,
+                id: "8e73288f-9a94-4678-8e92-9e1c5a0202c8",
+                date: "23 sty 2023",
+                title: "Ślub Julii i Kuby długi film",
+                company: "Brodacz Media",
+                video: {
+                    time: "26:25",
+                    src: videoWeddingThumbnail4,
+                    urlPage: "https://www.youtube.com/watch?v=WaZBzuRGEzY"
+                }
+            },
+            {
+                display: true,
+                id: "094a1697-de9d-4b1f-9dd5-e2015c65fcc3",
+                date: "19 sty 2023",
+                title: "Ślub Julii i Jakuba 2022 Teledysk",
+                company: "Brodacz Media",
+                video: {
+                    time: "4:07",
+                    src: videoWeddingThumbnail3,
+                    urlPage: "https://www.youtube.com/watch?v=YmpTvY-rR-w"
+                }
+            },
             {
                 display: true,
                 id: "262d3b76-ff77-4a6a-93d8-7797180085aa",

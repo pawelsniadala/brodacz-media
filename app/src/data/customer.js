@@ -2,7 +2,7 @@ import customerPhoto1 from '../assets/customer/customerPhoto1.png';
 import customerPhoto2 from '../assets/customer/customerPhoto2.png';
 import customerPhoto3 from '../assets/customer/customerPhoto3.png';
 import customerPhoto4 from '../assets/customer/customerPhoto4.png';
-// import customerPhoto5 from '../assets/customer/customerPhoto5.png';
+import customerPhoto5 from '../assets/customer/customerPhoto5.png';
 import customerPhoto6 from '../assets/customer/customerPhoto6.png';
 import customerPhoto7 from '../assets/customer/customerPhoto7.png';
 import customerPhoto8 from '../assets/customer/customerPhoto8.png';
@@ -10,6 +10,8 @@ import customerPhoto9 from '../assets/customer/customerPhoto9.png';
 import customerPhoto10 from '../assets/customer/customerPhoto10.png';
 import customerPhoto11 from '../assets/customer/customerPhoto11.png';
 import customerPhoto12 from '../assets/customer/customerPhoto12.png';
+import customerPhoto13 from '../assets/customer/customerPhoto13.png';
+import customerPhoto14 from '../assets/customer/customerPhoto14.png';
 
 export const customer = [
     {
@@ -32,11 +34,11 @@ export const customer = [
         name: 'customerPhoto4',
         image: customerPhoto4
     },
-    // {
-    //     id: "26b86551-14c8-4a87-9d6a-a906d269b4fe",
-    //     name: 'customerPhoto5',
-    //     image: customerPhoto5
-    // },
+    {
+        id: "26b86551-14c8-4a87-9d6a-a906d269b4fe",
+        name: 'customerPhoto5',
+        image: customerPhoto5
+    },
     {
         id: "7f6b249d-3df9-4040-80a2-a745de9de3f7",
         name: 'customerPhoto6',
@@ -74,4 +76,15 @@ export const customer = [
         name: 'customerPhoto12',
         image: customerPhoto12
     },
+    {
+        id: "d759d6ae-4313-4a33-abb6-d9228f9c37e8",
+        name: 'customerPhoto13',
+        image: customerPhoto13,
+        width: "different"
+    },
+    {
+        id: "cae300b4-48f8-4570-872e-efdbe5ddf487",
+        name: 'customerPhoto14',
+        image: customerPhoto14
+    }
 ];

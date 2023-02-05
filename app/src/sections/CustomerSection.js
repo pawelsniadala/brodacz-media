@@ -14,9 +14,24 @@ const CustomerSection = () => {
 
     return (
         <section className="customer-section">
-            <div className="">
+            <div className="container">
                 <div className="section-wrapper">
-                    <Marquee
+                    <div className="customer-wrapper">
+                        {customer.length && customer.map(item => (
+                            <div key={item.id} className="card customer">
+                                <div className={`image-wrapper ${item.width ? "different-width" : ""}`}>
+                                    <ReactImageAppear
+                                        src={item.image}
+                                        className="card-img"
+                                        placeholderStyle={{ backgroundColor: "transparent", display: "inline" }}
+                                        showLoader={false}
+                                        alt={item.title}
+                                    />
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                    {/* <Marquee
                         speed={40}
                         gradient={false}
                         className="card-wrapper customer"
@@ -34,7 +49,7 @@ const CustomerSection = () => {
                                 </div>
                             </div>
                         ))}
-                    </Marquee>
+                    </Marquee> */}
                 </div>
             </div>
         </section>

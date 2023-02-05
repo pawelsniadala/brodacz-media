@@ -1,0 +1,19 @@
+.customer-section {
+    .section-wrapper {
+        .customer-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 2rem;
+
+            @media (max-width: 539.98px) {
+                display: grid;
+                justify-items: center;
+                align-items: center;
+                grid-template-columns: 1rem 1rem;
+                gap: 2rem;
+            }
+        }
+    }
+}
