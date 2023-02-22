@@ -10,34 +10,41 @@ import SoundOnSvg from "../assets/common/SoundOnSvg";
 import cameraShutterClick from "./../assets/navbar/cameraShutterClick.wav";
 import cameraFocusBeep from "./../assets/navbar/cameraFocusBeep.wav";
 
+
+
+
+import GitHubIcon from '@mui/icons-material/GitHub';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import MoreVertIcon from '@mui/icons-material/MoreVert';
+
 const NavSection = () => {
-    const [ darkTheme, setDarkTheme ] = useState(() => {
-        const saved = localStorage.getItem("darkTheme");
-        const initialValue = JSON.parse(saved);
+    // const [ darkTheme, setDarkTheme ] = useState(() => {
+    //     const saved = localStorage.getItem("darkTheme");
+    //     const initialValue = JSON.parse(saved);
 
-        return initialValue || false;
-    });
+    //     return initialValue || false;
+    // });
 
-    useEffect(() => {
-        localStorage.setItem("darkTheme", JSON.stringify(darkTheme));
+    // useEffect(() => {
+    //     localStorage.setItem("darkTheme", JSON.stringify(darkTheme));
 
-        setTheme(darkTheme)
+    //     setTheme(darkTheme)
 
-        return () => {
-            localStorage.clear();
-        }
-    }, [darkTheme]);
+    //     return () => {
+    //         localStorage.clear();
+    //     }
+    // }, [darkTheme]);
 
-    const setTheme = (darkTheme) => {
-        let app = document.querySelector("body");
-        if (darkTheme) {
-            app.classList.add("dark-theme");
-            app.classList.remove("light-theme");
-        } else {
-            app.classList.add("light-theme");
-            app.classList.remove("dark-theme");
-        }
-    }
+    // const setTheme = (darkTheme) => {
+    //     let app = document.querySelector("body");
+    //     if (darkTheme) {
+    //         app.classList.add("dark-theme");
+    //         app.classList.remove("light-theme");
+    //     } else {
+    //         app.classList.add("light-theme");
+    //         app.classList.remove("dark-theme");
+    //     }
+    // }
 
     const [ soundOf, setSoundOf ] = useState(() => {
         const saved = localStorage.getItem("soundOf");
@@ -112,16 +119,16 @@ const NavSection = () => {
                     </NavLink>
                     <div className="button-wrapper mobile">
                         <div className="icon-wrapper"
-                            title={darkTheme ? "Ustaw jasny motyw" : "Ustaw ciemny motyw"}
-                            onClick={() => setDarkTheme(!darkTheme)}
+                            // title={darkTheme ? "Ustaw jasny motyw" : "Ustaw ciemny motyw"}
+                            // onClick={() => setDarkTheme(!darkTheme)}
                         >
-                            <div className="theme-mobile">
+                            {/* <div className="theme-mobile">
                                 {darkTheme ? (
                                     <SunSvgMobile />
                                 ) : (
                                     <MoonSvgMobile />
                                 )}
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     <div className="collapse navbar-collapse" id="navbarNav">
@@ -135,7 +142,7 @@ const NavSection = () => {
                                     onClick={() => cameraFocusBeepAudioSwitch()}
 
                                 >
-                                    Video
+                                    Filmy
                                 </NavLink>
                             </li>
                             <li className="nav-item">
@@ -146,7 +153,7 @@ const NavSection = () => {
                                     to="/photo"
                                     onClick={() => cameraFocusBeepAudioSwitch()}
                                 >
-                                    Foto
+                                    Zdjęcia
                                 </NavLink>
                             </li>
                             <li className="nav-item">
@@ -176,15 +183,37 @@ const NavSection = () => {
                                     className="nav-link"
                                     activeclassname="active"
                                     aria-current="page"
+                                    to="/backstage"
+                                    onClick={() => cameraFocusBeepAudioSwitch()}
+                                >
+                                    Blog
+                                </NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink
+                                    className="nav-link"
+                                    activeclassname="active"
+                                    aria-current="page"
                                     to="/contact"
                                     onClick={() => cameraFocusBeepAudioSwitch()}
                                 >
                                     Kontakt
                                 </NavLink>
                             </li>
+                            <li className="nav-item">
+                                <NavLink
+                                    className="nav-link"
+                                    activeclassname="active"
+                                    aria-current="page"
+                                    to="/contact"
+                                    onClick={() => cameraFocusBeepAudioSwitch()}
+                                >
+                                    <MoreVertIcon fontSize="small" />
+                                </NavLink>
+                            </li>
                         </ul>
                     </div>
-                    <div className="button-wrapper desktop">
+                    {/* <div className="button-wrapper desktop">
                         <div className="icon-wrapper"
                             title={soundOf ? "Włącz dźwiek" : "Wyłącz dźwięk"}
                             onClick={() => setSoundOf(!soundOf)}
@@ -212,7 +241,7 @@ const NavSection = () => {
                                 )}
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </nav>

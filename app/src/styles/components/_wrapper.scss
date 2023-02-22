@@ -5,7 +5,9 @@ html, body, #root, .app {
 }
 
 body {
-    background-color: #F2F3F5;
+    // background-color: #F2F3F5;
+    background-color: #f6f8fa;
+    // background-color: #fff;
 }
 
 body::-webkit-scrollbar {
@@ -16,13 +18,23 @@ main {
     flex: 1 1;
 
     @media (min-width: 991.98px) {
-        margin-top: 51px;
+        // margin-top: 80px;
     }
 }
 
 .view-wrapper {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    // margin-top: 3rem;
+    // margin-bottom: 3rem;
+
+    .view-header {
+        background-color: #f6f8fa;
+        // background-color: #fff;
+    }
+
+    .view-body {
+        // background-color: #fff;
+        background-color: #f6f8fa;
+    }
 }
 
 .section-wrapper {

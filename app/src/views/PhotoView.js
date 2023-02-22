@@ -1,7 +1,13 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { photo } from "../data/photo";
-import PageHeader from "../components/PageHeader";
+import { Link, useLocation } from "react-router-dom";
+
+import Tabs, { tabsClasses } from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Breadcrumbs from '@mui/material/Breadcrumbs';
+import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+
 import PhotoAllPartial from "./partials/photo/PhotoAllPartial";
 import PhotoBrandingPartial from "./partials/photo/PhotoBrandingPartial";
 import PhotoStudioPartial from "./partials/photo/PhotoStudioPartial";
@@ -10,38 +16,36 @@ import PhotoProductPartial from "./partials/photo/PhotoProductPartial";
 import PhotoDronePartial from "./partials/photo/PhotoDronePartial";
 
 const PhotoView = () => {
+    const location = useLocation();
+
     const [ photoTab, setTab ] = useState(() => {
         const pathname = window.location.pathname;
 
         const selectTab = (pathname) => {
             switch(pathname) {
-                case "/photo":
+                case '/photo':
                     return (
-                        "photo-all"
+                        'photo-all'
                     );
-                case "/photo/all":
+                case '/photo/branding':
                     return (
-                        "photo-all"
+                        'photo-branding'
                     );
-                case "/photo/branding":
+                case '/photo/studio':
                     return (
-                        "photo-branding"
+                        'photo-studio'
                     );
-                case "/photo/studio":
+                case '/photo/outdoor':
                     return (
-                        "photo-studio"
+                        'photo-outdoor'
                     );
-                case "/photo/outdoor":
+                case '/photo/product':
                     return (
-                        "photo-outdoor"
+                        'photo-product'
                     );
-                case "/photo/product":
+                case '/photo/drone':
                     return (
-                        "photo-product"
-                    );
-                case "/photo/drone":
-                    return (
-                        "photo-drone"
+                        'photo-drone'
                     );
                 default:
             }
@@ -86,83 +90,117 @@ const PhotoView = () => {
 
     return (
         <div className="photo-view">
-            <div className="view-wrapper container">
-                <PageHeader header={photo.title} />
-                <div className="navpils">
-                    <ul className="nav nav-pills photo">
-                        <li className="nav-item">
-                            <Link
-                                to="/photo/all"
-                                className={(`nav-link ${photoTab === "photo-all" ? "active" : ""}`).trim()}
-                                aria-current="page"
-                                onClick={() => setTab("photo-all")}
+            <div className="view-wrapper">
+                <div className="view-header">
+                    <div className="header-wrapper container">
+                        <Box className='breadcrumb-wrapper'>
+                            <Breadcrumbs
+                                className='breadcrumb back'
+                                aria-label='breadcrumb'
                             >
-                                Wszystkie
-                            </Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link
-                                to="/photo/branding"
-                                className={(`nav-link ${photoTab === "photo-branding" ? "active" : ""}`).trim()}
-                                aria-current="page"
-                                onClick={() => setTab("photo-branding")}
+                                <Link
+                                    to='/'
+                                    aria-current='page'
+                                >
+                                    <Box>Home</Box>
+                                </Link>
+                            </Breadcrumbs>
+                            <Breadcrumbs
+                                className='breadcrumb nav'
+                                separator={<NavigateNextIcon fontSize='smform' />}
+                                aria-label='breadcrumb'
                             >
-                                Wizerunkowe
-                            </Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link
-                                to="/photo/studio"
-                                className={(`nav-link ${photoTab === "photo-studio" ? "active" : ""}`).trim()}
-                                aria-current="page"
-                                onClick={() => setTab("photo-studio")}
+                                <Link
+                                    to='/'
+                                    aria-current='page'
+                                >
+                                    Home
+                                </Link>
+                                <Typography color='text.primary'>
+                                    Zdjęcia
+                                </Typography>
+                            </Breadcrumbs>
+                        </Box>
+                        <Box className='heading-wrapper'>
+                            <Typography variant='h4' className='heading-view'>
+                                Zdjęcia
+                            </Typography>
+                        </Box>
+                        <Box className='tabs-wrapper'>
+                            <Tabs
+                                value={location.pathname}
+                                variant='scrollable'
+                                scrollButtons='auto'
+                                aria-label='scrollable auto tabs example'
+                                TabIndicatorProps={{ style: { background: 'transparent' }}}
+                                sx={{
+                                    [`& .${tabsClasses.scrollButtons}`]: {
+                                        '&.Mui-disabled': { opacity: 0.3 },
+                                    }
+                                }}
                             >
-                                Studyjne
-                            </Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link
-                                to="/photo/outdoor"
-                                className={(`nav-link${photoTab === "photo-outdoor" ? " active" : ""}`).trim()}
-                                aria-current="page"
-                                onClick={() => setTab("photo-outdoor")}
-                            >
-                                Plenerowe
-                            </Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link
-                                to="/photo/product"
-                                className={(`nav-link ${photoTab === "photo-product" ? "active" : ""}`).trim()}
-                                aria-current="page"
-                                onClick={() => setTab("photo-product")}
-                            >
-                                Produktowe
-                            </Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link
-                                to="/photo/drone"
-                                className={(`nav-link ${photoTab === "photo-drone" ? "active" : ""}`).trim()}
-                                aria-current="page"
-                                onClick={() => setTab("photo-drone")}
-                            >
-                                Dron
-                            </Link>
-                        </li>
-                    </ul>
-                    <div className="tab-content"
-                        id="pills-photo-tab-content"
-                    >
-                        <div className="tab-pane fade show active"
-                            id={`pills-${photoTab}`}
-                            role="tabpanel"
-                            aria-labelledby={`pills-${photoTab}-tab`}
-                        >
-                            {renderTabContent(photoTab)}
-                        </div>
+                                <Tab
+                                    label='Wszystkie'
+                                    component={Link}
+                                    to={`/photo`}
+                                    value={`/photo`}
+                                    selected={photoTab === 'photo-all'}
+                                    onClick={() => setTab('photo-all')}
+                                />
+                                <Tab
+                                    label='Wizerunkowe'
+                                    component={Link}
+                                    to={`/photo/branding`}
+                                    value={`/photo/branding`}
+                                    onClick={() => setTab('photo-branding')}
+                                />
+                                <Tab
+                                    label='Studyjne'
+                                    component={Link}
+                                    to={`/photo/studio`}
+                                    value={`/photo/studio`}
+                                    onClick={() => setTab('photo-studio')}
+                                />
+                                <Tab
+                                    label='Plenerowe'
+                                    component={Link}
+                                    to={`/photo/outdoor`}
+                                    value={`/photo/outdoor`}
+                                    onClick={() => setTab('photo-outdoor')}
+                                />
+                                <Tab
+                                    label='Produktowe'
+                                    component={Link}
+                                    to={`/photo/product`}
+                                    value={`/photo/product`}
+                                    onClick={() => setTab('photo-product')}
+                                />
+                                <Tab
+                                    label='Dron'
+                                    component={Link}
+                                    to={`/photo/drone`}
+                                    value={`/photo/drone`}
+                                    onClick={() => setTab('photo-drone')}
+                                />
+                            </Tabs>
+                        </Box>
+
                     </div>
                 </div>
+                <Box className='view-body'>
+                    <Box className='body-wrapper container'>
+                        <Box className='prices-tabels'>
+                            <Box
+                                className='tab-pane fade show active'
+                                id={`pills-${photoTab}`}
+                                role='tabpanel'
+                                aria-labelledby={`pills-${photoTab}-tab`}
+                            >
+                                {renderTabContent(photoTab)}
+                            </Box>
+                        </Box>
+                    </Box>
+                </Box>
             </div>
         </div>
     );

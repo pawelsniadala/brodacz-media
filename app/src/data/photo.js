@@ -3,6 +3,7 @@ import photoCategoryStudio from "../assets/photo/category/photoCategoryStudio.pn
 import photoCategoryProduct from "../assets/photo/category/photoCategoryProduct.png";
 import photoCategoryOutdoor from "../assets/photo/category/photoCategoryOutdoor.png";
 import photoCategoryDrone from "../assets/photo/category/photoCategoryDrone.png";
+import photoCategoryDrone2 from "../assets/photo/category/photoCategoryDrone2.jpg";
 
 // WIZERUNKOWE
 // MINIATURKI
@@ -149,39 +150,42 @@ import photoDroneThumbnail1 from "../assets/photo/realization/drone/thumbnail/ph
 import photoDroneOriginal1 from "../assets/photo/realization/drone/original/photoDroneOriginal1.png";
 
 export const photo = {
-    "title": "Foto",
+    "title": "Zdjęcia",
     "path": "/photo",
     "categories": [
         {
             id: "1d74d681-e494-4cd8-8782-79eab496f9dd",
             label: "zdjęcia",
-            title: 'Wizerunkowe',
+            title: 'Plenerowe',
             description: "Nieważne czym się zajmujesz reprezentatywne zdjęcie utrwalające Twój charakter oraz wykonywany zawód jest niezastąpione przy poszukiwaniu nowych wyzwań zawodowych",
-            image: photoCategoryBranding,
-            path: '/photo/branding'
+            image: photoOutdoorOriginal17,
+            path: '/photo/outdoor'
         },
         {
             id: "57c5d3f9-6dc3-40e4-a0e4-a966827b6833",
             label: "zdjęcia",
             title: 'Studyjne',
             description: "Chcesz pokazać światu artystyczne wnętrze Twojej duszy poprzez niecodzienny portret? Spróbujmy razem stworzyć coś niesamowitego. Uwielbiam pracę oświetleniem studyjnym na przeróżne sposoby.",
-            image: photoCategoryStudio,
+            // image: photoStudioOriginal11,
+            image: photoStudioOriginal3,
             path: '/photo/studio'
         },
         {
             id: "2c807707-b84c-4522-9e7e-2f26d3a82352",
             label: "zdjęcia",
-            title: 'Plenerowe',
+            title: 'Produktowe',
             description: "Wykształcenie przyrodnicze nie poszło na marne! Chętnie zabiorę Cię na spacer i uchwycę jego najlepsze chwile urozmaicając sesję ciekawostkami ze świata przyrody.",
-            image: photoCategoryOutdoor,
-            path: '/photo/outdoor'
+            // image: photoBrandingOriginal3,
+            image: photoProductOriginal2,
+            path: '/photo/product'
         },
         {
             id: "5f36d40d-812a-4ea5-8cae-2eb033280939",
             label: "zdjęcia",
-            title: 'Produktowe',
+            title: 'Biznesowe',
             description: "Wszyscy kupujemy oczami, dlatego ważne, żeby produkt miał dobre zdjęcie. Znajdę ciekawy sposób na ukazanie Twojego produktu w jak najlepszym świetle.",
-            image: photoCategoryProduct,
+            // image: photoStudioOriginal14,
+            image: photoBrandingOriginal4,
             path: '/photo/product'
         },
         {
@@ -189,9 +193,60 @@ export const photo = {
             label: "zdjęcia",
             title: 'Dron',
             description: "Nowa perspektywa to nowe możliwości. Dzięki posiadaniu drona zainteresowałem się mocno fotografią krajobrazową i dokumentalną i chętnie uwiecznię też Twoje otoczenie.",
-            image: photoCategoryDrone,
+            // image: photoStudioOriginal18,
+            // image: photoCategoryDrone2,
+            image: photoStudioOriginal14,
+            path: '/photo/drone'
+        },
+        {
+            id: "7b014e6a-f5d7-48e4-bab3-e9905ea1f8e6",
+            label: "zdjęcia",
+            title: 'Dron',
+            description: "Nowa perspektywa to nowe możliwości. Dzięki posiadaniu drona zainteresowałem się mocno fotografią krajobrazową i dokumentalną i chętnie uwiecznię też Twoje otoczenie.",
+            image: photoStudioOriginal11,
+            // image: photoStudioOriginal15,
             path: '/photo/drone'
         }
+        // {
+        //     id: "1d74d681-e494-4cd8-8782-79eab496f9dd",
+        //     label: "zdjęcia",
+        //     title: 'Wizerunkowe',
+        //     description: "Nieważne czym się zajmujesz reprezentatywne zdjęcie utrwalające Twój charakter oraz wykonywany zawód jest niezastąpione przy poszukiwaniu nowych wyzwań zawodowych",
+        //     image: photoCategoryBranding,
+        //     path: '/photo/branding'
+        // },
+        // {
+        //     id: "57c5d3f9-6dc3-40e4-a0e4-a966827b6833",
+        //     label: "zdjęcia",
+        //     title: 'Studyjne',
+        //     description: "Chcesz pokazać światu artystyczne wnętrze Twojej duszy poprzez niecodzienny portret? Spróbujmy razem stworzyć coś niesamowitego. Uwielbiam pracę oświetleniem studyjnym na przeróżne sposoby.",
+        //     image: photoCategoryStudio,
+        //     path: '/photo/studio'
+        // },
+        // {
+        //     id: "2c807707-b84c-4522-9e7e-2f26d3a82352",
+        //     label: "zdjęcia",
+        //     title: 'Plenerowe',
+        //     description: "Wykształcenie przyrodnicze nie poszło na marne! Chętnie zabiorę Cię na spacer i uchwycę jego najlepsze chwile urozmaicając sesję ciekawostkami ze świata przyrody.",
+        //     image: photoCategoryOutdoor,
+        //     path: '/photo/outdoor'
+        // },
+        // {
+        //     id: "5f36d40d-812a-4ea5-8cae-2eb033280939",
+        //     label: "zdjęcia",
+        //     title: 'Produktowe',
+        //     description: "Wszyscy kupujemy oczami, dlatego ważne, żeby produkt miał dobre zdjęcie. Znajdę ciekawy sposób na ukazanie Twojego produktu w jak najlepszym świetle.",
+        //     image: photoCategoryProduct,
+        //     path: '/photo/product'
+        // },
+        // {
+        //     id: "7b014e6a-f5d7-48e4-bab3-e9905ea1f8e6",
+        //     label: "zdjęcia",
+        //     title: 'Dron',
+        //     description: "Nowa perspektywa to nowe możliwości. Dzięki posiadaniu drona zainteresowałem się mocno fotografią krajobrazową i dokumentalną i chętnie uwiecznię też Twoje otoczenie.",
+        //     image: photoCategoryDrone,
+        //     path: '/photo/drone'
+        // }
     ],
     "favorite": {
         studio: [
@@ -763,22 +818,22 @@ export const photo = {
                     }
                 }
             },
-            {
-                id: "402167aa-f117-4eff-a56d-3c7c7ff83a25",
-                date: '20 Listopada 2019',
-                title: "",
-                description: '',
-                image: {
-                    "thumbnail": {
-                        "src": photoStudioThumbnail16,
-                    },
-                    "original": {
-                        "src": photoStudioOriginal16,
-                        "width": "1920",
-                        "height": "2880"
-                    }
-                }
-            },
+            // {
+            //     id: "402167aa-f117-4eff-a56d-3c7c7ff83a25",
+            //     date: '20 Listopada 2019',
+            //     title: "",
+            //     description: '',
+            //     image: {
+            //         "thumbnail": {
+            //             "src": photoStudioThumbnail16,
+            //         },
+            //         "original": {
+            //             "src": photoStudioOriginal16,
+            //             "width": "1920",
+            //             "height": "2880"
+            //         }
+            //     }
+            // },
             {
                 id: "ba7aebf4-e296-4a8f-bea8-ca11658505c5",
                 date: '20 Listopada 2019',
@@ -843,22 +898,22 @@ export const photo = {
                     }
                 }
             },
-            {
-                id: "a8a14547-f4b3-49c7-a2ab-d8f98663705f",
-                date: '20 Listopada 2019',
-                title: "",
-                description: '',
-                image: {
-                    "thumbnail": {
-                        "src": photoStudioThumbnail21,
-                    },
-                    "original": {
-                        "src": photoStudioOriginal21,
-                        "width": "1920",
-                        "height": "3269"
-                    }
-                }
-            },
+            // {
+            //     id: "a8a14547-f4b3-49c7-a2ab-d8f98663705f",
+            //     date: '20 Listopada 2019',
+            //     title: "",
+            //     description: '',
+            //     image: {
+            //         "thumbnail": {
+            //             "src": photoStudioThumbnail21,
+            //         },
+            //         "original": {
+            //             "src": photoStudioOriginal21,
+            //             "width": "1920",
+            //             "height": "3269"
+            //         }
+            //     }
+            // },
             {
                 id: "788fb592-42de-431f-9470-7f2f6f92f20f",
                 date: '20 Listopada 2019',

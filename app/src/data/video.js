@@ -229,90 +229,90 @@ export const video = {
                     urlPage: "https://www.youtube.com/watch?v=g2EtwK54kwc"
                 }
             },
-            {
-                display: true,
-                id: "f86138a8-2da8-48e7-8c13-d2ba1049a17d",
-                date: "30 gru 2021",
-                title: "Debata KRD - Infodemia",
-                company: "KRD",
-                video: {
-                    time: "3:40",
-                    src: videoDebateThumbnail6,
-                    urlPage: "https://www.youtube.com/watch?v=-gihCEMOOtM&t=7s"
-                }
-            },
-            {
-                display: true,
-                id: "7278f28e-6452-49da-920f-379692505fdd",
-                date: "14 sty 2022",
-                title: "Debata KRD - Śmiertelność w czasie pandemii",
-                company: "KRD",
-                video: {
-                    time: "2:41",
-                    src: videoDebateThumbnail7,
-                    urlPage: "https://www.youtube.com/watch?v=cEEf2-FbwZ0"
-                }
-            },
-            {
-                display: true,
-                id: "9c4154db-2a04-4fb1-a3be-704db5d303d3",
-                date: "14 sty 2022",
-                title: "Debata KRD - Transmisja wirusa",
-                company: "KRD",
-                video: {
-                    time: "3:20",
-                    src: videoDebateThumbnail8,
-                    urlPage: "https://www.youtube.com/watch?v=HGginrpYMv0"
-                }
-            },
-            {
-                display: true,
-                id: "b67034bf-4bff-4710-b202-ed4e0e82adec",
-                date: "14 sty 2022",
-                title: "Debata KRD - Dawka przypominająca",
-                company: "KRD",
-                video: {
-                    time: "4:40",
-                    src: videoDebateThumbnail9,
-                    urlPage: "https://www.youtube.com/watch?v=avY5RUd-Rjk"
-                }
-            },
-            {
-                display: true,
-                id: "5432b848-3bdc-46b9-8b34-02e73c570a4a",
-                date: "14 sty 2022",
-                title: "Debata KRD - Nowa generacja szczepionek",
-                company: "KRD",
-                video: {
-                    time: "5:04",
-                    src: videoDebateThumbnail10,
-                    urlPage: "https://www.youtube.com/watch?v=mtCsNsWl7_U"
-                }
-            },
-            {
-                display: true,
-                id: "acf3c54f-8b72-4fe9-84c8-7a624508e2fa",
-                date: "14 sty 2022",
-                title: "Debata KRD - Czy szczepionki są eksperymentem?",
-                company: "KRD",
-                video: {
-                    time: "2:52",
-                    src: videoDebateThumbnail11,
-                    urlPage: "https://www.youtube.com/watch?v=-tSRoLXpNKs"
-                }
-            },
-            {
-                display: true,
-                id: "b28833cc-efd3-49c4-8c91-90c2b8425bcf",
-                date: "14 sty 2022",
-                title: "Debata KRD - Czy można mieszać szczepionki?",
-                company: "KRD",
-                video: {
-                    time: "3:16",
-                    src: videoDebateThumbnail12,
-                    urlPage: "https://www.youtube.com/watch?v=BLTErhvN7sE"
-                }
-            },
+            // {
+            //     display: true,
+            //     id: "f86138a8-2da8-48e7-8c13-d2ba1049a17d",
+            //     date: "30 gru 2021",
+            //     title: "Debata KRD - Infodemia",
+            //     company: "KRD",
+            //     video: {
+            //         time: "3:40",
+            //         src: videoDebateThumbnail6,
+            //         urlPage: "https://www.youtube.com/watch?v=-gihCEMOOtM&t=7s"
+            //     }
+            // },
+            // {
+            //     display: true,
+            //     id: "7278f28e-6452-49da-920f-379692505fdd",
+            //     date: "14 sty 2022",
+            //     title: "Debata KRD - Śmiertelność w czasie pandemii",
+            //     company: "KRD",
+            //     video: {
+            //         time: "2:41",
+            //         src: videoDebateThumbnail7,
+            //         urlPage: "https://www.youtube.com/watch?v=cEEf2-FbwZ0"
+            //     }
+            // },
+            // {
+            //     display: true,
+            //     id: "9c4154db-2a04-4fb1-a3be-704db5d303d3",
+            //     date: "14 sty 2022",
+            //     title: "Debata KRD - Transmisja wirusa",
+            //     company: "KRD",
+            //     video: {
+            //         time: "3:20",
+            //         src: videoDebateThumbnail8,
+            //         urlPage: "https://www.youtube.com/watch?v=HGginrpYMv0"
+            //     }
+            // },
+            // {
+            //     display: true,
+            //     id: "b67034bf-4bff-4710-b202-ed4e0e82adec",
+            //     date: "14 sty 2022",
+            //     title: "Debata KRD - Dawka przypominająca",
+            //     company: "KRD",
+            //     video: {
+            //         time: "4:40",
+            //         src: videoDebateThumbnail9,
+            //         urlPage: "https://www.youtube.com/watch?v=avY5RUd-Rjk"
+            //     }
+            // },
+            // {
+            //     display: true,
+            //     id: "5432b848-3bdc-46b9-8b34-02e73c570a4a",
+            //     date: "14 sty 2022",
+            //     title: "Debata KRD - Nowa generacja szczepionek",
+            //     company: "KRD",
+            //     video: {
+            //         time: "5:04",
+            //         src: videoDebateThumbnail10,
+            //         urlPage: "https://www.youtube.com/watch?v=mtCsNsWl7_U"
+            //     }
+            // },
+            // {
+            //     display: true,
+            //     id: "acf3c54f-8b72-4fe9-84c8-7a624508e2fa",
+            //     date: "14 sty 2022",
+            //     title: "Debata KRD - Czy szczepionki są eksperymentem?",
+            //     company: "KRD",
+            //     video: {
+            //         time: "2:52",
+            //         src: videoDebateThumbnail11,
+            //         urlPage: "https://www.youtube.com/watch?v=-tSRoLXpNKs"
+            //     }
+            // },
+            // {
+            //     display: true,
+            //     id: "b28833cc-efd3-49c4-8c91-90c2b8425bcf",
+            //     date: "14 sty 2022",
+            //     title: "Debata KRD - Czy można mieszać szczepionki?",
+            //     company: "KRD",
+            //     video: {
+            //         time: "3:16",
+            //         src: videoDebateThumbnail12,
+            //         urlPage: "https://www.youtube.com/watch?v=BLTErhvN7sE"
+            //     }
+            // },
         ],
         "immovables": [
             {

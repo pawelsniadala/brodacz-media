@@ -5,6 +5,7 @@ import {
 } from "react-router-dom";
 import MainTemplate from "../templates/MainTemplate";
 import NavSection from "../sections/NavSection";
+import HeaderSection from '../sections/HeaderSection';
 import FooterSection from "../sections/FooterSection";
 import HomeView from "./HomeView";
 import VideoView from "./VideoView";
@@ -36,7 +37,8 @@ import Toast from "../components/Toast";
 const Root = () => (
     <MainTemplate>
         <Router>
-            <NavSection />
+            {/* <NavSection /> */}
+            <HeaderSection />
             <main>
                 <Routes>
                     <Route exact path="/" element={<HomeView />} />

@@ -5,6 +5,8 @@ import "photoswipe/dist/photoswipe.css";
 import "photoswipe/dist/default-skin/default-skin.css";
 import "../styles/app.scss";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import 'react-lazy-load-image-component/src/effects/blur.css';
+// import 'react-lazy-load-image-component/src/effects/opacity.css';
 
 const MainTemplate = ({ children }) => (
     <div className="app">

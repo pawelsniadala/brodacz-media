@@ -3,7 +3,7 @@ import IntroductionSection from "../sections/IntroductionSection";
 import PreludeSection from "../sections/PreludeSection";
 import VideoSection from "../sections/VideoSection";
 import StudioSection from "../sections/StudioSection";
-import PhotoSection from "../sections/PhotoSection";
+import PhotoSection2 from "../sections/PhotoSection2";
 import BackstageSection from "../sections/BackstageSection";
 // import FavoritePhotosSection from "../sections/FavoritePhotosSection";
 import FeedbackSection from "../sections/FeedbackSection";
@@ -18,17 +18,17 @@ const HomeView = () => {
 
     return (
         <div className="home-view">
-            <PreludeSection />
-            <IntroductionSection />
-            <VideoSection />
-            <PhotoSection/>
+            {/* <PreludeSection /> */}
+            {/* <IntroductionSection /> */}
+            {/* <VideoSection /> */}
+            <PhotoSection2 />
          
-            <StudioSection />
+            {/* <StudioSection /> */}
             {/* <FavoritePhotosSection /> */}
-            <FeedbackSection />
+            {/* <FeedbackSection /> */}
             {/* <OutdoorSection /> */}
-               <BackstageSection />
-            <CustomerSection />
+               {/* <BackstageSection /> */}
+            {/* <CustomerSection /> */}
             {/* <ContactSection /> */}
         </div>
     );
