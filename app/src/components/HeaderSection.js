@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
-const SectionHeader = ({
+const HeaderSection = ({
     sectionTitle,
     sectionHeader,
     sectionSubheader,
@@ -16,12 +16,12 @@ const SectionHeader = ({
     sectionWrapperClass
 }) => (
     <Box className={(`section-header ${sectionWrapperClass}`).trim()}>
-        <Typography
+        {/* <Typography
             className='title'
             data-aos={'fade-right'}
         >
             {sectionTitle}
-        </Typography>
+        </Typography> */}
         <Typography
             className='header'
             variant='h4'
@@ -36,7 +36,7 @@ const SectionHeader = ({
         >
             {sectionSubheader}
         </Typography>
-        {sectionDescription}
+        {/* {sectionDescription}
         <Box
             className='link-contained'
             display='flex'
@@ -60,8 +60,8 @@ const SectionHeader = ({
                     {sectionLinkText}
                 </Button>
             </Box>
-        </Box>
+        </Box> */}
     </Box>
 );
 
-export default SectionHeader;
+export default HeaderSection;

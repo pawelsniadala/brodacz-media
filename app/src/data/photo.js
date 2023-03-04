@@ -4,6 +4,7 @@ import photoCategoryProduct from "../assets/photo/category/photoCategoryProduct.
 import photoCategoryOutdoor from "../assets/photo/category/photoCategoryOutdoor.png";
 import photoCategoryDrone from "../assets/photo/category/photoCategoryDrone.png";
 import photoCategoryDrone2 from "../assets/photo/category/photoCategoryDrone2.jpg";
+import photoCategoryDrone3 from "../assets/photo/category/photoCategoryDrone3.jpg";
 
 // WIZERUNKOWE
 // MINIATURKI
@@ -149,12 +150,31 @@ import photoDroneThumbnail1 from "../assets/photo/realization/drone/thumbnail/ph
 // ORYGINALNE
 import photoDroneOriginal1 from "../assets/photo/realization/drone/original/photoDroneOriginal1.png";
 
+
+
+
+
+//
+import a1 from "../assets/reel/a1.jpg"; // nev size
+import b1 from "../assets/reel/b1.jpg"; // nev size
+import c1 from "../assets/reel/c1.jpg"; // nev size
+
+
+//REEL
+import a from "../assets/reel/a.jpg"; // nev size
+import b from "../assets/reel/b.jpg"; // nev size
+import c from "../assets/reel/c.jpg"; // nev size
+import d from "../assets/reel/d.jpg"; // nev size
+import e from "../assets/reel/e.jpg"; // nev size
+
+
 export const photo = {
     "title": "Zdjęcia",
     "path": "/photo",
     "categories": [
         {
             id: "1d74d681-e494-4cd8-8782-79eab496f9dd",
+            designation: "outdoor",
             label: "zdjęcia",
             title: 'Plenerowe',
             description: "Nieważne czym się zajmujesz reprezentatywne zdjęcie utrwalające Twój charakter oraz wykonywany zawód jest niezastąpione przy poszukiwaniu nowych wyzwań zawodowych",
@@ -163,6 +183,7 @@ export const photo = {
         },
         {
             id: "57c5d3f9-6dc3-40e4-a0e4-a966827b6833",
+            designation: "studio",
             label: "zdjęcia",
             title: 'Studyjne',
             description: "Chcesz pokazać światu artystyczne wnętrze Twojej duszy poprzez niecodzienny portret? Spróbujmy razem stworzyć coś niesamowitego. Uwielbiam pracę oświetleniem studyjnym na przeróżne sposoby.",
@@ -172,6 +193,7 @@ export const photo = {
         },
         {
             id: "2c807707-b84c-4522-9e7e-2f26d3a82352",
+            designation: "product",
             label: "zdjęcia",
             title: 'Produktowe',
             description: "Wykształcenie przyrodnicze nie poszło na marne! Chętnie zabiorę Cię na spacer i uchwycę jego najlepsze chwile urozmaicając sesję ciekawostkami ze świata przyrody.",
@@ -181,73 +203,139 @@ export const photo = {
         },
         {
             id: "5f36d40d-812a-4ea5-8cae-2eb033280939",
+            designation: "branding",
             label: "zdjęcia",
             title: 'Biznesowe',
             description: "Wszyscy kupujemy oczami, dlatego ważne, żeby produkt miał dobre zdjęcie. Znajdę ciekawy sposób na ukazanie Twojego produktu w jak najlepszym świetle.",
             // image: photoStudioOriginal14,
             image: photoBrandingOriginal4,
-            path: '/photo/product'
+            path: '/photo/branding'
         },
         {
             id: "7b014e6a-f5d7-48e4-bab3-e9905ea1f8e6",
+            designation: "drone",
             label: "zdjęcia",
             title: 'Dron',
             description: "Nowa perspektywa to nowe możliwości. Dzięki posiadaniu drona zainteresowałem się mocno fotografią krajobrazową i dokumentalną i chętnie uwiecznię też Twoje otoczenie.",
             // image: photoStudioOriginal18,
-            // image: photoCategoryDrone2,
-            image: photoStudioOriginal14,
+            image: photoCategoryDrone3,
+            // image: photoStudioOriginal14,
             path: '/photo/drone'
         },
         {
             id: "7b014e6a-f5d7-48e4-bab3-e9905ea1f8e6",
+            designation: "drone",
             label: "zdjęcia",
-            title: 'Dron',
+            title: 'Studyjne',
             description: "Nowa perspektywa to nowe możliwości. Dzięki posiadaniu drona zainteresowałem się mocno fotografią krajobrazową i dokumentalną i chętnie uwiecznię też Twoje otoczenie.",
             image: photoStudioOriginal11,
             // image: photoStudioOriginal15,
-            path: '/photo/drone'
+            path: '/photo/studio'
         }
-        // {
-        //     id: "1d74d681-e494-4cd8-8782-79eab496f9dd",
-        //     label: "zdjęcia",
-        //     title: 'Wizerunkowe',
-        //     description: "Nieważne czym się zajmujesz reprezentatywne zdjęcie utrwalające Twój charakter oraz wykonywany zawód jest niezastąpione przy poszukiwaniu nowych wyzwań zawodowych",
-        //     image: photoCategoryBranding,
-        //     path: '/photo/branding'
-        // },
-        // {
-        //     id: "57c5d3f9-6dc3-40e4-a0e4-a966827b6833",
-        //     label: "zdjęcia",
-        //     title: 'Studyjne',
-        //     description: "Chcesz pokazać światu artystyczne wnętrze Twojej duszy poprzez niecodzienny portret? Spróbujmy razem stworzyć coś niesamowitego. Uwielbiam pracę oświetleniem studyjnym na przeróżne sposoby.",
-        //     image: photoCategoryStudio,
-        //     path: '/photo/studio'
-        // },
-        // {
-        //     id: "2c807707-b84c-4522-9e7e-2f26d3a82352",
-        //     label: "zdjęcia",
-        //     title: 'Plenerowe',
-        //     description: "Wykształcenie przyrodnicze nie poszło na marne! Chętnie zabiorę Cię na spacer i uchwycę jego najlepsze chwile urozmaicając sesję ciekawostkami ze świata przyrody.",
-        //     image: photoCategoryOutdoor,
-        //     path: '/photo/outdoor'
-        // },
-        // {
-        //     id: "5f36d40d-812a-4ea5-8cae-2eb033280939",
-        //     label: "zdjęcia",
-        //     title: 'Produktowe',
-        //     description: "Wszyscy kupujemy oczami, dlatego ważne, żeby produkt miał dobre zdjęcie. Znajdę ciekawy sposób na ukazanie Twojego produktu w jak najlepszym świetle.",
-        //     image: photoCategoryProduct,
-        //     path: '/photo/product'
-        // },
-        // {
-        //     id: "7b014e6a-f5d7-48e4-bab3-e9905ea1f8e6",
-        //     label: "zdjęcia",
-        //     title: 'Dron',
-        //     description: "Nowa perspektywa to nowe możliwości. Dzięki posiadaniu drona zainteresowałem się mocno fotografią krajobrazową i dokumentalną i chętnie uwiecznię też Twoje otoczenie.",
-        //     image: photoCategoryDrone,
-        //     path: '/photo/drone'
-        // }
     ],
+
+
+    "movie": [
+        {
+            id: "1d74d681-e494-4cd8-8782-79eab496f9dd",
+            designation: "outdoor",
+            label: "zdjęcia",
+            title: 'Zdjęcia zielony tiul',
+            description: "Nieważne czym się zajmujesz reprezentatywne zdjęcie utrwalające Twój charakter oraz wykonywany zawód jest niezastąpione przy poszukiwaniu nowych wyzwań zawodowych",
+            image: a1,
+            path: '/photo/outdoor'
+        },
+        {
+            id: "57c5d3f9-6dc3-40e4-a0e4-a966827b6833",
+            designation: "studio",
+            label: "zdjęcia",
+            title: 'Plener ślubny',
+            description: "Chcesz pokazać światu artystyczne wnętrze Twojej duszy poprzez niecodzienny portret? Spróbujmy razem stworzyć coś niesamowitego. Uwielbiam pracę oświetleniem studyjnym na przeróżne sposoby.",
+            // image: photoStudioOriginal11,
+            image: b1,
+            path: '/photo/studio'
+        },
+        {
+            id: "2c807707-b84c-4522-9e7e-2f26d3a82352",
+            designation: "product",
+            label: "zdjęcia",
+            title: 'Zdjęcia z czerwonym tiulem',
+            description: "Wykształcenie przyrodnicze nie poszło na marne! Chętnie zabiorę Cię na spacer i uchwycę jego najlepsze chwile urozmaicając sesję ciekawostkami ze świata przyrody.",
+            // image: photoBrandingOriginal3,
+            image: c1,
+            path: '/photo/product'
+        },
+        {
+            id: "5f36d40d-812a-4ea5-8cae-2eb033280939",
+            designation: "branding",
+            label: "zdjęcia",
+            title: 'Zdjęcia z folią budowlaną',
+            description: "Wszyscy kupujemy oczami, dlatego ważne, żeby produkt miał dobre zdjęcie. Znajdę ciekawy sposób na ukazanie Twojego produktu w jak najlepszym świetle.",
+            // image: photoStudioOriginal14,
+            image: d,
+            path: '/photo/branding'
+        }
+    ],
+    "reel": [
+        {
+            id: "1d74d681-e494-4cd8-8782-79eab496f9dd",
+            designation: "outdoor",
+            label: "zdjęcia",
+            title: 'Zdjęcia zielony tiul',
+            description: "Nieważne czym się zajmujesz reprezentatywne zdjęcie utrwalające Twój charakter oraz wykonywany zawód jest niezastąpione przy poszukiwaniu nowych wyzwań zawodowych",
+            image: a,
+            path: '/photo/outdoor'
+        },
+        {
+            id: "57c5d3f9-6dc3-40e4-a0e4-a966827b6833",
+            designation: "studio",
+            label: "zdjęcia",
+            title: 'Plener ślubny',
+            description: "Chcesz pokazać światu artystyczne wnętrze Twojej duszy poprzez niecodzienny portret? Spróbujmy razem stworzyć coś niesamowitego. Uwielbiam pracę oświetleniem studyjnym na przeróżne sposoby.",
+            // image: photoStudioOriginal11,
+            image: b,
+            path: '/photo/studio'
+        },
+        {
+            id: "2c807707-b84c-4522-9e7e-2f26d3a82352",
+            designation: "product",
+            label: "zdjęcia",
+            title: 'Zdjęcia z czerwonym tiulem',
+            description: "Wykształcenie przyrodnicze nie poszło na marne! Chętnie zabiorę Cię na spacer i uchwycę jego najlepsze chwile urozmaicając sesję ciekawostkami ze świata przyrody.",
+            // image: photoBrandingOriginal3,
+            image: c,
+            path: '/photo/product'
+        },
+        {
+            id: "5f36d40d-812a-4ea5-8cae-2eb033280939",
+            designation: "branding",
+            label: "zdjęcia",
+            title: 'Zdjęcia z folią budowlaną',
+            description: "Wszyscy kupujemy oczami, dlatego ważne, żeby produkt miał dobre zdjęcie. Znajdę ciekawy sposób na ukazanie Twojego produktu w jak najlepszym świetle.",
+            // image: photoStudioOriginal14,
+            image: d,
+            path: '/photo/branding'
+        },
+        {
+            id: "5f36d40d-812a-4ea5-8cae-2eb033280939",
+            designation: "branding",
+            label: "zdjęcia",
+            title: 'Stary obiektyw Helios ujęcia nocne',
+            description: "Wszyscy kupujemy oczami, dlatego ważne, żeby produkt miał dobre zdjęcie. Znajdę ciekawy sposób na ukazanie Twojego produktu w jak najlepszym świetle.",
+            // image: photoStudioOriginal14,
+            image: e,
+            path: '/photo/branding'
+        }
+    ],
+
+
+
+
+
+
+
+
+
     "favorite": {
         studio: [
             {
