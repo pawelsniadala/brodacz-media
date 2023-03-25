@@ -1,5 +1,5 @@
 import ReactImageAppear from "react-image-appear";
-import Marquee from "react-fast-marquee";
+// import Marquee from "react-fast-marquee";
 import { customer } from "../data/customer";
 
 const CustomerSection = () => {

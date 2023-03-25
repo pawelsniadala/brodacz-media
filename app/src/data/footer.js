@@ -84,7 +84,7 @@ export const footer = {
                 label: "phone",
                 title: "Zadzwoń",
                 href: "tel:+48797365584",
-                content: "+48 797 365 854"
+                content: "+48 797 365 584"
             },
             {
                 id: "67028c30-d548-4ada-98c1-49fc3374c7f5",
@@ -119,12 +119,12 @@ export const footer = {
                 title: "TikTok",
                 href: "https://www.tiktok.com/@brodaczmedia",
             },
-            {
-                id: "2e852bd2-3dd4-4bc2-ac31-85e5eccca92c",
-                label: "vimeo",
-                title: "Vimeo",
-                href: "https://vimeo.com/brodaczmedia",
-            },
+            // {
+            //     id: "2e852bd2-3dd4-4bc2-ac31-85e5eccca92c",
+            //     label: "vimeo",
+            //     title: "Vimeo",
+            //     href: "https://vimeo.com/brodaczmedia",
+            // },
         ]
     }
 };

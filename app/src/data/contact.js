@@ -15,7 +15,7 @@ export const contact = {
             label: "phone",
             title: "Zadzwoń",
             href: "tel:+48797365584",
-            content: "+48 797 365 854"
+            content: "+48 797 365 584"
         },
         {
             id: "5054b5d7-ae05-4905-95ec-763d58559d15",

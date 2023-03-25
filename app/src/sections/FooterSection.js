@@ -3,7 +3,7 @@ import FacebookSvg from "../assets/common/FacebookSvg";
 import InstagramSvg from "../assets/common/InstagramSvg";
 import YouTubeSvg from "../assets/common/YouTubeSvg";
 import TikTokSvg from "../assets/common/TikTokSvg";
-import VimeoSvg from "../assets/common/VimeoSvg";
+// import VimeoSvg from "../assets/common/VimeoSvg";
 
 const FooterSection = () => {
     const renderMediaIcon = (label) => {
@@ -24,10 +24,10 @@ const FooterSection = () => {
                 return (
                     <TikTokSvg />
                 );
-            case "vimeo":
-                return (
-                    <VimeoSvg />
-                );
+            // case "vimeo":
+            //     return (
+            //         <VimeoSvg />
+            //     );
             default:
         }
     }
