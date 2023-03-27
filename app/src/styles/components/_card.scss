@@ -415,7 +415,9 @@
 
         &.photo {
             display: inline-block !important;
-            margin-bottom: 1rem;
+            // margin-bottom: 1rem;
+            margin-bottom: .6rem;
+            // margin-bottom: .75rem;
 
             .img-box {
                 position: relative;

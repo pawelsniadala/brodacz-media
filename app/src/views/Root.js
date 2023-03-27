@@ -6,6 +6,7 @@ import {
 import MainTemplate from "../templates/MainTemplate";
 import NavSection from "../sections/NavSection";
 import HeaderSection from '../sections/HeaderSection';
+import HeaderSection2 from '../sections/HeaderSection2';
 import FooterSection from "../sections/FooterSection";
 import HomeView from "./HomeView";
 import VideoView from "./VideoView";
@@ -21,6 +22,9 @@ import VideoMusicPartial from "./partials/video/VideoMusicPartial";
 import VideoWeddingPartial from "./partials/video/VideoWeddingPartial";
 import VideoBroadcastPartial from "./partials/video/VideoBroadcastPartial";
 import VideoAnimationPartial from "./partials/video/VideoAnimationPartial";
+
+import PhotoCategoryPartial from "./partials/photo/PhotoCategoryPartial";
+
 import PhotoAllPartial from "./partials/photo/PhotoAllPartial";
 import PhotoBrandingPartial from "./partials/photo/PhotoBrandingPartial";
 import PhotoStudioPartial from "./partials/photo/PhotoStudioPartial";
@@ -39,6 +43,7 @@ const Root = () => (
         <Router>
             {/* <NavSection /> */}
             <HeaderSection />
+            {/* <HeaderSection2 /> */}
             <main>
                 <Routes>
                     <Route exact path="/" element={<HomeView />} />
@@ -54,14 +59,19 @@ const Root = () => (
                         <Route path="/video/broadcasts" element={<VideoBroadcastPartial />} />
                         <Route path="/video/animations" element={<VideoAnimationPartial />} />
                     </Route>
-                    <Route path="/photo" element={<PhotoView />}>
+                    {/* <Route path="/photo" element={<PhotoView />}>
                         <Route path="/photo/all" element={<PhotoAllPartial />} />
                         <Route path="/photo/branding" element={<PhotoBrandingPartial />} />
                         <Route path="/photo/studio" element={<PhotoStudioPartial />} />
                         <Route path="/photo/product" element={<PhotoProductPartial />} />
                         <Route path="/photo/outdoor" element={<PhotoOutdoorPartial />} />
                         <Route path="/photo/drone" element={<PhotoDronePartial />} />
+                    </Route> */}
+
+                    <Route exact path='/photo' element={<PhotoView />}>
+                        <Route path=':category' element={<PhotoCategoryPartial />} />
                     </Route>
+
                     <Route path="/podcasts" element={<PodcastView />} />
                     <Route path="/backstage" element={<BackstageView />} >
                         <Route path="/backstage/video" element={<BackstageVideoPartial />} />

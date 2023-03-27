@@ -28,12 +28,15 @@ main {
 
     .view-header {
         background-color: #f6f8fa;
-        // background-color: #fff;
     }
 
     .view-body {
-        // background-color: #fff;
         background-color: #f6f8fa;
+
+        .body-wrapper {
+            padding-top: 2.5rem;
+            padding-bottom: 2.5rem;
+        }
     }
 }
 
@@ -146,7 +149,8 @@ main {
     &.realization {
         &.photo {
             column-count: 4;
-            column-gap: 1rem;
+            column-gap: .6rem;
+            // column-gap: .75rem;
             orphans: 1;
             widows: 1;
 
@@ -163,9 +167,9 @@ main {
         &.podcast {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            gap: 1rem;
+            column-gap: .6rem;
 
-            column-gap: 1rem;
+            // column-gap: .75rem;
             row-gap: 2rem;
 
             @media (max-width: 1199.98px) and (min-width: 992px) {
@@ -182,6 +186,9 @@ main {
 
             @media (max-width: 539.98px) {
                 grid-template-columns: 1fr;
+                row-gap: .6rem;
+                // gap: 10px;
+                // margin-bottom: 10px;
             }
 
             &.empty {
@@ -211,3 +218,5 @@ body.dark-theme {
     background-color: darken(#212529, 3%);
     color: rgba(255, 255, 255, 0.75);
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap');

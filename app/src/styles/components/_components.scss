@@ -7,8 +7,10 @@
 @import "button";
 @import "link";
 @import "jumbotron";
+
 @import "card";
-@import "_cardServices";
+@import "cardProposed";
+@import "cardServices";
 @import "parallax";
 @import "navpils";
 @import "scrollArrow";
@@ -21,3 +23,6 @@
 // material-ui
 @import 'breadcrumbs';
 @import 'tabs';
+
+// swiper
+@import 'swiper';

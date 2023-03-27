@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 import Box from '@mui/material/Box';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const LinkMore = ({
     linkTo,
@@ -20,7 +21,8 @@ const LinkMore = ({
                 sx={{ backgroundColor: linkColor }}
             >
                 <span className="text">
-                    {linkText}
+                    <span>{linkText}</span>
+                    <span><ArrowForwardIcon /></span>
                 </span>
             </Box>
         </Link>

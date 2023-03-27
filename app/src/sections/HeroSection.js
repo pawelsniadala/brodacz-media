@@ -3,11 +3,15 @@ import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import { useTheme } from '@mui/material/styles';
+import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+
+import PhotoLibraryIcon from '@mui/icons-material/PhotoLibrary';
+import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
 
 // import Container from '../components/Container';
 
@@ -44,87 +48,99 @@ const HeroSection = () => {
                     className='carousel slide carousel-fade'
                     data-bs-ride='carousel'
                 >
-                    <ol className='carousel-indicators'>
+                    {/* <ol className='carousel-indicators'>
                         <li data-bs-target='#carouselExampleIndicators' data-bs-slide-to='0' className='active'></li>
                         <li data-bs-target='#carouselExampleIndicators' data-bs-slide-to='1'></li>
                         <li data-bs-target='#carouselExampleIndicators' data-bs-slide-to='2'></li>
                         <li data-bs-target='#carouselExampleIndicators' data-bs-slide-to='3'></li>
-                    </ol>
+                    </ol> */}
                     <Box className='carousel-inner'>
-                        <Box className='carousel-item active' data-bs-interval='5000' style={{ height: '670px' }}>
+                        <Box className='carousel-item active' data-bs-interval='5000' style={{ height: '790px' }}>
                         {/* <Box className='carousel-item active' data-bs-interval='5000' style={{ height: 'calc(100vh - 335px)' }}> */}
                             <LazyLoadImage
                                 width={'100%'}
                                 src={require('../assets/hero/hero1a.jpg')}
+                                
                                 alt='...'
                                 effect='blur'
                                 style={{
                                     objectFit: 'cover',
                                     backgroundRepeat: 'no-repeat',
                                     backgroundSize: 'cover',
-                                    height: '670px',
+                                    height: '790px',
                                     // height: 'calc(100vh - 335px)',
                                     objectPosition: '50% 65%',
-                                    filter: 'brightness(0.95)',
+                                    filter: 'brightness(0.8)',
                                 }}
                             />
                             <Box className='carousel-caption d-none d-md-block' sx={{ bottom: '3.25rem' }}>
-                                <Box className='container'>
+                                <Container maxWidth="xl">
                                     <Typography
                                         variant='h4'
                                         align={'left'}
-                                        data-aos={'fade-in'}
-                                        data-aos-delay={'100'}
+                                        // data-aos={'fade-in'}
+                                        // data-aos-delay={'100'}
                                         gutterBottom
                                         sx={{
-                                            // fontFamily: 'Lato,sans-serif',
-                                            // fontSize: '30px',
-                                            // lineHeight: '1.208em',
-                                            // letterSpacing: '.045em',
-                                            // textTransform: 'uppercase',
-                                            // fontWeight: '500',
-                                            // color: '#fff'
-
-
-                                            // color: 'hsla(0,0%,100%,.95)',
                                             color: '#fff',
-                                            // fontFamily: 'Roboto,Helvetica,Arial,sans-serif',
-                                            fontFamily: 'Raleway,sans-serif',
+                                            color: 'rgba(255,255,255,0.95)',
+                                            fontFamily: 'Roboto,Helvetica,Arial,sans-serif',
                                             fontSize: '2.5rem',
                                             fontWeight: 500,
                                             lineHeight: 1.1,
-                                            // letterSpacing: '.0005em',
                                             letterSpacing: '-0.025em',
-                                            // marginBottom: '30px'
+                                            fontSize: '3.1rem',
+                                            lineHeight: '1.15',
+                                            marginBottom: '24px',
+                                            textShadow: '0.5px 0.5px 2px rgba(0, 0, 0, 0.15)',
+                                            fontWeight: '400',
                                         }}
                                     >
-                                        Zapraszam do mojego świata
-                                        <br/>pełnego obrazów i emocji
+                                        Zapraszam do świata
+                                        <br/>obrazów i emocji
                                     </Typography>
                                     <Typography
                                         variant='h6'
                                         align={'left'}
-                                        data-aos={'fade-in'}
-                                        data-aos-delay={'100'}
+                                        // data-aos={'fade-in'}
+                                        // data-aos-delay={'100'}
                                         sx={{
                                             fontSize: '18px',
                                             fontWeight: '400',
                                             // color: '#fff',
-                                            color: '#f6f8fa',
-                                            fontFamily: 'Raleway, sans-serif',
+                                            // color: '#f6f8fa',
+                                            color: 'rgba(255,255,255,0.9)',
+                                            // fontFamily: 'Raleway, sans-serif',
                                             // marginBottom: '30px'
+
+
+                                            fontFamily: '"Public Sans", sans-serif',
+                                            marginBottom: '40px',
+                                            lineHeight: '1.5',
+                                            textShadow: '0.5px 0.5px 2px rgba(0, 0, 0, 0.15)',
+                                            // color: '#2B2B2B'
                                         }}
                                     >
-                                        Exploring our built environments from brutalist buildings to eccentric
+                                        {/* Exploring our built environments from brutalist lorem
+                                        <br/>buildings to eccentric lorem ipsum dolor sii amet build find as */}
+
+                                        Posiadam wszechstronne umiejętności w zakresie marketingu internetowego,
+                                        <br/>obejmujące tworzenie grafiki, produkcję podcastów branżowych oraz cykli tematycznych.
+                                        <br/>Dostarczam wysokiej jakości treści wizualne, które przyciągają uwagę.
                                     </Typography>
+                                    {/* <Box
+                                        display='flex'
+                                        justifyContent='space-between'
+                                    > */}
                                     <Box
                                         display='flex'
                                         justifyContent={'left'}
-                                        marginTop={2}
-                                        data-aos={'fade-in'}
-                                        data-aos-delay={'100'}
+                                        // marginTop={2}
+                                        // data-aos={'fade-in'}
+                                        // data-aos-delay={'100'}
+                                        gap={'15px'}
                                     >
-                                        <Box
+                                        {/* <Box
                                             className='link-contained-more'
                                             width='auto'
 
@@ -136,13 +152,76 @@ const HeroSection = () => {
                                                 color='primary'
                                                 size='large'
                                                 // endIcon={<ArrowForwardIcon />}
+                                                startIcon={<VideoLibraryIcon />}
                                             >
                                                 Zobacz moje filmy
                                             </Button>
+                                        </Box> */}
+                                        <Box
+                                            className='link-outlined-contact'
+                                            // className='link-contained-more'
+                                            width='auto'
+
+                                        >
+                                            <Button
+                                                component={Link}
+                                                to={`/photo`}
+                                                variant='contained'
+                                                color='primary'
+                                                size='large'
+                                                endIcon={<ArrowForwardIcon />}
+                                                // startIcon={<PhotoLibraryIcon />}
+                                            >
+                                                Zobacz mój reel
+                                            </Button>
                                         </Box>
-                             
                                     </Box>
-                                </Box>
+                                        {/* <Box
+                                            display='flex'
+                                            justifyContent={'right'}
+                                            // marginTop={2}
+                                            // data-aos={'fade-in'}
+                                            // data-aos-delay={'100'}
+                                            gap={'15px'}
+                                        >
+                                            <Box
+                                                // className='link-contained-more'
+                                                className='link-outlined-contact'
+                                                width='auto'
+
+                                            >
+                                                <Button
+                                                    component={Link}
+                                                    to={`/video`}
+                                                    variant='contained'
+                                                    color='primary'
+                                                    size='large'
+                                                    // endIcon={<ArrowForwardIcon />}
+                                                    startIcon={<VideoLibraryIcon />}
+                                                >
+                                                    Filmy
+                                                </Button>
+                                            </Box>
+                                            <Box
+                                                className='link-outlined-contact'
+                                                width='auto'
+
+                                            >
+                                                <Button
+                                                    component={Link}
+                                                    to={`/photo`}
+                                                    variant='contained'
+                                                    color='primary'
+                                                    size='large'
+                                                    // endIcon={<ArrowForwardIcon />}
+                                                    startIcon={<PhotoLibraryIcon />}
+                                                >
+                                                    Zdjęcia
+                                                </Button>
+                                            </Box>
+                                        </Box> */}
+                                    {/* </Box> */}
+                                </Container>
                             </Box>
                         </Box>
                         {/* <Box className='carousel-item' data-bs-interval='5000' style={{ height: '670px' }}>
@@ -353,7 +432,7 @@ const HeroSection = () => {
                             </Box>
                         </Box> */}
                     </Box>
-                    <a className='carousel-control-prev'
+                    {/* <a className='carousel-control-prev'
                         href='#carouselExampleIndicators'
                         role='button'
                         data-bs-slide='prev'
@@ -368,7 +447,7 @@ const HeroSection = () => {
                     >
                         <span className='carousel-control-next-icon' aria-hidden='true' />
                         <span className='sr-only' />
-                    </a>
+                    </a> */}
                 </Box>
             ) : (
                 <Box className='jumbotron'>

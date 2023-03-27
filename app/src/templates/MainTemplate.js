@@ -12,6 +12,14 @@ import 'slick-carousel/slick/slick-theme.css';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 
+// import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
+// import "swiper/css/grid";
+
+// import "swiper/css";
+import "swiper/css/grid";
+// import "swiper/css/pagination";
+
 const MainTemplate = ({ children }) => {
     useEffect(() => {
         AOS.init({

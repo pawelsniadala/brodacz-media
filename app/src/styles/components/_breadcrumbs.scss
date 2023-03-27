@@ -13,6 +13,7 @@
         a {
             text-decoration: none !important;
             font-family: 'Source Sans Pro', sans-serif !important;
+            // font-family: Google Sans Text, Arial, Helvetica, sans-serif !important;
             font-size: 0.8rem !important;
             font-weight: 300 !important;
             // color: rgba(0, 0, 0, 0.45) !important;
@@ -30,6 +31,7 @@
         // color: rgba(0, 0, 0, 0.45) !important;
         color: #777c83 !important;
         font-family: 'Source Sans Pro', sans-serif !important;
+        // font-family: Google Sans Text, Arial, Helvetica, sans-serif !important;
         font-size: 0.8rem !important;
         font-weight: 300 !important;
     }
@@ -43,9 +45,9 @@
 }
 
 .breadcrumb {
-    &.nav {
-        @media (max-width: 991.98px) {
-            display: none;
-        }
-    }
+    // &.nav {
+    //     @media (max-width: 991.98px) {
+    //         display: none;
+    //     }
+    // }
 }

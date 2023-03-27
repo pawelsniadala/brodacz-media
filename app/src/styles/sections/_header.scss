@@ -224,7 +224,8 @@ nav.navbar {
                 padding: 0.25rem 0;
 
                 .navbar-toggler-icon {
-                    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+                    // background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+                    filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(6deg) brightness(104%) contrast(101%);
                 }
 
                 &:focus {
@@ -240,17 +241,17 @@ nav.navbar {
                     justify-content: flex-end;
                     align-items: center;
                     flex-grow: 1;
-                    gap: 2rem;
+                    gap: 2.2rem;
 
                     .nav-item {
                         .nav-link {
                             line-height: 1.5;
                             // letter-spacing: 0.00938em;
-                            // color: rgba(0, 0, 0, 0.55);
+                            color: rgba(255, 255, 255, 0.7);
                             // color: #777c83;
                             // color: #24292f;
                             // color: #2f363d;
-                            color: #fff;
+                            // color: #fff;
                             font-size: 0.8rem;
                             font-size: 0.8rem;
                             // font-family: 'Source Sans Pro', sans-serif;
@@ -260,16 +261,23 @@ nav.navbar {
                             padding-left: 0;
                             padding-right: 0;
 
+
+
+                            // font-family: "Public Sans", sans-serif;
+                            // text-transform: none;
+                            // font-size: 0.975rem;
+
                             &:hover {
-                                // color: rgba(0, 0, 0, 0.55);
+                                color: rgba(255, 255, 255, 0.85);
                                 // color: #24292f;
-                                color: #fff;
+                                // color: #fff;
                             }
 
                             &.active {
                                 // color: #d29a3e;
                                 // color: #24292f;
                                 color: #fff;
+                                // font-weight: 500;
                             }
                         }
                     }

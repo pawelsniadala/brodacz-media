@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { NavLink } from 'react-router-dom';
 
+import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import PhotoLibraryIcon from '@mui/icons-material/PhotoLibrary';
@@ -46,7 +47,7 @@ const LazyLoadImageComponent = ({
 const PhotoSection2 = () => {
     return (
         <section className='photo-section'>
-            <Box className='container'>
+            <Container maxWidth="xl">
                 <Box className='section-wrapper'>
                     <HeaderSection
                         sectionTitle='Zdjęcia'
@@ -81,7 +82,7 @@ const PhotoSection2 = () => {
                         linkColor="#f9fbfc"
                     />
                 </Box>
-            </Box>
+            </Container>
         </section>
     );
 }

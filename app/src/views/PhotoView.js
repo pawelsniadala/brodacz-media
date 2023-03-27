@@ -1,6 +1,7 @@
-import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useState, useEffect } from 'react';
+import { Link, useLocation, useParams } from 'react-router-dom';
 
+import Container from '@mui/material/Container';
 import Tabs, { tabsClasses } from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
@@ -8,45 +9,27 @@ import Typography from '@mui/material/Typography';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
-import PhotoAllPartial from "./partials/photo/PhotoAllPartial";
-import PhotoBrandingPartial from "./partials/photo/PhotoBrandingPartial";
-import PhotoStudioPartial from "./partials/photo/PhotoStudioPartial";
-import PhotoOutdoorPartial from "./partials/photo/PhotoOutdoorPartial";
-import PhotoProductPartial from "./partials/photo/PhotoProductPartial";
-import PhotoDronePartial from "./partials/photo/PhotoDronePartial";
+import PhotoCategoryPartial from './partials/photo/PhotoCategoryPartial';
 
 const PhotoView = () => {
-    const location = useLocation();
+    const { pathname } = useLocation();
+    const { category } = useParams();
 
     const [ photoTab, setTab ] = useState(() => {
-        const pathname = window.location.pathname;
-
-        const selectTab = (pathname) => {
+        const selectTab = () => {
             switch(pathname) {
                 case '/photo':
-                    return (
-                        'photo-all'
-                    );
+                    return 'photo-all';
                 case '/photo/branding':
-                    return (
-                        'photo-branding'
-                    );
+                    return 'photo-branding';
                 case '/photo/studio':
-                    return (
-                        'photo-studio'
-                    );
+                    return 'photo-studio';
                 case '/photo/outdoor':
-                    return (
-                        'photo-outdoor'
-                    );
+                    return 'photo-outdoor';
                 case '/photo/product':
-                    return (
-                        'photo-product'
-                    );
+                    return 'photo-product';
                 case '/photo/drone':
-                    return (
-                        'photo-drone'
-                    );
+                    return 'photo-drone';
                 default:
             }
         }
@@ -54,71 +37,70 @@ const PhotoView = () => {
         return selectTab(pathname);
     });
 
-    const renderTabContent = (photoTab) => {
+    const renderTabContent = () => {
         switch(photoTab) {
-            case "photo-all":
-                return (
-                    <PhotoAllPartial />
-                );
-            case "photo-branding":
-                return (
-                    <PhotoBrandingPartial />
-                );
-            case "photo-studio":
-                return (
-                    <PhotoStudioPartial />
-                );
-            case "photo-outdoor":
-                return (
-                    <PhotoOutdoorPartial />
-                );
-            case "photo-product":
-                return (
-                    <PhotoProductPartial />
-                );
-            case "photo-drone":
-                return (
-                    <PhotoDronePartial />
-                );
+            case 'photo-all':
+                return <PhotoCategoryPartial category='all' />;
+            case 'photo-branding':
+                return <PhotoCategoryPartial category={category} />;
+            case 'photo-studio':
+                return <PhotoCategoryPartial category={category} />;
+            case 'photo-outdoor':
+                return <PhotoCategoryPartial category={category} />;
+            case 'photo-product':
+                return <PhotoCategoryPartial category={category} />;
+            case 'photo-drone':
+                return <PhotoCategoryPartial category={category} />;
+            default:
+        }
+    }
+
+    const setBreadcrumbsName = () => {
+        switch(category) {
+            case 'branding':
+                return 'Biznesowe';
+            case 'studio':
+                return 'Studyjne';
+            case 'outdoor':
+                return 'Plenerowe';
+            case 'product':
+                return 'Produktowe';
+            case 'drone':
+                return 'Dron';
             default:
         }
     }
 
     useEffect(() => {
-        window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'instant'
+        });
     }, []);
 
     return (
-        <div className="photo-view">
-            <div className="view-wrapper">
-                <div className="view-header">
-                    <div className="header-wrapper container">
+        <Box className='photo-view'>
+            <Box className='view-wrapper'>
+                <Box className='view-header'>
+                    <Container className='header-wrapper' maxWidth='xl'>
                         <Box className='breadcrumb-wrapper'>
-                            <Breadcrumbs
-                                className='breadcrumb back'
-                                aria-label='breadcrumb'
-                            >
-                                <Link
-                                    to='/'
-                                    aria-current='page'
-                                >
-                                    <Box>Home</Box>
-                                </Link>
-                            </Breadcrumbs>
                             <Breadcrumbs
                                 className='breadcrumb nav'
                                 separator={<NavigateNextIcon fontSize='smform' />}
                                 aria-label='breadcrumb'
                             >
-                                <Link
-                                    to='/'
-                                    aria-current='page'
-                                >
+                                <Link to='/' aria-current='page'>
                                     Home
                                 </Link>
                                 <Typography color='text.primary'>
                                     Zdjęcia
                                 </Typography>
+                                {setBreadcrumbsName() && (
+                                    <Typography color='text.primary'>
+                                        {setBreadcrumbsName()}
+                                    </Typography>
+                                )}
                             </Breadcrumbs>
                         </Box>
                         <Box className='heading-wrapper'>
@@ -128,7 +110,7 @@ const PhotoView = () => {
                         </Box>
                         <Box className='tabs-wrapper'>
                             <Tabs
-                                value={location.pathname}
+                                value={pathname}
                                 variant='scrollable'
                                 scrollButtons='auto'
                                 aria-label='scrollable auto tabs example'
@@ -148,7 +130,7 @@ const PhotoView = () => {
                                     onClick={() => setTab('photo-all')}
                                 />
                                 <Tab
-                                    label='Wizerunkowe'
+                                    label='Biznesowe'
                                     component={Link}
                                     to={`/photo/branding`}
                                     value={`/photo/branding`}
@@ -184,25 +166,22 @@ const PhotoView = () => {
                                 />
                             </Tabs>
                         </Box>
-
-                    </div>
-                </div>
-                <Box className='view-body'>
-                    <Box className='body-wrapper container'>
-                        <Box className='prices-tabels'>
-                            <Box
-                                className='tab-pane fade show active'
-                                id={`pills-${photoTab}`}
-                                role='tabpanel'
-                                aria-labelledby={`pills-${photoTab}-tab`}
-                            >
-                                {renderTabContent(photoTab)}
-                            </Box>
-                        </Box>
-                    </Box>
+                    </Container>
                 </Box>
-            </div>
-        </div>
+                <Box className='view-body'>
+                    <Container className='body-wrapper' maxWidth='xl'>
+                        <Box
+                            className='tab-pane fade show active'
+                            id={`pills-${photoTab}`}
+                            role='tabpanel'
+                            aria-labelledby={`pills-${photoTab}-tab`}
+                        >
+                            {renderTabContent(photoTab)}
+                        </Box>
+                    </Container>
+                </Box>
+            </Box>
+        </Box>
     );
 }
 

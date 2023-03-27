@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 
+import Container from '@mui/material/Container';
 import Tabs, { tabsClasses } from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
@@ -8,6 +9,7 @@ import Typography from '@mui/material/Typography';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+// import HomeIcon from '@mui/icons-material/Home';
 
 import { video } from "../data/video";
 import PageHeader from "../components/PageHeader";
@@ -174,7 +176,7 @@ const VideoView = () => {
     return (
         <div className="video-view">
             <div className="view-wrapper">
-                <div className="header-wrapper container">
+                <Container maxWidth="xl">
                     <Box className='breadcrumb-wrapper'>
                         {/* <Breadcrumbs
                             className='breadcrumb back'
@@ -188,7 +190,7 @@ const VideoView = () => {
                             </Link>
                         </Breadcrumbs> */}
                         <Breadcrumbs
-                            className='breadcrumb nav'
+                            className='breadcrumb back'
                             separator={<NavigateNextIcon fontSize='smform' />}
                             aria-label='breadcrumb'
                         >
@@ -278,36 +280,38 @@ const VideoView = () => {
                                 value={`/video/guides`}
                                 onClick={() => setTab('video-guides')}
                             />
-                            {/* <Tab
+                            <Tab
                                 label='Transmicje'
                                 component={Link}
                                 to={`/video/broadcasts`}
                                 value={`/video/broadcasts`}
                                 onClick={() => setTab('video-broadcasts')}
-                            /> */}
-                            {/* <Tab
+                            />
+                            <Tab
                                 label='Animacje'
                                 component={Link}
                                 to={`/video/animations`}
                                 value={`/video/animations`}
                                 onClick={() => setTab('video-animations')}
-                            /> */}
+                            />
                         </Tabs>
                     </Box>
-                </div>
+                </Container>
             </div>
             <Box className='view-body'>
-                <Box className='body-wrapper container'>
-                    <Box className='prices-tabels'>
-                        <Box
-                            className='tab-pane fade show active'
-                            id={`pills-${videoTab}`}
-                            role='tabpanel'
-                            aria-labelledby={`pills-${videoTab}-tab`}
-                        >
-                            {renderTabContent(videoTab)}
+                <Box className='body-wrapper'>
+                    <Container maxWidth="xl">
+                        <Box className='prices-tabels'>
+                            <Box
+                                className='tab-pane fade show active'
+                                id={`pills-${videoTab}`}
+                                role='tabpanel'
+                                aria-labelledby={`pills-${videoTab}-tab`}
+                            >
+                                {renderTabContent(videoTab)}
+                            </Box>
                         </Box>
-                    </Box>
+                    </Container>
                 </Box>
             </Box>
 
