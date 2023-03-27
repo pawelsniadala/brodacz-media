@@ -33,23 +33,6 @@ const PhotoCategoryPartial = ({ category }) => {
         }
     }
 
-    // const all = [
-    //     ...photo.realization.studio,
-    //     ...photo.realization.branding,
-    //     ...photo.realization.product,
-    //     ...photo.realization.outdoor,
-    //     ...photo.realization.drone
-    // ];
-
-    // const shuffleArray = (array) => {
-    //     for (let i = array.length - 1; i > 0; i--) {
-    //         const j = Math.floor(Math.random() * (i + 1));
-    //         [array[i], array[j]] = [array[j], array[i]];
-    //     }
-    // }
-
-    // shuffleArray(all);
-
     return (
         <Box className="photo-category-partial">
             <Box className="card-wrapper realization photo">

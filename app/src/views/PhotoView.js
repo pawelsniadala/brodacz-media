@@ -86,7 +86,7 @@ const PhotoView = () => {
                     <Container className='header-wrapper' maxWidth='xl'>
                         <Box className='breadcrumb-wrapper'>
                             <Breadcrumbs
-                                className='breadcrumb nav'
+                                className='breadcrumb'
                                 separator={<NavigateNextIcon fontSize='smform' />}
                                 aria-label='breadcrumb'
                             >
