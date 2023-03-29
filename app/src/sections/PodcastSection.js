@@ -66,7 +66,6 @@ const PodcastSection = () => {
                         zIndex: -1,
                         backgroundRepeat: 'no-repeat',
                         backgroundSize: 'cover',
-                        backgroundPosition: 'center center',
                         backgroundPosition: '50% 10%',
                         // backgroundImage: 'url(https://assets.maccarianagency.com/backgrounds/img52.jpg)'
                         backgroundImage: `url(${isMd ? pricesJpg1 : pricesJpg2})`,

@@ -1,17 +1,17 @@
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { NavLink } from 'react-router-dom';
+// import { LazyLoadImage } from 'react-lazy-load-image-component';
+// import { NavLink } from 'react-router-dom';
 
-import HeaderSection from '../components/HeaderSection';
+// import HeaderSection from '../components/HeaderSection';
 
 import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
+// import Typography from '@mui/material/Typography';
 
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 // import SectionHeader from "../components/SectionHeader";
-import CardCategory from "../components/CardCategory";
-import Alert from "../components/Alert";
-import { photo } from "../data/photo";
+// import CardCategory from "../components/CardCategory";
+// import Alert from "../components/Alert";
+// import { photo } from "../data/photo";
 
 const HistorySection = () => {
     return (

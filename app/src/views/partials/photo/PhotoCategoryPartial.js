@@ -1,11 +1,14 @@
 import { useEffect } from 'react';
 import PhotoSwipeLightbox from 'photoswipe/lightbox';
+// import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Box from '@mui/material/Box';
 
 import CardRealization from '../../../components/CardRealization';
 
 import { photo } from "../../../data/photo";
+
+import { shuffleArray } from '../../../functions/functions';
 
 const PhotoCategoryPartial = ({ category }) => {
     useEffect(() => {
@@ -22,36 +25,35 @@ const PhotoCategoryPartial = ({ category }) => {
         lightbox.init();
     }, []);
 
-    const all = [
-        ...photo.realization.studio,
-        ...photo.realization.branding,
-        ...photo.realization.product,
-        ...photo.realization.outdoor,
-        ...photo.realization.drone
-    ];
+    const categories = [ 'branding', 'studio', 'outdoor', 'product', 'drone' ];
 
-    const setCategory = () => {
-        switch(category) {
-            case 'all':
-                return [ ...all ];
-            case 'branding':
-                return [ ...photo.realization.branding ];
-            case 'studio':
-                return [ ...photo.realization.studio ];
-            case 'outdoor':
-                return [ ...photo.realization.outdoor ];
-            case 'product':
-                return [ ...photo.realization.product ];
-            case 'drone':
-                return [ ...photo.realization.drone ];
-            default:
-        }
+    const photoRealizationCopy = photo.realization;
+
+    for (let category of categories) {
+        photoRealizationCopy[category] = shuffleArray(photoRealizationCopy[category]);
     }
+
+    const photoRealizationAll = [].concat(
+        ...categories.map(category => photoRealizationCopy[category])
+    );
+
+    const categoryMap = new Map([
+        [ 'all', photoRealizationAll ],
+        [ 'branding', photoRealizationCopy.branding ],
+        [ 'studio', photoRealizationCopy.studio ],
+        [ 'outdoor', photoRealizationCopy.outdoor ],
+        [ 'product', photoRealizationCopy.product ],
+        [ 'drone', photoRealizationCopy.drone ]
+    ]);
+
+    const setCategory = (category) => {
+        return categoryMap.get(category);
+    };
 
     return (
         <Box className="photo-category-partial">
             <Box className="card-wrapper realization photo pswp-gallery" id='my-gallery'>
-                {setCategory().map((item) => (
+                {setCategory(category).map((item) => (
                     <a
                         key={`my-gallery-${item.id}`}
                         href={item.image.original.src}
@@ -66,6 +68,17 @@ const PhotoCategoryPartial = ({ category }) => {
                             cardTitle={item.title}
                             cardPhotoSrc={item.image.thumbnail.src}
                         />
+                        {/* <Box className='card-photo'>
+                            <Box className="img-box">
+                                <LazyLoadImage
+                                    src={item.image.thumbnail.src}
+                                    alt={item.title}
+                                    height='100%'
+                                    width='100%'
+                                    effect='blur'
+                                />
+                            </Box>
+                        </Box> */}
                     </a>
                 ))}
             </Box>
@@ -75,14 +88,4 @@ const PhotoCategoryPartial = ({ category }) => {
 
 export default PhotoCategoryPartial;
 
-{/* <Box className='card-photo'>
-    <Box className="img-box">
-        <LazyLoadImage
-            src={item.image.thumbnail.src}
-            alt={item.title}
-            height='100%'
-            width='100%'
-            effect='blur'
-        />
-    </Box>
-</Box> */}
+

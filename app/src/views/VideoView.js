@@ -67,6 +67,13 @@ const VideoView = () => {
         }
     }
 
+    const handleTab = (e, selectedTab) => {
+        if (videoTab === selectedTab) {
+            e.preventDefault();
+        }
+        setTab(selectedTab);
+    };
+
     const setBreadcrumbsName = () => {
         switch(category) {
             case 'debates':
@@ -147,7 +154,7 @@ const VideoView = () => {
                                     to={`/video`}
                                     value={`/video`}
                                     selected={videoTab === 'video-all'}
-                                    onClick={() => setTab('video-all')}
+                                    onClick={(e) => handleTab(e, 'video-all')}
                                 />
                                 <Tab
                                     label='Biznesowe'
@@ -225,6 +232,7 @@ const VideoView = () => {
                             aria-labelledby={`pills-${videoTab}-tab`}
                         >
                             {renderTabContent(videoTab)}
+                            {/* <VideoCategoryPartial category={category ? category : 'all'} />; */}
                         </Box>
                     </Container>
                 </Box>

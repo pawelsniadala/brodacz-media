@@ -8,6 +8,8 @@ import CardProposed from '../../../components/CardProposed';
 
 import { video } from '../../../data/video';
 
+import { shuffleArray } from '../../../functions/functions';
+
 const VideoCategoryPartial = ({ category }) => {
     const all = [
         ...video.realization.debates,
@@ -19,6 +21,8 @@ const VideoCategoryPartial = ({ category }) => {
         ...video.realization.broadcast,
         ...video.realization.animations
     ];
+
+    shuffleArray(all)
 
     const setCategory = () => {
         switch(category) {

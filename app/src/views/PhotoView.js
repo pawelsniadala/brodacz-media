@@ -55,6 +55,13 @@ const PhotoView = () => {
         }
     }
 
+    const handleTab = (e, selectedTab) => {
+        if (photoTab === selectedTab) {
+            e.preventDefault();
+        }
+        setTab(selectedTab);
+    };
+
     const setBreadcrumbsName = () => {
         switch(category) {
             case 'branding':
@@ -127,42 +134,42 @@ const PhotoView = () => {
                                     to={`/photo`}
                                     value={`/photo`}
                                     selected={photoTab === 'photo-all'}
-                                    onClick={() => setTab('photo-all')}
+                                    onClick={(e) => handleTab(e, 'photo-all')}
                                 />
                                 <Tab
                                     label='Biznesowe'
                                     component={Link}
                                     to={`/photo/branding`}
                                     value={`/photo/branding`}
-                                    onClick={() => setTab('photo-branding')}
+                                    onClick={(e) => handleTab(e, 'photo-branding')}
                                 />
                                 <Tab
                                     label='Studyjne'
                                     component={Link}
                                     to={`/photo/studio`}
                                     value={`/photo/studio`}
-                                    onClick={() => setTab('photo-studio')}
+                                    onClick={(e) => handleTab(e, 'photo-studio')}
                                 />
                                 <Tab
                                     label='Plenerowe'
                                     component={Link}
                                     to={`/photo/outdoor`}
                                     value={`/photo/outdoor`}
-                                    onClick={() => setTab('photo-outdoor')}
+                                    onClick={(e) => handleTab(e, 'photo-outdoor')}
                                 />
                                 <Tab
                                     label='Produktowe'
                                     component={Link}
                                     to={`/photo/product`}
                                     value={`/photo/product`}
-                                    onClick={() => setTab('photo-product')}
+                                    onClick={(e) => handleTab(e, 'photo-product')}
                                 />
                                 <Tab
                                     label='Dron'
                                     component={Link}
                                     to={`/photo/drone`}
                                     value={`/photo/drone`}
-                                    onClick={() => setTab('photo-drone')}
+                                    onClick={(e) => handleTab(e, 'photo-drone')}
                                 />
                             </Tabs>
                         </Box>

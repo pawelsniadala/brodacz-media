@@ -1,6 +1,6 @@
 // import { Gallery, Item } from "react-photoswipe-gallery";
 import { backstage } from "../../../data/backstage";
-import CardRealization from "../../../components/CardRealization";
+// import CardRealization from "../../../components/CardRealization";
 
 const BackstagePhotoPartial = () => {
     const photo = backstage.realization.photo;

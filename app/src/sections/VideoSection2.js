@@ -1,23 +1,29 @@
 import React, { useState } from 'react';
-import Slider from 'react-slick';
+// import Slider from 'react-slick';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { NavLink } from 'react-router-dom';
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Grid, Pagination, Mousewheel, Keyboard } from "swiper";
+import {
+    // Navigation,
+    Grid,
+    Pagination,
+    // Mousewheel,
+    // Keyboard
+} from "swiper";
 // import { Pagination } from "swiper";
 
-import { useTheme } from '@mui/material/styles';
-import useMediaQuery from '@mui/material/useMediaQuery';
+// import { useTheme } from '@mui/material/styles';
+// import useMediaQuery from '@mui/material/useMediaQuery';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import PhotoLibraryIcon from '@mui/icons-material/PhotoLibrary';
+// import PhotoLibraryIcon from '@mui/icons-material/PhotoLibrary';
 import SubscriptionsIcon from '@mui/icons-material/Subscriptions';
-import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
-import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
+// import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+// import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 
 import HeaderSection from '../components/HeaderSection';
-import CardServices from '../components/CardServices';
+// import CardServices from '../components/CardServices';
 import LinkMore from '../components/LinkMore';
 
 import { video } from "../data/video";
@@ -54,62 +60,60 @@ const LazyLoadImageComponent = ({
     );
 }
 
-const SampleNextArrow = ({ onClick }) => {
-    return (
-        <Box
-            className='sample-next-arrow'
-            onClick={onClick}
-        >
-            <KeyboardArrowRightIcon />
-        </Box>
-    );
-}
+// const SampleNextArrow = ({ onClick }) => {
+//     return (
+//         <Box
+//             className='sample-next-arrow'
+//             onClick={onClick}
+//         >
+//             <KeyboardArrowRightIcon />
+//         </Box>
+//     );
+// }
 
-function SamplePrevArrow({ onClick }) {
-    return (
-        <Box
-            className='sample-prev-arrow'
-            onClick={onClick}
-        >
-            <KeyboardArrowLeftIcon />
-        </Box>
-    );
-}
+// function SamplePrevArrow({ onClick }) {
+//     return (
+//         <Box
+//             className='sample-prev-arrow'
+//             onClick={onClick}
+//         >
+//             <KeyboardArrowLeftIcon />
+//         </Box>
+//     );
+// }
 
 const VideoSection2 = () => {
-    const theme = useTheme();
+    // const theme = useTheme();
 
-    const isXl = useMediaQuery(theme.breakpoints.up('xl'), {
-        defaultMatches: true,
-    });
+    // const isXl = useMediaQuery(theme.breakpoints.up('xl'), {
+    //     defaultMatches: true,
+    // });
 
-    const isLg = useMediaQuery(theme.breakpoints.up('lg'), {
-        defaultMatches: true,
-    });
+    // const isLg = useMediaQuery(theme.breakpoints.up('lg'), {
+    //     defaultMatches: true,
+    // });
 
-    const isMd = useMediaQuery(theme.breakpoints.up('md'), {
-        defaultMatches: true,
-    });
+    // const isMd = useMediaQuery(theme.breakpoints.up('md'), {
+    //     defaultMatches: true,
+    // });
 
-    const isSm = useMediaQuery(theme.breakpoints.up('sm'), {
-        defaultMatches: true,
-    });
+    // const isSm = useMediaQuery(theme.breakpoints.up('sm'), {
+    //     defaultMatches: true,
+    // });
 
-    const sliderOpts = {
-        dots: false,
-        // arrows: isXl ? true : isLg ? false : isMd ? false : isSm ? false : false,
-        arrows: true,
-        // infinite: true,
-        slidesToShow: isXl ? 3 : isLg ? 3 : isMd ? 2 : isSm ? 2 : 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        // autoplay: false,
-        autoplaySpeed: 5000,
-        nextArrow: <SampleNextArrow />,
-        prevArrow: <SamplePrevArrow />,
-
-   
-    };
+    // const sliderOpts = {
+    //     dots: false,
+    //     // arrows: isXl ? true : isLg ? false : isMd ? false : isSm ? false : false,
+    //     arrows: true,
+    //     // infinite: true,
+    //     slidesToShow: isXl ? 3 : isLg ? 3 : isMd ? 2 : isSm ? 2 : 1,
+    //     slidesToScroll: 1,
+    //     autoplay: true,
+    //     // autoplay: false,
+    //     autoplaySpeed: 5000,
+    //     nextArrow: <SampleNextArrow />,
+    //     prevArrow: <SamplePrevArrow />
+    // };
 
     return (
         <section className="video-section">
@@ -176,7 +180,6 @@ const VideoSection2 = () => {
                             {video.video.map((item, index) => (
                                 <SwiperSlide key={index}>
                                     <Box
-                                        
                                         className='xxx'
                                         width={1}
                                         height={1}
