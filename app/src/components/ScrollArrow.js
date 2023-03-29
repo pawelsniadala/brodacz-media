@@ -1,9 +1,11 @@
-import { useState } from "react";
-// import arrowUp from "./../assets/common/arrowUp.svg";
+import { useState } from 'react';
 
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
 
 const ScrollArrow = () => {
-    const [showScroll, setShowScroll] = useState(false)
+    const [showScroll, setShowScroll] = useState(false);
 
     const checkScrollTop = () => {
         if (!showScroll && window.pageYOffset > 400) {
@@ -14,21 +16,21 @@ const ScrollArrow = () => {
     };
 
     const scrollTop = () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
-    window.addEventListener("scroll", checkScrollTop)
+    window.addEventListener('scroll', checkScrollTop)
 
     return (
-        <div className="scrollup"
+        <Box
+            className='scrollup'
             onClick={scrollTop}
-            style={{ display: showScroll ? "flex" : "none" }}
+            style={{ display: showScroll ? 'flex' : 'none' }}
         >
-            <button className="btn btn-secondary">
-                <i className="fas fa-arrow-up" />
-                {/* <img src={arrowUp} alt="arrowUp" /> */}
-            </button>
-        </div>
+            <Button variant='contained'>
+                <KeyboardDoubleArrowUpIcon />
+            </Button>
+        </Box>
     );
 }
 

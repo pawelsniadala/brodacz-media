@@ -1,0 +1,41 @@
+
+.card-photo {
+    margin-bottom: .6rem;
+
+    .img-box {
+        border-radius: 8px;
+        overflow: hidden;
+
+        position: relative;
+        user-select: none;
+
+        span {
+            // position: absolute;
+
+            img {
+                // object-fit: cover;
+                // object-position: center;
+                // position: absolute;
+                // top: 0;
+                // left: 0;
+                // width: 100%;
+                // height: 100%;
+                transition: 0.5s all ease-out !important;
+                // border-radius: 8px;
+                z-index: 2;
+            }
+        }
+    }
+
+    &:hover {
+        .img-box {
+            span {
+                img {
+                    filter: brightness(.85) !important;
+                    transition: 0.5s all ease-out !important;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

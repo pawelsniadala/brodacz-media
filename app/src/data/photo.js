@@ -44,7 +44,8 @@ import photoBrandingOriginal15 from "../assets/photo/realization/branding/origin
 
 // STUDYJNE
 // MINIATURKI
-import photoStudioThumbnail1 from "../assets/photo/realization/studio/thumbnail/photoStudioThumbnail1.png"; // nev size
+import photoStudioThumbnail1 from   "../assets/photo/realization/studio/thumbnail/photoStudioThumbnail1.png"; // nev size
+import photoStudioPlaceholder1 from "../assets/photo/realization/studio/thumbnail/photoStudioPlaceholder1.png" // ___________________TEST
 import photoStudioThumbnail2 from "../assets/photo/realization/studio/thumbnail/photoStudioThumbnail2.png"; // nev size
 import photoStudioThumbnail3 from "../assets/photo/realization/studio/thumbnail/photoStudioThumbnail3.png"; // nev size
 import photoStudioThumbnail4 from "../assets/photo/realization/studio/thumbnail/photoStudioThumbnail4.png"; // nev size
@@ -166,6 +167,11 @@ import b from "../assets/reel/b.jpg"; // nev size
 import c from "../assets/reel/c.jpg"; // nev size
 import d from "../assets/reel/d.jpg"; // nev size
 import e from "../assets/reel/e.jpg"; // nev size
+
+
+
+
+
 
 
 export const photo = {
@@ -674,6 +680,9 @@ export const photo = {
                 image: {
                     "thumbnail": {
                         "src": photoStudioThumbnail1,
+                        "width": "500",
+                        "height": "778",
+                        "placeholder": photoStudioPlaceholder1
                     },
                     "original": {
                         "src": photoStudioOriginal1,
@@ -690,6 +699,9 @@ export const photo = {
                 image: {
                     "thumbnail": {
                         "src": photoStudioThumbnail2,
+                        "width": "500",
+                        "height": "315",
+                        "placeholder": photoStudioPlaceholder1
                     },
                     "original": {
                         "src": photoStudioOriginal2,
@@ -706,6 +718,9 @@ export const photo = {
                 image: {
                     "thumbnail": {
                         "src": photoStudioThumbnail3,
+                        "width": "500",
+                        "height": "750",
+                        "placeholder": photoStudioPlaceholder1
                     },
                     "original": {
                         "src": photoStudioOriginal3,
@@ -722,6 +737,9 @@ export const photo = {
                 image: {
                     "thumbnail": {
                         "src": photoStudioThumbnail4,
+                        "width": "500",
+                        "height": "784",
+                        "placeholder": photoStudioPlaceholder1
                     },
                     "original": {
                         "src": photoStudioOriginal4,
@@ -738,6 +756,7 @@ export const photo = {
                 image: {
                     "thumbnail": {
                         "src": photoStudioThumbnail5,
+                        "placeholder": photoStudioPlaceholder1
                     },
                     "original": {
                         "src": photoStudioOriginal5,
@@ -754,6 +773,7 @@ export const photo = {
                 image: {
                     "thumbnail": {
                         "src": photoStudioThumbnail6,
+                        "placeholder": photoStudioPlaceholder1
                     },
                     "original": {
                         "src": photoStudioOriginal6,
@@ -770,6 +790,7 @@ export const photo = {
                 image: {
                     "thumbnail": {
                         "src": photoStudioThumbnail7,
+                        "placeholder": photoStudioPlaceholder1
                     },
                     "original": {
                         "src": photoStudioOriginal7,
@@ -786,6 +807,7 @@ export const photo = {
                 image: {
                     "thumbnail": {
                         "src": photoStudioThumbnail8,
+                        "placeholder": photoStudioPlaceholder1
                     },
                     "original": {
                         "src": photoStudioOriginal8,
@@ -802,6 +824,7 @@ export const photo = {
                 image: {
                     "thumbnail": {
                         "src": photoStudioThumbnail9,
+                        "placeholder": photoStudioPlaceholder1
                     },
                     "original": {
                         "src": photoStudioOriginal9,
@@ -818,6 +841,7 @@ export const photo = {
                 image: {
                     "thumbnail": {
                         "src": photoStudioThumbnail10,
+                        "placeholder": photoStudioPlaceholder1
                     },
                     "original": {
                         "src": photoStudioOriginal10,
@@ -834,6 +858,7 @@ export const photo = {
                 image: {
                     "thumbnail": {
                         "src": photoStudioThumbnail11,
+                        "placeholder": photoStudioPlaceholder1
                     },
                     "original": {
                         "src": photoStudioOriginal11,
@@ -850,6 +875,7 @@ export const photo = {
                 image: {
                     "thumbnail": {
                         "src": photoStudioThumbnail12,
+                        "placeholder": photoStudioPlaceholder1
                     },
                     "original": {
                         "src": photoStudioOriginal12,
@@ -866,6 +892,7 @@ export const photo = {
                 image: {
                     "thumbnail": {
                         "src": photoStudioThumbnail13,
+                        "placeholder": photoStudioPlaceholder1
                     },
                     "original": {
                         "src": photoStudioOriginal13,
@@ -882,6 +909,7 @@ export const photo = {
                 image: {
                     "thumbnail": {
                         "src": photoStudioThumbnail14,
+                        "placeholder": photoStudioPlaceholder1
                     },
                     "original": {
                         "src": photoStudioOriginal14,
@@ -898,6 +926,7 @@ export const photo = {
                 image: {
                     "thumbnail": {
                         "src": photoStudioThumbnail15,
+                        "placeholder": photoStudioPlaceholder1
                     },
                     "original": {
                         "src": photoStudioOriginal15,
@@ -930,6 +959,7 @@ export const photo = {
                 image: {
                     "thumbnail": {
                         "src": photoStudioThumbnail17,
+                        "placeholder": photoStudioPlaceholder1
                     },
                     "original": {
                         "src": photoStudioOriginal17,
@@ -946,6 +976,7 @@ export const photo = {
                 image: {
                     "thumbnail": {
                         "src": photoStudioThumbnail18,
+                        "placeholder": photoStudioPlaceholder1
                     },
                     "original": {
                         "src": photoStudioOriginal18,
@@ -978,6 +1009,7 @@ export const photo = {
                 image: {
                     "thumbnail": {
                         "src": photoStudioThumbnail20,
+                        "placeholder": photoStudioPlaceholder1
                     },
                     "original": {
                         "src": photoStudioOriginal20,
@@ -1010,6 +1042,7 @@ export const photo = {
                 image: {
                     "thumbnail": {
                         "src": photoStudioThumbnail22,
+                        "placeholder": photoStudioPlaceholder1
                     },
                     "original": {
                         "src": photoStudioOriginal22,
@@ -1026,6 +1059,7 @@ export const photo = {
                 image: {
                     "thumbnail": {
                         "src": photoStudioThumbnail23,
+                        "placeholder": photoStudioPlaceholder1
                     },
                     "original": {
                         "src": photoStudioOriginal23,

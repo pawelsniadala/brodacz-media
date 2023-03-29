@@ -72,7 +72,7 @@ const VideoView = () => {
             case 'debates':
                 return 'Biznesowe';
             case 'immovables':
-                return 'Nieruchomośći';
+                return 'Nieruchomości';
             case 'drone':
                 return 'Dron';
             case 'events':

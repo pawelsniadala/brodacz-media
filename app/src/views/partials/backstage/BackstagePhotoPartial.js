@@ -1,4 +1,4 @@
-import { Gallery, Item } from "react-photoswipe-gallery";
+// import { Gallery, Item } from "react-photoswipe-gallery";
 import { backstage } from "../../../data/backstage";
 import CardRealization from "../../../components/CardRealization";
 
@@ -19,7 +19,7 @@ const BackstagePhotoPartial = () => {
             <section className="backstage-photo-section">
                 <div className="section-wrapper">
                     <div className="card-wrapper realization photo">
-                        <Gallery>
+                        {/* <Gallery>
                             {photo.length ? photo.map((item) => (
                                 <Item
                                     key={item.id}
@@ -42,7 +42,7 @@ const BackstagePhotoPartial = () => {
                             )) : (
                                 <div />
                             )}
-                        </Gallery>
+                        </Gallery> */}
                     </div>
                 </div>
             </section>
