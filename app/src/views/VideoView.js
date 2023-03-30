@@ -20,8 +20,8 @@ const VideoView = () => {
             switch(pathname) {
                 case '/video':
                     return 'video-all';
-                case '/video/debates':
-                    return 'video-debates';
+                case '/video/content':
+                    return 'video-content';
                 case '/video/immovables':
                     return 'video-immovables';
                 case '/video/drone':
@@ -49,7 +49,7 @@ const VideoView = () => {
         switch(videoTab) {
             case 'video-all':
                 return <VideoCategoryPartial category='all' />;
-            case 'video-debates':
+            case 'video-content':
                 return <VideoCategoryPartial category={category} />;
             case 'video-immovables':
                 return <VideoCategoryPartial category={category} />;
@@ -60,6 +60,8 @@ const VideoView = () => {
             case 'video-music':
                 return <VideoCategoryPartial category={category} />;
             case 'video-weddings':
+                return <VideoCategoryPartial category={category} />;
+            case 'video-guides':
                 return <VideoCategoryPartial category={category} />;
             case 'video-broadcasts':
                 return <VideoCategoryPartial category={category} />;
@@ -78,8 +80,8 @@ const VideoView = () => {
 
     const setBreadcrumbsName = () => {
         switch(category) {
-            case 'debates':
-                return 'Biznesowe';
+            case 'content':
+                return 'Kontent';
             case 'immovables':
                 return 'Nieruchomości';
             case 'drone':
@@ -159,11 +161,11 @@ const VideoView = () => {
                                     onClick={(e) => handleTab(e, 'video-all')}
                                 />
                                 <Tab
-                                    label='Biznesowe'
+                                    label='Kontent'
                                     component={Link}
-                                    to={`/video/debates`}
-                                    value={`/video/debates`}
-                                    onClick={() => setTab('video-debates')}
+                                    to={`/video/content`}
+                                    value={`/video/content`}
+                                    onClick={() => setTab('video-content')}
                                 />
                                 <Tab
                                     label='Nieruchomości'
@@ -234,7 +236,6 @@ const VideoView = () => {
                             aria-labelledby={`pills-${videoTab}-tab`}
                         >
                             {renderTabContent(videoTab)}
-                            {/* <VideoCategoryPartial category={category ? category : 'all'} />; */}
                         </Box>
                     </Container>
                 </Box>

@@ -26,7 +26,8 @@ import HeaderSection from '../components/HeaderSection';
 // import CardServices from '../components/CardServices';
 import LinkMore from '../components/LinkMore';
 
-import { video } from "../data/video";
+// import { video } from "../data/video";
+import { video } from '../data/video/video';
 
 const LazyLoadImageComponent = ({
     src,
@@ -177,7 +178,7 @@ const VideoSection2 = () => {
                             ]}
                             className="mySwiper"
                         >
-                            {video.video.map((item, index) => (
+                            {video.category.map((item, index) => (
                                 <SwiperSlide key={index}>
                                     <Box
                                         className='xxx'

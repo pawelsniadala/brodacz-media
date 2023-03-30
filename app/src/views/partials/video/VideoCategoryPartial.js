@@ -6,7 +6,7 @@ import CardRealization from '../../../components/CardRealization';
 import Alert from '../../../components/Alert';
 import CardProposed from '../../../components/CardProposed';
 
-import { video } from '../../../data/video';
+import { video } from '../../../data/video/video';
 
 import { shuffleArray } from '../../../functions/functions';
 
@@ -21,7 +21,7 @@ const VideoCategoryPartial = ({ category }) => {
 
     const videoCategoryMap = {
         all: videoRealizationAll,
-        debates: videoRealizationCopy.debates,
+        content: videoRealizationCopy.content,
         immovables: videoRealizationCopy.immovables,
         drone: videoRealizationCopy.drone,
         events: videoRealizationCopy.events,
