@@ -10,8 +10,17 @@ import videoEventThumbnail9 from '../../../assets/video/realization/events/video
 import videoEventThumbnail10 from '../../../assets/video/realization/events/videoEventThumbnail10.png';
 import videoEventThumbnail11 from '../../../assets/video/realization/events/videoEventThumbnail11.png';
 import videoEventThumbnail12 from '../../../assets/video/realization/events/videoEventThumbnail12.png';
+import videoEventThumbnail13 from '../../../assets/video/realization/events/videoEventThumbnail13.png'; // nev size 626
 
 export const events = [
+    {
+        display: true,
+        id: 'ca89bd1c-b7c7-42bb-ba31-57bad24ade12',
+        date: '27 mar 2023',
+        title: 'Targi Leśne Forest SHOW Straszęcin 2023 / #19',
+        company: 'Gazeta Leśna',
+        video: { time: '2:07', src: videoEventThumbnail13, urlPage: 'https://www.youtube.com/watch?v=G-Ue4S4EbS4' }
+    },
     {
         display: true,
         id: '57cd8389-2657-4a8f-a719-b81ba615916d',
