@@ -13,13 +13,13 @@ import videoDebateThumbnail2 from "../assets/video/realization/debates/videoDeba
 import videoDebateThumbnail3 from "../assets/video/realization/debates/videoDebateThumbnail3.png";
 import videoDebateThumbnail4 from "../assets/video/realization/debates/videoDebateThumbnail4.png";
 import videoDebateThumbnail5 from "../assets/video/realization/debates/videoDebateThumbnail5.png";
-import videoDebateThumbnail6 from "../assets/video/realization/debates/videoDebateThumbnail6.png";
-import videoDebateThumbnail7 from "../assets/video/realization/debates/videoDebateThumbnail7.png";
-import videoDebateThumbnail8 from "../assets/video/realization/debates/videoDebateThumbnail8.png";
-import videoDebateThumbnail9 from "../assets/video/realization/debates/videoDebateThumbnail9.png";
-import videoDebateThumbnail10 from "../assets/video/realization/debates/videoDebateThumbnail10.png";
-import videoDebateThumbnail11 from "../assets/video/realization/debates/videoDebateThumbnail11.png";
-import videoDebateThumbnail12 from "../assets/video/realization/debates/videoDebateThumbnail12.png";
+// import videoDebateThumbnail6 from "../assets/video/realization/debates/videoDebateThumbnail6.png";
+// import videoDebateThumbnail7 from "../assets/video/realization/debates/videoDebateThumbnail7.png";
+// import videoDebateThumbnail8 from "../assets/video/realization/debates/videoDebateThumbnail8.png";
+// import videoDebateThumbnail9 from "../assets/video/realization/debates/videoDebateThumbnail9.png";
+// import videoDebateThumbnail10 from "../assets/video/realization/debates/videoDebateThumbnail10.png";
+// import videoDebateThumbnail11 from "../assets/video/realization/debates/videoDebateThumbnail11.png";
+// import videoDebateThumbnail12 from "../assets/video/realization/debates/videoDebateThumbnail12.png";
 import videoDebateThumbnail13 from "../assets/video/realization/debates/videoDebateThumbnail13.png";
 import videoDebateThumbnail14 from "../assets/video/realization/debates/videoDebateThumbnail14.png";
 
@@ -55,6 +55,9 @@ import videoWeddingThumbnail2 from "../assets/video/realization/weddings/videoWe
 import videoWeddingThumbnail3 from "../assets/video/realization/weddings/videoWeddingThumbnail3.png";
 import videoWeddingThumbnail4 from "../assets/video/realization/weddings/videoWeddingThumbnail4.png";
 import videoWeddingThumbnail5 from "../assets/video/realization/weddings/videoWeddingThumbnail5.png";
+
+// PORADNIKI
+import videoGuideThumbnail1 from "../assets/video/realization/guides/videoGuideThumbnail1.png"; // nev size 626x352
 
 // TRANSMISJE
 import videoBroadcastThumbnail1 from "../assets/video/realization/broadcasts/videoBroadcastThumbnail1.png";
@@ -151,8 +154,8 @@ export const video = {
         }
     ],
     "realization": {
-        "title": "Realizacje",
-        "empty": "Brak video.",
+        // "title": "Realizacje",
+        // "empty": "Brak video.",
         "debates": [
             {
                 display: true,
@@ -609,7 +612,7 @@ export const video = {
                 }
             }
         ],
-        "broadcast": [
+        "broadcasts": [
             {
                 display: true,
                 id: "84af7c53-275e-48f7-aa2e-839a498e0df1",
@@ -632,6 +635,20 @@ export const video = {
                     time: "5:41:05",
                     src: videoBroadcastThumbnail2,
                     urlPage: "https://www.youtube.com/watch?v=VGLSbb2LWuo"
+                }
+            }
+        ],
+        "guides": [
+            {
+                display: true,
+                id: "d63eccd5-81d3-4ee3-ae74-dfe6526e9a28",
+                date: "19 lut 2023",
+                title: "Jak dobrze wypaść na filmie ślubnym?",
+                company: "Brodacz Media",
+                video: {
+                    time: "9:10",
+                    src: videoGuideThumbnail1,
+                    urlPage: "https://www.youtube.com/watch?v=YA0SnULLgEA&t=26s"
                 }
             }
         ],

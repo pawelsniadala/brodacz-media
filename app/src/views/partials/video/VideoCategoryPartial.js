@@ -11,53 +11,37 @@ import { video } from '../../../data/video';
 import { shuffleArray } from '../../../functions/functions';
 
 const VideoCategoryPartial = ({ category }) => {
-    const all = [
-        ...video.realization.debates,
-        ...video.realization.immovables,
-        ...video.realization.drone,
-        ...video.realization.events,
-        ...video.realization.music,
-        ...video.realization.weddings,
-        ...video.realization.broadcast,
-        ...video.realization.animations
-    ];
+    const videoRealizationCopy = {
+        ...video.realization
+    };
 
-    shuffleArray(all)
+    const videoRealizationAll = [].concat(
+        ...Object.values(videoRealizationCopy)
+    );
 
-    const setCategory = () => {
-        switch(category) {
-            case 'all':
-                return [ ...all ];
-            case 'debates':
-                return [ ...video.realization.debates ];
-            case 'immovables':
-                return [ ...video.realization.immovables ];
-            case 'drone':
-                return [ ...video.realization.drone ];
-            case 'events':
-                return [ ...video.realization.events ];
-            case 'music':
-                return [ ...video.realization.music ];
-            case 'weddings':
-                return [ ...video.realization.weddings ];
-            case 'guides':
-                return [ ...video.realization.guides ];
-            case 'broadcasts':
-                return [ ...video.realization.broadcast ];
-            case 'animations':
-                return [ ...video.realization.animations ];
-            default:
-        }
-    }
+    const videoCategoryMap = {
+        all: videoRealizationAll,
+        debates: videoRealizationCopy.debates,
+        immovables: videoRealizationCopy.immovables,
+        drone: videoRealizationCopy.drone,
+        events: videoRealizationCopy.events,
+        music: videoRealizationCopy.music,
+        weddings: videoRealizationCopy.weddings,
+        guides: videoRealizationCopy.guides,
+        broadcasts: videoRealizationCopy.broadcasts,
+        animations: videoRealizationCopy.animations
+    };
 
-    // const realizationCategory = video.realization[category];
-
-    // console.log("realizationCategory", realizationCategory);
+    const setVideoCategory = (category) => {
+        return category === 'all'
+            ? shuffleArray(videoCategoryMap[category])
+            : videoCategoryMap[category];
+    };
 
     function getWindowDimensions() {
         const { innerWidth: width } = window;
         return { width };
-    }
+    };
 
     function useWindowDimensions() {
         const [ windowDimensions, setWindowDimensions ] = useState(getWindowDimensions());
@@ -72,15 +56,15 @@ const VideoCategoryPartial = ({ category }) => {
         }, []);
 
         return windowDimensions;
-    }
+    };
 
     const { width } = useWindowDimensions();
 
     return (
         <Box className='video-wedding-partial'>
-            <Box className={`card-wrapper realization video ${setCategory() ? '' : 'empty'}`}>
+            <Box className={`card-wrapper realization video ${setVideoCategory(category) ? '' : 'empty'}`}>
                 {width >= 991.98 ? (
-                    setCategory() ? (category === 'all' ? setCategory().filter(item => item.display !== false) : setCategory()).map((item) => (
+                    setVideoCategory(category) ? (category === 'all' ? setVideoCategory(category).filter(item => item.display !== false) : setVideoCategory(category)).map((item) => (
                         <Box key={item.id}>
                             <CardRealization
                                 cardThumbnaiVideo
@@ -99,7 +83,7 @@ const VideoCategoryPartial = ({ category }) => {
                         />
                     )
                 ) : (
-                    setCategory() && (category === 'all' ? setCategory().filter(item => item.display !== false) : setCategory()).map((item) => (
+                    setVideoCategory(category) && (category === 'all' ? setVideoCategory(category).filter(item => item.display !== false) : setVideoCategory(category)).map((item) => (
                         <Box key={item.id}>
                             <CardProposed
                                 cardTitle={item.title}
@@ -114,6 +98,6 @@ const VideoCategoryPartial = ({ category }) => {
             </Box>
         </Box>
     );
-}
+};
 
 export default VideoCategoryPartial;

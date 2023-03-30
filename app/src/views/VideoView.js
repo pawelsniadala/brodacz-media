@@ -32,6 +32,8 @@ const VideoView = () => {
                     return 'video-music';
                 case '/video/weddings':
                     return 'video-weddings';
+                case '/video/guides':
+                    return 'video-guides';
                 case '/video/broadcasts':
                     return 'video-broadcasts';
                 case '/video/animations':
