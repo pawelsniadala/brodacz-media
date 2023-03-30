@@ -1,9 +1,9 @@
-import photoCategoryBranding from "../assets/photo/category/photoCategoryBranding.png";
-import photoCategoryStudio from "../assets/photo/category/photoCategoryStudio.png";
-import photoCategoryProduct from "../assets/photo/category/photoCategoryProduct.png";
-import photoCategoryOutdoor from "../assets/photo/category/photoCategoryOutdoor.png";
-import photoCategoryDrone from "../assets/photo/category/photoCategoryDrone.png";
-import photoCategoryDrone2 from "../assets/photo/category/photoCategoryDrone2.jpg";
+// import photoCategoryBranding from "../assets/photo/category/photoCategoryBranding.png";
+// import photoCategoryStudio from "../assets/photo/category/photoCategoryStudio.png";
+// import photoCategoryProduct from "../assets/photo/category/photoCategoryProduct.png";
+// import photoCategoryOutdoor from "../assets/photo/category/photoCategoryOutdoor.png";
+// import photoCategoryDrone from "../assets/photo/category/photoCategoryDrone.png";
+// import photoCategoryDrone2 from "../assets/photo/category/photoCategoryDrone2.jpg";
 import photoCategoryDrone3 from "../assets/photo/category/photoCategoryDrone3.jpg";
 
 // WIZERUNKOWE
@@ -103,7 +103,7 @@ export const photo = {
             id: "5f36d40d-812a-4ea5-8cae-2eb033280939",
             designation: "branding",
             label: "zdjęcia",
-            title: 'Biznesowe',
+            title: 'Wizerunkowe',
             description: "Wszyscy kupujemy oczami, dlatego ważne, żeby produkt miał dobre zdjęcie. Znajdę ciekawy sposób na ukazanie Twojego produktu w jak najlepszym świetle.",
             // image: photoStudioOriginal14,
             image: photoBrandingOriginal4,

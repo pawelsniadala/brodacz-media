@@ -47,7 +47,7 @@ const LazyLoadImageComponent = ({
 const PhotoSection2 = () => {
     return (
         <section className='photo-section'>
-            <Container maxWidth="xl">
+            <Container maxWidth='xl'>
                 <Box className='section-wrapper'>
                     <HeaderSection
                         sectionTitle='Zdjęcia'
@@ -77,9 +77,9 @@ const PhotoSection2 = () => {
                         </ul>
                     </Box>
                     <LinkMore
-                        linkTo="/photo"
-                        linkText="Zobacz wszystkie zdjęcia"
-                        linkColor="#f9fbfc"
+                        linkTo='/photo'
+                        linkText='Zobacz wszystkie zdjęcia'
+                        linkColor='#f9fbfc'
                     />
                 </Box>
             </Container>

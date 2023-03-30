@@ -65,7 +65,7 @@ const PhotoView = () => {
     const setBreadcrumbsName = () => {
         switch(category) {
             case 'branding':
-                return 'Biznesowe';
+                return 'Wizerunkowe';
             case 'studio':
                 return 'Studyjne';
             case 'outdoor':
@@ -137,7 +137,7 @@ const PhotoView = () => {
                                     onClick={(e) => handleTab(e, 'photo-all')}
                                 />
                                 <Tab
-                                    label='Biznesowe'
+                                    label='Wizerunkowe'
                                     component={Link}
                                     to={`/photo/branding`}
                                     value={`/photo/branding`}
