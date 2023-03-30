@@ -25,35 +25,32 @@ const PhotoCategoryPartial = ({ category }) => {
         lightbox.init();
     }, []);
 
-    const categories = [ 'branding', 'studio', 'outdoor', 'product', 'drone' ];
-
-    const photoRealizationCopy = photo.realization;
-
-    for (let category of categories) {
-        photoRealizationCopy[category] = shuffleArray(photoRealizationCopy[category]);
-    }
+    const photoRealizationCopy = {
+        ...photo.realization
+    };
 
     const photoRealizationAll = [].concat(
-        ...categories.map(category => photoRealizationCopy[category])
+        ...Object.values(photoRealizationCopy)
     );
 
-    const categoryMap = new Map([
-        [ 'all', photoRealizationAll ],
-        [ 'branding', photoRealizationCopy.branding ],
-        [ 'studio', photoRealizationCopy.studio ],
-        [ 'outdoor', photoRealizationCopy.outdoor ],
-        [ 'product', photoRealizationCopy.product ],
-        [ 'drone', photoRealizationCopy.drone ]
-    ]);
+    const photoCategoryMap = {
+        all: photoRealizationAll,
+        branding: photoRealizationCopy.branding,
+        studio: photoRealizationCopy.studio,
+        outdoor: photoRealizationCopy.outdoor,
+        product: photoRealizationCopy.product,
+        drone: photoRealizationCopy.drone
+    };
 
-    const setCategory = (category) => {
-        return categoryMap.get(category);
+    const setPhotoCategory = (category) => {
+        const shuffledCategory = shuffleArray(photoCategoryMap[category]);
+        return shuffledCategory;
     };
 
     return (
         <Box className="photo-category-partial">
             <Box className="card-wrapper realization photo pswp-gallery" id='my-gallery'>
-                {setCategory(category).map((item) => (
+                {setPhotoCategory(category).map((item) => (
                     <a
                         key={`my-gallery-${item.id}`}
                         href={item.image.original.src}
@@ -84,8 +81,6 @@ const PhotoCategoryPartial = ({ category }) => {
             </Box>
         </Box>
     );
-}
+};
 
 export default PhotoCategoryPartial;
-
-
