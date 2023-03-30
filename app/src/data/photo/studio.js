@@ -4,7 +4,7 @@ import photoStudioThumbnail3 from '../../assets/photo/realization/studio/thumbna
 import photoStudioThumbnail4 from '../../assets/photo/realization/studio/thumbnail/photoStudioThumbnail4.png'; // nev size
 import photoStudioThumbnail5 from '../../assets/photo/realization/studio/thumbnail/photoStudioThumbnail5.png'; // nev size
 import photoStudioThumbnail6 from '../../assets/photo/realization/studio/thumbnail/photoStudioThumbnail6.png'; // nev size
-import photoStudioThumbnail7 from '../../assets/photo/realization/studio/thumbnail/photoStudioThumbnail7.png'; // nev size
+import photoStudioThumbnail7 from '../../assets/photo/realization/studio/thumbnail/photoStudioThumbnail7.png'; // nev size -> 626
 import photoStudioThumbnail8 from '../../assets/photo/realization/studio/thumbnail/photoStudioThumbnail8.png'; // nev size
 import photoStudioThumbnail9 from '../../assets/photo/realization/studio/thumbnail/photoStudioThumbnail9.png'; // nev size
 import photoStudioThumbnail10 from '../../assets/photo/realization/studio/thumbnail/photoStudioThumbnail10.png'; // nev size
@@ -15,7 +15,7 @@ import photoStudioThumbnail14 from '../../assets/photo/realization/studio/thumbn
 import photoStudioThumbnail15 from '../../assets/photo/realization/studio/thumbnail/photoStudioThumbnail15.png'; // nev size
 import photoStudioThumbnail16 from '../../assets/photo/realization/studio/thumbnail/photoStudioThumbnail16.png'; // nev size -> 626
 import photoStudioThumbnail17 from '../../assets/photo/realization/studio/thumbnail/photoStudioThumbnail17.png'; // nev size
-import photoStudioThumbnail18 from '../../assets/photo/realization/studio/thumbnail/photoStudioThumbnail18.png'; // nev size
+import photoStudioThumbnail18 from '../../assets/photo/realization/studio/thumbnail/photoStudioThumbnail18.png'; // nev size -> 626
 import photoStudioThumbnail19 from '../../assets/photo/realization/studio/thumbnail/photoStudioThumbnail19.png'; // nev size -> 626
 import photoStudioThumbnail20 from '../../assets/photo/realization/studio/thumbnail/photoStudioThumbnail20.png'; // nev size
 import photoStudioThumbnail21 from '../../assets/photo/realization/studio/thumbnail/photoStudioThumbnail21.png'; // nev size -> 626
@@ -26,6 +26,9 @@ import photoStudioThumbnail25 from '../../assets/photo/realization/studio/thumbn
 import photoStudioThumbnail26 from '../../assets/photo/realization/studio/thumbnail/photoStudioThumbnail26.png'; // nev size -> 626
 import photoStudioThumbnail27 from '../../assets/photo/realization/studio/thumbnail/photoStudioThumbnail27.png'; // nev size -> 626
 import photoStudioThumbnail28 from '../../assets/photo/realization/studio/thumbnail/photoStudioThumbnail28.png'; // nev size -> 626
+import photoStudioThumbnail29 from '../../assets/photo/realization/studio/thumbnail/photoStudioThumbnail29.png'; // nev size -> 626
+import photoStudioThumbnail30 from '../../assets/photo/realization/studio/thumbnail/photoStudioThumbnail30.png'; // nev size -> 626
+import photoStudioThumbnail31 from '../../assets/photo/realization/studio/thumbnail/photoStudioThumbnail31.png'; // nev size -> 626
 
 import photoStudioOriginal1 from '../../assets/photo/realization/studio/original/photoStudioOriginal1.png'; // nev size
 import photoStudioOriginal2 from '../../assets/photo/realization/studio/original/photoStudioOriginal2.png'; // nev size
@@ -33,28 +36,31 @@ import photoStudioOriginal3 from '../../assets/photo/realization/studio/original
 import photoStudioOriginal4 from '../../assets/photo/realization/studio/original/photoStudioOriginal4.png'; // nev size
 import photoStudioOriginal5 from '../../assets/photo/realization/studio/original/photoStudioOriginal5.png'; // nev size
 import photoStudioOriginal6 from '../../assets/photo/realization/studio/original/photoStudioOriginal6.png'; // nev size
-import photoStudioOriginal7 from '../../assets/photo/realization/studio/original/photoStudioOriginal7.png'; // nev size
+import photoStudioOriginal7 from '../../assets/photo/realization/studio/original/photoStudioOriginal7.png'; // nev size -> 1758x2000
 import photoStudioOriginal8 from '../../assets/photo/realization/studio/original/photoStudioOriginal8.png'; // nev size
-import photoStudioOriginal9 from '../../assets/photo/realization/studio/original/photoStudioOriginal9.png'; // nev size
+import photoStudioOriginal9 from '../../assets/photo/realization/studio/original/photoStudioOriginal9.png'; // nev size -> 2560x1975
 import photoStudioOriginal10 from '../../assets/photo/realization/studio/original/photoStudioOriginal10.png'; // nev size
 import photoStudioOriginal11 from '../../assets/photo/realization/studio/original/photoStudioOriginal11.png'; // nev size
 import photoStudioOriginal12 from '../../assets/photo/realization/studio/original/photoStudioOriginal12.png'; // nev size
 import photoStudioOriginal13 from '../../assets/photo/realization/studio/original/photoStudioOriginal13.png'; // nev size
-import photoStudioOriginal14 from '../../assets/photo/realization/studio/original/photoStudioOriginal14.png'; // nev size
+import photoStudioOriginal14 from '../../assets/photo/realization/studio/original/photoStudioOriginal14.png'; // nev size 2560x2314
 import photoStudioOriginal15 from '../../assets/photo/realization/studio/original/photoStudioOriginal15.png'; // nev size
-import photoStudioOriginal16 from '../../assets/photo/realization/studio/original/photoStudioOriginal16.png'; // nev size -> 2560
+import photoStudioOriginal16 from '../../assets/photo/realization/studio/original/photoStudioOriginal16.png'; // nev size -> 2560x1905
 import photoStudioOriginal17 from '../../assets/photo/realization/studio/original/photoStudioOriginal17.png'; // nev size
-import photoStudioOriginal18 from '../../assets/photo/realization/studio/original/photoStudioOriginal18.png'; // nev size
+import photoStudioOriginal18 from '../../assets/photo/realization/studio/original/photoStudioOriginal18.png'; // nev size -> 2560x1777
 import photoStudioOriginal19 from '../../assets/photo/realization/studio/original/photoStudioOriginal19.png'; // nev size -> 2560
 import photoStudioOriginal20 from '../../assets/photo/realization/studio/original/photoStudioOriginal20.png'; // nev size
-import photoStudioOriginal21 from '../../assets/photo/realization/studio/original/photoStudioOriginal21.png'; // nev size -> 2560
-import photoStudioOriginal22 from '../../assets/photo/realization/studio/original/photoStudioOriginal22.png'; // nev size
+import photoStudioOriginal21 from '../../assets/photo/realization/studio/original/photoStudioOriginal21.png'; // nev size -> 2560x1864
+import photoStudioOriginal22 from '../../assets/photo/realization/studio/original/photoStudioOriginal22.png'; // nev size -> 2204x1975
 import photoStudioOriginal23 from '../../assets/photo/realization/studio/original/photoStudioOriginal23.png'; // nev size
-import photoStudioOriginal24 from '../../assets/photo/realization/studio/original/photoStudioOriginal24.png'; // nev size -> 1637x2560
+import photoStudioOriginal24 from '../../assets/photo/realization/studio/original/photoStudioOriginal24.png'; // nev size -> 1731x2560
 import photoStudioOriginal25 from '../../assets/photo/realization/studio/original/photoStudioOriginal25.png'; // nev size -> 2012x2560
 import photoStudioOriginal26 from '../../assets/photo/realization/studio/original/photoStudioOriginal26.png'; // nev size -> 2560x2145
 import photoStudioOriginal27 from '../../assets/photo/realization/studio/original/photoStudioOriginal27.png'; // nev size -> 2560x1823
 import photoStudioOriginal28 from '../../assets/photo/realization/studio/original/photoStudioOriginal28.png'; // nev size -> 2560x1729
+import photoStudioOriginal29 from '../../assets/photo/realization/studio/original/photoStudioOriginal29.png'; // nev size -> 1635x2560
+import photoStudioOriginal30 from '../../assets/photo/realization/studio/original/photoStudioOriginal30.png'; // nev size -> 2560x1801
+import photoStudioOriginal31 from '../../assets/photo/realization/studio/original/photoStudioOriginal31.png'; // nev size -> 2560x1755
 
 export const studio = [
     {
@@ -110,7 +116,7 @@ export const studio = [
         title: 'photoStudiol7',
         image: {
             thumbnail: { src: photoStudioThumbnail7 },
-            original: { src: photoStudioOriginal7, width: 1920, height: 1080 }
+            original: { src: photoStudioOriginal7, width: 1758, height: 2000 }
         }
     },
     {
@@ -126,7 +132,7 @@ export const studio = [
         title: 'photoStudiol9',
         image: {
             thumbnail: { src: photoStudioThumbnail9 },
-            original: { src: photoStudioOriginal9, width: 1920, height: 1699 }
+            original: { src: photoStudioOriginal9, width: 2560, height: 1975 }
         }
     },
     {
@@ -166,7 +172,7 @@ export const studio = [
         title: 'photoStudio14',
         image: {
             thumbnail: { src: photoStudioThumbnail14 },
-            original: { src: photoStudioOriginal14, width: 1920, height: 1080 }
+            original: { src: photoStudioOriginal14, width: 2560, height: 2314 }
         }
     },
     {
@@ -182,7 +188,7 @@ export const studio = [
         title: 'photoStudio16',
         image: {
             thumbnail: { src: photoStudioThumbnail16 },
-            original: { src: photoStudioOriginal16, width: 2560, height: 1937 }
+            original: { src: photoStudioOriginal16, width: 2560, height: 1905 }
         }
     },
     {
@@ -198,7 +204,7 @@ export const studio = [
         title: 'photoStudio18',
         image: {
             thumbnail: { src: photoStudioThumbnail18 },
-            original: { src: photoStudioOriginal18, width: 1920, height: 1280 }
+            original: { src: photoStudioOriginal18, width: 2560, height: 1777 }
         }
     },
     {
@@ -206,7 +212,7 @@ export const studio = [
         title: 'photoStudio19',
         image: {
             thumbnail: { src: photoStudioThumbnail19 },
-            original: { src: photoStudioOriginal19, width: 2560, height: 2048 }
+            original: { src: photoStudioOriginal19, width: 2560, height: 1852 }
         }
     },
     {
@@ -222,7 +228,7 @@ export const studio = [
         title: 'photoStudio21',
         image: {
             thumbnail: { src: photoStudioThumbnail21 },
-            original: { src: photoStudioOriginal21, width: 2560, height: 1489 }
+            original: { src: photoStudioOriginal21, width: 2560, height: 1864 }
         }
     },
     {
@@ -230,7 +236,7 @@ export const studio = [
         title: 'photoStudio22',
         image: {
             thumbnail: { src: photoStudioThumbnail22 },
-            original: { src: photoStudioOriginal22, width: 1920, height: 2400 }
+            original: { src: photoStudioOriginal22, width: 2000, height: 1975 }
         }
     },
     {
@@ -246,7 +252,7 @@ export const studio = [
         title: 'photoStudio24',
         image: {
             thumbnail: { src: photoStudioThumbnail24 },
-            original: { src: photoStudioOriginal24, width: 1637, height: 2560 }
+            original: { src: photoStudioOriginal24, width: 1731, height: 2560 }
         }
     },
     {
@@ -279,6 +285,30 @@ export const studio = [
         image: {
             thumbnail: { src: photoStudioThumbnail28 },
             original: { src: photoStudioOriginal28, width: 2560, height: 1729 }
+        }
+    },
+    {
+        id: 'a731c4b0-f87a-49bb-aa57-1724b5e70214',
+        title: 'photoStudio29',
+        image: {
+            thumbnail: { src: photoStudioThumbnail29 },
+            original: { src: photoStudioOriginal29, width: 1635, height: 2560 }
+        }
+    },
+    {
+        id: '9dd62e3b-8dfd-4706-9351-a68b55cdf756',
+        title: 'photoStudio30',
+        image: {
+            thumbnail: { src: photoStudioThumbnail30 },
+            original: { src: photoStudioOriginal30, width: 2560, height: 1801 }
+        }
+    },
+    {
+        id: '26350ce5-c429-4ad5-baeb-b6089e820a40',
+        title: 'photoStudio30',
+        image: {
+            thumbnail: { src: photoStudioThumbnail31 },
+            original: { src: photoStudioOriginal31, width: 2560, height: 1755 }
         }
     }
 ];
