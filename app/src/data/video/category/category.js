@@ -1,10 +1,8 @@
 import videoCategoryDebate from '../../../assets/video/category/videoCategoryDebate.png';
-import videoCategoryImmovables from '../../../assets/video/category/videoCategoryImmovables.png';
 import videoCategoryDrone from '../../../assets/video/category/videoCategoryDrone.png';
 import videoCategoryEvents from '../../../assets/video/category/videoCategoryEvents.png';
 import videoCategoryMusicVideo from '../../../assets/video/category/videoCategoryMusicVideo.png';
 import videoCategoryWeddings from '../../../assets/video/category/videoCategoryWeddings.png';
-import videoCategoryBroadcasts from '../../../assets/video/category/videoCategoryBroadcasts.png';
 import videoCategoryAnimation from '../../../assets/video/category/videoCategoryAnimation.png';
 
 export const category = [
@@ -16,15 +14,6 @@ export const category = [
         image: videoCategoryDebate,
         path: '/video/content',
         tab: 'video-content'
-    },
-    {
-        id: '32cbb538-c587-4946-8ddf-e7753d4f2966',
-        label: 'filmy',
-        title: 'Nieruchomości',
-        description: 'Lubię podchodzić do każdej nieruchomości indywidualnie jako oddzielnego kawałka świata ze swoją historią. Staram się pokazywać dane otoczenie nie tylko od strony wizualnej, ale też podprogowo przemycić nastrój i uczucia, jakie towarzyszą podczas przebywania w danym miejscu.',
-        image: videoCategoryImmovables,
-        path: '/video/immovables',
-        tab: 'video-immovables'
     },
     {
         id: 'c9aa88bb-d3ea-47b9-a3b2-318fb7e51af3',
@@ -61,15 +50,6 @@ export const category = [
         image: videoCategoryWeddings,
         path: '/video/weddings',
         tab: 'video-weddings'
-    },
-    {
-        id: 'a1280498-4dab-4ec8-8854-24a708e23331',
-        label: 'filmy',
-        title: 'Transmisje',
-        description: 'W dzisiejszych czasach trudno wyobrazić sobie wszędzie zdążyć, dzięki transmisji możesz przełamać barierę odległości zyskując większą publikę podczas Twojego eventu. Możesz połączyć się z ludźmi z całego świata w ułamku sekundy.',
-        image: videoCategoryBroadcasts,
-        path: '/video/broadcasts',
-        tab: 'video-broadcasts'
     },
     {
         id: '7993088f-594b-4e2a-851a-d4f0e124eb19',

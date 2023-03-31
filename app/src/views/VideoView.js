@@ -8,8 +8,6 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-// import PlayArrowIcon from '@mui/icons-material/PlayArrow';
-// import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 
 import VideoCategoryPartial from './partials/video/VideoCategoryPartial';
 
@@ -24,8 +22,6 @@ const VideoView = () => {
                     return 'video-all';
                 case '/video/content':
                     return 'video-content';
-                case '/video/immovables':
-                    return 'video-immovables';
                 case '/video/drone':
                     return 'video-drone';
                 case '/video/events':
@@ -36,8 +32,6 @@ const VideoView = () => {
                     return 'video-weddings';
                 case '/video/guides':
                     return 'video-guides';
-                case '/video/broadcasts':
-                    return 'video-broadcasts';
                 case '/video/animations':
                     return 'video-animations';
                 default:
@@ -53,8 +47,6 @@ const VideoView = () => {
                 return <VideoCategoryPartial category='all' />;
             case 'video-content':
                 return <VideoCategoryPartial category={category} />;
-            case 'video-immovables':
-                return <VideoCategoryPartial category={category} />;
             case 'video-drone':
                 return <VideoCategoryPartial category={category} />;
             case 'video-events':
@@ -64,8 +56,6 @@ const VideoView = () => {
             case 'video-weddings':
                 return <VideoCategoryPartial category={category} />;
             case 'video-guides':
-                return <VideoCategoryPartial category={category} />;
-            case 'video-broadcasts':
                 return <VideoCategoryPartial category={category} />;
             case 'video-animations':
                 return <VideoCategoryPartial category={category} />;
@@ -84,8 +74,6 @@ const VideoView = () => {
         switch(category) {
             case 'content':
                 return 'Kontent';
-            case 'immovables':
-                return 'Nieruchomości';
             case 'drone':
                 return 'Dron';
             case 'events':
@@ -96,8 +84,6 @@ const VideoView = () => {
                 return 'Śluby';
             case 'guides':
                 return 'Poradniki';
-            case 'broadcasts':
-                return 'Transmisje';
             case 'animations':
                 return 'Animacje';
             default:
@@ -121,7 +107,6 @@ const VideoView = () => {
                             <Breadcrumbs
                                 className='breadcrumb'
                                 separator={<NavigateNextIcon fontSize='smform' />}
-                                // separator={<FiberManualRecordIcon sx={{ fontSize: '4px', marginX: '5px' }} /> }
                                 aria-label='breadcrumb'
                             >
                                 <Link to='/' aria-current='page'>
@@ -171,13 +156,6 @@ const VideoView = () => {
                                     onClick={() => setTab('video-content')}
                                 />
                                 <Tab
-                                    label='Nieruchomości'
-                                    component={Link}
-                                    to={`/video/immovables`}
-                                    value={`/video/immovables`}
-                                    onClick={() => setTab('video-immovables')}
-                                />
-                                <Tab
                                     label='Dron'
                                     component={Link}
                                     to={`/video/drone`}
@@ -211,13 +189,6 @@ const VideoView = () => {
                                     to={`/video/guides`}
                                     value={`/video/guides`}
                                     onClick={() => setTab('video-guides')}
-                                />
-                                <Tab
-                                    label='Transmicje'
-                                    component={Link}
-                                    to={`/video/broadcasts`}
-                                    value={`/video/broadcasts`}
-                                    onClick={() => setTab('video-broadcasts')}
                                 />
                                 <Tab
                                     label='Animacje'
