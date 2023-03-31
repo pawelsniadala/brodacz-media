@@ -8,6 +8,8 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+// import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+// import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 
 import VideoCategoryPartial from './partials/video/VideoCategoryPartial';
 
@@ -119,6 +121,7 @@ const VideoView = () => {
                             <Breadcrumbs
                                 className='breadcrumb'
                                 separator={<NavigateNextIcon fontSize='smform' />}
+                                // separator={<FiberManualRecordIcon sx={{ fontSize: '4px', marginX: '5px' }} /> }
                                 aria-label='breadcrumb'
                             >
                                 <Link to='/' aria-current='page'>

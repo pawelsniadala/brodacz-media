@@ -119,22 +119,22 @@ export const branding = [
             original: { src: photoBrandingOriginal11, width: 1920, height: 2880 }
         }
     },
-    {
-        id: '7563f466-7e53-475c-ba36-8d353c3a8873',
-        title: 'photoBranding12',
-        image: {
-            thumbnail: { src: photoBrandingThumbnail12 },
-            original: { src: photoBrandingOriginal12, width: 1920, height: 2880 }
-        }
-    },
-    {
-        id: '84b660d5-df63-4e6d-b8e7-4708651a6421',
-        title: 'photoBranding13',
-        image: {
-            thumbnail: { src: photoBrandingThumbnail13 },
-            original: { src: photoBrandingOriginal13, width: 1920, height: 2880 }
-        }
-    },
+    // {
+    //     id: '7563f466-7e53-475c-ba36-8d353c3a8873',
+    //     title: 'photoBranding12',
+    //     image: {
+    //         thumbnail: { src: photoBrandingThumbnail12 },
+    //         original: { src: photoBrandingOriginal12, width: 1920, height: 2880 }
+    //     }
+    // },
+    // {
+    //     id: '84b660d5-df63-4e6d-b8e7-4708651a6421',
+    //     title: 'photoBranding13',
+    //     image: {
+    //         thumbnail: { src: photoBrandingThumbnail13 },
+    //         original: { src: photoBrandingOriginal13, width: 1920, height: 2880 }
+    //     }
+    // },
     {
         id: '70b91122-081c-4085-9bce-18d981b42f64',
 

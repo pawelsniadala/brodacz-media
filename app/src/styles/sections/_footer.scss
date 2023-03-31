@@ -1,10 +1,15 @@
 footer {
     background-color: #ffffff;
-    border-top: 1px solid rgba(0, 0, 0, .1);
+    // background-color: #e7e8eb;
+    // background-color: rgba(0, 0, 0, 0.085);
+    // background-color: #f6f8fa;
+    // background-color: #2f363d;
+    // border-top: 1px solid rgba(0, 0, 0, .1);
 
     .section-wrapper {
         &.footer {
             color: rgba(0,0,0,.5);
+            // color: rgba(255,255,255,.5);
 
             .footer-subheader {
                 color: rgba(0,0,0,.7);
@@ -34,7 +39,11 @@ footer {
 
                     .list-group-item {
                         padding: 0.5rem 0;
-                        background-color: #ffffff;
+                        // background-color: #ffffff;
+                        // background-color: #e7e8eb;
+                        // background-color: rgba(0, 0, 0, 0.05);
+                        border-bottom: 1px solid rgba(255, 255, 255, .07);
+                        border-bottom: 1px solid rgba(0, 0, 0, .1);
 
                         a {
                             text-decoration: none;
@@ -51,7 +60,12 @@ footer {
 
                         &:last-child {
                             padding-bottom: 0;
+                            border-bottom: none;
                         }
+
+                        // &:last-child {
+                        //     border-bottom: none;
+                        // }
                     }
                 }
             }
@@ -90,8 +104,11 @@ footer {
             text-align: center;
             margin: 0;
             padding: .7rem 0;
-            background-color: #F2F3F5;
-            border-top: 1px solid rgba(0, 0, 0, .1);
+            // background-color: #F2F3F5;
+            background-color: #f6f8fa;
+            background-color: #fff;
+            background-color: #f6f8fa;;
+            // border-top: 1px solid rgba(0, 0, 0, .1);
 
             .copyright {
                 color: rgba(0,0,0,.55);

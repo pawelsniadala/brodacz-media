@@ -71,14 +71,14 @@ export const studio = [
             original: { src: photoStudioOriginal1, width: 1920, height: 2989 }
         }
     },
-    {
-        id: 'c1177a7d-cba9-46ba-888c-18061ab3ad28',
-        title: 'photoStudio2',
-        image: {
-            thumbnail: { src: photoStudioThumbnail2 },
-            original: { src: photoStudioOriginal2, width: 1920, height: 1208 }
-        }
-    },
+    // {
+    //     id: 'c1177a7d-cba9-46ba-888c-18061ab3ad28',
+    //     title: 'photoStudio2',
+    //     image: {
+    //         thumbnail: { src: photoStudioThumbnail2 },
+    //         original: { src: photoStudioOriginal2, width: 1920, height: 1208 }
+    //     }
+    // },
     {
         id: '5d52c967-58ad-4644-9a44-b365786056cb',
         title: 'photoStudio3',
@@ -111,14 +111,14 @@ export const studio = [
             original: { src: photoStudioOriginal6, width: 1920, height: 1169 }
         }
     },
-    {
-        id: '45636f72-9b6c-4c52-b333-693b05d60eb1',
-        title: 'photoStudiol7',
-        image: {
-            thumbnail: { src: photoStudioThumbnail7 },
-            original: { src: photoStudioOriginal7, width: 1758, height: 2000 }
-        }
-    },
+    // {
+    //     id: '45636f72-9b6c-4c52-b333-693b05d60eb1',
+    //     title: 'photoStudiol7',
+    //     image: {
+    //         thumbnail: { src: photoStudioThumbnail7 },
+    //         original: { src: photoStudioOriginal7, width: 1758, height: 2000 }
+    //     }
+    // },
     {
         id: '0ec4474c-75ad-4fa5-8ce7-8182fc485c6d',
         title: 'photoStudiol8',
@@ -191,14 +191,14 @@ export const studio = [
             original: { src: photoStudioOriginal16, width: 2560, height: 1905 }
         }
     },
-    {
-        id: 'ba7aebf4-e296-4a8f-bea8-ca11658505c5',
-        title: 'photoStudio17',
-        image: {
-            thumbnail: { src: photoStudioThumbnail17 },
-            original: { src: photoStudioOriginal17, width: 1920, height: 2880 }
-        }
-    },
+    // {
+    //     id: 'ba7aebf4-e296-4a8f-bea8-ca11658505c5',
+    //     title: 'photoStudio17',
+    //     image: {
+    //         thumbnail: { src: photoStudioThumbnail17 },
+    //         original: { src: photoStudioOriginal17, width: 1920, height: 2880 }
+    //     }
+    // },
     {
         id: 'b1708b46-e1a2-4320-b7f6-eb438e528ecc',
         title: 'photoStudio18',
@@ -215,14 +215,14 @@ export const studio = [
             original: { src: photoStudioOriginal19, width: 2560, height: 1852 }
         }
     },
-    {
-        id: 'df0903d2-1707-46e7-96e3-d7cd48fe150c',
-        title: 'photoStudio20',
-        image: {
-            thumbnail: { src: photoStudioThumbnail20 },
-            original: { src: photoStudioOriginal20, width: 1920, height: 1536 }
-        }
-    },
+    // {
+    //     id: 'df0903d2-1707-46e7-96e3-d7cd48fe150c',
+    //     title: 'photoStudio20',
+    //     image: {
+    //         thumbnail: { src: photoStudioThumbnail20 },
+    //         original: { src: photoStudioOriginal20, width: 1920, height: 1536 }
+    //     }
+    // },
     {
         id: 'a8a14547-f4b3-49c7-a2ab-d8f98663705f',
         title: 'photoStudio21',
@@ -255,14 +255,14 @@ export const studio = [
             original: { src: photoStudioOriginal24, width: 1731, height: 2560 }
         }
     },
-    {
-        id: '30845c16-2b68-4bfc-b027-4031d1828b29',
-        title: 'photoStudio25',
-        image: {
-            thumbnail: { src: photoStudioThumbnail25 },
-            original: { src: photoStudioOriginal25, width: 2012, height: 2560 }
-        }
-    },
+    // {
+    //     id: '30845c16-2b68-4bfc-b027-4031d1828b29',
+    //     title: 'photoStudio25',
+    //     image: {
+    //         thumbnail: { src: photoStudioThumbnail25 },
+    //         original: { src: photoStudioOriginal25, width: 2012, height: 2560 }
+    //     }
+    // },
     {
         id: '5f0ded7f-c9eb-48ff-9898-10fa4d5e7b27',
         title: 'photoStudio26',

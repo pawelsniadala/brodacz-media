@@ -14,8 +14,8 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 
 // import Container from '../components/Container';
-import PhoneSvg from '../assets/svg/PhoneSvg';
-import EmailSvg from '../assets/svg/EmailSvg';
+// import PhoneSvg from '../assets/svg/PhoneSvg';
+// import EmailSvg from '../assets/svg/EmailSvg';
 import FacebookSvg from '../assets/svg/FacebookSvg';
 import InstagramSvg from '../assets/svg/InstagramSvg';
 // import YouTubeSvg from '../assets/svg/YouTubeSvg';
@@ -27,16 +27,17 @@ import TeamSvg from '../assets/svg/TeamSvg';
 import TechnologySvg from '../assets/svg/TechnologySvg';
 import ContactSvg from '../assets/svg/ContactSvg';
 
+// import SettingsIcon from '@mui/icons-material/Settings';
 
 import EmailIcon from '@mui/icons-material/Email';
 import CallIcon from '@mui/icons-material/Call';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
+// import MoreVertIcon from '@mui/icons-material/MoreVert';
 
 import LogoSvg from "../assets/common/LogoSvg";
 
 
-import FacebookIcon from '@mui/icons-material/Facebook';
-import YouTubeIcon from '@mui/icons-material/YouTube';
+// import FacebookIcon from '@mui/icons-material/Facebook';
+// import YouTubeIcon from '@mui/icons-material/YouTube';
 
 const HeaderSection = () => {
     const [ state, setState ] = useState({
@@ -412,6 +413,16 @@ const HeaderSection = () => {
                                         Kontakt
                                     </NavLink>
                                 </li>
+                                {/* <li className='nav-item'>
+                                    <NavLink
+                                        className='nav-link'
+                                        activeclassname='active'
+                                        aria-current='page'
+                                        to='/contact'
+                                    >
+                                        <SettingsIcon sx={{ fontSize: 16 }} />
+                                    </NavLink>
+                                </li> */}
                                 {/* <li className='nav-item'>
                                     <NavLink
                                         className='nav-link'
