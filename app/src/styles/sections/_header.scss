@@ -196,6 +196,7 @@ nav.navbar {
                 align-items: center;
                 gap: 7px;
                 padding: 0;
+                margin-right: 3rem;
 
                 svg {
                     // filter: invert(11%) sepia(14%) saturate(687%) hue-rotate(173deg) brightness(101%) contrast(90%);
@@ -255,10 +256,12 @@ nav.navbar {
                             // color: #2f363d;
                             // color: #fff;
                             font-size: 0.8rem;
-                            font-size: 0.8rem;
+                            font-size: 0.85rem;
+                            // font-size: 0.95rem;
                             // font-family: 'Source Sans Pro', sans-serif;
                             font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-                            text-transform: uppercase;
+                            font-family: Public Sans,sans-serif;
+                            // text-transform: uppercase;
                             font-weight: 400;
                             padding-left: 0;
                             padding-right: 0;

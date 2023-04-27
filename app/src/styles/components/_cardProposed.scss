@@ -1,7 +1,7 @@
 .card-proposed {
     .card {
         display: grid;
-        grid-template-columns: 144px 1fr;
+        grid-template-columns: 170px 1fr;
         height: 100%;
         width: 100%;
         border: none;
@@ -13,20 +13,20 @@
 
         @media (hover: hover) {
             &:hover {
-                box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
-                transition: all 0.3s ease-in-out;
+                // box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+                // transition: all 0.3s ease-in-out;
             }
         }
 
         .card-media {
             background-color: #e6e6e6;
-            height: 80px;
+            height: 94.4px;
             border-radius: 8px;
 
             .card-image {
                 object-fit: cover;
-                height: 80px;
-                width: 144px;
+                height: 94.4px;
+                width: 170px;
                 // aspect-ratio: auto 120 / 120;
                 // border-top-left-radius: 8px;
                 // border-top-right-radius: 0;
@@ -37,8 +37,8 @@
         }
 
         .card-content {
-            height: 80px;
-            padding: 5px 0 0 .6rem;
+            height: 94.4px;
+            padding: 5px 0 0 .7rem;
             // display: grid;
             // row-gap: 5px;
 

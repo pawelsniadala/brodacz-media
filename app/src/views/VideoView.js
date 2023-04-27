@@ -115,11 +115,11 @@ const VideoView = () => {
                                 <Typography color='text.primary'>
                                     Filmy
                                 </Typography>
-                                {setBreadcrumbsName() && (
+                                {/* {setBreadcrumbsName() && (
                                     <Typography color='text.primary'>
                                         {setBreadcrumbsName()}
                                     </Typography>
-                                )}
+                                )} */}
                             </Breadcrumbs>
                         </Box>
                         <Box className='heading-wrapper'>
@@ -133,7 +133,8 @@ const VideoView = () => {
                                 variant='scrollable'
                                 scrollButtons='auto'
                                 aria-label='scrollable auto tabs example'
-                                TabIndicatorProps={{ style: { background: 'transparent' }}}
+                                TabIndicatorProps={{ style: { background: '#2f363d', height: '2px', borderRadius: '1px' }}}
+                                // TabIndicatorProps={{ style: { background: 'transparent' }}}
                                 sx={{
                                     [`& .${tabsClasses.scrollButtons}`]: {
                                         '&.Mui-disabled': { opacity: 0.3 },

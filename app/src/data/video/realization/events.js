@@ -19,7 +19,12 @@ export const events = [
         date: '27 mar 2023',
         title: 'Targi Leśne Forest SHOW Straszęcin 2023 / #19',
         company: 'Gazeta Leśna',
-        video: { time: '2:07', src: videoEventThumbnail13, urlPage: 'https://www.youtube.com/watch?v=G-Ue4S4EbS4' }
+        video: {
+            time: '2:07',
+            src: videoEventThumbnail13,
+            urlPage: 'https://www.youtube.com/watch?v=G-Ue4S4EbS4',
+            embed: 'https://www.youtube.com/embed/G-Ue4S4EbS4'
+        }
     },
     {
         display: true,
@@ -27,7 +32,12 @@ export const events = [
         date: '5 wrz 2022',
         title: 'Święto Mazurskiej Dłubanki 2022',
         company: 'Brodacz Media',
-        video: { time: '1:59', src: videoEventThumbnail12, urlPage: 'https://www.youtube.com/watch?v=J1bUJ4w4mCY' }
+        video: {
+            time: '1:59',
+            src: videoEventThumbnail12,
+            urlPage: 'https://www.youtube.com/watch?v=J1bUJ4w4mCY',
+            embed: 'https://www.youtube.com/embed/J1bUJ4w4mCY'
+        }
     },
     {
         display: true,
@@ -35,7 +45,12 @@ export const events = [
         date: '22 lip 2022',
         title: 'Graj o Swój Biznes 2022 - Siatkówka Plażowa',
         company: 'Manager Business Hub',
-        video: { time: '2:56', src: videoEventThumbnail11, urlPage: 'https://www.youtube.com/watch?v=CGgA4K06xAM' }
+        video: {
+            time: '2:56',
+            src: videoEventThumbnail11,
+            urlPage: 'https://www.youtube.com/watch?v=CGgA4K06xAM',
+            embed: 'https://www.youtube.com/embed/CGgA4K06xAM'
+        }
     },
     {
         display: true,
@@ -43,7 +58,12 @@ export const events = [
         date: '30 cze 2022',
         title: 'Centralne eRobocze SHOW Lubień Kujawski 3-4.06.2022',
         company: 'erobocze.pl',
-        video: { time: '2:10', src: videoEventThumbnail10, urlPage: 'https://www.youtube.com/watch?v=TQrnbLunIpA' }
+        video: {
+            time: '2:10',
+            src: videoEventThumbnail10,
+            urlPage: 'https://www.youtube.com/watch?v=TQrnbLunIpA',
+            embed: 'https://www.youtube.com/embed/TQrnbLunIpA'
+        }
     },
     {
         display: true,
@@ -51,7 +71,12 @@ export const events = [
         date: '1 lip 2022',
         title: 'Piknik Rodzinny 2022',
         company: 'Manager Business Hub',
-        video: { time: '3:25', src: videoEventThumbnail9, urlPage: 'https://www.youtube.com/watch?v=g64cEQZLeyU' }
+        video: {
+            time: '3:25',
+            src: videoEventThumbnail9,
+            urlPage: 'https://www.youtube.com/watch?v=g64cEQZLeyU',
+            embed: 'https://www.youtube.com/embed/g64cEQZLeyU'
+        }
     },
     {
         display: true,
@@ -59,7 +84,12 @@ export const events = [
         date: '23 cze 2022',
         title: 'Gala z okazji pięciolecia',
         company: 'Manager Business Hub',
-        video: { time: '3:16', src: videoEventThumbnail8, urlPage: 'https://www.youtube.com/watch?v=2WXALR88vwA' }
+        video: {
+            time: '3:16',
+            src: videoEventThumbnail8,
+            urlPage: 'https://www.youtube.com/watch?v=2WXALR88vwA',
+            embed: 'https://www.youtube.com/embed/2WXALR88vwA'
+        }
     },
     {
         display: true,
@@ -67,7 +97,12 @@ export const events = [
         date: '17 maj 2022',
         title: 'Wieczór Aperitivo',
         company: 'Manager Business Hub',
-        video: { time: '2:45', src: videoEventThumbnail7, urlPage: 'https://www.youtube.com/watch?v=aYo1Iqkr9cs' }
+        video: {
+            time: '2:45',
+            src: videoEventThumbnail7,
+            urlPage: 'https://www.youtube.com/watch?v=aYo1Iqkr9cs',
+            embed: 'https://www.youtube.com/embed/aYo1Iqkr9cs'
+        }
     },
     {
         display: true,
@@ -75,7 +110,12 @@ export const events = [
         date: '16 mar 2022',
         title: 'Targi maszyn roboczych',
         company: 'erobocze.pl',
-        video: { time: '1:21', src: videoEventThumbnail6, urlPage: 'https://www.youtube.com/watch?v=YoAXW5QFmg8' }
+        video: {
+            time: '1:21',
+            src: videoEventThumbnail6,
+            urlPage: 'https://www.youtube.com/watch?v=YoAXW5QFmg8',
+            embed: 'https://www.youtube.com/embed/YoAXW5QFmg8'
+        }
     },
     {
         display: true,
@@ -83,7 +123,12 @@ export const events = [
         date: '20 sty 2022',
         title: 'Przedświąteczne spotkanie',
         company: 'Manager Business Hub',
-        video: { time: '2:36', src: videoEventThumbnail5, urlPage: 'https://www.youtube.com/watch?v=_bLjnT3vk-E' }
+        video: {
+            time: '2:36',
+            src: videoEventThumbnail5,
+            urlPage: 'https://www.youtube.com/watch?v=_bLjnT3vk-E',
+            embed: 'https://www.youtube.com/embed/_bLjnT3vk-E'
+        }
     },
     {
         display: true,
@@ -91,7 +136,12 @@ export const events = [
         date: '15 sty 2022',
         title: 'Graj o Swój Biznes 2021 - Turniej Bilardowy',
         company: 'Manager Business Hub',
-        video: { time: '2:44', src: videoEventThumbnail4, urlPage: 'https://www.youtube.com/watch?v=45JbG8Azjtg' }
+        video: {
+            time: '2:44',
+            src: videoEventThumbnail4,
+            urlPage: 'https://www.youtube.com/watch?v=45JbG8Azjtg',
+            embed: 'https://www.youtube.com/embed/45JbG8Azjtg'
+        }
     },
     {
         display: true,
@@ -99,7 +149,12 @@ export const events = [
         date: '7 lip 2021',
         title: 'Military Day - III Edycja',
         company: 'Manager Business Hub',
-        video: { time: '2:48', src: videoEventThumbnail3, urlPage: 'https://www.youtube.com/watch?v=GzPJnvwsmtM' }
+        video: {
+            time: '2:48',
+            src: videoEventThumbnail3,
+            urlPage: 'https://www.youtube.com/watch?v=GzPJnvwsmtM',
+            embed: 'https://www.youtube.com/embed/GzPJnvwsmtM'
+        }
     },
     {
         display: true,
@@ -107,7 +162,12 @@ export const events = [
         date: '2 gru 2021',
         title: 'Wieczór Portugalski',
         company: 'Manager Business Hub',
-        video: { time: '2:22', src: videoEventThumbnail2, urlPage: 'https://www.youtube.com/watch?v=q0Q_wY3V2g0&t=4s' }
+        video: {
+            time: '2:22',
+            src: videoEventThumbnail2,
+            urlPage: 'https://www.youtube.com/watch?v=q0Q_wY3V2g0&t=4s',
+            embed: 'https://www.youtube.com/embed/q0Q_wY3V2g0'
+        }
     },
     {
         display: true,
@@ -115,6 +175,11 @@ export const events = [
         date: '20 sie 2021',
         title: 'Graj o Swój Biznes 2021 - Golf',
         company: 'Manager Business Hub',
-        video: { time: '3:04', src: videoEventThumbnail1, urlPage: 'https://www.youtube.com/watch?v=ryhhKhGw0n0&t=4s' }
+        video: {
+            time: '3:04',
+            src: videoEventThumbnail1,
+            urlPage: 'https://www.youtube.com/watch?v=ryhhKhGw0n0&t=4s',
+            embed: 'https://www.youtube.com/embed/ryhhKhGw0n0'
+        }
     }
 ];

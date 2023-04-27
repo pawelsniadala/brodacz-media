@@ -13,7 +13,12 @@ export const content = [
         date: '3 lis 2023',
         title: 'Strategie sprzedażowe do sklepu internetowego. Tomasz Jaroszek',
         company: 'PKO Bank Polski',
-        video: { time: '9:30', src: videoContentThumbnail14, urlPage: 'https://www.youtube.com/watch?v=bZLEkMOd2qQ' }
+        video: {
+            time: '9:30',
+            src: videoContentThumbnail14,
+            urlPage: 'https://www.youtube.com/watch?v=bZLEkMOd2qQ',
+            embed: 'https://www.youtube.com/embed/bZLEkMOd2qQ'
+        }
     },
     {
         display: true,
@@ -21,7 +26,12 @@ export const content = [
         date: '30 cze 2022',
         title: 'PowerB@nk. Jak promować sklep internetowy? Webinar Tomasza Jaroszka',
         company: 'PKO Bank Polski',
-        video: { time: '13:31', src: videoContentThumbnail13, urlPage: 'https://www.youtube.com/watch?v=Yrle7CRNNCk' }
+        video: {
+            time: '13:31',
+            src: videoContentThumbnail13,
+            urlPage: 'https://www.youtube.com/watch?v=Yrle7CRNNCk',
+            embed: 'https://www.youtube.com/embed/Yrle7CRNNCk'
+        }
     },
     {
         display: true,
@@ -29,7 +39,12 @@ export const content = [
         date: '4 mar 2022',
         title: 'Petycja przedsiębiorców leśnych do premiera',
         company: 'Gazeta Leśna',
-        video: { time: '6:36', src: videoContentThumbnail1, urlPage: 'https://www.youtube.com/watch?v=R6pBg2yjwJo' }
+        video: {
+            time: '6:36',
+            src: videoContentThumbnail1,
+            urlPage: 'https://www.youtube.com/watch?v=R6pBg2yjwJo',
+            embed: 'https://www.youtube.com/embed/R6pBg2yjwJo'
+        }
     },
     {
         display: true,
@@ -37,7 +52,12 @@ export const content = [
         date: '12 mar 2022',
         title: 'Przedsiębiorca leśny a rosnące ceny paliw',
         company: 'Gazeta Leśna',
-        video: { time: '6:58', src: videoContentThumbnail2, urlPage: 'https://www.youtube.com/watch?v=7k6lNBVcoeY' }
+        video: {
+            time: '6:58',
+            src: videoContentThumbnail2,
+            urlPage: 'https://www.youtube.com/watch?v=7k6lNBVcoeY',
+            embed: 'https://www.youtube.com/embed/7k6lNBVcoeY'
+        }
     },
     {
         display: true,
@@ -45,7 +65,12 @@ export const content = [
         date: '18 mar 2022',
         title: 'Zacznijmy liczyć koszty',
         company: 'Gazeta Leśna',
-        video: { time: '18:37', src: videoContentThumbnail3, urlPage: 'https://www.youtube.com/watch?v=f9kugwOM-5Q' }
+        video: {
+            time: '18:37',
+            src: videoContentThumbnail3,
+            urlPage: 'https://www.youtube.com/watch?v=f9kugwOM-5Q',
+            embed: 'https://www.youtube.com/embed/f9kugwOM-5Q'
+        }
     },
     {
         display: true,
@@ -53,7 +78,12 @@ export const content = [
         date: '24 maj 2021',
         title: 'Targi Work&Science Forum',
         company: 'KRD',
-        video: { time: '2:55', src: videoContentThumbnail4, urlPage: 'https://www.youtube.com/watch?v=4xADP7bfBeg' }
+        video: {
+            time: '2:55',
+            src: videoContentThumbnail4,
+            urlPage: 'https://www.youtube.com/watch?v=4xADP7bfBeg',
+            embed: 'https://www.youtube.com/embed/4xADP7bfBeg'
+        }
     },
     {
         display: true,
@@ -61,6 +91,11 @@ export const content = [
         date: '29 sty 2021',
         title: 'Leśnictwo na Wydziale Leśnym SGGW',
         company: 'SGGW',
-        video: { time: '2:01', src: videoContentThumbnail5, urlPage: 'https://www.youtube.com/watch?v=g2EtwK54kwc' }
+        video: {
+            time: '2:01',
+            src: videoContentThumbnail5,
+            urlPage: 'https://www.youtube.com/watch?v=g2EtwK54kwc',
+            embed: 'https://www.youtube.com/embed/g2EtwK54kwc'
+        }
     }
 ];

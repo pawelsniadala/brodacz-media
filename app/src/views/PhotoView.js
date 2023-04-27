@@ -121,7 +121,7 @@ const PhotoView = () => {
                                 variant='scrollable'
                                 scrollButtons='auto'
                                 aria-label='scrollable auto tabs example'
-                                TabIndicatorProps={{ style: { background: 'transparent' }}}
+                                TabIndicatorProps={{ style: { background: '#2f363d' }}}
                                 sx={{
                                     [`& .${tabsClasses.scrollButtons}`]: {
                                         '&.Mui-disabled': { opacity: 0.3 },

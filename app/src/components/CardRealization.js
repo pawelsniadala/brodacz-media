@@ -1,3 +1,7 @@
+import { Link, useLocation, useParams } from 'react-router-dom';
+
+import Box from '@mui/material/Box';
+
 import Iframe from "react-iframe";
 import ReactImageAppear from "react-image-appear";
 import SearchZoomSvg from "../assets/common/SearchZoomSvg";
@@ -23,9 +27,9 @@ const CardRealization = ({
     cardThumbnaiVideoDate,
     cardThumbnaiVideoPath
 }) => (
-    <div className={`card realization ${cardPhoto ? "photo" : "video"}`}>
+    <Box className={`card realization ${cardPhoto ? "photo" : "video"}`}>
         {cardPhoto && (
-            <div className="img-box" ref={layoutRef}>
+            <Box className="img-box" ref={layoutRef}>
                 <ReactImageAppear
                     src={cardPhotoSrc}
                     onClick={onClick}
@@ -37,7 +41,7 @@ const CardRealization = ({
                 <span onClick={onClick}>
                     <SearchZoomSvg />
                 </span>
-            </div>
+            </Box>
         )}
         {cardVideo && (
             <Iframe
@@ -53,12 +57,8 @@ const CardRealization = ({
             />
         )}
         {cardThumbnaiVideo && (
-            <div className="thumbnail">
-                <a className="img-box"
-                    href={cardThumbnaiVideoPath ? cardThumbnaiVideoPath : "#"}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
+            <Box className="thumbnail">
+                <Box className="img-box">
                     <ReactImageAppear
                         className="card-img-top"
                         src={cardThumbnaiVideoSrc}
@@ -72,16 +72,14 @@ const CardRealization = ({
                     <span>
                         <PlayVideoSvg />
                     </span>
-                </a>
-                <div className="card-body">
-                    <a className="card-title"
+                </Box>
+                <Box className="card-body">
+                    <Box
+                        className="card-title"
                         title={cardThumbnaiVideoTitle}
-                        href={cardThumbnaiVideoPath ? cardThumbnaiVideoPath : "#"}
-                        target="_blank"
-                        rel="noopener noreferrer"
                     >
                         {cardThumbnaiVideoTitle}
-                    </a>
+                    </Box>
                     <small className="card-meta text-muted">
                         <span className="company">
                             {cardThumbnaiVideoCompany}
@@ -90,15 +88,14 @@ const CardRealization = ({
                             {cardThumbnaiVideoDate}
                         </span>
                     </small>
-                    {/* <a className="stretched-link"
-                        href={cardThumbnaiVideoPath ? cardThumbnaiVideoPath : "#"}
-                        target="_blank"
-                        rel="noopener noreferrer">
-                    </a> */}
-                </div>
-            </div>
+                    <Link
+                        className="stretched-link"
+                        to={cardThumbnaiVideoPath}
+                    />
+                </Box>
+            </Box>
         )}
-    </div>
+    </Box>
 );
 
 export default CardRealization;

@@ -15,6 +15,7 @@ import {
 
 // import { useTheme } from '@mui/material/styles';
 // import useMediaQuery from '@mui/material/useMediaQuery';
+import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 // import PhotoLibraryIcon from '@mui/icons-material/PhotoLibrary';
@@ -118,7 +119,7 @@ const VideoSection2 = () => {
 
     return (
         <section className="video-section">
-            <Box className="container">
+            <Container maxWidth='xl'>
                 <Box className="section-wrapper">
                     <HeaderSection
                         sectionTitle='Specjalizacje'
@@ -213,7 +214,7 @@ const VideoSection2 = () => {
                         linkColor="#fff"
                     />
                 </Box>
-            </Box>
+            </Container>
         </section>
     );
 }

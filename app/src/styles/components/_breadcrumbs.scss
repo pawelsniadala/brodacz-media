@@ -1,8 +1,10 @@
 .breadcrumb-wrapper {
     display: flex;
     justify-content: space-between;
-    padding-top: 1rem;
-    padding-bottom: 1.2rem;
+    // padding-top: 1rem;
+    // padding-bottom: 1.2rem;
+    padding-top: 40px;
+    margin-bottom: 40px;
 }
 
 .MuiBreadcrumbs-root {
@@ -39,8 +41,10 @@
 }
 
 .MuiBreadcrumbs-separator {
-    margin-left: 3px !important;
-    margin-right: 3px !important;
+    // margin-left: 3px !important;
+    // margin-right: 3px !important;
+    margin-left: 16px;
+    margin-right: 16px;
     // color: rgba(0, 0, 0, 0.45) !important;
     color: #777c83 !important;
 }

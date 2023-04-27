@@ -15,6 +15,7 @@ import ContactView from './ContactView';
 
 import VideoView from './VideoView';
 import VideoCategoryPartial from './partials/video/VideoCategoryPartial';
+import VideoRealizationPartial from './partials/video/VideoRealizationPartial';
 
 import PhotoView from './PhotoView';
 import PhotoCategoryPartial from './partials/photo/PhotoCategoryPartial';
@@ -39,6 +40,7 @@ const Root = () => (
                     <Route exact path='/video' element={<VideoView />}>
                         <Route path=':category' element={<VideoCategoryPartial />} />
                     </Route>
+                    <Route path='/video/:category/:videoId' element={<VideoRealizationPartial />} />
                     <Route exact path='/photo' element={<PhotoView />}>
                         <Route path=':category' element={<PhotoCategoryPartial />} />
                     </Route>

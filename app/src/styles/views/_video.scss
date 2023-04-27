@@ -1,0 +1,91 @@
+.view-wrapper {
+    .view-body {
+        .body-wrapper {
+            &.video-realization {
+                display: grid;
+                gap: 1.5rem;
+                grid-template-columns: repeat(3, 1fr);
+                // overflow: hidden;
+
+                .realization-wrapper {
+                    grid-column: span 2;
+
+                    .video-wrapper {
+
+                    }
+
+                    .description-wrapper {
+                        padding: 1.5rem 0;
+              
+                        // padding: 0;
+                        // animation: 1000ms ease-in-out 0s 1 normal none running fadeIn;
+
+                        .title {
+                            // font-size: 1.2rem;
+                            // line-height: 1.2;
+                            // font-weight: 500;
+                            // color: #212529;
+                            // display: -webkit-box;
+                            // -webkit-line-clamp: 2;
+                            // -webkit-box-orient: vertical;
+                            // overflow: hidden;
+                            // text-overflow: ellipsis;
+                            // margin-bottom: 0;
+                            // cursor: pointer;
+                            // text-decoration: none;
+                            // padding: .7rem 0 .2rem 0;
+
+
+                            color: #2f363d;
+                            font-family: "Roboto", "Arial", sans-serif;
+                            font-size: 1.25rem;
+                            line-height: 1.25rem;
+                            font-weight: 500;
+                            margin-bottom: .7rem;
+                            // display: -webkit-box;
+                            // -webkit-line-clamp: 2;
+                            // -webkit-box-orient: vertical;
+                            // overflow: hidden;
+                        }
+
+                        // .meta {
+                        //     .company {
+                        //         &:not(:last-of-type):after {
+                        //             content: "•";
+                        //             margin: 0 4px;
+                        //         }
+                        //     }
+                        // }
+
+                        .meta {
+                            .company {
+                                font-size: 14px;
+                                letter-spacing: -0.035em;
+                                &:not(:last-of-type):after {
+                                    content: "•";
+                                    margin: 0 4px;
+                                }
+                            }
+                        }
+                    }
+
+                    @media (max-width: 991.98px) {
+                        grid-column: span 3;
+                    }
+
+                }
+
+                .proposed-wrapper {
+                    grid-column: span 1;
+                    align-content: start;
+                    display: grid;
+                    gap: .7rem;
+
+                    @media (max-width: 991.98px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

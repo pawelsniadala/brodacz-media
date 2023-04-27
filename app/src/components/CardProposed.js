@@ -34,7 +34,7 @@ const CardProposed = ({
                         width={1}
                         src={cardImage}
                         alt={cardTitle}
-                        effect='blur'
+                        effect='none'
                     />
                 </CardMedia>
                 <CardContent className='card-content'>

@@ -6,8 +6,8 @@ html, body, #root, .app {
 
 body {
     // background-color: #F2F3F5;
-    background-color: #f6f8fa;
-    // background-color: #fff;
+    // background-color: #f6f8fa;
+    background-color: #fff;
 }
 
 body::-webkit-scrollbar {
@@ -28,14 +28,34 @@ main {
 
     .view-header {
         background-color: #f6f8fa;
+        // box-shadow: 1px 2px 3px rgba(0,0,0,1);
+        // box-shadow: inset 0 -1px 0 rgba(0,0,0,.025);
+        // box-shadow: inset 0 -1px 0 #efefef;
+        // border-bottom: 1px solid #f1f1f1;
+        // height: 180px;
+
+        .header-wrapper {
+            // display: flex;
+            // flex-direction: column;
+            // height: 191.188px;
+            // gap: 2.5rem;
+        }
+
+
+
+        .header-wrapper {
+            // padding-bottom: 0.6rem;
+        }
     }
 
     .view-body {
-        background-color: #f6f8fa;
+        // background-color: #f6f8fa;
+        background-color: #fff;
+
 
         .body-wrapper {
-            padding-top: 2.4rem;
-            padding-bottom: 2.4rem;
+            padding-top: 60px;
+            padding-bottom: 60px;
         }
     }
 }
@@ -149,7 +169,7 @@ main {
     &.realization {
         &.photo {
             column-count: 5;
-            column-gap: .6rem;
+            column-gap: .7rem;
             // column-gap: .75rem;
             orphans: 1;
             widows: 1;
@@ -168,7 +188,7 @@ main {
         &.podcast {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            column-gap: .6rem;
+            column-gap: .7rem;
 
             // column-gap: .75rem;
             row-gap: 2rem;
@@ -178,16 +198,18 @@ main {
             }
 
             @media (max-width: 991.98px) and (min-width: 768px) {
-                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
+                row-gap: .7rem;
             }
 
             @media (max-width: 767.98px) and (min-width: 540px) {
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 1fr;
+                row-gap: .7rem;
             }
 
             @media (max-width: 539.98px) {
                 grid-template-columns: 1fr;
-                row-gap: .6rem;
+                row-gap: .7rem;
                 // gap: 10px;
                 // margin-bottom: 10px;
             }

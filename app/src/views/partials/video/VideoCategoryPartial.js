@@ -31,10 +31,14 @@ const VideoCategoryPartial = ({ category }) => {
         animations: videoRealizationCopy.animations
     };
 
+    // const setVideoCategory = (category) => {
+    //     return category === 'all'
+    //         ? shuffleArray(videoCategoryMap[category])
+    //         : videoCategoryMap[category];
+    // };
+
     const setVideoCategory = (category) => {
-        return category === 'all'
-            ? shuffleArray(videoCategoryMap[category])
-            : videoCategoryMap[category];
+        return videoCategoryMap[category];
     };
 
     function getWindowDimensions() {
@@ -73,7 +77,7 @@ const VideoCategoryPartial = ({ category }) => {
                                 cardThumbnaiVideoDate={item.date}
                                 cardThumbnaiVideoTime={item.video.time}
                                 cardThumbnaiVideoSrc={item.video.src}
-                                cardThumbnaiVideoPath={item.video.urlPage}
+                                cardThumbnaiVideoPath={`/video/${category}/${item.id}`}
                             />
                         </Box>
                     )) : (
@@ -89,7 +93,7 @@ const VideoCategoryPartial = ({ category }) => {
                                 cardThumbnaiVideoCompany={item.company}
                                 cardThumbnaiVideoDate={item.date}
                                 cardImage={item.video.src}
-                                cardPath={`/team`}
+                                cardPath={`/video/${category}/${item.id}`}
                             />
                         </Box>
                     ))

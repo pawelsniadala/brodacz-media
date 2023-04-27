@@ -11,7 +11,12 @@ export const weddings = [
         date: '30 sty 2023',
         title: 'Pierwszy Taniec Julia i Jakub',
         company: 'Brodacz Media',
-        video: { time: '2:26', src: videoWeddingThumbnail5, urlPage: 'https://www.youtube.com/watch?v=_4WTR8WdBZo' }
+        video: {
+            time: '2:26',
+            src: videoWeddingThumbnail5,
+            urlPage: 'https://www.youtube.com/watch?v=_4WTR8WdBZo',
+            embed: 'https://www.youtube.com/embed/_4WTR8WdBZo'
+        }
     },
     {
         display: true,
@@ -19,7 +24,12 @@ export const weddings = [
         date: '23 sty 2023',
         title: 'Ślub Julii i Kuby długi film',
         company: 'Brodacz Media',
-        video: { time: '26:25', src: videoWeddingThumbnail4, urlPage: 'https://www.youtube.com/watch?v=WaZBzuRGEzY' }
+        video: {
+            time: '26:25',
+            src: videoWeddingThumbnail4,
+            urlPage: 'https://www.youtube.com/watch?v=WaZBzuRGEzY',
+            embed: 'https://www.youtube.com/embed/WaZBzuRGEzY'
+        }
     },
     {
         display: true,
@@ -27,7 +37,12 @@ export const weddings = [
         date: '19 sty 2023',
         title: 'Ślub Julii i Jakuba 2022 Teledysk',
         company: 'Brodacz Media',
-        video: { time: '4:07', src: videoWeddingThumbnail3, urlPage: 'https://www.youtube.com/watch?v=YmpTvY-rR-w' }
+        video: {
+            time: '4:07',
+            src: videoWeddingThumbnail3,
+            urlPage: 'https://www.youtube.com/watch?v=YmpTvY-rR-w',
+            embed: 'https://www.youtube.com/embed/YmpTvY-rR-w'
+        }
     },
     {
         display: true,
@@ -35,7 +50,12 @@ export const weddings = [
         date: '6 sie 2021',
         title: 'Teledysk Ślubny Sylwia i Norbert',
         company: 'Brodacz Media',
-        video: { time: '3:06', src: videoWeddingThumbnail1, urlPage: 'https://www.youtube.com/watch?v=9AdxCvFOa-k' }
+        video: {
+            time: '3:06',
+            src: videoWeddingThumbnail1,
+            urlPage: 'https://www.youtube.com/watch?v=9AdxCvFOa-k',
+            embed: 'https://www.youtube.com/embed/9AdxCvFOa-k'
+        }
     },
     {
         display: true,
@@ -43,6 +63,11 @@ export const weddings = [
         date: '15 sie 2020',
         title: 'Teledysk Ślubny Kasia i Łukasz',
         company: 'Brodacz Media',
-        video: { time: '2:15', src: videoWeddingThumbnail2, urlPage: 'https://www.youtube.com/watch?v=FURA4xL9-hs' }
+        video: {
+            time: '2:15',
+            src: videoWeddingThumbnail2,
+            urlPage: 'https://www.youtube.com/watch?v=FURA4xL9-hs',
+            embed: 'https://www.youtube.com/embed/FURA4xL9-hs'
+        }
     }
 ];
