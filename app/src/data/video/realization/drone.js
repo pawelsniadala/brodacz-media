@@ -8,7 +8,12 @@ export const drone = [
         date: '5 wrz 2022',
         title: 'Święto Mazurskiej Dłubanki 2022',
         company: 'Brodacz Media',
-        video: { time: '1:59', src: videoDroneThumbnail2, urlPage: 'https://www.youtube.com/watch?v=J1bUJ4w4mCY' }
+        video: {
+            time: '1:59',
+            src: videoDroneThumbnail2,
+            urlPage: 'https://www.youtube.com/watch?v=J1bUJ4w4mCY',
+            embed: 'https://www.youtube.com/embed/J1bUJ4w4mCY'
+        }
     },
     {
         display: false,
@@ -16,6 +21,11 @@ export const drone = [
         date: '30 cze 2022',
         title: 'Centralne eRobocze SHOW Lubień Kujawski 3-4.06.2022',
         company: 'erobocze.pl',
-        video: { time: '2:10', src: videoDroneThumbnail1, urlPage: 'https://www.youtube.com/watch?v=TQrnbLunIpA' }
+        video: {
+            time: '2:10',
+            src: videoDroneThumbnail1,
+            urlPage: 'https://www.youtube.com/watch?v=TQrnbLunIpA',
+            embed: 'https://www.youtube.com/embed/TQrnbLunIpA'
+        }
     }
 ];

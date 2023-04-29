@@ -1,5 +1,6 @@
-import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
+
+import Container from '../components/Container';
 
 import FacebookSvg from '../assets/common/FacebookSvg';
 import InstagramSvg from '../assets/common/InstagramSvg';
@@ -38,7 +39,7 @@ const FooterSection = () => {
 
     return (
         <footer>
-            <Container maxWidth='xl'>
+            <Container>
                 <Box className='section-wrapper footer'>
                     <Box className='business'>
                         <h5 className='footer-subheader'>Studio</h5>

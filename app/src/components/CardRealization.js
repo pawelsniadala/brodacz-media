@@ -66,7 +66,7 @@ const CardRealization = ({
                         placeholderStyle={{ backgroundColor: "transparent", display: "inline" }}
                         showLoader={false}
                     />
-                    <span className="card-video-time badge bg-dark">
+                    <span className="card-video-time badge">
                         {cardThumbnaiVideoTime}
                     </span>
                     <span>

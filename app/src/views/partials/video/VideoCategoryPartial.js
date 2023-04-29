@@ -28,7 +28,8 @@ const VideoCategoryPartial = ({ category }) => {
         music: videoRealizationCopy.music,
         weddings: videoRealizationCopy.weddings,
         guides: videoRealizationCopy.guides,
-        animations: videoRealizationCopy.animations
+        animations: videoRealizationCopy.animations,
+        backstage: videoRealizationCopy.backstage,
     };
 
     // const setVideoCategory = (category) => {

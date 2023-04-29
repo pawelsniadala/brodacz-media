@@ -7,11 +7,12 @@ import Box from '@mui/material/Box';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
 // import Container from '../components/Container';
-import Container from '@mui/material/Container';
+// import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
+import Container from '../components/Container';
 import SectionHeader from '../components/SectionHeader';
 import pricesJpg1 from '../assets/prices/prices1.jpg';
 import pricesJpg2 from '../assets/prices/prices2.jpg';
@@ -91,7 +92,6 @@ const HeroSection2 = () => {
                     }}
                 />
                 <Container
-                    maxWidth="xl"
                     sx={{
                         position: "relative",
                         zIndex: 2,

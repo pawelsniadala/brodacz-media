@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation, useParams } from 'react-router-dom';
 
-import Container from '@mui/material/Container';
+// import Container from '@mui/material/Container';
 import Tabs, { tabsClasses } from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
@@ -10,6 +10,7 @@ import Breadcrumbs from '@mui/material/Breadcrumbs';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 import PhotoCategoryPartial from './partials/photo/PhotoCategoryPartial';
+import Container from '../components/Container';
 
 const PhotoView = () => {
     const { pathname } = useLocation();
@@ -30,6 +31,8 @@ const PhotoView = () => {
                     return 'photo-product';
                 case '/photo/drone':
                     return 'photo-drone';
+                case '/photo/backstage':
+                    return 'photo-backstage';
                 default:
             }
         }
@@ -50,6 +53,8 @@ const PhotoView = () => {
             case 'photo-product':
                 return <PhotoCategoryPartial category={category} />;
             case 'photo-drone':
+                return <PhotoCategoryPartial category={category} />;
+            case 'photo-backstage':
                 return <PhotoCategoryPartial category={category} />;
             default:
         }
@@ -74,6 +79,8 @@ const PhotoView = () => {
                 return 'Produktowe';
             case 'drone':
                 return 'Dron';
+            case 'backstage':
+                return 'Backstage';
             default:
         }
     }
@@ -90,7 +97,7 @@ const PhotoView = () => {
         <Box className='photo-view'>
             <Box className='view-wrapper'>
                 <Box className='view-header'>
-                    <Container className='header-wrapper' maxWidth='xl'>
+                    <Container className='header-wrapper'>
                         <Box className='breadcrumb-wrapper'>
                             <Breadcrumbs
                                 className='breadcrumb'
@@ -103,11 +110,11 @@ const PhotoView = () => {
                                 <Typography color='text.primary'>
                                     Zdjęcia
                                 </Typography>
-                                {setBreadcrumbsName() && (
+                                {/* {setBreadcrumbsName() && (
                                     <Typography color='text.primary'>
                                         {setBreadcrumbsName()}
                                     </Typography>
-                                )}
+                                )} */}
                             </Breadcrumbs>
                         </Box>
                         <Box className='heading-wrapper'>
@@ -121,7 +128,7 @@ const PhotoView = () => {
                                 variant='scrollable'
                                 scrollButtons='auto'
                                 aria-label='scrollable auto tabs example'
-                                TabIndicatorProps={{ style: { background: '#2f363d' }}}
+                                TabIndicatorProps={{ style: { background: '#2f363d', height: '2px', borderRadius: '1px' }}}
                                 sx={{
                                     [`& .${tabsClasses.scrollButtons}`]: {
                                         '&.Mui-disabled': { opacity: 0.3 },
@@ -171,12 +178,19 @@ const PhotoView = () => {
                                     value={`/photo/drone`}
                                     onClick={(e) => handleTab(e, 'photo-drone')}
                                 />
+                                <Tab
+                                    label='Backstage'
+                                    component={Link}
+                                    to={`/photo/backstage`}
+                                    value={`/photo/backstage`}
+                                    onClick={(e) => handleTab(e, 'photo-backstage')}
+                                />
                             </Tabs>
                         </Box>
                     </Container>
                 </Box>
                 <Box className='view-body'>
-                    <Container className='body-wrapper' maxWidth='xl'>
+                    <Container className='body-wrapper'>
                         <Box
                             className='tab-pane fade show active'
                             id={`pills-${photoTab}`}

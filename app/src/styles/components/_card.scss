@@ -416,7 +416,7 @@
         &.photo {
             display: inline-block !important;
             // margin-bottom: 1rem;
-            margin-bottom: .6rem;
+            margin-bottom: .75rem;
             // margin-bottom: .75rem;
 
             .img-box {
@@ -493,10 +493,15 @@
                     }
 
                     .card-video-time {
+                        background-color: rgba(0, 0, 0, 0.7);
+                        // background-color: #2f363d;
                         position: absolute;
                         right: .5rem;
                         bottom: .5rem;
                         animation: 1000ms ease-in-out 0s 1 normal none running fadeIn;
+                        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+                        font-weight: 500;
+                        border-radius: 4px;
                     }
                 }
 

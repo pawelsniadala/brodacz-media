@@ -7,6 +7,11 @@ export const guides = [
         date: '19 lut 2023',
         title: 'Jak dobrze wypaść na filmie ślubnym?',
         company: 'Brodacz Media',
-        video: { time: '9:10', src: videoGuideThumbnail1, urlPage: 'https://www.youtube.com/watch?v=YA0SnULLgEA&t=26s' }
+        video: {
+            time: '9:10',
+            src: videoGuideThumbnail1,
+            urlPage: 'https://www.youtube.com/watch?v=YA0SnULLgEA&t=26s',
+            embed: 'https://www.youtube.com/embed/YA0SnULLgEA'
+        }
     }
 ];

@@ -3,36 +3,54 @@
     justify-content: space-between;
     // padding-top: 1rem;
     // padding-bottom: 1.2rem;
-    padding-top: 40px;
-    margin-bottom: 40px;
+    // padding-top: 30px;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+
+    // overflow: auto;
+    white-space: nowrap;
 }
 
 .MuiBreadcrumbs-root {
     display: flex;
     justify-content: flex-start;
+    overflow: auto;
+
+    .MuiBreadcrumbs-ol {
+        flex-wrap: nowrap;
+        overflow: auto;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
 
     .MuiBreadcrumbs-li {
         a {
             text-decoration: none !important;
             font-family: 'Source Sans Pro', sans-serif !important;
+            // font-family: 'Barlow', sans-serif !important;
             // font-family: Google Sans Text, Arial, Helvetica, sans-serif !important;
             font-size: 0.8rem !important;
             font-weight: 400 !important;
             // color: rgba(0, 0, 0, 0.45) !important;
-            color: #777c83 !important;
+            // color: #777c83 !important;
+            color: rgb(99, 115, 129) !important;
             display: flex;
             align-items: center;
             letter-spacing: -0.005em;
 
             &:hover {
-                color: rgba(0, 0, 0, 0.55) !important;
+                // color: rgba(0, 0, 0, 0.55) !important;
+                color: #2f363d !important;
             }
         }
     }
 
     .MuiTypography-root {
         // color: rgba(0, 0, 0, 0.45) !important;
-        color: #777c83 !important;
+        // color: #777c83 !important;
+        color: rgb(99, 115, 129) !important;
         font-family: 'Source Sans Pro', sans-serif !important;
         font-size: 0.8rem !important;
         font-weight: 400 !important;
@@ -41,12 +59,9 @@
 }
 
 .MuiBreadcrumbs-separator {
-    // margin-left: 3px !important;
-    // margin-right: 3px !important;
-    margin-left: 16px;
-    margin-right: 16px;
-    // color: rgba(0, 0, 0, 0.45) !important;
-    color: #777c83 !important;
+    margin-left: .375rem !important;
+    margin-right: .375rem !important;
+    color: rgb(99, 115, 129) !important;
 }
 
 // .breadcrumb {

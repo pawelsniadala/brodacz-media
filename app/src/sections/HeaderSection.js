@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
-import Container from '@mui/material/Container';
+// import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Tooltip from '@mui/material/Tooltip';
 import Box from '@mui/material/Box';
@@ -13,11 +13,15 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 
+import Container from '../components/Container';
 // import Container from '../components/Container';
 // import PhoneSvg from '../assets/svg/PhoneSvg';
 // import EmailSvg from '../assets/svg/EmailSvg';
 import FacebookSvg from '../assets/svg/FacebookSvg';
 import InstagramSvg from '../assets/svg/InstagramSvg';
+import TikTokSvg from '../assets/svg/TikTokSvg';
+import YouTubeSvg from '../assets/svg/YouTubeSvg';
+
 // import YouTubeSvg from '../assets/svg/YouTubeSvg';
 import ClinicSvg from '../assets/svg/ClinicSvg';
 import ServicesSvg from '../assets/svg/ServicesSvg';
@@ -250,7 +254,7 @@ const HeaderSection = () => {
             className='header-section'
         >
             <Box className='top-nav'>
-                <Container maxWidth="xl" className='nav-wrapper container'>
+                <Container className='nav-wrapper container'>
                     <Box className='content-wrapper'>
                         <Box className='contact-wrapper'>
                             <Tooltip title='Zadzwoń'>
@@ -285,7 +289,7 @@ const HeaderSection = () => {
                         <Box className='media-wrapper'>
                             <Tooltip title='Facebook'>
                                 <a className='link'
-                                    href='https://www.facebook.com/profile.php?id=100063736802328'
+                                    href='https://www.facebook.com/brodaczmedia1/'
                                     target='_blank'
                                     rel='noreferrer'
                                 >
@@ -294,11 +298,29 @@ const HeaderSection = () => {
                             </Tooltip>
                             <Tooltip title='Instagram'>
                                 <a className='link'
-                                    href='https://www.instagram.com/klinikawyszkow/'
+                                    href='https://www.instagram.com/brodaczmedia/'
                                     target='_blank'
                                     rel='noreferrer'
                                 >
                                     <InstagramSvg width='14px' height='14px' color='#2f363d' />
+                                </a>
+                            </Tooltip>
+                            <Tooltip title='YouTube'>
+                                <a className='link'
+                                    href='https://www.youtube.com/channel/UCNbuL274tzbrmcqFOtcGYaw'
+                                    target='_blank'
+                                    rel='noreferrer'
+                                >
+                                    <YouTubeSvg width='19px' height='14px' color='#2f363d' />
+                                </a>
+                            </Tooltip>
+                            <Tooltip title='TikTok'>
+                                <a className='link'
+                                    href='https://www.tiktok.com/@brodaczmedia'
+                                    target='_blank'
+                                    rel='noreferrer'
+                                >
+                                    <TikTokSvg width='14px' height='14px' color='#2f363d' />
                                 </a>
                             </Tooltip>
                         </Box>
@@ -306,7 +328,7 @@ const HeaderSection = () => {
                 </Container>
             </Box>
             <Box component='nav' className='navbar navbar-light navbar-expand-lg'>
-                <Container maxWidth="xl" className='container container-fluid'>
+                <Container className='navbar-wrapper container-fluid'>
                     <NavLink
                         className='navbar-brand text-uppercase'
                         activeclassname='active'
@@ -353,7 +375,42 @@ const HeaderSection = () => {
                                         className='nav-link'
                                         activeclassname='active'
                                         aria-current='page'
+                                        to='/about'
+                                        onClick={(e) => {
+                                            if (window.location.pathname.includes('/about')) {
+                                                e.preventDefault();
+                                            }
+                                        }}
+                                    >
+                                        O mnie
+                                    </NavLink>
+                                </li>
+                                <li className='nav-item'>
+                                    <NavLink
+                                        className='nav-link'
+                                        activeclassname='active'
+                                        aria-current='page'
+                                        to='/services'
+                                        onClick={(e) => {
+                                            if (window.location.pathname.includes('/services')) {
+                                                e.preventDefault();
+                                            }
+                                        }}
+                                    >
+                                        Usługi
+                                    </NavLink>
+                                </li>
+                                <li className='nav-item'>
+                                    <NavLink
+                                        className='nav-link'
+                                        activeclassname='active'
+                                        aria-current='page'
                                         to='/video'
+                                        onClick={(e) => {
+                                            if (window.location.pathname.includes('/video')) {
+                                                e.preventDefault();
+                                            }
+                                        }}
                                     >
                                         Filmy
                                     </NavLink>
@@ -379,11 +436,16 @@ const HeaderSection = () => {
                                         activeclassname='active'
                                         aria-current='page'
                                         to='/podcasts'
+                                        onClick={(e) => {
+                                            if (window.location.pathname.includes('/podcasts')) {
+                                                e.preventDefault();
+                                            }
+                                        }}
                                     >
                                         Podcasty
                                     </NavLink>
                                 </li>
-                                <li className='nav-item'>
+                                {/* <li className='nav-item'>
                                     <NavLink
                                         className='nav-link'
                                         activeclassname='active'
@@ -392,13 +454,18 @@ const HeaderSection = () => {
                                     >
                                         Backstage
                                     </NavLink>
-                                </li>
+                                </li> */}
                                 <li className='nav-item'>
                                     <NavLink
                                         className='nav-link'
                                         activeclassname='active'
                                         aria-current='page'
-                                        to='/technology'
+                                        to='/blog'
+                                        onClick={(e) => {
+                                            if (window.location.pathname.includes('/blog')) {
+                                                e.preventDefault();
+                                            }
+                                        }}
                                     >
                                         Blog
                                     </NavLink>
@@ -409,6 +476,11 @@ const HeaderSection = () => {
                                         activeclassname='active'
                                         aria-current='page'
                                         to='/contact'
+                                        onClick={(e) => {
+                                            if (window.location.pathname.includes('/contact')) {
+                                                e.preventDefault();
+                                            }
+                                        }}
                                     >
                                         Kontakt
                                     </NavLink>

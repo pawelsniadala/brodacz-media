@@ -1,95 +1,107 @@
-// .tabs-wrapper {
-//     // margin-top: 1.8rem;
-//     padding-bottom: .95rem;
+.tabs-wrapper2 {
+    // margin-top: 1.8rem;
+    padding-bottom: 40px;
+    // height: 30px;
+    // width: 100% !important;
+    // position: sticky;
+    // top: 2rem;
+    // background-color: #ffffff;
+    // z-index: 2;
 
-//     .MuiTabs-root {
-//         min-height: 40px !important;
+    .MuiTabs-root {
+        min-height: 40px !important;
 
-//         .MuiTabs-flexContainer {
-//             gap: .75rem;
-//         }
+        .MuiTabs-flexContainer {
+            gap: .75rem !important;
+        }
 
-//         a {
-//             text-transform: none;
-//             font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
-//             font-weight: 400;
-//             font-size: 1rem;
-//             font-size: 0.95rem;
-//             letter-spacing: 0.00938em;
-//             border-radius: 8px;
-//             // padding: 16px;
-//             // padding: 10px 30px;
+        a {
+            text-transform: none;
+            font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            font-weight: 400;
+            font-size: 1rem;
+            font-size: 0.95rem;
+            letter-spacing: 0.00938em;
+            border-radius: 8px;
+            // padding: 16px;
+            // padding: 10px 30px;
 
-//             // color: rgba(0, 0, 0, 0.7);
-//             color: #2f363d;
-//             // color: #24292f;
+            // color: rgba(0, 0, 0, 0.7);
+            color: #2f363d;
+            // color: #24292f;
 
-//             // background-color: aliceblue;
+            // background-color: aliceblue;
 
-//             &:hover {
-//                 // color: rgba(0, 0, 0, 0.7);
-//                 color: #2f363d;
-//                 // color: #24292f;
-//             }
+            &:hover {
+                // color: rgba(0, 0, 0, 0.7);
+                color: #2f363d;
+                // color: #24292f;
+            }
 
-//             span span span {
-//                 background-color: transparent !important;
-//             }
-//         }
+            span span span {
+                background-color: transparent !important;
+            }
+        }
 
-//         .MuiButtonBase-root {
-//             // background-color: #f9f9f9;
-//             // background-color: #ffffff;
-//             // background-color: rgba(0, 0, 0, 0.05);
-//             // background-color: #EAEBED;
-//             background-color: #e7e8eb;
-//             // background-color: #e5e6e8;
-//             // background-color: #e2e3e6;
-//             // background-color: #dfe1e4;
-//             border-radius: 8px;
-//             // border-radius: 980px;
-//             // border: 1px solid rgba(0, 0, 0, 0.04);
+        .MuiButtonBase-root {
+            // background-color: #f9f9f9;
+            // background-color: #ffffff;
+            // background-color: rgba(0, 0, 0, 0.05);
+            // background-color: #EAEBED;
+            background-color: #e7e8eb;
+            background-color: #f6f8fa;
+            background-color: #f3f5f8;
+            // background-color: rgba(0, 0, 0, 0.05);
+            // border: 1px solid #e7e8eb;
+            // background-color: #e5e6e8;
+            // background-color: #e2e3e6;
+            // background-color: #dfe1e4;
+            border-radius: 8px;
+            // border-radius: 980px;
+            // border: 1px solid rgba(0, 0, 0, 0.04);
 
-//             padding: 10px 30px;
-//             min-height: 40px !important;
+            padding: 10px 30px;
+            min-height: 30px !important;
 
-//             &.MuiTabScrollButton-root {
-//                 background-color: transparent;
-//                 // opacity: .4;
-//             }
+            &.MuiTabScrollButton-root {
+                background-color: transparent;
+                // opacity: .4;
+            }
 
-//             span span span {
-//                 background-color: transparent !important;
-//             }
-//         }
-//     }
+            span span span {
+                background-color: transparent !important;
+            }
+        }
+    }
 
-//     // .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
-//     //     // color: #D29A3E;
-//     //     color: greenyellow;
-//     // }
+    // .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+    //     // color: #D29A3E;
+    //     color: greenyellow;
+    // }
 
-//     // .Mui-selected {
-//     //     // color: #D29A3E !important;
-//     //     color: red !important;
-//     // }
+    // .Mui-selected {
+    //     // color: #D29A3E !important;
+    //     color: red !important;
+    // }
 
-//     .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
-//         color: #ffffff !important;
-//         // background-color: #24292f;
-//         background-color:#2f363d;
-//         // background-image: linear-gradient(45deg,#d29a3e,#dbaf62 51%,#ddbd83);
-//         // background-image: linear-gradient(45deg,#24292f,#3a424c 51%,#505b69);
-//     }
+    .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+        color: #ffffff !important;
+        // background-color: #24292f;
+        background-color:#2f363d;
+        // background-image: linear-gradient(45deg,#d29a3e,#dbaf62 51%,#ddbd83);
+        // background-image: linear-gradient(45deg,#24292f,#3a424c 51%,#505b69);
+    }
 
-//     // .css-1q2h7u5.Mui-selected {
-//     //     background-color: #253d38 !important;
-//     // }
+    // .css-1q2h7u5.Mui-selected {
+    //     background-color: #253d38 !important;
+    // }
 
-//     // .css-1aquho2-MuiTabs-indicator {
-//     //     background-color: #253d38 !important;
-//     // }
-// }
+    // .css-1aquho2-MuiTabs-indicator {
+    //     background-color: #253d38 !important;
+    // }
+
+
+}
 
 
 
@@ -98,7 +110,7 @@
 .tabs-wrapper {
 
     .MuiTabs-root {
-        min-height: 40px !important;
+        min-height: auto !important;
 
         .MuiTabs-flexContainer {
         }
@@ -108,9 +120,17 @@
             font-weight: 400;
             font-size: 1rem;
             font-size: 0.95rem;
+            line-height: 0.95rem;
             letter-spacing: 0.00938em;
             border-radius: 8px;
+            
+            // color: #777c83;
+            // color: rgb(99, 115, 129);
             color: #2f363d;
+
+            // font-family: "Barlow", sans-serif !important;
+
+            // transition: color .15s;
             &:hover {
                 color: #2f363d;
             }
@@ -121,10 +141,12 @@
         }
 
         .MuiButtonBase-root {
-            border-radius: 8px;
+            border-radius: 0;
 
-            padding: 12px 12px;
-            min-height: 40px !important;
+            padding: 0 0 1rem 0;
+            min-height: auto !important;
+
+            min-width: auto !important;
 
             &.MuiTabScrollButton-root {
                 background-color: transparent;
@@ -133,6 +155,10 @@
             span span span {
                 background-color: transparent !important;
             }
+        }
+
+        .Mui-selected {
+            color: #2f363d;
         }
     }
 
@@ -143,4 +169,9 @@
     }
 
 
+}
+
+
+.css-heg063-MuiTabs-flexContainer {
+    gap: 2rem !important;
 }

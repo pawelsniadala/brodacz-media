@@ -5,17 +5,18 @@ import React, {
 import { Link, useParams } from 'react-router-dom';
 import Iframe from 'react-iframe'
 
-import Container from '@mui/material/Container';
+// import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
+import Container from '../../../components/Container';
 import CardProposed from '../../../components/CardProposed';
 
 import { video } from '../../../data/video/video';
 
-import { shuffleArray } from '../../../functions/functions';
+// import { shuffleArray } from '../../../functions/functions';
 
 const VideoRealizationPartial = () => {
     const {
@@ -48,7 +49,8 @@ const VideoRealizationPartial = () => {
         music: videoRealizationCopy.music,
         weddings: videoRealizationCopy.weddings,
         guides: videoRealizationCopy.guides,
-        animations: videoRealizationCopy.animations
+        animations: videoRealizationCopy.animations,
+        backstage: videoRealizationCopy.backstage
     };
 
     // const setVideoCategory = (category) => {
@@ -79,6 +81,8 @@ const VideoRealizationPartial = () => {
                 return 'Poradniki';
             case 'animations':
                 return 'Animacje';
+            case 'backstage':
+                return 'Backstage';
             default:
         }
     }
@@ -109,12 +113,13 @@ const VideoRealizationPartial = () => {
         <Box className='video-view'>
             <Box className='view-wrapper'>
                 <Box className='view-header'>
-                    <Container className='header-wrapper' maxWidth='xl'>
+                    <Container className='header-wrapper'>
                         <Box className='breadcrumb-wrapper'>
                             <Breadcrumbs
                                 className='breadcrumb'
                                 separator={<NavigateNextIcon fontSize='smform' />}
                                 aria-label='breadcrumb'
+                                // style={{ overflowX: 'auto', whiteSpace: 'nowrap', display: 'inline-grid' }}
                             >
                                 <Link to='/' aria-current='page'>
                                     Home
@@ -122,20 +127,23 @@ const VideoRealizationPartial = () => {
                                 <Link to='/video' aria-current='page'>
                                     Filmy
                                 </Link>
-                                <Link to={`/video/${category}`} aria-current='page'>
+                                <Link to={category === 'all' ? '/video' : `/video/${category}`} aria-current='page'>
                                     {setBreadcrumbsName()}
                                 </Link>
+                                <Typography color='text.primary'>
+                                    {setVideoCategory(category).find(item => item.id === videoId)?.title ?? ''}
+                                </Typography>
                             </Breadcrumbs>
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                {setBreadcrumbsName()}
+                                {setBreadcrumbsName() === 'Wszystkie' ? 'Filmy' : setBreadcrumbsName()}
                             </Typography>
                         </Box>
                     </Container>
                 </Box>
                 <Box className='view-body'>
-                    <Container className='body-wrapper video-realization' maxWidth='xl'>
+                    <Container className='body-wrapper video-realization'>
                         <Box className='realization-wrapper'>
                             {setVideoCategory(category).filter(item => item.id === videoId).map(item => (
                                 <Box key={item.id}>
@@ -144,18 +152,18 @@ const VideoRealizationPartial = () => {
                                             className='iframe'
                                             url={`${item.video.embed}?autoplay=1`}
                                             id={item.id}
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
                                         />
                                     </Box>
                                     <Box className='description-wrapper'>
                                         <Box className='title'>
                                             {item.title}
                                         </Box>
-                                        <small className="meta text-muted">
-                                            <span className="company">
+                                        <small className='meta text-muted'>
+                                            <span className='company'>
                                                 {item.company}
                                             </span>
-                                            <span className="company">
+                                            <span className='company'>
                                                 {item.date}
                                             </span>
                                         </small>

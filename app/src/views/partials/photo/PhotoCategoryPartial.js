@@ -39,7 +39,8 @@ const PhotoCategoryPartial = ({ category }) => {
         studio: photoRealizationCopy.studio,
         outdoor: photoRealizationCopy.outdoor,
         product: photoRealizationCopy.product,
-        drone: photoRealizationCopy.drone
+        drone: photoRealizationCopy.drone,
+        backstage: photoRealizationCopy.backstage,
     };
 
     const setPhotoCategory = (category) => {

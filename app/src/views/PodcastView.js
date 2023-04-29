@@ -1,56 +1,32 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-import Container from '@mui/material/Container';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
-import { podcast } from '../data/podcast';
-// import PageHeader from '../components/PageHeader';
+import Container from '../components/Container';
 import CardRealization from '../components/CardRealization';
 import Alert from '../components/Alert';
 
+// import { podcast } from '../data/podcast/podcast';
+import { podcast } from '../data/podcast/podcast';
+
 const PodcastView = () => {
     useEffect(() => {
-        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'instant'
+        });
     }, []);
 
     return (
-        // <Box className='podcast-view'>
-        //     <Box className='view-wrapper container'>
-        //         <PageHeader header={podcast.title} />
-        //         <section className='realization-section'>
-        //             <Box className='section-wrapper pt-0'>
-                        // <Box className={`card-wrapper realization podcast ${podcast.realization.length ? '' : 'empty'}`}>
-                        //     {podcast.realization.length ? podcast.realization.map((item) => (
-                        //         <CardRealization
-                        //             cardThumbnaiVideo
-                        //             key={item.id}
-                        //             cardThumbnaiVideoAlt={item.title}
-                        //             cardThumbnaiVideoTitle={item.title}
-                        //             cardThumbnaiVideoCompany={item.company}
-                        //             cardThumbnaiVideoDate={item.date}
-                        //             cardThumbnaiVideoTime={item.podcast.time}
-                        //             cardThumbnaiVideoSrc={item.podcast.src}
-                        //             cardThumbnaiVideoPath={item.podcast.urlPage}
-                        //         />
-                        //     )) : (
-                        //         <Alert
-                        //             content={podcast.realization.empty}
-                        //         />
-                        //     )}
-                        // </Box>
-        //             </Box>
-        //         </section>
-        //     </Box>
-        // </Box>
-
         <Box className='podcast-view'>
             <Box className='view-wrapper'>
                 <Box className='view-header'>
-                    <Container className='header-wrapper' maxWidth='xl'>
+                    <Container className='header-wrapper'>
                         <Box className='breadcrumb-wrapper'>
                             <Breadcrumbs
                                 className='breadcrumb'
@@ -73,7 +49,7 @@ const PodcastView = () => {
                     </Container>
                 </Box>
                 <Box className='view-body'>
-                    <Container className='body-wrapper' maxWidth='xl'>
+                    <Container className='body-wrapper'>
                         <Box className={`card-wrapper realization podcast ${podcast.realization.length ? '' : 'empty'}`}>
                             {podcast.realization.length ? podcast.realization.map((item) => (
                                 <CardRealization
@@ -85,7 +61,7 @@ const PodcastView = () => {
                                     cardThumbnaiVideoDate={item.date}
                                     cardThumbnaiVideoTime={item.podcast.time}
                                     cardThumbnaiVideoSrc={item.podcast.src}
-                                    cardThumbnaiVideoPath={item.podcast.urlPage}
+                                    cardThumbnaiVideoPath={`/podcasts/${item.id}`}
                                 />
                             )) : (
                                 <Alert

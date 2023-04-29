@@ -10,8 +10,9 @@ import HeaderSection from '../sections/HeaderSection';
 import FooterSection from '../sections/FooterSection';
 import HomeView from './HomeView';
 
-import BackstageView from './BackstageView';
-import ContactView from './ContactView';
+import AboutView from './AboutView';
+import ServicesView from './ServicesView';
+
 
 import VideoView from './VideoView';
 import VideoCategoryPartial from './partials/video/VideoCategoryPartial';
@@ -21,8 +22,17 @@ import PhotoView from './PhotoView';
 import PhotoCategoryPartial from './partials/photo/PhotoCategoryPartial';
 
 import PodcastView from './PodcastView';
+import PodcastRealizationPartial from './partials/podcast/PodcastRealizationPartial';
+
+import BackstageView from './BackstageView';
 import BackstageVideoPartial from './partials/backstage/BackstageVideoPartial';
 import BackstagePhotoPartial from './partials/backstage/BackstagePhotoPartial';
+
+
+import BlogView from './BlogView';
+
+import ContactView from './ContactView';
+
 import ScrollArrow from '../components/ScrollArrow';
 import Modal from '../components/Modal';
 import Toast from '../components/Toast';
@@ -37,18 +47,30 @@ const Root = () => (
                 <Routes>
                     <Route exact path='/' element={<HomeView />} />
                     <Route exact path='https://brodaczmedia.pl' element={<HomeView />} />
+
+                    <Route path='/about' element={<AboutView />} />
+                    
+                    <Route path='/services' element={<ServicesView />} />
+
                     <Route exact path='/video' element={<VideoView />}>
                         <Route path=':category' element={<VideoCategoryPartial />} />
                     </Route>
                     <Route path='/video/:category/:videoId' element={<VideoRealizationPartial />} />
+
                     <Route exact path='/photo' element={<PhotoView />}>
                         <Route path=':category' element={<PhotoCategoryPartial />} />
                     </Route>
+
                     <Route path='/podcasts' element={<PodcastView />} />
+                    <Route path='/podcasts/:podcastId' element={<PodcastRealizationPartial />} />
+
                     <Route path='/backstage' element={<BackstageView />} >
                         <Route path='/backstage/video' element={<BackstageVideoPartial />} />
                         <Route path='/backstage/photo' element={<BackstagePhotoPartial />} />
                     </Route>
+
+                    <Route path='/blog' element={<BlogView />} />
+
                     <Route path='/contact' element={<ContactView />} />
                 </Routes>
             </main>

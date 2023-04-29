@@ -1,47 +1,21 @@
-// const FacebookSvg = ({
-//     width,
-//     height,
-//     color
-// }) => (
-//     <svg
-//         xmlns='http://www.w3.org/2000/svg'
-//         shapeRendering='geometricPrecision'
-//         textRendering='geometricPrecision'
-//         imageRendering='optimizeQuality'
-//         fillRule='evenodd'
-//         clipRule='evenodd'
-//         viewBox='160.01 0 319.99 640'
-//         width={width}
-//         height={height}
-//         fill={color}
-//     >
-//         <path d='M380.001 120.001h99.993V0h-99.993c-77.186 0-139.986 62.8-139.986 139.986v60h-80.009V320h79.985v320h120.013V320h99.994l19.996-120.013h-119.99v-60.001c0-10.843 9.154-19.996 19.996-19.996v.012z' />
-//     </svg>
-// );
+const YouTubeSvg = ({
+    width,
+    height,
+    color
+}) => (
+    <svg
+        id="Layer_1"
+        dataname="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 122.88 86.43"
+        width={width}
+        height={height}
+        fill={color}
+    >
+        <defs><style>{`.cls-1yt,.ccls-2yt{fill-rule:evenodd;}.ccls-2yt{fill:#fff;}`}</style></defs>
+        <path className="cls-1yt" d="M121.63,18.65s-1.2-8.47-4.9-12.19c-4.67-4.89-9.91-4.92-12.31-5.21C87.24,0,61.43,0,61.43,0h0s-25.8,0-43,1.25c-2.4.29-7.63.31-12.31,5.21C2.4,10.18,1.22,18.65,1.22,18.65A187.15,187.15,0,0,0,0,38.55v9.31a187.65,187.65,0,0,0,1.22,19.9S2.42,76.23,6.09,80c4.68,4.9,10.82,4.74,13.57,5.26,9.83.94,41.78,1.22,41.78,1.22s25.83,0,43-1.27c2.41-.29,7.64-.32,12.32-5.21,3.69-3.72,4.89-12.2,4.89-12.2a187.15,187.15,0,0,0,1.22-19.9V38.54a189.26,189.26,0,0,0-1.25-19.9Z"/>
+        <polygon className="ccls-2yt" points="48.71 59.16 48.71 24.63 81.9 41.95 48.71 59.16 48.71 59.16"/>
+    </svg>
+);
 
-// export default FacebookSvg;
-
-
-
-// const YouTubeSvg = ({
-//     width,
-//     height,
-//     color
-// }) => (
-//     <svg
-//         xmlns="http://www.w3.org/2000/svg"
-//         viewBox="0 0 3333 2376"
-//         shape-rendering="geometricPrecision"
-//         text-rendering="geometricPrecision"
-//         image-rendering="optimizeQuality"
-//         fill-rule="evenodd"
-//         clip-rule="evenodd"
-//         width={width}
-//         height={height}
-//         fill={color}
-//     >
-//         <path d="M3193 548c-4-24-34-208-113-287l-1-1c-97-101-207-112-269-118l-20-2c-448-33-1121-33-1123-33h-1c-2 0-674 0-1123 33-3 0-12 1-22 2-62 6-172 17-268 118l-1 1c-80 81-110 271-112 288 0 1-32 258-32 516v244c0 258 32 515 32 516v1c3 20 33 208 113 288l1 1c88 92 204 106 279 115 17 2 32 4 46 7 259 24 1087 32 1090 32 17 0 678-2 1124-33l20-2c62-6 172-17 269-118l1-1c80-81 110-271 113-288 0-1 32-258 32-516v-244c-1-235-27-472-32-511 0-2-1-4-1-7zm-36-362c99 101 136 306 142 343 1 2 1 5 1 7 0 1 32 263 33 529v244c0 264-32 528-33 529v1c0 1-34 238-142 349l-1 1c-125 130-260 144-337 151-4 0-8 1-19 2h-3c-451 32-1131 33-1133 33s-836-7-1099-32c-2 0-5 0-7-1-10-2-24-4-41-6-89-11-229-28-344-148-102-104-138-321-142-347 0-1 0-3-1-4 0-1-32-265-32-529v-244c0-264 32-528 33-529v-1c0-1 33-238 141-349l1-1C298 54 433 41 510 33c5 0 9-1 20-2h3C987-2 1663-2 1665-2h1c2 0 677 0 1131 33h4c12 1 15 2 19 2 76 7 212 21 337 151zM1279 1606V699c0-30 24-54 54-54 11 0 21 3 29 9l867 453c26 14 36 46 23 72-5 10-13 18-23 23l-871 452c-26 14-59 3-72-23-4-8-6-16-6-25zm108-818v730l702-364-702-366z" fill-rule="nonzero"/>
-//     </svg>
-// );
-
-// export default YouTubeSvg;
+export default YouTubeSvg;

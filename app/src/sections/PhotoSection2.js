@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { NavLink } from 'react-router-dom';
 
-import Container from '@mui/material/Container';
+// import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import PhotoLibraryIcon from '@mui/icons-material/PhotoLibrary';
 
+import Container from '../components/Container';
 import HeaderSection from '../components/HeaderSection';
 import LinkMore from '../components/LinkMore';
 
@@ -47,7 +48,7 @@ const LazyLoadImageComponent = ({
 const PhotoSection2 = () => {
     return (
         <section className='photo-section'>
-            <Container maxWidth='xl'>
+            <Container>
                 <Box className='section-wrapper'>
                     <HeaderSection
                         sectionTitle='Zdjęcia'

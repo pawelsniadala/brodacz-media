@@ -19,6 +19,7 @@ import { studio } from "./photo/studio";
 import { outdoor } from "./photo/outdoor";
 import { product } from "./photo/product";
 import { drone } from "./photo/dron";
+import { backstage } from "./photo/backstage";
 
 // STUDYJNE
 // MINIATURKI
@@ -47,6 +48,8 @@ import photoOutdoorOriginal17 from "../assets/photo/realization/outdoor/original
 
 
 
+
+
 //
 import a1 from "../assets/reel/a1.jpg"; // nev size
 import b1 from "../assets/reel/b1.jpg"; // nev size
@@ -59,6 +62,7 @@ import b from "../assets/reel/b.jpg"; // nev size
 import c from "../assets/reel/c.jpg"; // nev size
 import d from "../assets/reel/d.jpg"; // nev size
 import e from "../assets/reel/e.jpg"; // nev size
+
 
 
 
@@ -308,6 +312,7 @@ export const photo = {
         studio: [ ...studio ],
         outdoor: [ ...outdoor ],
         product: [ ...product ],
-        drone: [ ...drone ]
+        drone: [ ...drone ],
+        backstage: [ ...backstage ],
     }
 };

@@ -6,6 +6,7 @@ import { music } from './realization/music';
 import { weddings } from './realization/weddings';
 import { guides } from './realization/guides';
 import { animations } from './realization/animations';
+import { backstage } from './realization/backstage';
 
 export const video = {
     category: [ ...category ],
@@ -16,6 +17,7 @@ export const video = {
         music: [ ...music ],
         weddings: [ ...weddings ],
         guides: [ ...guides ],
-        animations: [ ...animations ]
+        animations: [ ...animations ],
+        backstage: [ ...backstage ],
     }
 };

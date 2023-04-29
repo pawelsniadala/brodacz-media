@@ -62,8 +62,17 @@ export const category = [
     },
     {
         id: '7993088f-594b-4e2a-851a-d4f0e124eb19',
-        label: 'Poradniki',
+        label: 'filmy',
         title: 'Animacje',
+        description: 'Intro, outro, reklama, animacyjna wstawka w filmie? A może cały animowany film? Możliwości są nieograniczone.',
+        image: videoCategoryAnimation,
+        path: '/video/animations',
+        tab: 'video-animations'
+    },
+    {
+        id: '7993088f-594b-4e2a-851a-d4f0e124eb11',
+        label: 'filmy',
+        title: 'Backstage',
         description: 'Intro, outro, reklama, animacyjna wstawka w filmie? A może cały animowany film? Możliwości są nieograniczone.',
         image: videoCategoryAnimation,
         path: '/video/animations',

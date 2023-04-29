@@ -1,14 +1,20 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation, useParams } from 'react-router-dom';
 
-import Container from '@mui/material/Container';
+// import Container from '@mui/material/Container';
 import Tabs, { tabsClasses } from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
-import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import Chip from '@mui/material/Chip';
+import Stack from '@mui/material/Stack';
 
+import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import VisibilityIcon from '@mui/icons-material/Visibility';
+
+
+import Container from '../components/Container';
 import VideoCategoryPartial from './partials/video/VideoCategoryPartial';
 
 const VideoView = () => {
@@ -34,6 +40,8 @@ const VideoView = () => {
                     return 'video-guides';
                 case '/video/animations':
                     return 'video-animations';
+                case '/video/backstage':
+                    return 'video-backstage';
                 default:
             }
         }
@@ -58,6 +66,8 @@ const VideoView = () => {
             case 'video-guides':
                 return <VideoCategoryPartial category={category} />;
             case 'video-animations':
+                return <VideoCategoryPartial category={category} />;
+            case 'video-backstage':
                 return <VideoCategoryPartial category={category} />;
             default:
         }
@@ -86,6 +96,8 @@ const VideoView = () => {
                 return 'Poradniki';
             case 'animations':
                 return 'Animacje';
+            case 'backstage':
+                return 'Backstage';
             default:
         }
     }
@@ -102,7 +114,7 @@ const VideoView = () => {
         <Box className='video-view'>
             <Box className='view-wrapper'>
                 <Box className='view-header'>
-                    <Container className='header-wrapper' maxWidth='xl'>
+                    <Container className='header-wrapper'>
                         <Box className='breadcrumb-wrapper'>
                             <Breadcrumbs
                                 className='breadcrumb'
@@ -126,6 +138,20 @@ const VideoView = () => {
                             <Typography variant='h4' className='heading-view'>
                                 Filmy
                             </Typography>
+                            {/* <Box sx={{ paddingBottom: '30px' }}>
+                                <Stack direction="row" spacing={1}>
+                                    <Chip
+                                        icon={<VisibilityIcon style={{ fontSize: '16px', color: '#637381' }} />}
+                                        label="25 filmów"
+                                        style={{ backgroundColor: '#f6f8fa', color: '#637381', fontFamily: 'Source Sans Pro, sans-serif', fontWeight: '300' }}
+                                    />
+                                    <Chip
+                                        icon={<VisibilityIcon style={{ fontSize: '16px', color: '#637381' }} />}
+                                        label="33 342 wyświetleń"
+                                        style={{ backgroundColor: '#f6f8fa', color: '#637381', fontFamily: 'Source Sans Pro, sans-serif', fontWeight: '300' }}
+                                    />
+                                </Stack>
+                            </Box> */}
                         </Box>
                         <Box className='tabs-wrapper'>
                             <Tabs
@@ -198,12 +224,19 @@ const VideoView = () => {
                                     value={`/video/animations`}
                                     onClick={() => setTab('video-animations')}
                                 />
+                                <Tab
+                                    label='Backstage'
+                                    component={Link}
+                                    to={`/video/backstage`}
+                                    value={`/video/backstage`}
+                                    onClick={() => setTab('video-backstage')}
+                                />
                             </Tabs>
                         </Box>
                     </Container>
                 </Box>
                 <Box className='view-body'>
-                    <Container className='body-wrapper' maxWidth='xl'>
+                    <Container className='body-wrapper'>
                         <Box
                             className='tab-pane fade show active'
                             id={`pills-${videoTab}`}

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import { useTheme } from '@mui/material/styles';
-import Container from '@mui/material/Container';
+// import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
@@ -13,7 +13,7 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import PhotoLibraryIcon from '@mui/icons-material/PhotoLibrary';
 import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
 
-// import Container from '../components/Container';
+import Container from '../components/Container';
 
 const HeroSection = () => {
     const theme = useTheme();
@@ -74,7 +74,7 @@ const HeroSection = () => {
                                 }}
                             />
                             <Box className='carousel-caption d-none d-md-block' sx={{ bottom: '3.25rem' }}>
-                                <Container maxWidth="xl">
+                                <Container>
                                     <Typography
                                         variant='h4'
                                         align={'left'}
