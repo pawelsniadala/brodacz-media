@@ -1,0 +1,65 @@
+.card-blog {
+    box-shadow: none !important;
+    // box-shadow: 1px 2px 6px rgba(0,0,0,.04) !important;
+
+    border-radius: 8px !important;
+
+    // background-color: #f6f8fa !important;
+    background-color: #F9FAFB !important;
+
+    .card-content {
+
+        .card-date {
+            color: #637381 !important;
+            line-height: 1.5;
+            font-size: 0.75rem;
+            font-weight: 400;
+            font-family: "Source Sans Pro", sans-serif !important;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            line-height: 1.5;
+            font-family: 'Barlow', sans-serif !important;
+            color: #2f363d;
+
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+        }
+
+        .card-description {
+            // color: #637381;
+            color: #637381 !important;
+            // font-family: "Roboto", sans-serif !important;
+            font-family: 'Public Sans', sans-serif;
+            font-weight: 300;
+            line-height: 1.5714285714285714;
+            font-size: 0.875rem;
+
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+        }
+    }
+
+    .card-actions {
+        padding: 0 16px 16px 16px !important;
+
+        display: flex !important;
+        gap: 8px;
+
+        .card-author {
+            font-size: 0.875rem;
+            font-weight: 400;
+            font-family: 'Public Sans', sans-serif;
+
+            color: #2f363d;
+        }
+    }
+}

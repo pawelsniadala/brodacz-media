@@ -9,8 +9,8 @@ import photoBrandingThumbnail8 from '../../assets/photo/realization/branding/thu
 import photoBrandingThumbnail9 from '../../assets/photo/realization/branding/thumbnail/photoBrandingThumbnail9.png'; // nev size
 import photoBrandingThumbnail10 from '../../assets/photo/realization/branding/thumbnail/photoBrandingThumbnail10.png'; // nev size
 import photoBrandingThumbnail11 from '../../assets/photo/realization/branding/thumbnail/photoBrandingThumbnail11.png'; // nev size
-import photoBrandingThumbnail12 from '../../assets/photo/realization/branding/thumbnail/photoBrandingThumbnail12.png'; // nev size
-import photoBrandingThumbnail13 from '../../assets/photo/realization/branding/thumbnail/photoBrandingThumbnail13.png'; // nev size
+// import photoBrandingThumbnail12 from '../../assets/photo/realization/branding/thumbnail/photoBrandingThumbnail12.png'; // nev size
+// import photoBrandingThumbnail13 from '../../assets/photo/realization/branding/thumbnail/photoBrandingThumbnail13.png'; // nev size
 import photoBrandingThumbnail14 from '../../assets/photo/realization/branding/thumbnail/photoBrandingThumbnail14.png';  // nev size
 import photoBrandingThumbnail15 from '../../assets/photo/realization/branding/thumbnail/photoBrandingThumbnail15.png'; // nev size
 
@@ -25,8 +25,8 @@ import photoBrandingOriginal8 from '../../assets/photo/realization/branding/orig
 import photoBrandingOriginal9 from '../../assets/photo/realization/branding/original/photoBrandingOriginal9.png'; // nev size
 import photoBrandingOriginal10 from '../../assets/photo/realization/branding/original/photoBrandingOriginal10.png'; // nev size
 import photoBrandingOriginal11 from '../../assets/photo/realization/branding/original/photoBrandingOriginal11.png'; // nev size
-import photoBrandingOriginal12 from '../../assets/photo/realization/branding/original/photoBrandingOriginal12.png'; // nev size
-import photoBrandingOriginal13 from '../../assets/photo/realization/branding/original/photoBrandingOriginal13.png'; // nev size
+// import photoBrandingOriginal12 from '../../assets/photo/realization/branding/original/photoBrandingOriginal12.png'; // nev size
+// import photoBrandingOriginal13 from '../../assets/photo/realization/branding/original/photoBrandingOriginal13.png'; // nev size
 import photoBrandingOriginal14 from '../../assets/photo/realization/branding/original/photoBrandingOriginal14.png'; // nev size
 import photoBrandingOriginal15 from '../../assets/photo/realization/branding/original/photoBrandingOriginal15.png'; // nev size
 

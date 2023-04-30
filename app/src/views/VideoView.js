@@ -7,11 +7,11 @@ import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
-import Chip from '@mui/material/Chip';
-import Stack from '@mui/material/Stack';
+// import Chip from '@mui/material/Chip';
+// import Stack from '@mui/material/Stack';
 
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-import VisibilityIcon from '@mui/icons-material/Visibility';
+// import VisibilityIcon from '@mui/icons-material/Visibility';
 
 
 import Container from '../components/Container';
@@ -80,27 +80,27 @@ const VideoView = () => {
         setTab(selectedTab);
     };
 
-    const setBreadcrumbsName = () => {
-        switch(category) {
-            case 'content':
-                return 'Kontent';
-            case 'drone':
-                return 'Dron';
-            case 'events':
-                return 'Eventy';
-            case 'music':
-                return 'Teledyski';
-            case 'weddings':
-                return 'Śluby';
-            case 'guides':
-                return 'Poradniki';
-            case 'animations':
-                return 'Animacje';
-            case 'backstage':
-                return 'Backstage';
-            default:
-        }
-    }
+    // const setBreadcrumbsName = () => {
+    //     switch(category) {
+    //         case 'content':
+    //             return 'Kontent';
+    //         case 'drone':
+    //             return 'Dron';
+    //         case 'events':
+    //             return 'Eventy';
+    //         case 'music':
+    //             return 'Teledyski';
+    //         case 'weddings':
+    //             return 'Śluby';
+    //         case 'guides':
+    //             return 'Poradniki';
+    //         case 'animations':
+    //             return 'Animacje';
+    //         case 'backstage':
+    //             return 'Backstage';
+    //         default:
+    //     }
+    // }
 
     useEffect(() => {
         window.scrollTo({

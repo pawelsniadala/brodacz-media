@@ -1,4 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState,
+    // useEffect
+} from 'react';
 import { NavLink } from 'react-router-dom';
 
 // import Container from '@mui/material/Container';
@@ -16,11 +18,13 @@ import ListItemText from '@mui/material/ListItemText';
 import Container from '../components/Container';
 // import Container from '../components/Container';
 // import PhoneSvg from '../assets/svg/PhoneSvg';
-// import EmailSvg from '../assets/svg/EmailSvg';
+import EmailSvg from '../assets/svg/EmailSvg';
 import FacebookSvg from '../assets/svg/FacebookSvg';
 import InstagramSvg from '../assets/svg/InstagramSvg';
 import TikTokSvg from '../assets/svg/TikTokSvg';
 import YouTubeSvg from '../assets/svg/YouTubeSvg';
+// import LinkedInSvg from '../assets/svg/LinkedInSvg';
+import PhoneSvg from '../assets/svg/PhoneSvg';
 
 // import YouTubeSvg from '../assets/svg/YouTubeSvg';
 import ClinicSvg from '../assets/svg/ClinicSvg';
@@ -33,8 +37,8 @@ import ContactSvg from '../assets/svg/ContactSvg';
 
 // import SettingsIcon from '@mui/icons-material/Settings';
 
-import EmailIcon from '@mui/icons-material/Email';
-import CallIcon from '@mui/icons-material/Call';
+// import EmailIcon from '@mui/icons-material/Email';
+// import CallIcon from '@mui/icons-material/Call';
 // import MoreVertIcon from '@mui/icons-material/MoreVert';
 
 import LogoSvg from "../assets/common/LogoSvg";
@@ -56,30 +60,30 @@ const HeaderSection = () => {
         setState({ ...state, [anchor]: open });
     };
 
-    function getWindowDimensions() {
-        const { innerWidth: width, innerHeight: height } = window;
-        return {
-            width,
-            height
-        };
-    }
+    // function getWindowDimensions() {
+    //     const { innerWidth: width, innerHeight: height } = window;
+    //     return {
+    //         width,
+    //         height
+    //     };
+    // }
 
-    function useWindowDimensions() {
-        const [ windowDimensions, setWindowDimensions ] = useState(getWindowDimensions());
+    // function useWindowDimensions() {
+    //     const [ windowDimensions, setWindowDimensions ] = useState(getWindowDimensions());
 
-        useEffect(() => {
-            function handleResize() {
-                setWindowDimensions(getWindowDimensions());
-            }
+    //     useEffect(() => {
+    //         function handleResize() {
+    //             setWindowDimensions(getWindowDimensions());
+    //         }
 
-            window.addEventListener('resize', handleResize);
-            return () => window.removeEventListener('resize', handleResize);
-        }, []);
+    //         window.addEventListener('resize', handleResize);
+    //         return () => window.removeEventListener('resize', handleResize);
+    //     }, []);
 
-        return windowDimensions;
-    }
+    //     return windowDimensions;
+    // }
 
-    const { width } = useWindowDimensions();
+    // const { width } = useWindowDimensions();
 
     const drawerList = (anchor) => (
         <Box
@@ -264,7 +268,8 @@ const HeaderSection = () => {
                                     rel='noreferrer'
                                 >
                                     <Box className='link-wrapper'>
-                                        <CallIcon style={{ color: '#2f363d' }} fontSize='14px' />
+                                        {/* <CallIcon style={{ color: '#2f363d' }} fontSize='14px' /> */}
+                                        <PhoneSvg width='12px' height='12px' color='#2f363d'  />                                         
                                         <Typography className='link-text'>
                                             797 365 584
                                         </Typography>
@@ -278,7 +283,8 @@ const HeaderSection = () => {
                                     rel='noreferrer'
                                 >
                                     <Box className='link-wrapper'>
-                                        <EmailIcon style={{ color: '#2f363d' }} fontSize='14px' />
+                                        {/* <EmailIcon style={{ color: '#2f363d', fontSize: '15px' }} fontSize='12px' /> */}
+                                        <EmailSvg width='12px' height='12px' color='#2f363d'  />
                                         <Typography className='link-text'>
                                             studio@brodaczmedia.pl
                                         </Typography>
@@ -287,42 +293,56 @@ const HeaderSection = () => {
                             </Tooltip>
                         </Box>
                         <Box className='media-wrapper'>
+
                             <Tooltip title='Facebook'>
                                 <a className='link'
                                     href='https://www.facebook.com/brodaczmedia1/'
                                     target='_blank'
                                     rel='noreferrer'
                                 >
-                                    <FacebookSvg width='14px' height='14px' color='#2f363d' />
+                                    <FacebookSvg width='12px' height='12px' color='#2f363d' />
                                 </a>
                             </Tooltip>
+
                             <Tooltip title='Instagram'>
                                 <a className='link'
                                     href='https://www.instagram.com/brodaczmedia/'
                                     target='_blank'
                                     rel='noreferrer'
                                 >
-                                    <InstagramSvg width='14px' height='14px' color='#2f363d' />
+                                    <InstagramSvg width='12px' height='12px' color='#2f363d' />
                                 </a>
                             </Tooltip>
-                            <Tooltip title='YouTube'>
-                                <a className='link'
-                                    href='https://www.youtube.com/channel/UCNbuL274tzbrmcqFOtcGYaw'
-                                    target='_blank'
-                                    rel='noreferrer'
-                                >
-                                    <YouTubeSvg width='19px' height='14px' color='#2f363d' />
-                                </a>
-                            </Tooltip>
+
                             <Tooltip title='TikTok'>
                                 <a className='link'
                                     href='https://www.tiktok.com/@brodaczmedia'
                                     target='_blank'
                                     rel='noreferrer'
                                 >
-                                    <TikTokSvg width='14px' height='14px' color='#2f363d' />
+                                    <TikTokSvg width='12px' height='12px' color='#2f363d' />
                                 </a>
                             </Tooltip>
+
+                            <Tooltip title='YouTube'>
+                                <a className='link'
+                                    href='https://www.youtube.com/channel/UCNbuL274tzbrmcqFOtcGYaw'
+                                    target='_blank'
+                                    rel='noreferrer'
+                                >
+                                    <YouTubeSvg width='16px' height='12px' color='#2f363d' />
+                                </a>
+                            </Tooltip>
+{/* 
+                            <Tooltip title='LinkedIn'>
+                                <a className='link'
+                                    href='https://www.tiktok.com/@brodaczmedia'
+                                    target='_blank'
+                                    rel='noreferrer'
+                                >
+                                    <LinkedInSvg width='12px' height='12px' color='#2f363d' />
+                                </a>
+                            </Tooltip> */}
                         </Box>
                     </Box>
                 </Container>

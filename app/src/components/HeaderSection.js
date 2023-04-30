@@ -1,18 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+// import Button from '@mui/material/Button';
+// import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const HeaderSection = ({
-    sectionTitle,
+    // sectionTitle,
     sectionHeader,
     sectionSubheader,
-    sectionLinkText,
-    sectionLinkPath,
-    sectionDescription,
+    // sectionLinkText,
+    // sectionLinkPath,
+    // sectionDescription,
     sectionWrapperClass
 }) => (
     <Box className={(`section-header ${sectionWrapperClass}`).trim()}>

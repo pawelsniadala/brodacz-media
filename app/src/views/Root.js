@@ -7,12 +7,12 @@ import MainTemplate from '../templates/MainTemplate';
 // import NavSection from '../sections/NavSection';
 import HeaderSection from '../sections/HeaderSection';
 // import HeaderSection2 from '../sections/HeaderSection2';
-import FooterSection from '../sections/FooterSection';
+
 import HomeView from './HomeView';
 
 import AboutView from './AboutView';
-import ServicesView from './ServicesView';
 
+import ServicesView from './ServicesView';
 
 import VideoView from './VideoView';
 import VideoCategoryPartial from './partials/video/VideoCategoryPartial';
@@ -28,10 +28,11 @@ import BackstageView from './BackstageView';
 import BackstageVideoPartial from './partials/backstage/BackstageVideoPartial';
 import BackstagePhotoPartial from './partials/backstage/BackstagePhotoPartial';
 
-
 import BlogView from './BlogView';
 
 import ContactView from './ContactView';
+
+import FooterSection from '../sections/FooterSection';
 
 import ScrollArrow from '../components/ScrollArrow';
 import Modal from '../components/Modal';
@@ -49,7 +50,7 @@ const Root = () => (
                     <Route exact path='https://brodaczmedia.pl' element={<HomeView />} />
 
                     <Route path='/about' element={<AboutView />} />
-                    
+
                     <Route path='/services' element={<ServicesView />} />
 
                     <Route exact path='/video' element={<VideoView />}>

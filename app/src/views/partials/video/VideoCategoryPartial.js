@@ -8,7 +8,7 @@ import CardProposed from '../../../components/CardProposed';
 
 import { video } from '../../../data/video/video';
 
-import { shuffleArray } from '../../../functions/functions';
+// import { shuffleArray } from '../../../functions/functions';
 
 const VideoCategoryPartial = ({ category }) => {
     const videoRealizationCopy = {

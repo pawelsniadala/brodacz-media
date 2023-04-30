@@ -1,4 +1,6 @@
-import React, { useEffect } from 'react';
+import React, {
+    // useEffect
+} from 'react';
 import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
@@ -10,8 +12,8 @@ import Button from '@mui/material/Button';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
-import PhotoLibraryIcon from '@mui/icons-material/PhotoLibrary';
-import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
+// import PhotoLibraryIcon from '@mui/icons-material/PhotoLibrary';
+// import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
 
 import Container from '../components/Container';
 
@@ -82,12 +84,12 @@ const HeroSection = () => {
                                         // data-aos-delay={'100'}
                                         gutterBottom
                                         sx={{
-                                            color: '#fff',
+                                            // color: '#fff',
                                             color: 'rgba(255,255,255,0.95)',
                                             fontFamily: 'Roboto,Helvetica,Arial,sans-serif',
-                                            fontSize: '2.5rem',
-                                            fontWeight: 500,
-                                            lineHeight: 1.1,
+                                            // fontSize: '2.5rem',
+                                            // fontWeight: 500,
+                                            // lineHeight: 1.1,
                                             letterSpacing: '-0.025em',
                                             fontSize: '3.1rem',
                                             lineHeight: '1.15',

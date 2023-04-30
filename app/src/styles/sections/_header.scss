@@ -4,6 +4,14 @@
     background-color: #2f363d;
 
     background-color: #f6f8fa;
+    // display: none;
+
+
+    // background: url('../../assets/biale-proste-tlo-z-tekstura.jpg');
+    // object-fit: cover;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
 
     .nav-wrapper {
         padding-top: 5px;
@@ -29,13 +37,18 @@
                         gap: 6px;
 
                         .link-text {
-                            font-size: 11px;
+                            font-size: 11.5px;
                             font-weight: 400;
-                            font-family: Google Sans Text, Arial, Helvetica, sans-serif;
+                            // font-family: Google Sans Text, Arial, Helvetica, sans-serif;/
+
+                            // font-family: 'Public Sans', sans-serif !important;
+                            // font-family: "Roboto","Helvetica","Arial",sans-serif;
+                            // font-family: 'Barlow', sans-serif !important;
                             letter-spacing: 0.00938em;
                             line-height: 1.5;
                             // color: #fff;
                             color: #2f363d;
+                            // color: #4a5560;
                             margin: 0;
                         }
                     }
@@ -256,7 +269,7 @@ nav.navbar {
                             // color: #2f363d;
                             // color: #fff;
                             font-size: 0.8rem;
-                            font-size: 0.85rem;
+                            font-size: 0.86rem;
                             // font-size: 0.95rem;
                             // font-family: 'Source Sans Pro', sans-serif;
                             font-family: "Roboto", "Helvetica", "Arial", sans-serif;

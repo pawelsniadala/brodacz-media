@@ -67,23 +67,23 @@ const PhotoView = () => {
         setTab(selectedTab);
     };
 
-    const setBreadcrumbsName = () => {
-        switch(category) {
-            case 'branding':
-                return 'Wizerunkowe';
-            case 'studio':
-                return 'Studyjne';
-            case 'outdoor':
-                return 'Plenerowe';
-            case 'product':
-                return 'Produktowe';
-            case 'drone':
-                return 'Dron';
-            case 'backstage':
-                return 'Backstage';
-            default:
-        }
-    }
+    // const setBreadcrumbsName = () => {
+    //     switch(category) {
+    //         case 'branding':
+    //             return 'Wizerunkowe';
+    //         case 'studio':
+    //             return 'Studyjne';
+    //         case 'outdoor':
+    //             return 'Plenerowe';
+    //         case 'product':
+    //             return 'Produktowe';
+    //         case 'drone':
+    //             return 'Dron';
+    //         case 'backstage':
+    //             return 'Backstage';
+    //         default:
+    //     }
+    // }
 
     useEffect(() => {
         window.scrollTo({

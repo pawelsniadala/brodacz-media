@@ -1,4 +1,4 @@
-import videoAnimationThumbnail1 from '../../../assets/video/realization/animations/videoAnimationThumbnail1.png'
+// import videoAnimationThumbnail1 from '../../../assets/video/realization/animations/videoAnimationThumbnail1.png';
 import videoAnimationThumbnail2 from '../../../assets/video/realization/animations/videoAnimationThumbnail2.png';
 
 export const animations = [
