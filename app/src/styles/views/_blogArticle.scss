@@ -1,0 +1,90 @@
+.view-wrapper {
+    // .view-header {
+
+    // }
+
+    .view-body {
+        .body-wrapper {
+            &.blog-article {
+                display: grid;
+                gap: 3rem;
+                grid-template-columns: repeat(3, 1fr);
+
+                @media (max-width: 991.98px) {
+                    grid-template-columns: 1fr;
+                }
+
+                .article-wrapper {
+                    grid-column: span 2;
+
+                    // align-content: start;
+                    // display: grid;
+                    // gap: 3rem;
+
+                }
+
+                .proposed-wrapper {
+                    grid-column: span 1;
+
+                    align-content: start;
+                    display: grid;
+                    gap: 3rem;
+
+                    .title {
+                        font-size: 1.25rem;
+                        font-weight: 600;
+                        line-height: 1.5;
+                        font-family: 'Barlow', sans-serif !important;
+                        color: #2f363d;
+                        margin: 0;
+                        margin-bottom: 1.5rem;
+                    }
+
+                    .author-wrapper {
+                        .avatar-wrapper {
+                            display: flex;
+                            align-items: center;
+                            gap: .75rem;
+
+                            .description {
+                                display: grid;
+
+                                .author {
+                                    font-weight: 600;
+                                    line-height: 1.57143;
+                                    font-size: 0.875rem;
+                                    font-family: 'Public Sans', sans-serif;
+                                    color: #2f363d;
+
+                                    font-size: 0.875rem;
+                                    font-weight: 600;
+                                    // line-height: 1.5;
+                                    line-height: 1.5714285714285714;
+                                    // font-family: 'Barlow', sans-serif !important;
+                                    color: #2f363d;
+                                    
+                                }
+
+                                .date {
+                                    color: #637381 !important;
+                                    line-height: 1.5;
+                                    font-size: 0.75rem;
+                                    font-weight: 400;
+                                    font-family: 'Public Sans', sans-serif !important;
+                                }
+                            }
+                        }
+                    }
+
+                    .recent-wrapper {
+                        .card-wrapper {
+                            display: grid;
+                            gap: .75rem;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

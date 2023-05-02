@@ -29,6 +29,7 @@ import BackstageVideoPartial from './partials/backstage/BackstageVideoPartial';
 import BackstagePhotoPartial from './partials/backstage/BackstagePhotoPartial';
 
 import BlogView from './BlogView';
+import BlogArticlePartial from './partials/blog/BlogArticlePartial';
 
 import ContactView from './ContactView';
 
@@ -71,6 +72,7 @@ const Root = () => (
                     </Route>
 
                     <Route path='/blog' element={<BlogView />} />
+                    <Route path="/blog/:articleId" element={<BlogArticlePartial />} />
 
                     <Route path='/contact' element={<ContactView />} />
                 </Routes>

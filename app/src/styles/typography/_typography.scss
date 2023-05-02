@@ -3,4 +3,14 @@
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600&display=swap');
+
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    color: #2f363d;
+    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: 400;
+}

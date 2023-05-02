@@ -1,0 +1,46 @@
+.pagination {
+    // margin-top: 20px;
+
+    button {
+        color: #535353;
+        box-shadow: 1px 2px 6px rgb(0 0 0 / 4%);
+        box-shadow: none;
+        background-color: #fff;
+        transition: background-color 0.15s;
+
+        svg {
+            color: #535353;
+        }
+
+        span span {
+            background-color: transparent !important;
+        }
+    }
+
+    .css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+        background-color: #2f363d;
+        color: #fff;
+
+        &:hover {
+            background-color: #2f363d;
+            color: #fff;
+        }
+    }
+
+    // .css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root:hover {
+    //     background-color: #f8f8f8;
+    //     transition: background-color 0.3s;
+    // }
+
+    .css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root {
+
+        &:hover{
+            background-color: #f8f8f8;
+            // transition: background-color 0.3s;
+        }
+    }
+
+    // &:not(.css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected):hover {
+    //     background-color: #e6ebf1;
+    // }
+}

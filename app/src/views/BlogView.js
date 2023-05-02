@@ -16,6 +16,7 @@ import Pagination from '@mui/material/Pagination';
 
 import Container from '../components/Container';
 import CardBlog from '../components/CardBlog';
+import CardBlogProposed from '../components/CardBlogProposed';
 
 // import SearchSvg from '../assets/svg/SearchSvg';
 
@@ -305,7 +306,7 @@ const BlogView = () => {
                         item.date.toLowerCase().includes(lowercaseFilter) ||
                         item.title.toLowerCase().includes(lowercaseFilter) ||
                         item.description.toLowerCase().includes(lowercaseFilter) ||
-                        item.author.name.toLowerCase().includes(lowercaseFilter)
+                        item.author.toLowerCase().includes(lowercaseFilter)
                     )
                 );
             });
@@ -325,9 +326,9 @@ const BlogView = () => {
     }, []);
 
     useEffect(() => {
-        const storedFilter = localStorage.getItem('filter');
-        const storedPage = localStorage.getItem('page');
-        const storedTags = localStorage.getItem('tags');
+        const storedFilter = sessionStorage.getItem('filter');
+        const storedPage = sessionStorage.getItem('page');
+        const storedTags = sessionStorage.getItem('tags');
 
         if (storedFilter) {
             setFilter(storedFilter);
@@ -343,16 +344,16 @@ const BlogView = () => {
     }, [setFilter, setSelectedTags]);
 
     useEffect(() => {
-        localStorage.setItem('filter', filter);
+        sessionStorage.setItem('filter', filter);
     }, [filter]);
 
     useEffect(() => {
-        localStorage.setItem('tags', JSON.stringify(selectedTags));
+        sessionStorage.setItem('tags', JSON.stringify(selectedTags));
     }, [selectedTags]);
 
     const handleSetPage = (_, value) => {
         setPage(value);
-        localStorage.setItem('page', value.toString());
+        sessionStorage.setItem('page', value.toString());
     };
 
     const itemsPerPage = 6;
@@ -367,11 +368,11 @@ const BlogView = () => {
         setFilter(event.target.value);
         // setSelectedTags([]);
         setPage(1);
-        localStorage.removeItem('page');
+        sessionStorage.removeItem('page');
     };
 
     const handleClearFilterChange = () => {
-        localStorage.removeItem('filter');
+        sessionStorage.removeItem('filter');
         setFilter('');
         // setSelectedTags([]);
     };
@@ -388,7 +389,7 @@ const BlogView = () => {
         }
         // setFilter('');
         setPage(1);
-        localStorage.removeItem('page');
+        sessionStorage.removeItem('page');
     };
 
     const handleKeyPress = (event) => {
@@ -434,20 +435,23 @@ const BlogView = () => {
                 </Box>
                 <Box className='view-body'>
                     <Container className='body-wrapper blog'>
-                        <Box className='post-wrapper'>
-                            {currentData.length ? currentData.map(item => (
-                                <CardBlog
-                                    key={item.id}
-                                    cardDate={item.date}
-                                    cardTitle={item.title}
-                                    cardDescription={item.description}
-                                    cardImage={item.image}
-                                    cardAuthor={item.author.name}
-                                    cardAvatar={item.author.avatar}
-                                />
-                            )) : (
-                                <Box>Brak</Box>
-                            )}
+                        <Box className='articles-wrapper'>
+                            <Box className='card-wrapper'>
+                                {currentData.length ? currentData.map(item => (
+                                    <CardBlog
+                                        key={item.id}
+                                        cardDate={item.date}
+                                        cardTitle={item.title}
+                                        cardDescription={item.description}
+                                        cardImage={item.image}
+                                        cardAuthor={item.author}
+                                        cardAvatar={item.avatar}
+                                        cardPath={`/blog/${item.name}`}
+                                    />
+                                )) : (
+                                    <Box />
+                                )}
+                            </Box>
                             {pageCount > 1 && (
                                 <Box className='pagination-wrapper'>
                                     <Pagination
@@ -458,7 +462,6 @@ const BlogView = () => {
                                     />
                                 </Box>
                             )}
-
                         </Box>
                         <Box className='proposed-wrapper'>
                             <Box className='search-wrapper'>
@@ -472,7 +475,7 @@ const BlogView = () => {
                                     </Box>
                                     <InputBase
                                         className='input-base'
-                                        placeholder="Wyszukaj post"
+                                        placeholder="Wyszukaj artykuł"
                                         inputProps={{ 'aria-label': 'search google maps' }}
                                         value={filter}
                                         // onChange={e => setFilter(e.target.value)}
@@ -480,7 +483,7 @@ const BlogView = () => {
                                         onKeyPress={handleKeyPress}
                                     />
                                     {filter && (
-                                        <Box className='icon-box close' aria-label="search">
+                                        <Box className='icon-box clear' aria-label="search">
                                             <Tooltip title='Wyczyść'>
                                                 <ClearIcon className='clear-icon' onClick={handleClearFilterChange} />
                                             </Tooltip>
@@ -489,7 +492,7 @@ const BlogView = () => {
                                 </Paper>
                             </Box>
                             <Box className='categories-wrapper'>
-                                <Typography variant='h5' className='categories-title'>
+                                <Typography variant='h5' className='title'>
                                     Kategorie
                                 </Typography>
                                 <Box className='list-wrapper'>
@@ -512,7 +515,7 @@ const BlogView = () => {
                                 </Box>
                             </Box>
                             <Box className="tags-wrapper">
-                                <Typography variant='h5' className='tags-title'>
+                                <Typography variant='h5' className='title'>
                                     Popularne tagi
                                 </Typography>
                                 <Box className='chip-wrapper'>
@@ -564,6 +567,22 @@ const BlogView = () => {
                                         onClick={() => handleTagFilterChange('direction')}
                                         label='Reżyseria'
                                     />
+                                </Box>
+                            </Box>
+                            <Box className='recent-wrapper'>
+                                <Typography variant='h5' className='title'>
+                                    Ostatnie artykuły
+                                </Typography>
+                                <Box className='card-wrapper'>
+                                        {data.slice(0, 4).map(item => (
+                                            <CardBlogProposed
+                                                key={item.id}
+                                                cardDate={item.date}
+                                                cardTitle={item.title}
+                                                cardImage={item.image}
+                                                cardPath={`/blog/${item.name}`}
+                                            />
+                                        ))}
                                 </Box>
                             </Box>
                         </Box>

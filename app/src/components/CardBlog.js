@@ -1,5 +1,5 @@
-import * as React from 'react';
-
+import React from 'react';
+import { Link } from 'react-router-dom';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -8,6 +8,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import Avatar from '@mui/material/Avatar';
 // import Box from '@mui/material/Box';
+// import Skeleton from '@mui/material/Skeleton';
 
 const CardBlog = ({
     cardImage,
@@ -16,14 +17,18 @@ const CardBlog = ({
     cardDate,
 
     cardAuthor,
-    cardAvatar
+    cardAvatar,
+    cardPath
+    // cardLoading
 }) => {
+
+
     return (
         <Card className='card-blog'>
             <CardMedia
-            sx={{ height: 230 }}
+                className='card-media'
                 image={cardImage}
-                title="green iguana"
+                title={cardTitle}
             />
             <CardContent className='card-content'>
                 <Typography gutterBottom variant="span" component="div" className='card-date'>
@@ -38,15 +43,15 @@ const CardBlog = ({
 
             </CardContent>
             <CardActions className='card-actions'>
-                {/* <Box> */}
-                    <Avatar alt={cardAuthor} src={cardAvatar} />
-                    <Typography variant="span" className='card-author'>
-                        {cardAuthor}
-                    </Typography>
-                {/* </Box> */}
-                {/* <Button size="small">{cardDate}</Button>
-                <Button size="small">Learn More</Button> */}
+                <Avatar alt={cardAuthor} src={cardAvatar} />
+                <Typography variant="span" className='card-author'>
+                    {cardAuthor}
+                </Typography>
             </CardActions>
+            <Link
+                className="stretched-link"
+                to={cardPath}
+            />
         </Card>
     );
 }
