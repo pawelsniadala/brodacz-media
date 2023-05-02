@@ -17,9 +17,32 @@
                 .article-wrapper {
                     grid-column: span 2;
 
-                    // align-content: start;
-                    // display: grid;
-                    // gap: 3rem;
+                    .header {
+                        font-size: 1.5rem;
+                        margin-top: 0px;
+                        margin-bottom: 16px;
+                        font-weight: 500;
+                        line-height: 1.5;
+                    }
+
+                    .paragraph {
+                        margin-bottom: 16px;
+                        // color: #212B36;
+                        color: #333b43;
+                        color: #384049;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+
+                    .box {
+                        margin-bottom: 32px;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
 
                 }
 
@@ -40,7 +63,7 @@
                         margin-bottom: 1.5rem;
                     }
 
-                    .author-wrapper {
+                    .writer-wrapper {
                         .avatar-wrapper {
                             display: flex;
                             align-items: center;
@@ -49,7 +72,7 @@
                             .description {
                                 display: grid;
 
-                                .author {
+                                .writer {
                                     font-weight: 600;
                                     line-height: 1.57143;
                                     font-size: 0.875rem;

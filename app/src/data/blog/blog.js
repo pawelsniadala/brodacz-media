@@ -1,116 +1,88 @@
-import jakDobrzeWypascNaFilmieSlubnym from '../../assets/blog/article/jakDobrzeWypascNaFilmieSlubnym.jpg';
-import jakZjescCalyTalerzZupyWChinczyku from '../../assets/blog/article/jakZjescCalyTalerzZupyWChinczyku.jpg';
-import szybkiPrzewodnikPoNajnowszychTrendachWMontazuWideo from '../../assets/blog/article/szybkiPrzewodnikPoNajnowszychTrendachWMontazuWideo.jpg';
-import jakiAparatDoFilmowania from '../../assets/blog/article/jakiAparatDoFilmowania.jpg';
-import poznajHistoriePaczkow from '../../assets/blog/article/poznajHistoriePaczkow.jpg';
-import lepszaJakoscDzwiekuWTwoichfilmach from '../../assets/blog/article/lepszaJakoscDzwiekuWTwoichfilmach.jpg'
+// import jakDobrzeWypascNaFilmieSlubnym from '../../assets/blog/article/jakDobrzeWypascNaFilmieSlubnym.jpg';
+// import jakZjescCalyTalerzZupyWChinczyku from '../../assets/blog/article/jakZjescCalyTalerzZupyWChinczyku.jpg';
+// import szybkiPrzewodnikPoNajnowszychTrendachWMontazuWideo from '../../assets/blog/article/szybkiPrzewodnikPoNajnowszychTrendachWMontazuWideo.jpg';
+// import jakiAparatDoFilmowania from '../../assets/blog/article/jakiAparatDoFilmowania.jpg';
+// import poznajHistoriePaczkow from '../../assets/blog/article/poznajHistoriePaczkow.jpg';
+// import lepszaJakoscDzwiekuWTwoichfilmach from '../../assets/blog/article/lepszaJakoscDzwiekuWTwoichfilmach.jpg';
+// import wykorzystanieWideoWKampaniachReklamowychNaFacebooku0 from '../../assets/blog/article/wykorzystanieWideoWKampaniachReklamowychNaFacebooku0.jpg';
+// import wykorzystanieWideoWKampaniachReklamowychNaFacebooku1 from '../../assets/blog/article/wykorzystanieWideoWKampaniachReklamowychNaFacebooku1.jpg';
 
-import mariuszSniadala from '../../assets/blog/author/mariuszSniadala.png';
-import majaRostkowska from '../../assets/blog/author/majaRostkowska.png';
-import pawelSniadala from '../../assets/blog/author/pawelSniadala.png';
-import piotrSniadala from '../../assets/blog/author/piotrSniadala.png';
+
+import { jakDobrzeWypascNaFilmieSlubnym } from './article/jakDobrzeWypascNaFilmieSlubnym';
+import { najlepszeZupyChinskie } from './article/najlepszeZupyChinskie';
+import { wykorzystanieWideoWKampaniachReklamowychNaFacebooku } from './article/wykorzystanieWideoWKampaniachReklamowychNaFacebooku';
+
+// import mariuszSniadala from '../../assets/blog/author/mariuszSniadala.png';
+// import majaRostkowska from '../../assets/blog/author/majaRostkowska.png';
+// import pawelSniadala from '../../assets/blog/author/pawelSniadala.png';
+// import piotrSniadala from '../../assets/blog/author/piotrSniadala.png';
 
 export const blog = [
-    {
-        id: '03322c53-a1c2-481e-bcd1-47cd3a56d5a1',
-        name: 'jak-dobrze-wypasc-na-filmie-slubnym',
-        component: 'JakDobrzeWypascNaFilmieSlubnym',
-        date: '31 paź 2022',
-        title: 'Jak dobrze wypaść na filmie ślubnym?',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam iaculis sodales dignissim. Sed rutrum pellentesque lacus et fermentum. Morbi aliquam lacinia sapien blandit vehicula. Nullam rutrum, eros vel tempus gravida, justo mauris gravida libero, vitae aliquam odio elit at arcu. Sed porta semper massa in fringilla.',
-        image: jakDobrzeWypascNaFilmieSlubnym,
-        author: 'Mariusz Śniadała',
-        avatar: mariuszSniadala,
-        tags: [
-            'guide',
-            'direction'
-        ]
-    },
-    {
-        id: 'f21207be-d582-40f6-b63d-d04327548582',
-        name: 'najlepsze-zupy-chinskie',
-        component: 'NajlepszeZupyChinskie',
-        date: '10 paź 2022',
-        title: 'Najlepsze zupy chińskie',
-        description: 'Phasellus vitae tristique leo. Phasellus efficitur facilisis nulla eu ullamcorper. Maecenas scelerisque interdum semper. Ut dolor magna, viverra fringilla eros at, varius ultrices orci. Fusce eget congue libero. Suspendisse porttitor sem id lorem vulputate sollicitudin. Nulla facilisi. Nunc erat orci, pretium vel porttitor.',
-        image: jakZjescCalyTalerzZupyWChinczyku,
-        author: 'Maja Rostkowska',
-        avatar: majaRostkowska,
-        tags: [
-            'food'
-        ]
-    },
-    {
-        id: '003ca3d8-4034-4a09-abf5-631c585386a6',
-        name: 'jaki-aparat-do-filmowania',
-        component: 'JakiAparatDoFilmowania',
-        date: '2 paź 2021',
-        title: 'Jaki aparat do filmowania?',
-        description: 'Morbi sodales ut massa a pretium. Mauris mollis, nisi ac gravida cursus, neque turpis dignissim arcu, in dignissim nisl mauris ac dui. Suspendisse aliquam venenatis maximus. Pellentesque eros tellus, blandit mattis interdum non, tristique blandit neque. Vestibulum pharetra hendrerit ipsum eu porta.',
-        image: jakiAparatDoFilmowania,
-        author: 'Paweł Śniadała',
-        avatar: pawelSniadala,
-        tags: [
-            'equipment'
-        ]
-    },
-    {
-        id: 'e63d1845-314a-42f2-b95a-402b9065bdf2',
-        name: 'szybki-przewodnik-po-najnowszych-trendach-w-montazu-wideo',
-        component: 'SzybkiPrzewodnikPoNajnowszychTrendachWMontazuWideo',
-        date: '6 wrz 2021',
-        title: 'Szybki przewodnik po najnowszych trendach w montażu wideo',
-        description: 'Ut eget libero est. Cras ultrices eu ex a gravida. Pellentesque dapibus consequat lectus, at cursus mi. Phasellus posuere pretium nisi, quis hendrerit nisl pellentesque ut. Donec tristique ex sed hendrerit molestie. Fusce et mi sed nibh venenatis ornare. Fusce iaculis lectus ut tellus cursus sollicitudin.',
-        image: szybkiPrzewodnikPoNajnowszychTrendachWMontazuWideo,
-        author: 'Piotr Śniadała',
-        avatar: piotrSniadala,
-        tags: [
-            'guide',
-            'montage'
-        ]
-    },
-    {
-        id: '7d63090c-2bab-454e-9166-b073af47aa95',
-        name: 'poznaj-historie-paczkow',
-        component: 'PoznajHistoriePaczkow',
-        date: '17 sty 2020',
-        title: 'Poznaj histroię pączków',
-        description: 'Ut eget libero est. Cras ultrices eu ex a gravida. Pellentesque dapibus consequat lectus, at cursus mi. Phasellus posuere pretium nisi, quis hendrerit nisl pellentesque ut. Donec tristique ex sed hendrerit molestie. Fusce et mi sed nibh venenatis ornare. Fusce iaculis lectus ut tellus cursus sollicitudin.',
-        image: poznajHistoriePaczkow,
-        author: 'Maja Rostkowska',
-        avatar: majaRostkowska,
-        tags: [
-            'food',
-        ]
-    },
-    {
-        id: '1b7657b2-7038-46e0-b3e9-ffbaf625c3f2',
-        name: 'lepsza-jakosc-dzwieku-w-twoich-filmach',
-        component: 'LepszaJakoscDzwiekuWTwoichfilmach',
-        date: '1 sty 2020',
-        title: 'Lepsza jakość dźwięku w Twoich filmach',
-        description: 'Vivamus luctus ornare tellus in efficitur. Sed aliquam consectetur interdum. Etiam euismod aliquet ipsum non blandit. Ut nec lorem vitae libero scelerisque ultrices eu sed erat. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris augue urna, convallis.',
-        image: lepszaJakoscDzwiekuWTwoichfilmach,
-        author: 'Paweł Śniadała',
-        avatar: pawelSniadala,
-        tags: [
-            'guide'
-        ]
-    },
+    { ...jakDobrzeWypascNaFilmieSlubnym },
+    { ...najlepszeZupyChinskie },
+    { ...wykorzystanieWideoWKampaniachReklamowychNaFacebooku }
     // {
-    //     id: '20c53422-e2ee-4efe-9683-f9b19cf09049',
-    //     date: '24 gru 2019',
-    //     title: 'Jak dobrze wypaść na filmie ślubnym?',
-    //     description: 'Morbi blandit in erat id elementum. Proin maximus, sem eget aliquam vestibulum, velit dui porttitor neque, sit amet egestas nisi nisl eget orci. Phasellus ac erat at purus cursus tristique vitae nec dolor. Nullam nec rhoncus ex, in varius velit. Aliquam blandit risus sit amet elit suscipit egestas.',
-    //     image: jakDobrzeWypascNaFilmieSlubnym,
-    //     author: {
-    //         name: 'Mariusz Śniadała',
-    //         avatar: mariuszSniadala
-    //     },
+
+    // },
+    // {
+    //     id: '003ca3d8-4034-4a09-abf5-631c585386a6',
+    //     name: 'jaki-aparat-do-filmowania',
+    //     component: 'JakiAparatDoFilmowania',
+    //     date: '2 paź 2021',
+    //     title: 'Jaki aparat do filmowania?',
+    //     description: 'Morbi sodales ut massa a pretium. Mauris mollis, nisi ac gravida cursus, neque turpis dignissim arcu, in dignissim nisl mauris ac dui. Suspendisse aliquam venenatis maximus. Pellentesque eros tellus, blandit mattis interdum non, tristique blandit neque. Vestibulum pharetra hendrerit ipsum eu porta.',
+    //     image: jakiAparatDoFilmowania,
+    //     author: 'Paweł Śniadała',
+    //     avatar: pawelSniadala,
     //     tags: [
+    //         'equipment'
+    //     ]
+    // },
+    // {
+    //     id: 'e63d1845-314a-42f2-b95a-402b9065bdf2',
+    //     name: 'szybki-przewodnik-po-najnowszych-trendach-w-montazu-wideo',
+    //     component: 'SzybkiPrzewodnikPoNajnowszychTrendachWMontazuWideo',
+    //     date: '6 wrz 2021',
+    //     title: 'Szybki przewodnik po najnowszych trendach w montażu wideo',
+    //     description: 'Ut eget libero est. Cras ultrices eu ex a gravida. Pellentesque dapibus consequat lectus, at cursus mi. Phasellus posuere pretium nisi, quis hendrerit nisl pellentesque ut. Donec tristique ex sed hendrerit molestie. Fusce et mi sed nibh venenatis ornare. Fusce iaculis lectus ut tellus cursus sollicitudin.',
+    //     image: szybkiPrzewodnikPoNajnowszychTrendachWMontazuWideo,
+    //     author: 'Piotr Śniadała',
+    //     avatar: piotrSniadala,
+    //     tags: [
+    //         'guide',
     //         'montage'
     //     ]
     // },
+    // {
+    //     id: '7d63090c-2bab-454e-9166-b073af47aa95',
+    //     name: 'poznaj-historie-paczkow',
+    //     component: 'PoznajHistoriePaczkow',
+    //     date: '17 sty 2020',
+    //     title: 'Poznaj histroię pączków',
+    //     description: 'Ut eget libero est. Cras ultrices eu ex a gravida. Pellentesque dapibus consequat lectus, at cursus mi. Phasellus posuere pretium nisi, quis hendrerit nisl pellentesque ut. Donec tristique ex sed hendrerit molestie. Fusce et mi sed nibh venenatis ornare. Fusce iaculis lectus ut tellus cursus sollicitudin.',
+    //     image: poznajHistoriePaczkow,
+    //     author: 'Maja Rostkowska',
+    //     avatar: majaRostkowska,
+    //     tags: [
+    //         'food',
+    //     ]
+    // },
+    // {
+    //     id: '1b7657b2-7038-46e0-b3e9-ffbaf625c3f2',
+    //     name: 'lepsza-jakosc-dzwieku-w-twoich-filmach',
+    //     component: 'LepszaJakoscDzwiekuWTwoichfilmach',
+    //     date: '1 sty 2020',
+    //     title: 'Lepsza jakość dźwięku w Twoich filmach',
+    //     description: 'Vivamus luctus ornare tellus in efficitur. Sed aliquam consectetur interdum. Etiam euismod aliquet ipsum non blandit. Ut nec lorem vitae libero scelerisque ultrices eu sed erat. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris augue urna, convallis.',
+    //     image: lepszaJakoscDzwiekuWTwoichfilmach,
+    //     author: 'Paweł Śniadała',
+    //     avatar: pawelSniadala,
+    //     tags: [
+    //         'guide'
+    //     ]
+    // },
+   
+
     // {
     //     id: '90e1bb19-77f3-4fca-a459-8e6de57d022f',
     //     date: '5 lis 2019',

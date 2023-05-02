@@ -87,22 +87,21 @@ const BlogView = () => {
                             </Suspense>
                         </Box>
                         <Box className='proposed-wrapper'>
-                            <Box className='author-wrapper'>
+                            <Box className='writer-wrapper'>
                                 <Typography variant='h5' className='title'>
                                     Autor
                                 </Typography>
                                     <Box className='avatar-wrapper'>
                                     <Avatar alt={article.name} src={article.avatar}  sx={{ width: 60, height: 60 }} />
                                     <Box className='description'>
-                                        <Typography variant="span" className='author'>
-                                            {article.author}
+                                        <Typography variant="span" className='writer'>
+                                            {article.writer}
                                         </Typography>
                                         <Typography variant="span" className='date'>
                                             Fotograf
                                         </Typography>
                                     </Box>
                                 </Box>
-                           
                             </Box>
                             <Box className='recent-wrapper'>
                                 <Typography variant='h5' className='title'>
@@ -114,7 +113,7 @@ const BlogView = () => {
                                             key={item.id}
                                             cardDate={item.date}
                                             cardTitle={item.title}
-                                            cardImage={item.image}
+                                            cardImage={item.images[0].src}
                                             cardPath={`/blog/${item.name}`}
                                         />
                                     ))}

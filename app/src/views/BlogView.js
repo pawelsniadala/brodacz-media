@@ -21,6 +21,7 @@ import CardBlogProposed from '../components/CardBlogProposed';
 // import SearchSvg from '../assets/svg/SearchSvg';
 
 import { blog } from '../data/blog/blog';
+import { tag } from '../data/blog/tag/tag';
 
 const BlogView = () => {
 
@@ -306,7 +307,8 @@ const BlogView = () => {
                         item.date.toLowerCase().includes(lowercaseFilter) ||
                         item.title.toLowerCase().includes(lowercaseFilter) ||
                         item.description.toLowerCase().includes(lowercaseFilter) ||
-                        item.author.toLowerCase().includes(lowercaseFilter)
+                        item.writer.toLowerCase().includes(lowercaseFilter)
+                        // item.tags.some((tag) => tag.toLowerCase().includes(lowercaseFilter))
                     )
                 );
             });
@@ -443,8 +445,8 @@ const BlogView = () => {
                                         cardDate={item.date}
                                         cardTitle={item.title}
                                         cardDescription={item.description}
-                                        cardImage={item.image}
-                                        cardAuthor={item.author}
+                                        cardImage={item.images[0].src}
+                                        cardAuthor={item.writer}
                                         cardAvatar={item.avatar}
                                         cardPath={`/blog/${item.name}`}
                                     />
@@ -519,54 +521,15 @@ const BlogView = () => {
                                     Popularne tagi
                                 </Typography>
                                 <Box className='chip-wrapper'>
-                                    <Chip
-                                          className={`tag ${selectedTags.includes('marketing') ? 'selected' : ''}`}
-                                        variant='contained'
-                                        onClick={() => handleTagFilterChange('marketing')}
-                                        label='Marketing'
-                                    />
-                                    <Chip
-                                        className={`tag ${selectedTags.includes('media') ? 'selected' : ''}`}
-                                        variant='contained'
-                                        onClick={() => handleTagFilterChange('media')}
-                                        label='Media'
-                                    />
-                                    <Chip
-                                        className={`tag ${selectedTags.includes('guide') ? 'selected' : ''}`}
-                                        variant='contained'
-                                        onClick={() => handleTagFilterChange('guide')}
-                                        label='Poradnik'
-                                    />
-                                    <Chip
-                                        className={`tag ${selectedTags.includes('food') ? 'selected' : ''}`}
-                                        variant='contained'
-                                        onClick={() => handleTagFilterChange('food')}
-                                        label='Jedzenie'
-                                    />
-                                    <Chip
-                                          className={`tag ${selectedTags.includes('equipment') ? 'selected' : ''}`}
-                                        variant='contained'
-                                        onClick={() => handleTagFilterChange('equipment')}
-                                        label='Sprzęt'
-                                    />
-                                    <Chip
-                                        className={`tag ${selectedTags.includes('photos') ? 'selected' : ''}`}
-                                        variant='contained'
-                                        onClick={() => handleTagFilterChange('photos')}
-                                        label='Zdjęcia'
-                                    />
-                                    <Chip
-                                        className={`tag ${selectedTags.includes('montage') ? 'selected' : ''}`}
-                                        variant='contained'
-                                        onClick={() => handleTagFilterChange('montage')}
-                                        label='Montaż'
-                                    />
-                                    <Chip
-                                        className={`tag ${selectedTags.includes('direction') ? 'selected' : ''}`}
-                                        variant='contained'
-                                        onClick={() => handleTagFilterChange('direction')}
-                                        label='Reżyseria'
-                                    />
+                                    {Object.keys(tag).map(key => (
+                                        <Chip
+                                            key={key}
+                                            className={`tag ${selectedTags.includes(tag[key].name) ? 'selected' : ''}`}
+                                            variant='contained'
+                                            onClick={() => handleTagFilterChange(tag[key].name)}
+                                            label={tag[key].label}
+                                        />
+                                    ))}
                                 </Box>
                             </Box>
                             <Box className='recent-wrapper'>
@@ -574,15 +537,15 @@ const BlogView = () => {
                                     Ostatnie artykuły
                                 </Typography>
                                 <Box className='card-wrapper'>
-                                        {data.slice(0, 4).map(item => (
-                                            <CardBlogProposed
-                                                key={item.id}
-                                                cardDate={item.date}
-                                                cardTitle={item.title}
-                                                cardImage={item.image}
-                                                cardPath={`/blog/${item.name}`}
-                                            />
-                                        ))}
+                                    {data.slice(0, 4).map(item => (
+                                        <CardBlogProposed
+                                            key={item.id}
+                                            cardDate={item.date}
+                                            cardTitle={item.title}
+                                            cardImage={item.images[0].src}
+                                            cardPath={`/blog/${item.name}`}
+                                        />
+                                    ))}
                                 </Box>
                             </Box>
                         </Box>

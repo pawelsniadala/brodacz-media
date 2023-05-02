@@ -1,0 +1,23 @@
+.image {
+    .description {
+        padding-top: .75rem;
+
+        .source {
+            color: #637381;
+            font-size: .85rem;
+            font-family: "Public Sans", sans-serif;
+
+            .author {
+                &.link {
+                    text-decoration: none;
+                    font-size: .85rem;
+                    color: #637381;
+
+                    &:hover {
+                        color: #384049;
+                    }
+                }
+            }
+        }
+    }
+}
