@@ -14,41 +14,23 @@ import { blog } from '../../../data/blog/blog';
 
 const BlogView = () => {
     const { articleId } = useParams();
-    // debugger
+
     const [ data, setData ] = useState([]);
     const [ article, setArticle ] = useState({});
-    // debugger
+
     useEffect(() => {
         const fetchData = async () => {
             setData(blog);
         };
         fetchData();
     }, []);
-    // debugger
+
     useEffect(() => {
         const currentArticle = data.find(item => item.name === articleId) ?? {};
-        // const currentArticle = data.filter(item => item.id === articleId)[0] || {};
         setArticle(currentArticle);
     }, [articleId, data]);
-    
-    // debugger
-    // const article = data.find(item => item.name === articleId) ?? {};
 
-
-
-
-    // console.log("article", article);
-    
     const Article = lazy(() => import(`./article/${article.component}`));
-
-
-    // useEffect(() => {
-    //     window.scrollTo({
-    //         top: 0,
-    //         left: 0,
-    //         behavior: 'instant'
-    //     });
-    // }, [data]);
 
     return (
         <Box className='blog-view'>
@@ -76,6 +58,9 @@ const BlogView = () => {
                             <Typography variant='h4' className='heading-view'>
                                 {article.title}
                             </Typography>
+                            <Box className='meta'>
+                                {article.date}
+                            </Box>
                         </Box>
                     </Container>
                 </Box>
@@ -94,10 +79,10 @@ const BlogView = () => {
                                     <Box className='avatar-wrapper'>
                                     <Avatar alt={article.name} src={article.avatar}  sx={{ width: 60, height: 60 }} />
                                     <Box className='description'>
-                                        <Typography variant="span" className='writer'>
+                                        <Typography variant='span' className='writer'>
                                             {article.writer}
                                         </Typography>
-                                        <Typography variant="span" className='date'>
+                                        <Typography variant='span' className='date'>
                                             Fotograf
                                         </Typography>
                                     </Box>

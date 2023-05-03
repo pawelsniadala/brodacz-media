@@ -307,8 +307,8 @@ const BlogView = () => {
                         item.date.toLowerCase().includes(lowercaseFilter) ||
                         item.title.toLowerCase().includes(lowercaseFilter) ||
                         item.description.toLowerCase().includes(lowercaseFilter) ||
-                        item.writer.toLowerCase().includes(lowercaseFilter)
-                        // item.tags.some((tag) => tag.toLowerCase().includes(lowercaseFilter))
+                        item.writer.toLowerCase().includes(lowercaseFilter) ||
+                        item.tags.some((tag) => tag.toLowerCase().includes(lowercaseFilter))
                     )
                 );
             });
@@ -524,9 +524,9 @@ const BlogView = () => {
                                     {Object.keys(tag).map(key => (
                                         <Chip
                                             key={key}
-                                            className={`tag ${selectedTags.includes(tag[key].name) ? 'selected' : ''}`}
+                                            className={`tag ${selectedTags.includes(tag[key].label) ? 'selected' : ''}`}
                                             variant='contained'
-                                            onClick={() => handleTagFilterChange(tag[key].name)}
+                                            onClick={() => handleTagFilterChange(tag[key].label)}
                                             label={tag[key].label}
                                         />
                                     ))}

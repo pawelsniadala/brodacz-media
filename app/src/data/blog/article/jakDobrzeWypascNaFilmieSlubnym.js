@@ -22,9 +22,8 @@ export const jakDobrzeWypascNaFilmieSlubnym = {
         }
     ],
     tags: [
-        tag.guide.name,
-        tag.direction.name,
-        tag.movies.name,
-        tag.photos.name,
+        tag.guide.label,
+        tag.direction.label,
+        tag.movies.label
     ]
 };

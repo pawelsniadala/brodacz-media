@@ -3,7 +3,7 @@ import Typography from '@mui/material/Typography';
 
 import Image from '../../../../components/Image';
 
-const WykorzystanieWideoWKampaniachReklamowychNaFacebooku = ({ content }) => {
+const WykorzystanieWideoWKampaniachReklamowych = ({ content }) => {
     return (
         <>
             <Box className='box'>
@@ -58,7 +58,7 @@ const WykorzystanieWideoWKampaniachReklamowychNaFacebooku = ({ content }) => {
                 </Typography>
             </Box>
         </>
-    )
+    );
 }
 
-export default WykorzystanieWideoWKampaniachReklamowychNaFacebooku;
+export default WykorzystanieWideoWKampaniachReklamowych;

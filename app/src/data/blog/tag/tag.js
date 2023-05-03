@@ -1,5 +1,22 @@
 
 
+// export const tag = {
+//     marketing: 'Marketing',
+//     guide: 'Poradnik',
+//     direction: 'direction',
+//     food: 'Jedzenie',
+//     equipment: 'Sprzęt',
+//     technology: 'Technologia',
+//     movies: 'Filmy',
+//     photos: 'Zdjęcia',
+//     montage: 'Montaż',
+//     podcasts: 'Podcasty',
+//     studio: 'Studio',
+//     production: 'Produkcja'
+// };
+
+
+
 export const tag = {
     marketing: {
         name: 'marketing',

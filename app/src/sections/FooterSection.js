@@ -112,8 +112,11 @@ const FooterSection = () => {
             </Container>
             <Box className='section-wrapper info'>
                 <Box className='copyright'>
-                    <Box>Copyright © 2023 Brodacz Media Mariusz Śniadała. All rights reserved.</Box>
-                    <Box>Design by <a href='https://www.linkedin.com/in/pawelsniadala/' className='design' target='_blank' rel='noreferrer'>Paweł Śniadała</a>.</Box>
+                    <Box>Copyright © 2023 Brodacz Media Mariusz Śniadała.</Box>
+                    {/* <Box>Design by <a href='https://www.linkedin.com/in/pawelsniadala/' className='design' target='_blank' rel='noreferrer'>Paweł Śniadała</a>.</Box> */}
+                    <Box>
+                        All rights reserved. Design by <a href='https://www.linkedin.com/in/pawelsniadala/' className='design' target='_blank' rel='noreferrer'>Paweł Śniadała</a>.
+                    </Box>
                 </Box>
             </Box>
         </footer>

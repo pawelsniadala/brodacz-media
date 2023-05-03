@@ -11,8 +11,6 @@ const Image = ({
     imageHref,
     imageAuthor
 }) => {
-
-
     return (
         <Box className='image'>
             <LazyLoadImage

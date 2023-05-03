@@ -202,13 +202,23 @@ footer {
             }
 
             &.info {
-                background-color: darken(#212529, 3%);
+                text-align: center;
+                margin: 0;
+                padding: .7rem 0;
+                background-color: #fff;
+                font-family: 'Roboto', sans-serif;
 
                 .copyright {
-                    color: rgba(255,255,255,.5);
+                    color: rgba(0,0,0,.55);
+                    font-size: .75rem;
+
+                    @media (max-width: 539.98px) {
+                        font-size: .6rem;
+                    }
 
                     .design {
-                        color: rgba(255,255,255,.5);
+                        text-decoration: none;
+                        color: rgba(0,0,0,.55);
                     }
                 }
             }

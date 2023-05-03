@@ -16,12 +16,12 @@ export const najlepszeZupyChinskie = {
     images: [
         {
             src: najlepszeZupyChinskie0,
-            alt: 'Zupa',
+            alt: 'Świeża i pyszna chińskia zupa na ciemnym tle',
             author: 'Freepek',
-            href: ''
+            href: 'https://pl.freepik.com/darmowe-zdjecie/widok-z-gory-swieze-i-pyszne-chinskie-jedzenie-na-ciemnym-tle_37455295.htm#query=zupa&position=19&from_view=author'
         }
     ],
     tags: [
-        tag.food.name,
+        tag.food.label,
     ]
 };

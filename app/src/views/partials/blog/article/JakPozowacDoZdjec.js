@@ -3,7 +3,7 @@ import Typography from '@mui/material/Typography';
 
 import Image from '../../../../components/Image';
 
-const JakiAparatDoFilmowania = ({ content }) => {
+const JakPozowacDoZdjec = ({ content }) => {
     return (
         <>
             <Box className='box'>
@@ -53,4 +53,4 @@ const JakiAparatDoFilmowania = ({ content }) => {
     );
 }
 
-export default JakiAparatDoFilmowania;
+export default JakPozowacDoZdjec;
