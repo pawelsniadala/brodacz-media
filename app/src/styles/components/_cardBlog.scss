@@ -1,11 +1,77 @@
 .card-blog {
-    box-shadow: none !important;
+    // box-shadow: none !important;
+    box-shadow: rgba(145, 158, 171, 0.1) 0px 0px 2px 0px, rgba(145, 158, 171, 0.12) 0px 12px 24px -4px !important;
+    // transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+    // box-shadow: 1px 2px 6px rgba(0,0,0,.04) !important;
     border-radius: 8px !important;
-    background-color: #F9FAFB !important;
+    // background-color: #F9FAFB !important;
+    background-color: #fff !important;
     position: relative;
+
+    &:hover {
+        // box-shadow: rgba(145, 158, 171, 0.24) -24px 24px 72px -8px, rgba(145, 158, 171, 0.12) 0px 12px 24px -4px  !important;
+    }
 
     .card-media {
         height: 230px;
+        background-color: #e6e6e6;
+
+        position: relative;
+
+        // .test {
+        //     position: absolute;
+        //     top: 16px;
+        //     left: 16px;
+        //     // height: 20px;
+        //     // width: 20px;
+            
+        //     background-color: #2f363d;
+        //     display: grid;
+
+        //     border-radius: 4px;
+
+        //     text-align: center;
+
+        //     box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+
+        //     .month {
+        //         padding: 4px;
+        //         background-color: #2f363d;
+        //         color: #fff;
+        //         font-size: 0.75rem;
+
+        //         border-radius: 4px 4px 0 0;
+
+        //         font-size: 10px;
+        //         line-height: 12px;
+        //         padding-top: 3px;
+        //         padding-bottom: 4px;
+        //         font-weight: 700;
+        //         display: block;
+        //     }
+
+        //     .day {
+        //         background-color: #fff;
+        //         font-weight: 700;
+        //         font-size: 1.3rem;
+        //         line-height: 1.8rem;
+        //     }
+
+        //     .year {
+        //         background-color: #fff;
+        //         font-size: 12px;
+        //         line-height: 12px;
+        //         padding-bottom: 4px;
+        //         display: block;
+        //         text-align: center;
+
+        //         // border-radius: 0 0 4px 4px;
+
+        //         border-bottom-left-radius: calc(4px - 1px);
+        //         border-bottom-right-radius: calc(4px - 1px);
+        //     }
+        // }
     }
 
     .card-content {
@@ -15,7 +81,8 @@
             line-height: 1.5;
             font-size: 0.75rem;
             font-weight: 400;
-            font-family: 'Public Sans', sans-serif !important;
+            // font-family: 'Public Sans', sans-serif !important;
+            font-family: 'Roboto', sans-serif;
         }
 
         .card-title {
@@ -33,16 +100,19 @@
         }
 
         .card-description {
-            color: #637381 !important;
+            // color: #637381 !important;
+            // color: #737373 !important;
+            color: #6e6e6e !important;
             font-family: 'Public Sans', sans-serif;
+            // font-family: 'Roboto', sans-serif;
             font-weight: 300;
             line-height: 1.5714285714285714;
-            font-size: 0.875rem;
+            font-size: 0.85rem;
 
             overflow: hidden;
             text-overflow: ellipsis;
             display: -webkit-box;
-            -webkit-line-clamp: 5;
+            -webkit-line-clamp: 4;
             -webkit-box-orient: vertical;
         }
     }

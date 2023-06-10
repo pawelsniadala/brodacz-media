@@ -1,7 +1,11 @@
 .card-blog-proposed {
-    box-shadow: none !important;
+    // box-shadow: none !important;
+    // box-shadow: rgba(145, 158, 171, 0.2) 0px 0px 2px 0px, rgba(145, 158, 171, 0.12) 0px 12px 24px -4px !important;
+    box-shadow: rgba(145, 158, 171, 0.1) 0px 0px 2px 0px, rgba(145, 158, 171, 0.12) 0px 12px 24px -4px !important;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     border-radius: 8px !important;
-    background-color: #F9FAFB !important;
+    // background-color: #F9FAFB !important;
+    background-color: #Ffff !important;
 
     display: grid;
     grid-template-columns: 100px 1fr;
@@ -21,7 +25,8 @@
             line-height: 1.5;
             font-size: 0.75rem;
             font-weight: 400;
-            font-family: 'Public Sans', sans-serif !important;
+            // font-family: 'Public Sans', sans-serif !important;
+            font-family: 'Roboto', sans-serif !important;
         }
 
         .card-title {

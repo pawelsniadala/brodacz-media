@@ -4,6 +4,7 @@ import { Link, useParams } from 'react-router-dom';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import Chip from '@mui/material/Chip';
 import Avatar from '@mui/material/Avatar';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
@@ -23,7 +24,7 @@ const BlogView = () => {
             setData(blog);
         };
         fetchData();
-    }, []);
+    }, [articleId]);
 
     useEffect(() => {
         const currentArticle = data.find(item => item.name === articleId) ?? {};
@@ -31,6 +32,14 @@ const BlogView = () => {
     }, [articleId, data]);
 
     const Article = lazy(() => import(`./article/${article.component}`));
+
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'instant'
+        });
+    }, [articleId]);
 
     return (
         <Box className='blog-view'>
@@ -58,8 +67,25 @@ const BlogView = () => {
                             <Typography variant='h4' className='heading-view'>
                                 {article.title}
                             </Typography>
-                            <Box className='meta'>
-                                {article.date}
+                            <Box className='meta-wrapper'>
+                                <Box className='chip-wrapper'>
+                                    {article.tags?.map(item => (
+                                        <Chip
+                                            key={item}
+                                            variant='contained'
+                                            label={item}
+                                            size="small"
+                                            sx={{
+                                                backgroundColor: '#f0f3f6',
+                                                backgroundColor: 'rgba(0,0,0,0.035)',
+                                                color: '#384049'
+                                            }}
+                                        />
+                                    ))}
+                                 </Box>
+                                {/* <Typography gutterBottom variant="span" component="div" className='date'>
+                                    {article.date}
+                                </Typography> */}
                             </Box>
                         </Box>
                     </Container>

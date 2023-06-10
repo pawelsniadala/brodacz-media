@@ -1,0 +1,39 @@
+.blog-section {
+    .section-wrapper {
+        .section-header {
+            
+
+        }
+
+        .section-body {
+            .body-wrapper {
+                &.blog {
+                    // display: grid;
+                    // gap: 3rem;
+                    // grid-template-columns: repeat(3, 1fr);
+                    // // align-content: start;
+                    // // overflow: hidden;
+
+                    // @media (max-width: 991.98px) {
+                    //     grid-template-columns: 1fr;
+                    // }
+
+                    .article-wrapper {
+                        // grid-column: span 2;
+
+                        // display: grid;
+                        // gap: 3rem;
+
+                        .card-wrapper {
+                            display: grid;
+                            grid-template-columns: 1fr 1fr 1fr;
+                            gap: 1.5rem;
+                            align-content: start;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

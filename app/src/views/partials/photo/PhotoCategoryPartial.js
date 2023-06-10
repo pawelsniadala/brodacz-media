@@ -30,7 +30,7 @@ const PhotoCategoryPartial = ({ category }) => {
     };
 
     const photoRealizationAll = [].concat(
-        ...Object.values(photoRealizationCopy)
+        ...Object.values(photoRealizationCopy).filter(obj => obj !== photo.realization.backstage)
     );
 
     const photoCategoryMap = {

@@ -80,7 +80,11 @@
 
                     .search-wrapper {
                         .input-blog-search {
-                            background-color: #f6f8fa;
+                            // background-color: #f6f8fa;
+                            background-color: #f3f5f8;
+                            border: 1px solid rgba(145, 158, 171, 0.035);
+                            // background-color: #fff;
+                            // box-shadow: rgba(145, 158, 171, 0.1) 0px 0px 2px 0px, rgba(145, 158, 171, 0.12) 0px 12px 24px -4px !important;
                             // background-color: rgba(145, 158, 171, 0.08);
                             box-shadow: none;
                             border-radius: 8px;
@@ -185,8 +189,10 @@
 
                             .tag {
                                 border-radius: 8px;
-                                background-color: #f0f3f6;
+                                // background-color: #f0f3f6;
                                 // background-color: #f6f8fa;
+                                background-color: #f0f2f6;
+                                border: 1px solid rgba(145, 158, 171, 0.035);
                                 color: #2f363d;
 
                                 transition: color 0.15s ease, background-color 0.15s ease;
@@ -203,7 +209,8 @@
                                 }
 
                                 &:not(.selected):hover {
-                                    background-color: #e6ebf1;
+                                    // background-color: #e6ebf1;
+                                    background-color: #e9edf2;
                                 }
                             }
                         }

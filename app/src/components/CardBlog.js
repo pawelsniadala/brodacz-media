@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+// import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -8,7 +9,9 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import Avatar from '@mui/material/Avatar';
 // import Box from '@mui/material/Box';
+// import { LazyLoadImage } from 'react-lazy-load-image-component';
 // import Skeleton from '@mui/material/Skeleton';
+
 
 const CardBlog = ({
     cardImage,
@@ -18,21 +21,25 @@ const CardBlog = ({
 
     cardAuthor,
     cardAvatar,
-    cardPath
+    cardPath,
     // cardLoading
 }) => {
-
-
     return (
         <Card className='card-blog'>
             <CardMedia
                 className='card-media'
                 image={cardImage}
                 title={cardTitle}
-            />
+            >
+                {/* <Box className='test'>
+                    <Box component='span' className='month'>Czerwiec</Box>
+                    <Box component='span' className='day'>08</Box>
+                    <Box component='span' className='year'>2023</Box>
+                </Box> */}
+            </CardMedia>
             <CardContent className='card-content'>
                 <Typography gutterBottom variant="span" component="div" className='card-date'>
-                    {cardDate}
+                    {cardDate} • 6 minut czytania
                 </Typography>
                 <Typography gutterBottom variant="h5" component="div" className='card-title'>
                     {cardTitle}

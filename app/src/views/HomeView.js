@@ -16,6 +16,8 @@ import VideoSection2 from "../sections/VideoSection2";
 // import CustomerSection from "../sections/CustomerSection";
 // import ContactSection from "../sections/ContactSection";
 
+import BlogSection from "../sections/BlogSection";
+
 const HomeView = () => {
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -31,6 +33,7 @@ const HomeView = () => {
             {/* <VideoSection /> */}
             <PhotoSection2 />
             <VideoSection2 />
+            <BlogSection />
             {/* <PodcastSection /> */}
             {/* <StudioSection /> */}
             {/* <FavoritePhotosSection /> */}

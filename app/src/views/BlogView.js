@@ -359,7 +359,7 @@ const BlogView = () => {
     };
 
     const itemsPerPage = 6;
-    const [page, setPage] = useState(1);
+    const [ page, setPage ] = useState(1);
     const pageCount = Math.ceil(filteredList.length / itemsPerPage);
     const currentData = filteredList.slice(
         (page - 1) * itemsPerPage,

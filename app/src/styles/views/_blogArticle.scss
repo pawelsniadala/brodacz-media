@@ -31,6 +31,9 @@
                         color: #333b43;
                         color: #384049;
 
+                        font-family: "Roboto";
+                        font-weight: 300;
+
                         &:last-child {
                             margin-bottom: 0;
                         }
@@ -85,7 +88,6 @@
                                     line-height: 1.5714285714285714;
                                     // font-family: 'Barlow', sans-serif !important;
                                     color: #2f363d;
-                                    
                                 }
 
                                 .date {
@@ -105,7 +107,6 @@
                             gap: .75rem;
                         }
                     }
-
                 }
             }
         }

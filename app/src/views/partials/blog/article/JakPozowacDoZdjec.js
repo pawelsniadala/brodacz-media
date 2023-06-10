@@ -15,12 +15,12 @@ const JakPozowacDoZdjec = ({ content }) => {
                 </Typography>
             </Box>
             <Box className='box'>
-            <Image
-                imageSrc={content.images[0].src}
-                imageAlt={content.images[0].alt}
-                imageAuthor={content.images[0].author}
-                imageHref={content.images[0].href}
-            />
+                <Image
+                    imageSrc={content.images[0].src}
+                    imageAlt={content.images[0].alt}
+                    imageAuthor={content.images[0].author}
+                    imageHref={content.images[0].href}
+                />
             </Box>
             <Box className='box'>
                 <Typography className='paragraph'>
