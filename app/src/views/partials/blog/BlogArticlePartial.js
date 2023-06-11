@@ -10,6 +10,7 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 import Container from '../../../components/Container';
 import CardBlogProposed from '../../../components/CardBlogProposed';
+import CardBlogAuthor from '../../../components/CardBlogAuthor';
 
 import { blog } from '../../../data/blog/blog';
 
@@ -102,8 +103,8 @@ const BlogView = () => {
                                 <Typography variant='h5' className='title'>
                                     Autor
                                 </Typography>
-                                    <Box className='avatar-wrapper'>
-                                    <Avatar alt={article.name} src={article.avatar}  sx={{ width: 60, height: 60 }} />
+                                {/* <Box className='avatar-wrapper'>
+                                    <Avatar alt={article.name} src={article.avatar}  sx={{ width: 100, height: 100 }} />
                                     <Box className='description'>
                                         <Typography variant='span' className='writer'>
                                             {article.writer}
@@ -112,7 +113,13 @@ const BlogView = () => {
                                             Fotograf
                                         </Typography>
                                     </Box>
-                                </Box>
+                                </Box> */}
+
+                                <CardBlogAuthor
+                                    cardTitle={article.writer}
+                                    cardPosition='Fotograf'
+                                    cardImage={article.avatar}
+                                />
                             </Box>
                             <Box className='recent-wrapper'>
                                 <Typography variant='h5' className='title'>
@@ -122,8 +129,8 @@ const BlogView = () => {
                                     {data.slice(0, 8).map(item => (
                                         <CardBlogProposed
                                             key={item.id}
-                                            cardDate={item.date}
                                             cardTitle={item.title}
+                                            cardDate={item.date}
                                             cardImage={item.images[0].src}
                                             cardPath={`/blog/${item.name}`}
                                         />

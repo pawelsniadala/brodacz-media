@@ -44,16 +44,16 @@ const CardProposed = ({
                     {/* <Typography className='card-description'>
                         {cardDescription}
                     </Typography> */}
-                    <small className="card-meta text-muted">
-                        <span className="company">
+                    <Typography className="card-meta">
+                        <Typography component='span' className="company">
                             {cardThumbnaiVideoCompany}
                             {/* Brodacz Media */}
-                        </span>
-                        <span className="company">
+                        </Typography>
+                        <Typography component='span' className="company">
                             {cardThumbnaiVideoDate}
                             {/* 3 lis 2023 */}
-                        </span>
-                    </small>
+                        </Typography>
+                    </Typography>
                 </CardContent>
                 <Link to={cardPath} className='stretched-link' />
             </Card>

@@ -12,9 +12,9 @@ body {
     // background-color: #fdfdfe;
 }
 
-body::-webkit-scrollbar {
-    display: none;
-}
+// body::-webkit-scrollbar {
+    // display: none;
+// }
 
 main {
     flex: 1 1;
@@ -79,9 +79,9 @@ main {
 
 
 
-        .header-wrapper {
+        // .header-wrapper {
             // padding-bottom: 0.6rem;
-        }
+        // }
     }
 
     .view-body {
@@ -299,5 +299,3 @@ body.dark-theme {
     background-color: darken(#212529, 3%);
     color: rgba(255, 255, 255, 0.75);
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap');

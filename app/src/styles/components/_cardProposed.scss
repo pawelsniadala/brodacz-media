@@ -12,10 +12,10 @@
         border-radius: 8px;
 
         @media (hover: hover) {
-            &:hover {
+            // &:hover {
                 // box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
                 // transition: all 0.3s ease-in-out;
-            }
+            // }
         }
 
         .card-media {
@@ -45,7 +45,7 @@
             .card-title {
                 color: #2f363d;
                 font-family: "Roboto", "Arial",sans-serif;
-                font-size: .9rem;
+                font-size: 1rem;
                 line-height: 1.15rem;
                 font-weight: 500;
 
@@ -57,9 +57,16 @@
             }
 
             .card-meta {
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+
                 .company {
-                    font-size: 11px;
+                    color: #637381;
+                    font-size: 13px !important;
                     letter-spacing: -0.035em;
+
                     &:not(:last-of-type):after {
                         content: "•";
                         margin: 0 4px;
