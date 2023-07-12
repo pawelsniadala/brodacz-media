@@ -179,21 +179,6 @@ const ContactView = () => {
                             </form>
                         </div>
                     </div>
-                    {/* <div className="card contact map">
-                        <div className="card-body">
-                            <Iframe
-                                id="1"
-                                url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2413.891051533925!2d21.577543952006145!3d52.7702388797635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ef8390797683b%3A0x84896b53f66d30b6!2sKornaciska%2019%2C%2007-210%20Kornaciska!5e0!3m2!1spl!2spl!4v1648759836881!5m2!1spl!2spl"
-                                width="100%"
-                                height="515"
-                                display="block"
-                                position="relative"
-                                frameborder="0"
-                                allowfullscreen
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            />
-                        </div>
-                    </div> */}
                 </div>
             </div>
         </div>

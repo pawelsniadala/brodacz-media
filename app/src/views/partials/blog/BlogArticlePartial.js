@@ -68,8 +68,8 @@ const BlogView = () => {
                             <Typography variant='h4' className='heading-view'>
                                 {article.title}
                             </Typography>
-                            <Box className='meta-wrapper'>
-                                <Box className='chip-wrapper'>
+                            {/* <Box className='meta-wrapper'> */}
+                                {/* <Box className='chip-wrapper'>
                                     {article.tags?.map(item => (
                                         <Chip
                                             key={item}
@@ -83,11 +83,11 @@ const BlogView = () => {
                                             }}
                                         />
                                     ))}
-                                 </Box>
+                                 </Box> */}
                                 {/* <Typography gutterBottom variant="span" component="div" className='date'>
                                     {article.date}
                                 </Typography> */}
-                            </Box>
+                            {/* </Box> */}
                         </Box>
                     </Container>
                 </Box>

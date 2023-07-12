@@ -16,7 +16,7 @@ export const jakDobrzeWypascNaFilmieSlubnym = {
     images: [
         {
             src: jakDobrzeWypascNaFilmieSlubnym0,
-            alt: 'Ślub para we francji',
+            alt: 'Młoda para we fracji',
             author: 'Freepek',
             href: 'https://pl.freepik.com/darmowe-zdjecie/slub-para-we-francji_1619092.htm?query=%C5%9Blub%20francja%20ulica#from_view=detail_alsolike'
         }

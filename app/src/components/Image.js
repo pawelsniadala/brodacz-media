@@ -27,28 +27,28 @@ const Image = ({
                     height: '450px',
                 }}
             />
-                <Box className='description'>
-                    <Typography className='source'>
-                        Designed by {imageHref ? (
-                            <Typography
-                                component='a'
-                                className='author link'
-                                href={imageHref}
-                                target='_blank'
-                                rel='noreferrer'
-                            >
-                                {imageAuthor}
-                            </Typography>
-                        ) : (
-                            <Typography
-                                variant='span'
-                                className='author'
-                            >
-                                {imageAuthor}
-                            </Typography>
-                        )}
-                    </Typography>
-                </Box>
+            <Box className='description'>
+                <Typography className='source'>
+                    {imageAlt}<span className="dot-divider">&bull;</span>{imageHref ? (
+                        <Typography
+                            component='a'
+                            className='author link'
+                            href={imageHref}
+                            target='_blank'
+                            rel='noreferrer'
+                        >
+                            {imageAuthor}
+                        </Typography>
+                    ) : (
+                        <Typography
+                            variant='span'
+                            className='author'
+                        >
+                            {imageAuthor}
+                        </Typography>
+                    )}
+                </Typography>
+            </Box>
         </Box>
     );
 }

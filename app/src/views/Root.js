@@ -32,6 +32,7 @@ import BlogView from './BlogView';
 import BlogArticlePartial from './partials/blog/BlogArticlePartial';
 
 import ContactView from './ContactView';
+import ContactView2 from './ContactView2';
 
 import FooterSection from '../sections/FooterSection';
 
@@ -74,7 +75,7 @@ const Root = () => (
                     <Route path='/blog' element={<BlogView />} />
                     <Route path="/blog/:articleId" element={<BlogArticlePartial />} />
 
-                    <Route path='/contact' element={<ContactView />} />
+                    <Route path='/contact' element={<ContactView2 />} />
                 </Routes>
             </main>
             <Modal />

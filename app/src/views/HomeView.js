@@ -6,7 +6,8 @@ import HeroSection from "../sections/HeroSection";
 // import PreludeSection from "../sections/PreludeSection";
 // import VideoSection from "../sections/VideoSection";
 // import StudioSection from "../sections/StudioSection";
-import PhotoSection2 from "../sections/PhotoSection2";
+// import PhotoSection2 from "../sections/PhotoSection2";
+import PhotoSection3 from "../sections/PhotoSection3";
 import VideoSection2 from "../sections/VideoSection2";
 // import PodcastSection from "../sections/PodcastSection";
 // import BackstageSection from "../sections/BackstageSection";
@@ -31,8 +32,9 @@ const HomeView = () => {
             {/* <PreludeSection /> */}
             {/* <IntroductionSection /> */}
             {/* <VideoSection /> */}
-            <PhotoSection2 />
-            <VideoSection2 />
+            {/* <PhotoSection2 /> */}
+            {/* <PhotoSection3 /> */}
+            {/* <VideoSection2 /> */}
             <BlogSection />
             {/* <PodcastSection /> */}
             {/* <StudioSection /> */}

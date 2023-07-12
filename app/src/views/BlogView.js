@@ -493,7 +493,7 @@ const BlogView = () => {
                                     )}
                                 </Paper>
                             </Box>
-                            <Box className='categories-wrapper'>
+                            {/* <Box className='categories-wrapper'>
                                 <Typography variant='h5' className='title'>
                                     Kategorie
                                 </Typography>
@@ -515,7 +515,7 @@ const BlogView = () => {
                                         <Box className='list-b'>Podcasty</Box>
                                     </Box>
                                 </Box>
-                            </Box>
+                            </Box> */}
                             <Box className="tags-wrapper">
                                 <Typography variant='h5' className='title'>
                                     Popularne tagi

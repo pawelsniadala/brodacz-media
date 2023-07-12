@@ -5,10 +5,18 @@
         .source {
             color: #637381;
             font-size: .85rem;
-            font-family: "Public Sans", sans-serif;
+            // font-family: "Public Sans", sans-serif;
+            font-family: 'Roboto Flex', sans-serif;
+            font-weight: 300;
+
+            .dot-divider {
+                padding: 0 4px;
+            }
 
             .author {
                 &.link {
+                    font-family: 'Roboto Flex', sans-serif;
+                    font-weight: 300;
                     text-decoration: none;
                     font-size: .85rem;
                     color: #637381;
