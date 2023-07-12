@@ -33,9 +33,9 @@ import videoDroneThumbnail2 from "../assets/video/realization/drone/videoDroneTh
 // EVENTY
 import videoEventThumbnail1 from "../assets/video/realization/events/videoEventThumbnail1.png";
 import videoEventThumbnail2 from "../assets/video/realization/events/videoEventThumbnail2.png";
-import videoEventThumbnail3 from "../assets/video/realization/events/videoEventThumbnail3.png";
+// import videoEventThumbnail3 from "../assets/video/realization/events/videoEventThumbnail3.png";
 import videoEventThumbnail4 from "../assets/video/realization/events/videoEventThumbnail4.png";
-import videoEventThumbnail5 from "../assets/video/realization/events/videoEventThumbnail5.png";
+// import videoEventThumbnail5 from "../assets/video/realization/events/videoEventThumbnail5.png";
 import videoEventThumbnail6 from "../assets/video/realization/events/videoEventThumbnail6.png";
 import videoEventThumbnail7 from "../assets/video/realization/events/videoEventThumbnail7.png";
 import videoEventThumbnail8 from "../assets/video/realization/events/videoEventThumbnail8.png";
@@ -43,6 +43,9 @@ import videoEventThumbnail9 from "../assets/video/realization/events/videoEventT
 import videoEventThumbnail10 from "../assets/video/realization/events/videoEventThumbnail10.png";
 import videoEventThumbnail11 from "../assets/video/realization/events/videoEventThumbnail11.png";
 import videoEventThumbnail12 from "../assets/video/realization/events/videoEventThumbnail12.png";
+import videoEventThumbnail13 from '../assets/video/realization/events/videoEventThumbnail13.png'; // new size 626
+import videoEventThumbnail14 from '../assets/video/realization/events/videoEventThumbnail14.png'; // new size 626
+import videoEventThumbnail15 from '../assets/video/realization/events/videoEventThumbnail15.png'; // new size 626
 
 // TELEDYSKI
 import videoMusicThumbnail1 from "../assets/video/realization/music/videoMusicThumbnail1.png";
@@ -357,6 +360,45 @@ export const video = {
         "events": [
             {
                 display: true,
+                id: '5c022db9-37aa-4b3f-ac40-f9f3dc79d1f4',
+                date: '9 lip 2023',
+                title: 'Międzynarodowa Konferencja Naukowa „Od CSR do ESG - teoria i praktyka” 13.06.2023 w Warszawie',
+                company: 'Collegium Humanum',
+                video: {
+                    time: '2:48',
+                    src: videoEventThumbnail15,
+                    urlPage: 'https://www.youtube.com/watch?v=ZdbsQr56A9M',
+                    embed: 'https://www.youtube.com/embed/ZdbsQr56A9M'
+                }
+            },
+            {
+                display: true,
+                id: '15d02f88-a80f-4305-ac27-ae724766fde6',
+                date: '7 cze 2023',
+                title: 'Centralne eRobocze SHOW 2023 Lubień Kujawski # edycja 12',
+                company: 'RoboczeTV',
+                video: {
+                    time: '2:33',
+                    src: videoEventThumbnail14,
+                    urlPage: 'https://www.youtube.com/watch?v=XJtG0sDJP40',
+                    embed: 'https://www.youtube.com/embed/XJtG0sDJP40'
+                }
+            },
+            {
+                display: true,
+                id: 'ca89bd1c-b7c7-42bb-ba31-57bad24ade12',
+                date: '27 mar 2023',
+                title: 'Targi Leśne Forest SHOW Straszęcin 2023 / #19',
+                company: 'Gazeta Leśna',
+                video: {
+                    time: '2:07',
+                    src: videoEventThumbnail13,
+                    urlPage: 'https://www.youtube.com/watch?v=G-Ue4S4EbS4',
+                    embed: 'https://www.youtube.com/embed/G-Ue4S4EbS4'
+                }
+            },
+            {
+                display: true,
                 id: "57cd8389-2657-4a8f-a719-b81ba615916d",
                 date: "5 wrz 2022",
                 title: "Święto Mazurskiej Dłubanki 2022",
@@ -439,18 +481,18 @@ export const video = {
                     urlPage: "https://www.youtube.com/watch?v=YoAXW5QFmg8"
                 }
             },
-            {
-                display: true,
-                id: "13e18c2b-5dc3-4f4c-893e-98020dccaef2",
-                date: "20 sty 2022",
-                title: "Przedświąteczne spotkanie",
-                company: "Manager Business Hub",
-                video: {
-                    time: "2:36",
-                    src: videoEventThumbnail5,
-                    urlPage: "https://www.youtube.com/watch?v=_bLjnT3vk-E"
-                }
-            },
+            // {
+            //     display: true,
+            //     id: "13e18c2b-5dc3-4f4c-893e-98020dccaef2",
+            //     date: "20 sty 2022",
+            //     title: "Przedświąteczne spotkanie",
+            //     company: "Manager Business Hub",
+            //     video: {
+            //         time: "2:36",
+            //         src: videoEventThumbnail5,
+            //         urlPage: "https://www.youtube.com/watch?v=_bLjnT3vk-E"
+            //     }
+            // },
             {
                 display: true,
                 id: "91584c37-2ddf-43ed-8f2a-8bcddce639de",
@@ -463,18 +505,18 @@ export const video = {
                     urlPage: "https://www.youtube.com/watch?v=45JbG8Azjtg"
                 }
             },
-            {
-                display: true,
-                id: "ddc2f133-468b-4c7c-95dd-834c1c43a072",
-                date: "7 lip 2021",
-                title: "Military Day - III Edycja",
-                company: "Manager Business Hub",
-                video: {
-                    time: "2:48",
-                    src: videoEventThumbnail3,
-                    urlPage: "https://www.youtube.com/watch?v=GzPJnvwsmtM"
-                }
-            },
+            // {
+            //     display: true,
+            //     id: "ddc2f133-468b-4c7c-95dd-834c1c43a072",
+            //     date: "7 lip 2021",
+            //     title: "Military Day - III Edycja",
+            //     company: "Manager Business Hub",
+            //     video: {
+            //         time: "2:48",
+            //         src: videoEventThumbnail3,
+            //         urlPage: "https://www.youtube.com/watch?v=GzPJnvwsmtM"
+            //     }
+            // },
             {
                 display: true,
                 id: "40937a57-db58-4bbe-a46e-d142c8a690f3",
