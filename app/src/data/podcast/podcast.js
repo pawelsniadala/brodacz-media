@@ -5,6 +5,7 @@ import podcastThumbnail4 from '../../assets/podcast/podcastThumbnail4.png'; // n
 import podcastThumbnail5 from '../../assets/podcast/podcastThumbnail5.png'; // new size 626
 import podcastThumbnail6 from '../../assets/podcast/podcastThumbnail6.png'; // new size 626
 import podcastThumbnail7 from '../../assets/podcast/podcastThumbnail7.png'; // new size 626
+import podcastThumbnail8 from '../../assets/podcast/podcastThumbnail8.png'; // new size 626
 
 export const podcast = {
     title: 'Podcasty',
@@ -12,9 +13,21 @@ export const podcast = {
     empty: 'Brak video.',
     realization: [
         {
+            id: '13acd382-329d-4a8d-b487-b5c8090f7bff',
+            date: '16 lip 2023',
+            title: 'Rozmowa o życiu, przyszłości, sztucznej inteligencji, muzyce - PAKTOFONIKA | Yurkosky',
+            company: 'Yurkosky',
+            podcast: {
+                time: '46:51',
+                src: podcastThumbnail8,
+                urlPage: 'https://www.youtube.com/watch?v=fL9F3p3TMC8',
+                embed: 'https://www.youtube.com/embed/fL9F3p3TMC8'
+            }
+        },
+        {
             id: 'cee810d6-d11a-44ba-91a4-a5e34d525f33',
             date: '6 lip 2023',
-            title: '"Jeżeli bym robił w życiu tylko muzykę to bym zwariował" FILIPEK | Yurkosky & Yachu',
+            title: '"Jeżeli bym robił w życiu tylko muzykę to bym zwariował" - FILIPEK | Yurkosky & Yachu',
             company: 'Yurkosky',
             podcast: {
                 time: '41:05',
@@ -26,7 +39,7 @@ export const podcast = {
         {
             id: '15ec9975-3ad5-431d-95c1-d14035f5e8b9',
             date: '3 lip 2023',
-            title: '"Myślałem o robieniu innego rodzaju muzyki pod nowa ksywką" PALUCH | Yurkosky',
+            title: '"Myślałem o robieniu innego rodzaju muzyki pod nowa ksywką" - PALUCH | Yurkosky',
             company: 'Yurkosky',
             podcast: {
                 time: '51:38',
@@ -38,7 +51,7 @@ export const podcast = {
         {
             id: '036a8fb3-e9e6-4d50-8ceb-b0ef3acba8a1',
             date: '8 cze 2023',
-            title: '"Tworzenie muzyki jest jak gra" O.S.T.R. | Yurkosky & Yachu',
+            title: '"Tworzenie muzyki jest jak gra" - O.S.T.R. | Yurkosky & Yachu',
             company: 'Yurkosky',
             podcast: {
                 time: '51:57',
@@ -50,7 +63,7 @@ export const podcast = {
         {
             id: '29a27e76-c8ee-4648-ab82-ee2900410e92',
             date: '23 cze 2023',
-            title: '"Dzisiaj dominuje pajacowanie - tak się zdobywa słuchacza" MOLESTA EWENEMENT | Yurkosky',
+            title: '"Dzisiaj dominuje pajacowanie - tak się zdobywa słuchacza" - MOLESTA EWENEMENT | Yurkosky',
             company: 'Yurkosky',
             podcast: {
                 time: '43:19',

@@ -34,14 +34,14 @@ export const tag = {
     //     name: 'food',
     //     label: 'Jedzenie'
     // },
-    // equipment: {
-    //     name: 'equipment',
-    //     label: 'Sprzęt'
-    // },
-    // technology: {
-    //     name: 'technology',
-    //     label: 'Technologia'
-    // },
+    equipment: {
+        name: 'equipment',
+        label: 'Sprzęt'
+    },
+    technology: {
+        name: 'technology',
+        label: 'Technologia'
+    },
     movies: {
         name: 'movies',
         label: 'Filmy'
