@@ -6,8 +6,8 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import CardActions from '@mui/material/CardActions';
-import Button from '@mui/material/Button';
+// import CardActions from '@mui/material/CardActions';
+// import Button from '@mui/material/Button';
 import CardMedia from '@mui/material/CardMedia';
 import AvatarGroup from '@mui/material/AvatarGroup';
 import Avatar from '@mui/material/Avatar';
@@ -17,16 +17,13 @@ const CardServices = ({
     cardImageVisible,
     cardTitle,
     cardDescription,
-    // cardSpecialist,
+    cardSpecialist,
     cardPath,
-    // cardPrice
+    cardPathSpecialist,
+    cardPathPrices
 }) => {
     return (
-        <Box
-            className='card-services'
-            component={Link}
-            to={cardPath}
-        >
+        <Box className='card-services'>
             <Card className='card'>
                 <CardMedia className='card-media'>
                     <Box
@@ -49,7 +46,7 @@ const CardServices = ({
                     <Typography className='card-description'>
                         {cardDescription}
                     </Typography>
-                    {/* {cardSpecialist && (
+                    {cardSpecialist && (
                         <AvatarGroup className='card-avatar-group' max={7}>
                             {cardSpecialist.map((item, index) => (
                                 <Avatar
@@ -59,28 +56,31 @@ const CardServices = ({
                                 />
                             ))}
                         </AvatarGroup>
-                    )} */}
+                    )}
                 </CardContent>
-                <CardActions className='card-actions'>
+                {/* <CardActions className='card-actions'>
                     <Button
                         className='card-link'
                         component={Link}
-                        to={cardPath}
+                        to={cardPathSpecialist}
                         variant='outline'
                         size='small'
                     >
-                        Zobacz więcej
+                        Specjaliści
                     </Button>
-                    {/* <Button
+                    <Button
                         className='card-link'
                         component={Link}
-                        to={cardPrice}
+                        to={cardPathPrices}
                         variant='outline'
                         size='small'
                     >
                         Cennik
-                    </Button> */}
-                </CardActions>
+                    </Button>
+                </CardActions> */}
+                {cardPath && (
+                    <Link to={cardPath} className='stretched-link' />
+                )}
             </Card>
         </Box>
     );

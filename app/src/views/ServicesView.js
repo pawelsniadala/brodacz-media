@@ -5,8 +5,12 @@ import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import FastRewindIcon from '@mui/icons-material/FastRewind';
 
 import Container from '../components/Container';
+import CardServices from '../components/CardServices';
+
+import { services } from '../data/services';
 
 const ServicesView = () => {
     useEffect(() => {
@@ -18,7 +22,7 @@ const ServicesView = () => {
     }, []);
 
     return (
-        <Box className='podcast-view'>
+        <Box className='services-view'>
             <Box className='view-wrapper'>
                 <Box className='view-header'>
                     <Container className='header-wrapper'>
@@ -29,11 +33,9 @@ const ServicesView = () => {
                                 aria-label='breadcrumb'
                             >
                                 <Link to='/' aria-current='page'>
+                                    <FastRewindIcon />
                                     Home
                                 </Link>
-                                <Typography color='text.primary'>
-                                    Usługi
-                                </Typography>
                             </Breadcrumbs>
                         </Box>
                         <Box className='heading-wrapper'>
@@ -44,8 +46,22 @@ const ServicesView = () => {
                     </Container>
                 </Box>
                 <Box className='view-body'>
-                    <Container className='body-wrapper'>
-                        Usługi
+                    <Container className='body-wrapper padding-top-0'>
+                        <Box className='card-wrapper'>
+                            {services.map((item) => (
+                                <CardServices
+                                    key={item.id}
+                                    cardTitle={item.title}
+                                    cardDescription={item.description}
+                                    cardPath={item.path}
+                                    cardPathSpecialist={item.pathSpecialist}
+                                    cardPathPrices={item.pathPrices}
+                                    cardSpecialist={item.specialists}
+                                    cardImage={item.image}
+                                    cardImageVisible={false}
+                                />
+                            ))}
+                        </Box>
                     </Container>
                 </Box>
             </Box>

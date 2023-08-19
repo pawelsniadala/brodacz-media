@@ -6,6 +6,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import FastRewindIcon from '@mui/icons-material/FastRewind';
 
 import Container from '../../../components/Container';
 import CardProposed from '../../../components/CardProposed';
@@ -29,25 +30,20 @@ const PodcastRealizationPartial = () => {
                 <Box className='view-header'>
                     <Container className='header-wrapper'>
                         <Box className='breadcrumb-wrapper'>
-                            <Breadcrumbs
+                        <Breadcrumbs
                                 className='breadcrumb'
                                 separator={<NavigateNextIcon fontSize='smform' />}
                                 aria-label='breadcrumb'
                             >
-                                <Link to='/' aria-current='page'>
-                                    Home
-                                </Link>
                                 <Link to='/podcasts' aria-current='page'>
+                                    <FastRewindIcon />
                                     Podcasty
                                 </Link>
-                                <Typography color='text.primary'>
-                                    {podcast.realization.find(item => item.id === podcastId)?.title ?? ''}
-                                </Typography>
                             </Breadcrumbs>
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                Podcasty
+                                Podcast
                             </Typography>
                         </Box>
                     </Container>

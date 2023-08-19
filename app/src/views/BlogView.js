@@ -9,6 +9,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import ClearIcon from '@mui/icons-material/Clear';
+import FastRewindIcon from '@mui/icons-material/FastRewind';
 import Paper from '@mui/material/Paper';
 import InputBase from '@mui/material/InputBase';
 import SearchIcon from '@mui/icons-material/Search';
@@ -421,11 +422,9 @@ const BlogView = () => {
                                 aria-label='breadcrumb'
                             >
                                 <Link to='/' aria-current='page'>
+                                    <FastRewindIcon />
                                     Home
                                 </Link>
-                                <Typography color='text.primary'>
-                                    Blog
-                                </Typography>
                             </Breadcrumbs>
                         </Box>
                         <Box className='heading-wrapper'>

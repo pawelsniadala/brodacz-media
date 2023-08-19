@@ -18,6 +18,6 @@ export const video = {
         weddings: [ ...weddings ],
         guides: [ ...guides ],
         animations: [ ...animations ],
-        backstage: [ ...backstage ],
+        // backstage: [ ...backstage ],
     }
 };

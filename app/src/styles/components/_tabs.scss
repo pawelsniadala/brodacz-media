@@ -162,3 +162,104 @@
 .css-heg063-MuiTabs-flexContainer {
     gap: 2rem !important;
 }
+
+
+
+
+
+.tabs-wrapper-3 {
+    // position: sticky;
+    // top: 16px;
+
+    @media (max-width: 539.98px) {
+        margin-left: -16px !important;
+        margin-right: -16px !important;
+    }
+
+    .MuiTabs-root {
+        min-height: auto !important;
+
+        // .MuiTabs-flexContainer {
+        // }
+
+
+
+        a {
+            text-transform: none;
+            font-weight: 400;
+            font-size: 1rem;
+            font-size: 0.85rem;
+            line-height: 0.85rem;
+            letter-spacing: 0.00938em;
+            border-radius: 8px;
+            // color: #777c83;
+            // color: rgb(99, 115, 129);
+            color: #2f363d;
+            background-color: rgba(0, 0, 0, 0.05);
+
+            padding: 10px 16px;
+            // height: 32px;
+            // font-family: "Barlow", sans-serif !important;
+            // transition: color .15s;
+
+            // transition: background-color 0.5s cubic-bezier(0.05,0,0,1);
+            // transition: background-color 0.5s cubic-bezier(0.05, 0, 0, 1), color 0.5s cubic-bezier(0.05, 0, 0, 1);
+
+            @media (hover: hover) {
+                &:hover:not(.Mui-selected) {
+                    background-color: rgba(0, 0, 0, 0.1);
+                    transition: background-color 0.5s cubic-bezier(0.05,0,0,1);
+                }
+            }
+
+            span span span {
+                background-color: transparent !important;
+            }
+
+            @media (max-width: 539.98px) {
+                &:first-child {
+                    margin-left: 16px;
+                }
+            }
+        }
+
+        .MuiButtonBase-root {
+            // border-radius: 0;
+            border-radius: 8px;
+
+            // padding: 0 0 1rem 0;
+            min-height: auto !important;
+
+            min-width: auto !important;
+
+            &.MuiTabScrollButton-root {
+                background-color: transparent;
+            }
+
+            span span span {
+                background-color: transparent !important;
+            }
+        }
+
+        // .MuiTabScrollButton-root {
+        //     padding-left: 0 !important;
+        //     width: auto !important;
+        //     padding-right: 6px !important;
+        // }
+
+        .Mui-selected {
+            // color: #2f363d;
+
+            background-color: #2f363d;
+            color: #fff;
+        }
+    }
+
+    // .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+
+    // }
+}
+
+.css-heg063-MuiTabs-flexContainer {
+    gap: 12px !important;
+}

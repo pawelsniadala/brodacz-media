@@ -14,13 +14,19 @@ import videoEventThumbnail13 from '../../../assets/video/realization/events/vide
 import videoEventThumbnail14 from '../../../assets/video/realization/events/videoEventThumbnail14.png'; // new size 626
 import videoEventThumbnail15 from '../../../assets/video/realization/events/videoEventThumbnail15.png'; // new size 626
 
+import { company } from '../company/company';
+
 export const events = [
     {
         display: true,
         id: '5c022db9-37aa-4b3f-ac40-f9f3dc79d1f4',
         date: '9 lip 2023',
-        title: 'Międzynarodowa Konferencja Naukowa „Od CSR do ESG - teoria i praktyka” 13.06.2023 w Warszawie',
-        company: 'Collegium Humanum',
+        title: 'Międzynarodowa Konferencja Naukowa "Od CSR do ESG - teoria i praktyka" 13.06.2023 w Warszawie',
+        company: company.collegiumHumanum.name,
+        avatar: {
+            logo: null,
+            sign: company.collegiumHumanum.sign,
+        },
         video: {
             time: '2:48',
             src: videoEventThumbnail15,
@@ -32,8 +38,12 @@ export const events = [
         display: true,
         id: '15d02f88-a80f-4305-ac27-ae724766fde6',
         date: '7 cze 2023',
-        title: 'Centralne eRobocze SHOW 2023 Lubień Kujawski # edycja 12',
-        company: 'RoboczeTV',
+        title: 'Centralne eRobocze SHOW 2023 Lubień Kujawski #12',
+        company: company.roboczeTv.name,
+        avatar: {
+            logo: company.roboczeTv.logo,
+            sign: null
+        },
         video: {
             time: '2:33',
             src: videoEventThumbnail14,
@@ -46,7 +56,11 @@ export const events = [
         id: 'ca89bd1c-b7c7-42bb-ba31-57bad24ade12',
         date: '27 mar 2023',
         title: 'Targi Leśne Forest SHOW Straszęcin 2023 / #19',
-        company: 'Gazeta Leśna',
+        company: company.gazetaLesna.name,
+        avatar: {
+            logo: company.gazetaLesna.logo,
+            sign: null
+        },
         video: {
             time: '2:07',
             src: videoEventThumbnail13,
@@ -59,7 +73,11 @@ export const events = [
         id: '57cd8389-2657-4a8f-a719-b81ba615916d',
         date: '5 wrz 2022',
         title: 'Święto Mazurskiej Dłubanki 2022',
-        company: 'Brodacz Media',
+        company: company.brodaczMedia.name,
+        avatar: {
+            logo: company.brodaczMedia.logo,
+            sign: null
+        },
         video: {
             time: '1:59',
             src: videoEventThumbnail12,
@@ -72,7 +90,11 @@ export const events = [
         id: '1f20e019-8e1a-438c-89ef-083dd4113be4',
         date: '22 lip 2022',
         title: 'Graj o Swój Biznes 2022 - Siatkówka Plażowa',
-        company: 'Manager Business Hub',
+        company: company.managerBusinessHub.name,
+        avatar: {
+            logo: company.managerBusinessHub.logo,
+            sign: null
+        },
         video: {
             time: '2:56',
             src: videoEventThumbnail11,
@@ -85,7 +107,11 @@ export const events = [
         id: 'b1ad7b7a-8f6b-4432-ab27-7a35ca63cac4',
         date: '30 cze 2022',
         title: 'Centralne eRobocze SHOW Lubień Kujawski 3-4.06.2022',
-        company: 'erobocze.pl',
+        company: company.eRoboczePl.name,
+        avatar: {
+            logo: company.eRoboczePl.logo,
+            sign: null
+        },
         video: {
             time: '2:10',
             src: videoEventThumbnail10,
@@ -98,7 +124,11 @@ export const events = [
         id: '08e314dc-3fb8-4753-b800-046fea046937',
         date: '1 lip 2022',
         title: 'Piknik Rodzinny 2022',
-        company: 'Manager Business Hub',
+        company: company.managerBusinessHub.name,
+        avatar: {
+            logo: company.managerBusinessHub.logo,
+            sign: null
+        },
         video: {
             time: '3:25',
             src: videoEventThumbnail9,
@@ -111,7 +141,11 @@ export const events = [
         id: '9e35d83a-7440-4ab3-90ca-2b5594aa121b',
         date: '23 cze 2022',
         title: 'Gala z okazji pięciolecia',
-        company: 'Manager Business Hub',
+        company: company.managerBusinessHub.name,
+        avatar: {
+            logo: company.managerBusinessHub.logo,
+            sign: null
+        },
         video: {
             time: '3:16',
             src: videoEventThumbnail8,
@@ -124,7 +158,11 @@ export const events = [
         id: 'ccefc25b-92e0-463a-af8d-c366424fd428',
         date: '17 maj 2022',
         title: 'Wieczór Aperitivo',
-        company: 'Manager Business Hub',
+        company: company.managerBusinessHub.name,
+        avatar: {
+            logo: company.managerBusinessHub.logo,
+            sign: null
+        },
         video: {
             time: '2:45',
             src: videoEventThumbnail7,
@@ -137,7 +175,11 @@ export const events = [
         id: '538afe57-2907-46ff-9789-311c548a111a',
         date: '16 mar 2022',
         title: 'Targi maszyn roboczych',
-        company: 'erobocze.pl',
+        company: company.eRoboczePl.name,
+        avatar: {
+            logo: company.eRoboczePl.logo,
+            sign: null
+        },
         video: {
             time: '1:21',
             src: videoEventThumbnail6,
@@ -150,7 +192,7 @@ export const events = [
     //     id: '13e18c2b-5dc3-4f4c-893e-98020dccaef2',
     //     date: '20 sty 2022',
     //     title: 'Przedświąteczne spotkanie',
-    //     company: 'Manager Business Hub',
+    //     company: company.managerBusinessHub.name,
     //     video: {
     //         time: '2:36',
     //         src: videoEventThumbnail5,
@@ -163,7 +205,11 @@ export const events = [
         id: '91584c37-2ddf-43ed-8f2a-8bcddce639de',
         date: '15 sty 2022',
         title: 'Graj o Swój Biznes 2021 - Turniej Bilardowy',
-        company: 'Manager Business Hub',
+        company: company.managerBusinessHub.name,
+        avatar: {
+            logo: company.managerBusinessHub.logo,
+            sign: null
+        },
         video: {
             time: '2:44',
             src: videoEventThumbnail4,
@@ -176,7 +222,7 @@ export const events = [
     //     id: 'ddc2f133-468b-4c7c-95dd-834c1c43a072',
     //     date: '7 lip 2021',
     //     title: 'Military Day - III Edycja',
-    //     company: 'Manager Business Hub',
+    //     company: company.managerBusinessHub.name,
     //     video: {
     //         time: '2:48',
     //         src: videoEventThumbnail3,
@@ -189,7 +235,11 @@ export const events = [
         id: '40937a57-db58-4bbe-a46e-d142c8a690f3',
         date: '2 gru 2021',
         title: 'Wieczór Portugalski',
-        company: 'Manager Business Hub',
+        company: company.managerBusinessHub.name,
+        avatar: {
+            logo: company.managerBusinessHub.logo,
+            sign: null
+        },
         video: {
             time: '2:22',
             src: videoEventThumbnail2,
@@ -202,7 +252,11 @@ export const events = [
         id: 'e1989e40-8c49-4fc1-b7e7-ba842fbb40c8',
         date: '20 sie 2021',
         title: 'Graj o Swój Biznes 2021 - Golf',
-        company: 'Manager Business Hub',
+        company: company.managerBusinessHub.name,
+        avatar: {
+            logo: company.managerBusinessHub.logo,
+            sign: null
+        },
         video: {
             time: '3:04',
             src: videoEventThumbnail1,

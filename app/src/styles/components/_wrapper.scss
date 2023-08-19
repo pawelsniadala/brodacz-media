@@ -8,8 +8,10 @@ body {
     // background-color: #F2F3F5;
     // background-color: #f6f8fa;
     // background-color: #fff;
-    background-color: #fdfdfe;
     // background-color: #fdfdfe;
+    // background-color: #fdfdfe;
+
+    background-color: #F9FAFB;
 }
 
 // body::-webkit-scrollbar {
@@ -30,7 +32,9 @@ main {
 
     .view-header {
         // background-color: #f6f8fa;
-        background-color: #f3f5f8;
+        // background-color: #f3f5f8;
+        background-color: #F9FAFB;
+        // background-color: #edf0f4;
         // border-bottom: 1px solid rgba(145, 158, 171, 0.035);
         // box-shadow: 1px 2px 3px rgba(0,0,0,1);
         // box-shadow: inset 0 -1px 0 rgba(0,0,0,.025);
@@ -48,12 +52,13 @@ main {
             .breadcrumb-wrapper {
                 display: flex;
                 justify-content: space-between;
-                padding-bottom: 3rem;
+                padding-bottom: 32px;
                 white-space: nowrap;
             }
 
             .heading-wrapper {
-                padding-bottom: 3rem;
+                // padding-bottom: 3rem;
+                padding-bottom: 32px;
 
                 .meta-wrapper {
                     padding-top: .75rem;
@@ -62,41 +67,26 @@ main {
                         display: flex;
                         gap: .375rem;
                     }
-
-                 
                 }
-
-                // .date {
-                //     // margin-top: .75rem;
-                //     color: #637381 !important;
-                //     line-height: 1.5;
-                //     font-size: 0.75rem;
-                //     font-weight: 400;
-                //     font-family: "Public Sans", sans-serif !important;
-                // }
             }
         }
-
-
-
-        // .header-wrapper {
-            // padding-bottom: 0.6rem;
-        // }
     }
 
     .view-body {
         // background-color: #f6f8fa;
         // background-color: #fff;
-        background-color: #fdfdfe;
+        // background-color: #fdfdfe;
         // background-color: #fdfdfe;
         
 
 
         .body-wrapper {
-            // padding-top: 40px;
-            padding-top: 3rem;
+            padding-top: 32px;
             padding-bottom: 3rem;
-            // padding-bottom: 60px;
+
+            &.padding-top-0 {
+                padding-top: 0;
+            }
         }
     }
 }
@@ -246,7 +236,8 @@ main {
         &.podcast {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            column-gap: .75rem;
+            // column-gap: .75rem;
+            column-gap: 12px;
 
             // column-gap: .75rem;
             row-gap: 2rem;

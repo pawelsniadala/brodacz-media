@@ -5,6 +5,7 @@ import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import FastRewindIcon from '@mui/icons-material/FastRewind';
 
 import Container from '../components/Container';
 
@@ -29,11 +30,9 @@ const ServicesView = () => {
                                 aria-label='breadcrumb'
                             >
                                 <Link to='/' aria-current='page'>
+                                    <FastRewindIcon />
                                     Home
                                 </Link>
-                                <Typography color='text.primary'>
-                                    Usługi
-                                </Typography>
                             </Breadcrumbs>
                         </Box>
                         <Box className='heading-wrapper'>

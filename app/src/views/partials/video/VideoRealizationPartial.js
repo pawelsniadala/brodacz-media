@@ -5,11 +5,11 @@ import React, {
 import { Link, useParams } from 'react-router-dom';
 import Iframe from 'react-iframe'
 
-// import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import FastRewindIcon from '@mui/icons-material/FastRewind';
 
 import Container from '../../../components/Container';
 import CardProposed from '../../../components/CardProposed';
@@ -119,31 +119,23 @@ const VideoRealizationPartial = () => {
                                 className='breadcrumb'
                                 separator={<NavigateNextIcon fontSize='smform' />}
                                 aria-label='breadcrumb'
-                                // style={{ overflowX: 'auto', whiteSpace: 'nowrap', display: 'inline-grid' }}
                             >
-                                <Link to='/' aria-current='page'>
-                                    Home
-                                </Link>
-                                <Link to='/video' aria-current='page'>
+                                <Link to={category === 'all' ? '/video' : `/video/${category}`} aria-current='page'>
+                                    <FastRewindIcon />
                                     Filmy
                                 </Link>
-                                <Link to={category === 'all' ? '/video' : `/video/${category}`} aria-current='page'>
-                                    {setBreadcrumbsName()}
-                                </Link>
-                                <Typography color='text.primary'>
-                                    {setVideoCategory(category).find(item => item.id === videoId)?.title ?? ''}
-                                </Typography>
                             </Breadcrumbs>
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                {setBreadcrumbsName() === 'Wszystkie' ? 'Filmy' : setBreadcrumbsName()}
+                                {/* {setBreadcrumbsName() === 'Wszystkie' ? 'Filmy' : setBreadcrumbsName()} */}
+                                {setBreadcrumbsName()}
                             </Typography>
                         </Box>
                     </Container>
                 </Box>
                 <Box className='view-body'>
-                    <Container className='body-wrapper video-realization'>
+                    <Container className='body-wrapper padding-top-0 video-realization'>
                         <Box className='realization-wrapper'>
                             {setVideoCategory(category).filter(item => item.id === videoId).map(item => (
                                 <Box key={item.id}>

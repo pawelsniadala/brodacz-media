@@ -1,0 +1,172 @@
+.photo-category-partial {
+
+    .pswp-gallery-wrapper {
+        margin-bottom: 32px;
+
+        @media (max-width: 539.98px) {
+            margin-left: -16px !important;
+            margin-right: -16px !important;
+        }
+
+        .pswp-gallery {
+            display: grid;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            grid-auto-rows: minmax(0, 1fr);
+            // grid-gap: 5px;
+            // gap: 12px;
+            gap: 5px;
+            padding: 0;
+
+            // @media (max-width: 1199.98px) and (min-width: 992px) {
+            //     grid-template-columns: 1fr 1fr 1fr 1fr;
+            // }
+
+            @media (max-width: 991.98px) and (min-width: 768px) {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+
+            @media (max-width: 767.98px) and (min-width: 540px) {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            @media (max-width: 539.98px) {
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: 2px;
+            }
+        }
+
+        .pswp-gallery a {
+            list-style: none;
+            background-color: #e6e6e6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // border-radius: 8px;
+            // border-radius: 8px;
+
+            // @media (max-width: 539.98px) {
+            //     border-radius: 0;
+            // }
+
+            @media (max-width: 539.98px) {
+                border-radius: 0;
+            }
+        }
+
+        .pswp-gallery .box {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-bottom: 100%; /* Utrzymuje proporcje 1:1 dla kwadratowego boxu */
+            // padding-bottom: 150%; /* Utrzymuje proporcje 2:3 dla kwadratowego boxu */
+            // border-radius: 8px;
+            // border-radius: 8px;
+
+            @media (max-width: 539.98px) {
+                padding-bottom: 100%; /* Utrzymuje proporcje 1:1 dla kwadratowego boxu */
+            }
+
+            span {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+
+            span img {
+                object-fit: cover;
+                object-position: center;
+                width: 100%;
+                height: 100%;
+                transition: 0.5s all ease-out !important;
+            }
+        }
+
+        .pswp-gallery a:hover .box span img {
+            filter: brightness(.9);
+            transition: 0.5s all ease-out;
+            cursor: pointer;
+        }
+
+        .pswp-gallery a:nth-child(1) {
+            border-top-left-radius: 8px;
+
+            .box {
+                border-top-left-radius: 8px;
+            }
+        }
+
+        .pswp-gallery a:nth-child(5) {
+            border-top-right-radius: 8px;
+
+            .box {
+                border-top-right-radius: 8px;
+            }
+        }
+
+        @media (max-width: 991.98px) and (min-width: 768px) {
+            .pswp-gallery a:nth-child(4) {
+                border-top-right-radius: 8px;
+
+                .box {
+                    border-top-right-radius: 8px;
+                }
+            }
+
+            .pswp-gallery a:nth-child(5) {
+                border-top-right-radius: 0;
+
+                .box {
+                    border-top-right-radius: 0;
+                }
+            }
+        }
+
+        @media (max-width: 767.98px) and (min-width: 540px) {
+            .pswp-gallery a:nth-child(3) {
+                border-top-right-radius: 8px;
+
+                .box {
+                    border-top-right-radius: 8px;
+                }
+            }
+
+            .pswp-gallery a:nth-child(4) {
+                border-top-right-radius: 0;
+
+                .box {
+                    border-top-right-radius: 0;
+                }
+            }
+        }
+
+        @media (max-width: 539.98px) {
+            .pswp-gallery a:nth-child(1) {
+                border-top-left-radius: 0;
+
+                .box {
+                    border-top-left-radius: 0;
+                }
+            }
+
+            .pswp-gallery a:nth-child(4) {
+                border-top-right-radius: 0;
+
+                .box {
+                    border-top-right-radius: 0;
+                }
+            }
+
+            .pswp-gallery a:nth-child(5) {
+                border-top-right-radius: 0;
+
+                .box {
+                    border-top-right-radius: 0;
+                }
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -3,12 +3,13 @@ import React, { useState, useEffect } from 'react';
 import Box from '@mui/material/Box';
 
 import CardRealization from '../../../components/CardRealization';
+import CardVideo from '../../../components/CardVideo';
 import Alert from '../../../components/Alert';
 import CardProposed from '../../../components/CardProposed';
 
 import { video } from '../../../data/video/video';
 
-// import { shuffleArray } from '../../../functions/functions';
+import { shuffleArray } from '../../../functions/functions';
 
 const VideoCategoryPartial = ({ category }) => {
     const videoRealizationCopy = {
@@ -29,7 +30,7 @@ const VideoCategoryPartial = ({ category }) => {
         weddings: videoRealizationCopy.weddings,
         guides: videoRealizationCopy.guides,
         animations: videoRealizationCopy.animations,
-        backstage: videoRealizationCopy.backstage,
+        // backstage: videoRealizationCopy.backstage,
     };
 
     // const setVideoCategory = (category) => {
@@ -70,7 +71,7 @@ const VideoCategoryPartial = ({ category }) => {
                 {width >= 991.98 ? (
                     setVideoCategory(category) ? (category === 'all' ? setVideoCategory(category).filter(item => item.display !== false) : setVideoCategory(category)).map((item) => (
                         <Box key={item.id}>
-                            <CardRealization
+                            {/* <CardRealization
                                 cardThumbnaiVideo
                                 cardThumbnaiVideoAlt={item.title}
                                 cardThumbnaiVideoTitle={item.title}
@@ -79,6 +80,17 @@ const VideoCategoryPartial = ({ category }) => {
                                 cardThumbnaiVideoTime={item.video.time}
                                 cardThumbnaiVideoSrc={item.video.src}
                                 cardThumbnaiVideoPath={`/video/${category}/${item.id}`}
+                            /> */}
+                            <CardVideo
+                                cardImage={item.video.src}
+                                cardTime={item.video.time}
+                                cardTitle={item.title}
+                                cardCompany={item.company}
+                                cardAvatar={item.avatar}
+                                cardAvatarLogo={item.avatar.logo}
+                                cardAvatarSign={item.avatar.sign}
+                                cardDate={item.date}
+                                cardPath={`/video/${category}/${item.id}`}
                             />
                         </Box>
                     )) : (

@@ -6,13 +6,19 @@ import videoContentThumbnail5 from '../../../assets/video/realization/content/vi
 import videoContentThumbnail13 from '../../../assets/video/realization/content/videoContentThumbnail13.png';
 import videoContentThumbnail14 from '../../../assets/video/realization/content/videoContentThumbnail14.png';
 
+import { company } from '../company/company';
+
 export const content = [
     {
         display: true,
         id: 'a5e54b0c-e50c-45f2-aa20-7a47dda84a97',
         date: '3 lis 2023',
         title: 'Strategie sprzedażowe do sklepu internetowego. Tomasz Jaroszek',
-        company: 'PKO Bank Polski',
+        company: company.pkoBankPolski.name,
+        avatar: {
+            logo: null,
+            sign: company.pkoBankPolski.sign
+        },
         video: {
             time: '9:30',
             src: videoContentThumbnail14,
@@ -25,7 +31,11 @@ export const content = [
         id: 'ee854b71-2a40-4d02-91ce-cf627031c799',
         date: '30 cze 2022',
         title: 'PowerB@nk. Jak promować sklep internetowy? Webinar Tomasza Jaroszka',
-        company: 'PKO Bank Polski',
+        company: company.pkoBankPolski.name,
+        avatar: {
+            logo: null,
+            sign: company.pkoBankPolski.sign
+        },
         video: {
             time: '13:31',
             src: videoContentThumbnail13,
@@ -38,7 +48,11 @@ export const content = [
         id: '8427d654-853d-4070-9551-34c3a8aefdbb',
         date: '4 mar 2022',
         title: 'Petycja przedsiębiorców leśnych do premiera',
-        company: 'Gazeta Leśna',
+        company: company.gazetaLesna.name,
+        avatar: {
+            logo: company.gazetaLesna.logo,
+            sign: null
+        },
         video: {
             time: '6:36',
             src: videoContentThumbnail1,
@@ -51,7 +65,11 @@ export const content = [
         id: '596b24d5-1fe3-431a-87a5-a7ddc41eb6cb',
         date: '12 mar 2022',
         title: 'Przedsiębiorca leśny a rosnące ceny paliw',
-        company: 'Gazeta Leśna',
+        company: company.gazetaLesna.name,
+        avatar: {
+            logo: company.gazetaLesna.logo,
+            sign: null
+        },
         video: {
             time: '6:58',
             src: videoContentThumbnail2,
@@ -64,7 +82,11 @@ export const content = [
         id: '83c1cba9-ca5f-45c2-af90-5acf0888bb91',
         date: '18 mar 2022',
         title: 'Zacznijmy liczyć koszty',
-        company: 'Gazeta Leśna',
+        company: company.gazetaLesna.name,
+        avatar: {
+            logo: company.gazetaLesna.logo,
+            sign: null
+        },
         video: {
             time: '18:37',
             src: videoContentThumbnail3,
@@ -77,7 +99,11 @@ export const content = [
         id: 'e8a772c7-e6e4-45a3-a08a-763e86b58f7f',
         date: '24 maj 2021',
         title: 'Targi Work&Science Forum',
-        company: 'KRD',
+        company: company.krd.name,
+        avatar: {
+            logo: company.krd.logo,
+            sign: null
+        },
         video: {
             time: '2:55',
             src: videoContentThumbnail4,
@@ -90,7 +116,11 @@ export const content = [
         id: 'db33580f-b9c7-4d09-89ee-81b18d031f4d',
         date: '29 sty 2021',
         title: 'Leśnictwo na Wydziale Leśnym SGGW',
-        company: 'SGGW',
+        company: company.sggw.name,
+        avatar: {
+            logo: company.sggw.logo,
+            sign: null
+        },
         video: {
             time: '2:01',
             src: videoContentThumbnail5,

@@ -167,14 +167,14 @@ const HeroSection = () => {
                                         >
                                             <Button
                                                 component={Link}
-                                                to={`/photo`}
+                                                to={`/services`}
                                                 variant='contained'
                                                 color='primary'
                                                 size='large'
                                                 endIcon={<ArrowForwardIcon />}
                                                 // startIcon={<PhotoLibraryIcon />}
                                             >
-                                                Zobacz mój reel
+                                                Zobacz moje usługi
                                             </Button>
                                         </Box>
                                     </Box>

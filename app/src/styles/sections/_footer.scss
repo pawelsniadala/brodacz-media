@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
 footer {
     // background-color: #ffffff;
     // background-color: #f6f8fa;
     background-color: #f3f5f8;
+    // font-family: 'Lato', sans-serif;
+
     // border-top: 1px solid rgba(145, 158, 171, 0.035);
     // border: 1px solid rgba(145, 158, 171, 0.035);
     // background-color: #e7e8eb;
@@ -29,9 +33,13 @@ footer {
             color: rgba(0,0,0,.5);
             // color: rgba(255,255,255,.5);
 
+            font-family: arial,sans-serif;
+
             .footer-subheader {
                 color: rgba(0,0,0,.7);
                 margin-bottom: 1rem;
+
+                
             }
 
            .business {
@@ -153,78 +161,78 @@ footer {
     }
 }
 
-.dark-theme {
-    footer {
-        background-color: #171717;
+// .dark-theme {
+//     footer {
+//         background-color: #171717;
 
-        .section-wrapper {
-            &.footer {
-                color: rgba(255,255,255,.3);
+//         .section-wrapper {
+//             &.footer {
+//                 color: rgba(255,255,255,.3);
 
-                .footer-subheader {
-                    color: rgba(255,255,255,.5);
-                }
+//                 .footer-subheader {
+//                     color: rgba(255,255,255,.5);
+//                 }
 
-                .video,
-                .foto {
-                    .list-group-flush {
-                        .list-group-item {
-                            background-color: #171717;
-                            border-bottom: 1px solid rgba(255, 255, 255, .07);
+//                 .video,
+//                 .foto {
+//                     .list-group-flush {
+//                         .list-group-item {
+//                             background-color: #171717;
+//                             border-bottom: 1px solid rgba(255, 255, 255, .07);
 
-                            a {
-                                color: rgba(255,255,255,.3);
+//                             a {
+//                                 color: rgba(255,255,255,.3);
 
 
-                                &:hover {
-                                    color: rgba(255,255,255,.5);
-                                }
-                            }
+//                                 &:hover {
+//                                     color: rgba(255,255,255,.5);
+//                                 }
+//                             }
 
-                            &:last-child {
-                                border-bottom: none;
-                            }
-                        }
-                    }
-                }
+//                             &:last-child {
+//                                 border-bottom: none;
+//                             }
+//                         }
+//                     }
+//                 }
 
-                .contact {
-                    .contact-wrapper {
-                        .media {
-                            svg {
-                                filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
-                                opacity: .3;
+//                 .contact {
+//                     .contact-wrapper {
+//                         .media {
+//                             svg {
+//                                 filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+//                                 opacity: .3;
 
-                                &:hover {
-                                    opacity: .5;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+//                                 &:hover {
+//                                     opacity: .5;
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
 
-            &.info {
-                text-align: center;
-                margin: 0;
-                padding: .7rem 0;
-                background-color: #fff;
-                font-family: 'Roboto', sans-serif;
+//             &.info {
+//                 text-align: center;
+//                 margin: 0;
+//                 padding: .7rem 0;
+//                 background-color: #fff;
+//                 font-family: 'Roboto', sans-serif;
 
-                .copyright {
-                    color: rgba(0,0,0,.55);
-                    font-size: .75rem;
+//                 .copyright {
+//                     color: rgba(0,0,0,.55);
+//                     font-size: .75rem;
 
-                    @media (max-width: 539.98px) {
-                        font-size: .6rem;
-                    }
+//                     @media (max-width: 539.98px) {
+//                         font-size: .6rem;
+//                     }
 
-                    .design {
-                        text-decoration: none;
-                        color: rgba(0,0,0,.55);
-                    }
-                }
-            }
-        }
-    }
-}
+//                     .design {
+//                         text-decoration: none;
+//                         color: rgba(0,0,0,.55);
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }

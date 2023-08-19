@@ -1,18 +1,14 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation, useParams } from 'react-router-dom';
 
-// import Container from '@mui/material/Container';
 import Tabs, { tabsClasses } from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
-// import Chip from '@mui/material/Chip';
-// import Stack from '@mui/material/Stack';
 
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-// import VisibilityIcon from '@mui/icons-material/Visibility';
-
+import FastRewindIcon from '@mui/icons-material/FastRewind';
 
 import Container from '../components/Container';
 import VideoCategoryPartial from './partials/video/VideoCategoryPartial';
@@ -122,16 +118,9 @@ const VideoView = () => {
                                 aria-label='breadcrumb'
                             >
                                 <Link to='/' aria-current='page'>
+                                    <FastRewindIcon />
                                     Home
                                 </Link>
-                                <Typography color='text.primary'>
-                                    Filmy
-                                </Typography>
-                                {/* {setBreadcrumbsName() && (
-                                    <Typography color='text.primary'>
-                                        {setBreadcrumbsName()}
-                                    </Typography>
-                                )} */}
                             </Breadcrumbs>
                         </Box>
                         <Box className='heading-wrapper'>
@@ -153,14 +142,14 @@ const VideoView = () => {
                                 </Stack>
                             </Box> */}
                         </Box>
-                        <Box className='tabs-wrapper'>
+                        <Box className='tabs-wrapper-3'>
                             <Tabs
                                 value={pathname}
                                 variant='scrollable'
                                 scrollButtons='auto'
                                 aria-label='scrollable auto tabs example'
-                                TabIndicatorProps={{ style: { background: '#2f363d', height: '2px', borderRadius: '1px' }}}
-                                // TabIndicatorProps={{ style: { background: 'transparent' }}}
+                                // TabIndicatorProps={{ style: { background: '#2f363d', height: '2px', borderRadius: '1px' }}}
+                                TabIndicatorProps={{ style: { background: 'transparent' }}}
                                 sx={{
                                     [`& .${tabsClasses.scrollButtons}`]: {
                                         '&.Mui-disabled': { opacity: 0.3 },
@@ -224,13 +213,13 @@ const VideoView = () => {
                                     value={`/video/animations`}
                                     onClick={() => setTab('video-animations')}
                                 />
-                                <Tab
+                                {/* <Tab
                                     label='Backstage'
                                     component={Link}
                                     to={`/video/backstage`}
                                     value={`/video/backstage`}
                                     onClick={() => setTab('video-backstage')}
-                                />
+                                /> */}
                             </Tabs>
                         </Box>
                     </Container>

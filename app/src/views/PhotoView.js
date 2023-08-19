@@ -8,6 +8,8 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import FastRewindIcon from '@mui/icons-material/FastRewind';
+import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
 
 import PhotoCategoryPartial from './partials/photo/PhotoCategoryPartial';
 import Container from '../components/Container';
@@ -99,7 +101,7 @@ const PhotoView = () => {
                 <Box className='view-header'>
                     <Container className='header-wrapper'>
                         <Box className='breadcrumb-wrapper'>
-                            <Breadcrumbs
+                            {/* <Breadcrumbs
                                 className='breadcrumb'
                                 separator={<NavigateNextIcon fontSize='smform' />}
                                 aria-label='breadcrumb'
@@ -110,11 +112,21 @@ const PhotoView = () => {
                                 <Typography color='text.primary'>
                                     Zdjęcia
                                 </Typography>
-                                {/* {setBreadcrumbsName() && (
+                                {setBreadcrumbsName() && (
                                     <Typography color='text.primary'>
                                         {setBreadcrumbsName()}
                                     </Typography>
-                                )} */}
+                                )}
+                            </Breadcrumbs> */}
+                            <Breadcrumbs
+                                className='breadcrumb'
+                                separator={<NavigateNextIcon fontSize='smform' />}
+                                aria-label='breadcrumb'
+                            >
+                                <Link to='/' aria-current='page'>
+                                    <FastRewindIcon />
+                                    Home
+                                </Link>
                             </Breadcrumbs>
                         </Box>
                         <Box className='heading-wrapper'>
@@ -122,13 +134,14 @@ const PhotoView = () => {
                                 Zdjęcia
                             </Typography>
                         </Box>
-                        <Box className='tabs-wrapper'>
+                        <Box className='tabs-wrapper-3'>
                             <Tabs
                                 value={pathname}
                                 variant='scrollable'
                                 scrollButtons='auto'
                                 aria-label='scrollable auto tabs example'
-                                TabIndicatorProps={{ style: { background: '#2f363d', height: '2px', borderRadius: '1px' }}}
+                                // TabIndicatorProps={{ style: { background: '#2f363d', height: '2px', borderRadius: '1px' }}}
+                                TabIndicatorProps={{ style: { background: 'transparent' }}}
                                 sx={{
                                     [`& .${tabsClasses.scrollButtons}`]: {
                                         '&.Mui-disabled': { opacity: 0.3 },
@@ -178,13 +191,13 @@ const PhotoView = () => {
                                     value={`/photo/drone`}
                                     onClick={(e) => handleTab(e, 'photo-drone')}
                                 />
-                                <Tab
+                                {/* <Tab
                                     label='Backstage'
                                     component={Link}
                                     to={`/photo/backstage`}
                                     value={`/photo/backstage`}
                                     onClick={(e) => handleTab(e, 'photo-backstage')}
-                                />
+                                /> */}
                             </Tabs>
                         </Box>
                     </Container>

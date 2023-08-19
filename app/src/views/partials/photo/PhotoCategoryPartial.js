@@ -1,10 +1,8 @@
 import { useEffect } from 'react';
 import PhotoSwipeLightbox from 'photoswipe/lightbox';
-// import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Box from '@mui/material/Box';
-
-import CardRealization from '../../../components/CardRealization';
 
 import { photo } from '../../../data/photo';
 
@@ -50,38 +48,37 @@ const PhotoCategoryPartial = ({ category }) => {
 
     return (
         <Box className='photo-category-partial'>
-            <Box className='card-wrapper realization photo pswp-gallery' id='my-gallery'>
-                {setPhotoCategory(category).map((item) => (
-                    <a
-                        key={`my-gallery-${item.id}`}
-                        href={item.image.original.src}
-                        data-pswp-width={item.image.original.width}
-                        data-pswp-height={item.image.original.height}
-                        data-cropped='true'
-                        target='_blank'
-                        rel='noreferrer'
-                    >
-                        <CardRealization
-                            cardPhoto
-                            cardTitle={item.title}
-                            cardPhotoSrc={item.image.thumbnail.src}
-                        />
-                        {/* <Box className='card-photo'>
-                            <Box className='img-box'>
+            <Box className='pswp-gallery-wrapper'>
+                <Box className="pswp-gallery" id='my-gallery'>
+                    {setPhotoCategory(category).map((item) => (
+                        <a
+                            key={`my-gallery-${item.id}`}
+                            href={item.image.original.src}
+                            data-pswp-width={item.image.original.width}
+                            data-pswp-height={item.image.original.height}
+                            data-cropped='true'
+                            target='_blank'
+                            rel='noreferrer'
+                        >
+                            <Box className='box'>
                                 <LazyLoadImage
                                     src={item.image.thumbnail.src}
+                                    // src={item.image.original.src}
                                     alt={item.title}
                                     height='100%'
                                     width='100%'
                                     effect='blur'
                                 />
+                                <span className="pswp-caption-content">
+                                    {item.description}
+                                </span>
                             </Box>
-                        </Box> */}
-                    </a>
-                ))}
+                        </a>
+                    ))}
+                </Box>
             </Box>
         </Box>
     );
-};
+}
 
 export default PhotoCategoryPartial;

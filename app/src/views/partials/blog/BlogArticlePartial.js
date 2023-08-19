@@ -4,8 +4,8 @@ import { Link, useParams } from 'react-router-dom';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import Chip from '@mui/material/Chip';
-import Avatar from '@mui/material/Avatar';
+// import Chip from '@mui/material/Chip';
+// import Avatar from '@mui/material/Avatar';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 import Container from '../../../components/Container';

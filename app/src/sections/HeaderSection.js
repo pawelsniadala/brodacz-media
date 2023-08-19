@@ -257,7 +257,7 @@ const HeaderSection = () => {
             component='header'
             className='header-section'
         >
-            <Box className='top-nav'>
+            {/* <Box className='top-nav'>
                 <Container className='nav-wrapper container'>
                     <Box className='content-wrapper'>
                         <Box className='contact-wrapper'>
@@ -268,8 +268,8 @@ const HeaderSection = () => {
                                     rel='noreferrer'
                                 >
                                     <Box className='link-wrapper'>
-                                        {/* <CallIcon style={{ color: '#2f363d' }} fontSize='14px' /> */}
-                                        <PhoneSvg width='12px' height='12px' color='#2f363d'  />                                         
+                                        <CallIcon style={{ color: '#2f363d' }} fontSize='14px' />
+                                        <PhoneSvg width='12px' height='12px' color='#2f363d'  />
                                         <Typography className='link-text'>
                                             797 365 584
                                         </Typography>
@@ -283,7 +283,7 @@ const HeaderSection = () => {
                                     rel='noreferrer'
                                 >
                                     <Box className='link-wrapper'>
-                                        {/* <EmailIcon style={{ color: '#2f363d', fontSize: '15px' }} fontSize='12px' /> */}
+                                        <EmailIcon style={{ color: '#2f363d', fontSize: '15px' }} fontSize='12px' />
                                         <EmailSvg width='12px' height='12px' color='#2f363d'  />
                                         <Typography className='link-text'>
                                             studio@brodaczmedia.pl
@@ -333,20 +333,10 @@ const HeaderSection = () => {
                                     <YouTubeSvg width='16px' height='12px' color='#2f363d' />
                                 </a>
                             </Tooltip>
-{/* 
-                            <Tooltip title='LinkedIn'>
-                                <a className='link'
-                                    href='https://www.tiktok.com/@brodaczmedia'
-                                    target='_blank'
-                                    rel='noreferrer'
-                                >
-                                    <LinkedInSvg width='12px' height='12px' color='#2f363d' />
-                                </a>
-                            </Tooltip> */}
                         </Box>
                     </Box>
                 </Container>
-            </Box>
+            </Box> */}
             <Box component='nav' className='navbar navbar-light navbar-expand-lg'>
                 <Container className='navbar-wrapper container-fluid'>
                     <NavLink

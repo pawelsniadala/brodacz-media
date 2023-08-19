@@ -2,13 +2,19 @@ import videoMusicThumbnail1 from '../../../assets/video/realization/music/videoM
 import videoMusicThumbnail2 from '../../../assets/video/realization/music/videoMusicThumbnail2.png';
 import videoMusicThumbnail3 from '../../../assets/video/realization/music/videoMusicThumbnail3.png';
 
+import { company } from '../company/company';
+
 export const music = [
     {
         display: true,
         id: 'be1bfad3-7435-47dd-b1ba-28ffe39de6ca',
         date: '24 lis 2021',
         title: 'Kurp - Dopsierum tu przysła',
-        company: 'Kurp',
+        company: company.kurp.name,
+        avatar: {
+            logo: null,
+            sign: company.kurp.sign
+        },
         video: {
             time: '3:58',
             src: videoMusicThumbnail1,
@@ -21,7 +27,11 @@ export const music = [
         id: '296280a3-8f33-4895-ad14-f533907c0934',
         date: '18 gru 2020',
         title: 'Fire Show Infernal',
-        company: 'Teatr Ognia Infernal',
+        company: company.teatrOgniaInfernal.name,
+        avatar: {
+            logo: null,
+            sign: company.teatrOgniaInfernal.sign
+        },
         video: {
             time: '2:40',
             src: videoMusicThumbnail2,
@@ -34,7 +44,11 @@ export const music = [
         id: 'c4df3075-2e7c-464b-b3fe-acaa93104144',
         date: '27 lip 2020',
         title: 'Leśny z spacer Asią',
-        company: 'Brodacz Media',
+        company: company.brodaczMedia.name,
+        avatar: {
+            logo: company.brodaczMedia.logo,
+            sign: null
+        },
         video: {
             time: '0:39',
             src: videoMusicThumbnail3,
